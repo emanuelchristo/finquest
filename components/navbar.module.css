@@ -1,0 +1,32 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 4.5rem;
+}
+
+.links-list {
+	display: flex;
+	align-items: center;
+}
+.links-list li {
+	margin-right: 3rem;
+	font-size: 1.125rem;
+}
+.links-list li:last-child {
+	margin-right: 0;
+}
+
+.talk-button {
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 3.5rem;
+	padding: 0 1.5rem;
+	border-radius: 1rem;
+}
+.talk-button span {
+	margin-left: 0.5rem;
+	font-weight: 600;
+}
