@@ -4,6 +4,7 @@ import Benefits from '../components/Benefits'
 import Consultation from '../components/Consultation'
 import Faqs from '../components/Faqs'
 import Header from '../components/Header'
+import Reviews from '../components/Reviews'
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 			<Associated />
 			<About />
 			<Benefits />
+			<Reviews />
 			<Consultation />
 			<Faqs />
 		</div>
