@@ -1,0 +1,12 @@
+.associated {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	width: fit-content;
+}
+.associated > * {
+	margin-right: 5rem;
+}
+.associated > *:last-child {
+	margin-right: 0;
+}
