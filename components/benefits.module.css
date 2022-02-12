@@ -1,0 +1,29 @@
+.benefits {
+	margin-bottom: 7.5rem;
+}
+
+.benefits h2 {
+	margin-bottom: 3.5rem;
+}
+
+.content-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.benefit {
+	max-width: 240px;
+}
+.benefit img {
+	margin-bottom: 1.25rem;
+}
+.benefit h3 {
+	font-size: 1.75rem;
+	line-height: 1.4;
+	font-weight: 500;
+	margin-bottom: 1.25rem;
+}
+.benefit p {
+	font-size: 1.125rem;
+	line-height: 1.6;
+}

@@ -2,7 +2,8 @@
 	display: flex;
 	align-items: center;
 	max-width: 1100px;
-	margin: 10rem auto;
+	margin: 0 auto;
+	margin-bottom: 8rem;
 }
 
 .about img {

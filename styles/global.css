@@ -6,6 +6,12 @@
 	font-family: 'General Sans', Helvetica, Arial, sans-serif;
 }
 
+.margin {
+	max-width: 1440;
+	margin: 0 auto;
+	padding: 0 7rem;
+}
+
 h2 {
 	font-size: 4rem;
 	font-weight: 600;

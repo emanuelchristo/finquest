@@ -1,5 +1,6 @@
 import About from '../components/About'
 import Associated from '../components/Associated'
+import Benefits from '../components/Benefits'
 import Header from '../components/Header'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
 			<Header />
 			<Associated />
 			<About />
+			<Benefits />
 		</div>
 	)
 }
