@@ -5,3 +5,14 @@
 * {
 	font-family: 'General Sans', Helvetica, Arial, sans-serif;
 }
+
+h2 {
+	font-size: 4rem;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1.25rem;
+	color: var(--text-grey);
+	line-height: 1.75;
+}

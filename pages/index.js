@@ -1,3 +1,4 @@
+import About from '../components/About'
 import Associated from '../components/Associated'
 import Header from '../components/Header'
 
@@ -6,6 +7,7 @@ export default function Home() {
 		<div>
 			<Header />
 			<Associated />
+			<About />
 		</div>
 	)
 }

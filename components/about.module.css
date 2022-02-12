@@ -1,0 +1,43 @@
+.about {
+	display: flex;
+	align-items: center;
+	max-width: 1100px;
+	margin: 10rem auto;
+}
+
+.about img {
+	max-width: 500px;
+}
+
+.about h2 {
+	margin-bottom: 1rem;
+}
+
+.heading-wrapper {
+	position: relative;
+	width: fit-content;
+}
+.square {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: #facf38;
+	transform: rotate(30deg);
+	position: absolute;
+	right: -1.25rem;
+	top: -0.5rem;
+}
+.circle {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: #f555a0;
+	position: absolute;
+	right: -3rem;
+	top: 1.5rem;
+}
+
+.spacer {
+	width: 5rem;
+	height: 5rem;
+	flex-shrink: 0;
+}
