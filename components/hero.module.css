@@ -1,51 +1,146 @@
 .hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	flex: 1;
-	margin: 0 3rem;
-	border-radius: 2.5rem;
-	background-color: var(--primary-color);
 }
 
-.hero-left {
-	height: 100%;
-	max-width: 700px;
-	padding: 4.5rem;
+.hero h1 {
+	font-size: 5.75rem;
+	text-align: center;
+	line-height: 1.15;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
-.heading {
-	font-size: 4rem;
-	font-weight: 600;
-	line-height: 1.15;
+
+.hero h1 > span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.sub-heading {
-	margin-top: 1.5rem;
-	font-size: 1.375rem;
-	color: rgba(0, 0, 0, 0.6);
+
+.heading-wrapper {
+	display: flex;
+	position: relative;
 }
-.talk-button {
-	margin: 2rem 0;
+.twinkle-wrapper {
+	position: absolute;
+	top: 0.75rem;
+	left: -3rem;
+}
+.twinkle-1 {
+	width: 2.875rem;
+	height: auto;
+	transform: rotate(18deg);
+}
+.twinkle-2 {
+	width: 1.25rem;
+	height: auto;
+	transform: rotate(-73deg);
+	position: relative;
+	left: 1.75rem;
+	top: -0.5rem;
+}
+.square {
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: #875efb;
+	position: absolute;
+	right: 6.25rem;
+	top: 3.25rem;
+	transform: rotate(-55deg);
+}
+.circle {
+	width: 1rem;
+	height: 1rem;
+	background-color: #f874b3;
+	border-radius: 50%;
+	position: absolute;
+	right: 8rem;
+	top: 5.5rem;
+}
+.circle-img-1,
+.circle-img-2 {
+	width: 5.75rem;
+	height: 5.75rem;
+	border-radius: 50%;
+	flex-shrink: 0;
+	position: absolute;
+}
+.circle-img-1 {
+	background-color: #90d9f0;
+	background-image: url('/images/hero-circle-1.png');
+	transform: rotate(-20deg);
+	left: 4rem;
+}
+.circle-img-2 {
+	background-color: #f090cb;
+	background-image: url('/images/hero-circle-2.png');
+	transform: rotate(13deg);
+	bottom: 0;
+	right: 0;
+}
+.pill-img-1 {
+	width: 8rem;
+	height: 5.75rem;
+	border-radius: 200px;
+	flex-shrink: 0;
+	background-color: #d8c9f3;
+	background-image: url('/images/hero-pill-1.png');
+	position: absolute;
+	bottom: -1rem;
+	left: -1.5rem;
+	transform: rotate(-26deg);
+}
+.in-text-img {
+	display: inline-block;
+	width: 8.5rem;
+	height: 5.75rem;
+	margin: 0 1.5rem;
+	border-radius: 200px;
+	background-image: url('/images/hero-in-text.png');
+	background-color: rgb(255, 187, 0);
+}
+
+.circle-img-1,
+.circle-img-2,
+.pill-img-1,
+.in-text-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.description {
+	max-width: 470px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 3.75rem;
+}
+
+.talk-button,
+.consultation-button {
 	background-color: #000;
 	color: #fff;
 	display: flex;
 	align-items: center;
-	width: fit-content;
-	height: 3.5rem;
-	padding: 0 2.5rem;
-	border-radius: 1rem;
+	height: 3.75rem;
+	padding: 0 2rem;
+	border-radius: 100px;
 }
-.talk-button span {
-	margin-left: 0.5rem;
+
+.talk-button span,
+.consultation-button span {
+	margin-left: 0.6rem;
 	font-weight: 600;
 }
-.learn-button {
-	display: flex;
-	align-items: center;
+.consultation-icon {
+	font-size: 1.4rem;
 }
-.learn-button span {
-	margin-right: 0.5rem;
-	font-weight: 600;
-}
-.arrow-icon {
-	font-size: 1.5rem;
+.consultation-button {
+	margin-left: 1rem;
+	color: #000;
+	background-color: #f1f3f5;
 }

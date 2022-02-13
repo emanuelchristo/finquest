@@ -1,4 +1,4 @@
-import { BsFillChatFill } from 'react-icons/bs'
+import { BsFillChatLeftFill } from 'react-icons/bs'
 import styles from './navbar.module.css'
 
 export default function Navbar() {
@@ -20,7 +20,7 @@ export default function Navbar() {
 				</li>
 			</ul>
 			<button className={styles['talk-button']}>
-				<BsFillChatFill />
+				<BsFillChatLeftFill />
 				<span>Talk to us</span>
 			</button>
 		</nav>
