@@ -5,6 +5,7 @@ import Consultation from '../components/Consultation'
 import Faqs from '../components/Faqs'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Pricing from '../components/Pricing'
 import Reviews from '../components/Reviews'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
 			<Associated />
 			<About />
 			<Benefits />
+			<Pricing />
 			<Reviews />
 			<Consultation />
 			<Faqs />
