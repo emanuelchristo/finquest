@@ -33,3 +33,48 @@
 	margin-left: 0.6rem;
 	font-weight: 600;
 }
+
+.menu-icon {
+	display: none;
+	font-size: 1.75rem;
+	margin-right: 1rem;
+}
+
+@media (max-width: 1279px) {
+}
+
+@media (max-width: 1023px) {
+	.navbar {
+		padding: 2rem 2rem 1.5rem 2rem;
+	}
+	.links-list li {
+		margin-right: 1.5rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.menu-icon {
+		display: inline-block;
+	}
+	.links-list {
+		display: none;
+	}
+	.navbar {
+		padding: 2rem 1.5rem 1.5rem 1.5rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.navbar {
+		padding: 1.5rem 1rem 1.5rem 1rem;
+	}
+	.talk-button {
+		height: 2.75rem;
+	}
+	.logo {
+		height: 28px;
+	}
+	.menu-icon {
+		margin-right: 0.75rem;
+	}
+}

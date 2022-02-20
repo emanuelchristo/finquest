@@ -1,10 +1,14 @@
 import { BsFillChatLeftFill } from 'react-icons/bs'
+import { IoMdMenu } from 'react-icons/io'
 import styles from './navbar.module.css'
 
 export default function Navbar() {
 	return (
 		<nav className={styles['navbar']}>
-			<img src='/images/logo.svg' height={32} width='auto' className={styles['logo']} />
+			<div className='flex items-center'>
+				<IoMdMenu className={styles['menu-icon']} />
+				<img src='/images/logo.svg' height={32} width='auto' className={styles['logo']} />
+			</div>
 			<ul className={styles['links-list']}>
 				<li>
 					<a>About us</a>
@@ -21,7 +25,7 @@ export default function Navbar() {
 			</ul>
 			<button className={styles['talk-button']}>
 				<BsFillChatLeftFill />
-				<span>Talk to us</span>
+				<span>Talk</span>
 			</button>
 		</nav>
 	)
