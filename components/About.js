@@ -4,7 +4,7 @@ export default function About() {
 	return (
 		<div className='margin'>
 			<section className={styles['about']}>
-				<img src='/images/about-us.png' alt='' width='50%' height='auto' />
+				<img className={styles['image']} src='/images/about-us.png' alt='' width='50%' height='auto' />
 				<div className={styles['spacer']}></div>
 				<div className={styles['content']}>
 					<div className={styles['heading-wrapper']}>
