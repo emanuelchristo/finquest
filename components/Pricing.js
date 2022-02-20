@@ -6,6 +6,8 @@ const plans = [
 		imageLink: '/images/options-trading-plan.png',
 		planName: 'Options Trading',
 		price: 4499,
+		cutPrice: 4940,
+		discount: '10% off',
 		duration: 'Month',
 		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
 	},
@@ -13,6 +15,8 @@ const plans = [
 		imageLink: '/images/student-plan.png',
 		planName: 'Student',
 		price: 7499,
+		cutPrice: 8999,
+		discount: '20% off',
 		duration: 'Month',
 		color: 'yellow',
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],
@@ -21,6 +25,8 @@ const plans = [
 		imageLink: '/images/professional-plan.png',
 		planName: 'Professional',
 		price: 10399,
+		cutPrice: 11959,
+		discount: '15% off',
 		duration: '2 Months',
 		features: [
 			'Intraday & swing trading',
@@ -37,7 +43,7 @@ export default function Pricing() {
 	return (
 		<section className={styles['pricing']}>
 			<div className={styles['heading-wrapper']}>
-				<h2>Pricing</h2>
+				<h2>Memberships</h2>
 				<p>A nunc lacus nisl, neque, quam. Vitae leo, eu nibh non in fermentum tincidunt.</p>
 			</div>
 			<div className={styles['cards-wrapper']}>
@@ -47,6 +53,8 @@ export default function Pricing() {
 						imageLink={item.imageLink}
 						planName={item.planName}
 						price={item.price}
+						cutPrice={item.cutPrice}
+						discount={item.discount}
 						duration={item.duration}
 						features={item.features}
 						color={item.color}
@@ -57,11 +65,15 @@ export default function Pricing() {
 	)
 }
 
-function Card({ imageLink, planName, price, duration, features, color }) {
+function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color }) {
 	return (
 		<div className={`${styles['card']} ${color === 'yellow' ? styles['yellow-card'] : ''}`}>
 			<div className={styles['image-container']} style={{ backgroundImage: `url('${imageLink}')` }}></div>
 			<p className={styles['plan-name']}>{planName}</p>
+			<div className='flex items-center mb-2'>
+				<div className={styles['cut-price-wrapper']}>₹{cutPrice}</div>
+				<div className={styles['discount']}>{discount}</div>
+			</div>
 			<div className={styles['price-wrapper']}>
 				<h3>₹{price}</h3>
 				<span>{'/ ' + duration}</span>
@@ -73,6 +85,7 @@ function Card({ imageLink, planName, price, duration, features, color }) {
 					</li>
 				))}
 			</ul>
+			<button className={styles['action-button']}>JOIN NOW</button>
 		</div>
 	)
 }

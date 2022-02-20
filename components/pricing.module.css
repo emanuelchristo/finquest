@@ -91,3 +91,48 @@
 	margin-right: 0.75rem;
 	color: rgba(0, 0, 0, 0.75);
 }
+
+.cut-price-wrapper {
+	font-weight: 500;
+	font-size: 1.375rem;
+	color: rgba(0, 0, 0, 0.75);
+	position: relative;
+}
+.cut-price-wrapper::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.9rem;
+	transform: rotate(-5deg);
+	display: inline-block;
+	width: 105%;
+	background-color: rgba(217, 15, 15, 0.9);
+	height: 3px;
+}
+.discount {
+	color: #fff;
+	background-color: #16bf4e;
+	border-radius: 100px;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	margin-left: 0.5rem;
+}
+
+.action-button {
+	width: 100%;
+	height: 2.875rem;
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0d64e5;
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: 600;
+	border-radius: 100px;
+}
+
+.yellow-card .action-button {
+	background-color: #790de5;
+}
