@@ -61,6 +61,32 @@ export default function Pricing() {
 					/>
 				))}
 			</div>
+
+			<img
+				className={styles['grid-pattern-1']}
+				src='/images/grid-pattern.svg'
+				width='435px'
+				height='auto'
+				alt=''
+			/>
+			<img
+				className={styles['grid-pattern-2']}
+				src='/images/grid-pattern.svg'
+				width='435px'
+				height='auto'
+				alt=''
+			/>
+
+			<img className={styles['pricing-arrow']} src='/images/pricing-arrow.svg' width='95%' height='auto' alt='' />
+
+			<div className={styles['twinkle-wrapper-1']}>
+				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+			</div>
+			<div className={styles['twinkle-wrapper-2']}>
+				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+			</div>
 		</section>
 	)
 }
