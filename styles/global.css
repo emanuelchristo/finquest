@@ -6,6 +6,13 @@
 	font-family: 'General Sans', Helvetica, Arial, sans-serif;
 }
 
+html,
+body {
+	overflow-x: hidden;
+	width: 100vw;
+	min-width: 360px;
+}
+
 .margin {
 	max-width: 1440px;
 	margin: 0 auto;
@@ -21,4 +28,28 @@ p {
 	font-size: 1.25rem;
 	color: var(--text-grey);
 	line-height: 1.75;
+}
+
+@media (max-width: 1279px) {
+	.margin {
+		padding: 0 5rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	.margin {
+		padding: 0 3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.margin {
+		padding: 0 2rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.margin {
+		padding: 0 1.5rem;
+	}
 }
