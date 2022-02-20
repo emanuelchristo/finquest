@@ -4,6 +4,17 @@
 	width: fit-content;
 	margin: 0 auto;
 	margin-bottom: 8rem;
+	width: 100%;
+}
+
+.image {
+	width: 44%;
+	max-width: 100%;
+	background-image: url('/images/consultation.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	flex-shrink: 2;
 }
 
 .spacer {
@@ -14,17 +25,20 @@
 
 .content {
 	max-width: 490px;
+	flex-shrink: 1;
 }
 
 .content p {
 	margin-top: 1rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .phone-no {
 	font-size: 1.25rem;
 	font-weight: 600;
+	margin: 1rem 0;
 	margin-right: 1.5rem;
+	white-space: nowrap;
 }
 
 .whatsapp-button {
@@ -42,4 +56,49 @@
 .whatsapp-button span {
 	font-weight: 600;
 	margin-left: 0.6rem;
+}
+
+@media (max-width: 1279px) {
+	.spacer {
+		width: 3rem;
+		height: 3rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	.spacer {
+		width: 2rem;
+		height: 2rem;
+	}
+	.phone-no {
+		font-size: 1.15rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.image {
+		width: 100%;
+		max-width: 400px;
+		padding: 0 1rem;
+	}
+	.consultation {
+		flex-direction: column;
+	}
+	.spacer {
+		height: 1rem;
+	}
+	.whatsapp-button {
+		height: 3.25rem;
+		padding: 0 1.5rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.content p {
+		margin-bottom: 1rem;
+	}
+	.phone-no {
+		font-size: 1.1rem;
+		margin-right: 1rem;
+	}
 }
