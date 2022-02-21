@@ -63,3 +63,46 @@
 .open .arrow-wrapper path {
 	stroke: #fff;
 }
+
+@media (max-width: 1279px) {
+}
+
+@media (max-width: 1023px) {
+	.faq {
+		padding: 1.75rem 0;
+	}
+	.question {
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.faqs {
+		margin-bottom: 6rem;
+	}
+	.heading-wrapper {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.faqs {
+		margin-bottom: 5rem;
+	}
+	.faqs-count {
+		width: 2.125rem;
+		height: 2.125rem;
+		font-size: 1.125rem;
+	}
+	.faq {
+		padding: 1.5rem 0;
+	}
+	.question {
+		font-size: 1.4rem;
+	}
+	.arrow-wrapper {
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-left: 1rem;
+	}
+}
