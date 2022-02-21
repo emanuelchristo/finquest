@@ -12,13 +12,21 @@ export default function Home() {
 	return (
 		<div>
 			<Header />
+			<div className='section-spacer'></div>
 			<Associated />
+			<div className='section-spacer'></div>
 			<About />
+			<div className='section-spacer'></div>
 			<Benefits />
+			<div className='section-spacer'></div>
 			<Pricing />
+			<div className='section-spacer'></div>
 			<Reviews />
+			<div className='section-spacer'></div>
 			<Consultation />
+			<div className='section-spacer'></div>
 			<Faqs />
+			<div className='section-spacer'></div>
 			<Footer />
 		</div>
 	)

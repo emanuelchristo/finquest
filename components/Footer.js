@@ -26,17 +26,7 @@ export default function Footer() {
 						</li>
 					</ul>
 				</div>
-				<div className={styles['link-group']}>
-					<h3>Company</h3>
-					<ul>
-						<li>
-							<a>Privacy Policy</a>
-						</li>
-						<li>
-							<a>Terms of Service</a>
-						</li>
-					</ul>
-				</div>
+
 				<div className={styles['link-group']}>
 					<h3>Social</h3>
 					<ul>
@@ -71,6 +61,17 @@ export default function Footer() {
 									<span>LinkedIn</span>
 								</div>
 							</a>
+						</li>
+					</ul>
+				</div>
+				<div className={styles['link-group']}>
+					<h3>Company</h3>
+					<ul>
+						<li>
+							<a>Privacy Policy</a>
+						</li>
+						<li>
+							<a>Terms of Service</a>
 						</li>
 					</ul>
 				</div>

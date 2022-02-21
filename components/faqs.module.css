@@ -1,7 +1,3 @@
-.faqs {
-	margin-bottom: 8rem;
-}
-
 .heading-wrapper {
 	display: flex;
 	align-items: center;
@@ -77,19 +73,14 @@
 }
 
 @media (max-width: 767px) {
-	.faqs {
-		margin-bottom: 6rem;
-	}
 	.heading-wrapper {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 }
 
 @media (max-width: 639px) {
-	.faqs {
-		margin-bottom: 5rem;
-	}
 	.faqs-count {
+		margin-left: 0.75rem;
 		width: 2.125rem;
 		height: 2.125rem;
 		font-size: 1.125rem;

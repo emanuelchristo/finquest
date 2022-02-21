@@ -10,7 +10,7 @@
 	align-items: center;
 }
 .links-list li {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-right: 3rem;
@@ -36,7 +36,7 @@
 
 .menu-icon {
 	display: none;
-	font-size: 1.75rem;
+	font-size: 1.6rem;
 	margin-right: 1rem;
 }
 
@@ -66,15 +66,20 @@
 
 @media (max-width: 639px) {
 	.navbar {
-		padding: 1.5rem 1rem 1.5rem 1rem;
+		padding: 1rem;
+		padding-left: 0.75rem;
 	}
 	.talk-button {
-		height: 2.75rem;
+		height: 2.5rem;
+		padding: 0 1.25rem;
+	}
+	.talk-button svg {
+		width: 0.875rem;
 	}
 	.logo {
 		height: 28px;
 	}
 	.menu-icon {
-		margin-right: 0.75rem;
+		margin-right: 0.6rem;
 	}
 }

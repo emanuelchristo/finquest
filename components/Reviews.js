@@ -2,42 +2,42 @@ import styles from './reviews.module.css'
 
 const reviews = [
 	{
-		imageLink: '',
+		imageLink: '/images/jerry-james-vargheese.jpg',
 		name: 'Jerry James Varghese',
 		title: 'Air traffic controller, Chennai airport',
 		rating: 5,
 		review: `The stock market always fascinated me, but time was an issue for me due to my work. That is when finQ provided me with flexible timing,where I could learn anytime I wished.`,
 	},
 	{
-		imageLink: '',
+		imageLink: '/images/athul-roy.jpg',
 		name: 'Athul Roy',
 		title: 'Student & photographer',
 		rating: 5,
 		review: `Thanks to finQ they I was able to maintain my education and course both hand on hand, & the class were so interactive, never thought I could ever trade like this, feels great.`,
 	},
 	{
-		imageLink: '',
+		imageLink: '/images/abhishek-krishna.jpg',
 		name: 'Abhishek Krishna',
 		title: 'Influencer & marketing specialist',
 		rating: 5,
 		review: `I had a deep concern in the stock market and how it worked, I wished to learn it and try it live, that is when finQ taught me how to adjust my funds and invest them in the stock market.`,
 	},
 	{
-		imageLink: '',
+		imageLink: '/images/neena-km.jpg',
 		name: 'Neena KM',
 		title: 'Entrepreneur',
 		rating: 5,
 		review: `Being an entrepreneur I required a detailed course and i wanted to take my time to learn the course, finQ had no problem with all the doubts I had, all got cleared.`,
 	},
 	{
-		imageLink: '',
+		imageLink: '/images/ashil-kp.jpg',
 		name: 'Ashil KP',
 		title: 'Entrepreneur & DJ',
 		rating: 5,
 		review: `As an artist I had 2 shows a day and required a source of income that I could do any time of the day, finQ provided me with the following solution and was an amazing experience`,
 	},
 	{
-		imageLink: '',
+		imageLink: '/images/deepthi-boben.jpg',
 		name: 'Deepthi Boben',
 		title: 'Student',
 		rating: 5,

@@ -17,7 +17,7 @@ export default function Navbar() {
 					<a>Benefits</a>
 				</li>
 				<li>
-					<a>Pricing</a>
+					<a>Membership</a>
 				</li>
 				<li>
 					<a>FAQs</a>

@@ -41,53 +41,54 @@ const plans = [
 
 export default function Pricing() {
 	return (
-		<section className={styles['pricing']}>
-			<div className={styles['heading-wrapper']}>
-				<h2>Memberships</h2>
-				<p>A nunc lacus nisl, neque, quam. Vitae leo, eu nibh non in fermentum tincidunt.</p>
-			</div>
-			<div className={styles['cards-wrapper']}>
-				{plans.map((item, index) => (
-					<Card
-						key={index}
-						imageLink={item.imageLink}
-						planName={item.planName}
-						price={item.price}
-						cutPrice={item.cutPrice}
-						discount={item.discount}
-						duration={item.duration}
-						features={item.features}
-						color={item.color}
-					/>
-				))}
-			</div>
+		<div className='margin'>
+			<section className={styles['pricing']}>
+				<div className={styles['heading-wrapper']}>
+					<h2>Memberships</h2>
+					<p>A nunc lacus nisl, neque, quam. Vitae leo, eu nibh non in fermentum tincidunt.</p>
+				</div>
+				<div className={styles['cards-wrapper']}>
+					{plans.map((item, index) => (
+						<Card
+							key={index}
+							imageLink={item.imageLink}
+							planName={item.planName}
+							price={item.price}
+							cutPrice={item.cutPrice}
+							discount={item.discount}
+							duration={item.duration}
+							features={item.features}
+							color={item.color}
+						/>
+					))}
+					<div className={styles['twinkle-wrapper-1']}>
+						<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+						<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+					</div>
+					<div className={styles['twinkle-wrapper-2']}>
+						<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+						<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
+					</div>
+				</div>
 
-			<img
-				className={styles['grid-pattern-1']}
-				src='/images/grid-pattern.svg'
-				width='435px'
-				height='auto'
-				alt=''
-			/>
-			<img
-				className={styles['grid-pattern-2']}
-				src='/images/grid-pattern.svg'
-				width='435px'
-				height='auto'
-				alt=''
-			/>
+				<img
+					className={styles['grid-pattern-1']}
+					src='/images/grid-pattern.svg'
+					width='435px'
+					height='auto'
+					alt=''
+				/>
+				<img
+					className={styles['grid-pattern-2']}
+					src='/images/grid-pattern.svg'
+					width='435px'
+					height='auto'
+					alt=''
+				/>
 
-			<img className={styles['pricing-arrow']} src='/images/pricing-arrow.svg' width='95%' height='auto' alt='' />
-
-			<div className={styles['twinkle-wrapper-1']}>
-				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
-				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
-			</div>
-			<div className={styles['twinkle-wrapper-2']}>
-				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
-				<img src='/images/twinkle.svg' alt='' width='50px' height='auto'></img>
-			</div>
-		</section>
+				<img className={styles['pricing-arrow']} src='/images/pricing-arrow.svg' alt='' />
+			</section>
+		</div>
 	)
 }
 
@@ -107,7 +108,7 @@ function Card({ imageLink, planName, price, cutPrice, discount, duration, featur
 			<ul className={styles['features']}>
 				{features.map((item, index) => (
 					<li key={index}>
-						<BsFillCheckCircleFill className={styles['tick-icon']} /> <span>{item}</span>
+						<BsFillCheckCircleFill className={styles['tick-icon']} /> <p>{item}</p>
 					</li>
 				))}
 			</ul>
