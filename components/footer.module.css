@@ -2,7 +2,11 @@
 	background-color: #161818;
 	display: flex;
 	justify-content: space-between;
-	padding: 7rem;
+	padding: 6rem 7rem;
+}
+
+.left {
+	margin-right: 2rem;
 }
 
 .logo {
@@ -35,6 +39,7 @@
 	font-weight: 500;
 	color: rgba(255, 255, 255, 0.5);
 	margin-bottom: 0.5rem;
+	white-space: nowrap;
 }
 
 .social-wrapper {
@@ -43,4 +48,45 @@
 }
 .social-icon {
 	margin-right: 0.5rem;
+}
+
+@media (max-width: 1279px) {
+	.footer {
+		padding: 5rem;
+	}
+	.link-group {
+		margin-right: 5rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	.footer {
+		padding: 5rem 3rem;
+	}
+	.link-group {
+		margin-right: 3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.footer {
+		flex-direction: column;
+		padding: 3rem 2rem 1rem 2rem;
+	}
+	.left {
+		margin-bottom: 3rem;
+	}
+	.right {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.link-group {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.link-group:nth-child(2) {
+		order: 3;
+	}
 }
