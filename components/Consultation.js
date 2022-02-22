@@ -1,4 +1,5 @@
 import { ImWhatsapp } from 'react-icons/im'
+import { motion } from 'framer-motion'
 import styles from './consultation.module.css'
 
 export default function Consultation() {
@@ -14,10 +15,14 @@ export default function Consultation() {
 						<a className={styles['phone-no']} href='tel:+918075145434'>
 							+91 80751 45434
 						</a>
-						<button className={styles['whatsapp-button']}>
+						<motion.button
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}
+							className={styles['whatsapp-button']}
+						>
 							<ImWhatsapp className={styles['whatsapp-icon']} />
 							<span>WhatsApp</span>
-						</button>
+						</motion.button>
 					</div>
 				</div>
 			</section>

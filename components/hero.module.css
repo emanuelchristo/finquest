@@ -24,10 +24,18 @@
 	display: flex;
 	position: relative;
 }
+.changing-text {
+	font-weight: 600;
+	position: relative;
+	width: fit-content;
+	align-self: center;
+	/* background-color: rgba(244, 227, 28, 0.42); */
+	padding: 0 0.75rem 0.65rem 1rem;
+}
 .twinkle-wrapper {
 	position: absolute;
-	top: 0.75rem;
-	left: -3rem;
+	top: 7rem;
+	left: -7rem;
 }
 .twinkle-1 {
 	width: 2.875rem;
@@ -47,8 +55,8 @@
 	height: 1.25rem;
 	background-color: #875efb;
 	position: absolute;
-	right: 6.25rem;
-	top: 3.25rem;
+	right: -2rem;
+	top: 1rem;
 	transform: rotate(-55deg);
 }
 .circle {
@@ -57,8 +65,8 @@
 	background-color: #f874b3;
 	border-radius: 50%;
 	position: absolute;
-	right: 8rem;
-	top: 5.5rem;
+	right: 0rem;
+	top: 3rem;
 }
 .circle-img-1,
 .circle-img-2 {
@@ -72,14 +80,15 @@
 	background-color: #90d9f0;
 	background-image: url('/images/hero-circle-1.png');
 	transform: rotate(-20deg);
-	left: 4rem;
+	left: -4rem;
+	top: -2rem;
 }
 .circle-img-2 {
 	background-color: #f090cb;
 	background-image: url('/images/hero-circle-2.png');
 	transform: rotate(13deg);
-	bottom: 0;
-	right: 0;
+	bottom: -1rem;
+	right: -6rem;
 }
 .pill-img-1 {
 	width: 8rem;
@@ -89,13 +98,13 @@
 	background-color: #d8c9f3;
 	background-image: url('/images/hero-pill-1.png');
 	position: absolute;
-	bottom: -1rem;
-	left: -1.5rem;
+	bottom: -2rem;
+	left: -8rem;
 	transform: rotate(-26deg);
 }
 .in-text-img {
 	display: inline-block;
-	width: 8.5rem;
+	width: 15rem;
 	height: 5.75rem;
 	margin: 0 1.5rem;
 	border-radius: 200px;
@@ -112,12 +121,16 @@
 	background-repeat: no-repeat;
 }
 
+.in-text-img {
+	background-position: 0 -20px;
+}
+
 .description {
-	max-width: 470px;
+	max-width: 400px;
 	font-weight: 500;
 	text-align: center;
-	margin-top: 3rem;
-	margin-bottom: 3.75rem;
+	margin-top: 2rem;
+	margin-bottom: 2.5rem;
 }
 
 .talk-button,

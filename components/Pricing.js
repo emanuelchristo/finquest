@@ -1,4 +1,5 @@
 import { BsFillCheckCircleFill } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 import styles from './pricing.module.css'
 
 const plans = [
@@ -112,7 +113,9 @@ function Card({ imageLink, planName, price, cutPrice, discount, duration, featur
 					</li>
 				))}
 			</ul>
-			<button className={styles['action-button']}>JOIN NOW</button>
+			<motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className={styles['action-button']}>
+				JOIN NOW
+			</motion.button>
 		</div>
 	)
 }
