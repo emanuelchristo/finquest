@@ -1,4 +1,5 @@
-import '../assets/fonts/general-sans/stylesheet.css'
+// import '../assets/fonts/general-sans/stylesheet.css'
+import '../assets/fonts/gilroy/stylesheet.css'
 import '../styles/variables.css'
 import '../styles/global.css'
 
