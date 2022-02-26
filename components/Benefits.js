@@ -25,7 +25,7 @@ const benefits = [
 
 export default function Benefits() {
 	return (
-		<div className='margin'>
+		<div id="benefits" className='margin'>
 			<section className={styles['benefits']}>
 				<h2>Benefits</h2>
 				<div className={styles['content-wrapper']}>

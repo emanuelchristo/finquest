@@ -35,7 +35,7 @@ export default function Faqs() {
 	}
 
 	return (
-		<div className='margin'>
+		<div id="faq" className='margin'>
 			<section className={styles['faqs']}>
 				<div className={styles['heading-wrapper']}>
 					<h2>FAQs</h2>
