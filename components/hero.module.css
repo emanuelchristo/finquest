@@ -3,6 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	position: relative;
 	flex: 1;
 }
 
@@ -90,7 +91,8 @@
 	bottom: -1rem;
 	right: -6rem;
 }
-.pill-img-1 {
+.pill-img-1,
+.pill-img-2 {
 	width: 8rem;
 	height: 5.75rem;
 	border-radius: 200px;
@@ -101,6 +103,11 @@
 	bottom: -2rem;
 	left: -8rem;
 	transform: rotate(-26deg);
+}
+.pill-img-2 {
+	background-image: url('/images/hero-in-text.png');
+	background-size: cover;
+	display: none;
 }
 .in-text-img {
 	display: inline-block;
@@ -139,6 +146,7 @@
 	color: #fff;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 3.75rem;
 	padding: 0 2rem;
 	border-radius: 100px;
@@ -156,6 +164,10 @@
 	margin-left: 1rem;
 	color: #000;
 	background-color: #f1f3f5;
+}
+
+.hero-arrow {
+	display: none;
 }
 
 @media (max-width: 1279px) {
@@ -202,34 +214,88 @@
 	.hero {
 		padding: 0 1rem;
 	}
-	.hero h1 {
-		font-size: 3.5rem;
-	}
-	.changing-text {
-		padding: 0;
-	}
-	.in-text-img {
-		width: 8rem;
-	}
-}
-/* @media (max-width: 639px) {
-	.hero {
-		padding: 0 1rem;
-		align-items: flex-start;
-	}
-	.hero h1 {
-		font-size: 3.5rem;
-		text-align: left;
-		align-items: flex-start;
-	}
-	.changing-text {
-		align-self: flex-start;
-		padding: 0;
-	}
-	.in-text-img {
-		width: 7rem;
+	.heading-wrapper {
+		width: 100%;
 	}
 	.description {
-		text-align: left;
+		max-width: 300px;
 	}
-} */
+	.hero h1 {
+		font-size: 3.25rem;
+		width: 100%;
+	}
+	.changing-text {
+		padding: 0;
+	}
+	.in-text-img {
+		display: none;
+	}
+	.pill-img-2 {
+		display: inline-block;
+		left: -3rem;
+		top: -7rem;
+		height: 5.5rem;
+		width: 7rem;
+	}
+	.circle-img-1 {
+		top: -7rem;
+		left: unset;
+		right: -2rem;
+	}
+	.circle-img-2 {
+		right: unset;
+		left: -3rem;
+		top: unset;
+		bottom: -10rem;
+	}
+	.pill-img-1 {
+		left: unset;
+		right: -3.75rem;
+		top: unset;
+		bottom: -9rem;
+		height: 5.125rem;
+		width: 7rem;
+	}
+	.twinkle-wrapper {
+		right: 30%;
+		left: unset;
+	}
+	.square {
+		left: 0;
+		right: unset;
+		top: 5rem;
+		width: 1rem;
+		height: 1rem;
+	}
+	.circle {
+		top: 3.25rem;
+		width: 0.75rem;
+		height: 0.75rem;
+	}
+
+	.talk-button,
+	.consultation-button {
+		width: 100%;
+		margin: 0;
+		height: 3rem;
+	}
+	.talk-button {
+		margin-bottom: 0.75rem;
+	}
+
+	.hero-arrow {
+		position: absolute;
+		display: inline-block;
+		bottom: 2rem;
+		animation: updown 0.75s ease infinite alternate;
+	}
+
+	@keyframes updown {
+		0% {
+			transform: translate(0, 0.75rem);
+		}
+		100% {
+			transform: translate(0, -0.75rem);
+		}
+	}
+}

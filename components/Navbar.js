@@ -24,36 +24,30 @@ const item = {
 export default function Navbar() {
 	return (
 		<motion.nav variants={container} initial='hide' animate='show' className={styles['navbar']}>
-			<div className='flex items-center'>
-				<IoMdMenu className={styles['menu-icon']} />
-				<motion.img
-					variants={item}
-					src='/images/logo.svg'
-					height={32}
-					width='auto'
-					className={styles['logo']}
-				/>
-			</div>
-			<ul className={styles['links-list']}>
+			<motion.img variants={item} src='/images/logo.svg' height={32} width='auto' className={styles['logo']} />
 
+			<motion.span variants={item}>
+				<IoMdMenu className={styles['menu-icon']} />
+			</motion.span>
+
+			<ul className={styles['links-list']}>
 				<motion.li variants={item}>
-					<Link href="#about">
+					<Link href='#about'>
 						<a>About us</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href="#benefits">
-
+					<Link href='#benefits'>
 						<a>Benefits</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href="#membership">
+					<Link href='#membership'>
 						<a>Membership</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href="#faq">
+					<Link href='#faq'>
 						<a>FAQs</a>
 					</Link>
 				</motion.li>
