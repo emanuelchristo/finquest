@@ -51,7 +51,7 @@
 		margin-bottom: 2.5rem;
 	}
 	.benefit {
-		max-width: 320px;
+		max-width: unset;
 	}
 	.benefit h3 {
 		font-size: 1.5rem;
