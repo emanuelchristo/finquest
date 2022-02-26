@@ -55,6 +55,7 @@
 .whatsapp-button span {
 	font-weight: 600;
 	margin-left: 0.6rem;
+	margin-top: 0.125rem;
 }
 
 @media (max-width: 1279px) {
@@ -93,9 +94,6 @@
 }
 
 @media (max-width: 639px) {
-	.content p {
-		margin-bottom: 1rem;
-	}
 	.phone-no {
 		font-size: 1.1rem;
 		margin-right: 1rem;
