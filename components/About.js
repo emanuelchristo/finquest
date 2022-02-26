@@ -2,7 +2,7 @@ import styles from './about.module.css'
 
 export default function About() {
 	return (
-		<div id="about" className='margin'>
+		<div id='about' className='margin'>
 			<section className={styles['about']}>
 				<img className={styles['image']} src='/images/about-us.png' alt='' width='50%' height='auto' />
 				<div className={styles['spacer']}></div>
@@ -13,9 +13,10 @@ export default function About() {
 						<h2>About us</h2>
 					</div>
 					<p>
-						Et aliquam non maecenas ut donec. Morbi nisl pretium viverra porta dolor gravida in. Feugiat nec
-						varius sapien eu blandit massa, quam id. Mattis amet id facilisis habitasse molestie. Eu
-						vulputate ut turpis in consequat etiam ultricies arcu.
+						We have been running finQ programs and have instructed 150 Professionals and Future Leaders in
+						various methods in the stock market to scale their game. We&apos;ve been getting a 100% student
+						satisfaction. We build a network, a network of trained professionals and the new entries or the
+						future leaders to be exact, to trade together &amp; grow together
 					</p>
 				</div>
 			</section>

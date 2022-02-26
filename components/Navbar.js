@@ -26,7 +26,7 @@ export default function Navbar() {
 		<motion.nav variants={container} initial='hide' animate='show' className={styles['navbar']}>
 			<motion.img variants={item} src='/images/logo.svg' height={32} width='auto' className={styles['logo']} />
 
-			<motion.span variants={item}>
+			<motion.span variants={item} className='hidden md:inline-block'>
 				<IoMdMenu className={styles['menu-icon']} />
 			</motion.span>
 
