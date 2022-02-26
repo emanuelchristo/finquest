@@ -158,7 +158,10 @@
 	font-weight: 600;
 }
 .consultation-icon {
-	font-size: 1.4rem;
+	font-size: 1.25rem;
+}
+.membership-icon {
+	font-size: 1.5rem;
 }
 .consultation-button {
 	margin-left: 1rem;
@@ -223,6 +226,12 @@
 	.hero h1 {
 		font-size: 3.25rem;
 		width: 100%;
+	}
+	.consultation-icon {
+		font-size: 1.15rem;
+	}
+	.membership-icon {
+		font-size: 1.35rem;
 	}
 	.changing-text {
 		padding: 0;

@@ -1,5 +1,5 @@
 import { BsFillChatLeftFill, BsEasel } from 'react-icons/bs'
-import { FaRegHandshake } from 'react-icons/fa'
+import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import TypeAnimation from 'react-type-animation'
 import styles from './hero.module.css'
@@ -223,7 +223,7 @@ export default function Hero() {
 					whileTap={{ scale: 0.95 }}
 					className={styles['talk-button']}
 				>
-					<FaRegHandshake />
+					<MdCardMembership className={styles['membership-icon']} />
 					<span>Memberships</span>
 				</motion.button>
 				<motion.button
