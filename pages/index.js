@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div>
 			<Header />
-			<div className='section-spacer'></div>
+			{/* <div className='section-spacer'></div> */}
 			<Associated />
 			<div className='section-spacer'></div>
 			<About />

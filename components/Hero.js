@@ -210,7 +210,9 @@ export default function Hero() {
 					className={styles['talk-button']}
 				>
 					<BsFillChatLeftFill />
-					<span>Talk to us</span>
+					<span>
+						Talk <span className=' sm:hidden'>to us</span>
+					</span>
 				</motion.button>
 				<motion.button
 					initial={{ scale: 0 }}
