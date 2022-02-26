@@ -2,7 +2,7 @@ import styles from './about.module.css'
 
 export default function About() {
 	return (
-		<div className='margin'>
+		<div id="about" className='margin'>
 			<section className={styles['about']}>
 				<img className={styles['image']} src='/images/about-us.png' alt='' width='50%' height='auto' />
 				<div className={styles['spacer']}></div>

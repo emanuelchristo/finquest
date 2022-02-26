@@ -2,6 +2,7 @@ import { BsFillChatLeftFill } from 'react-icons/bs'
 import { IoMdMenu } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
+import Link from 'next/link'
 
 const container = {
 	hide: {},
@@ -34,17 +35,27 @@ export default function Navbar() {
 				/>
 			</div>
 			<ul className={styles['links-list']}>
+
 				<motion.li variants={item}>
-					<a>About us</a>
+					<Link href="#about">
+						<a>About us</a>
+					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<a>Benefits</a>
+					<Link href="#benefits">
+
+						<a>Benefits</a>
+					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<a>Membership</a>
+					<Link href="#membership">
+						<a>Membership</a>
+					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<a>FAQs</a>
+					<Link href="#faq">
+						<a>FAQs</a>
+					</Link>
 				</motion.li>
 			</ul>
 			<motion.button
