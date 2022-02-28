@@ -1,0 +1,65 @@
+.community {
+	background-color: var(--blue);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 1.5rem;
+	padding: 7rem 1.5rem 5rem 1.5rem;
+	position: relative;
+	margin-bottom: -12rem;
+	margin-top: 12rem;
+}
+
+.image {
+	position: absolute;
+	top: -8.5rem;
+}
+
+.community h2 {
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+.community p {
+	color: rgba(255, 255, 255, 0.55);
+	max-width: 550px;
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+.pills-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.pill {
+	padding: 0.75rem 1.125rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 100px;
+	width: fit-content;
+	font-size: 1rem;
+	margin: 0.3rem;
+}
+
+.pill.white {
+	background-color: #fff;
+	color: var(--blue);
+	font-weight: 600;
+}
+
+.arrow-1 {
+	position: absolute;
+	bottom: 0;
+	left: 1.5rem;
+}
+
+.arrow-2 {
+	position: absolute;
+	right: 1.5rem;
+	top: 0;
+	transform: rotate(180deg);
+}

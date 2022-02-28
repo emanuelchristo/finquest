@@ -1,6 +1,7 @@
 import About from '../components/About'
 import Associated from '../components/Associated'
 import Benefits from '../components/Benefits'
+import Community from '../components/Community'
 import Consultation from '../components/Consultation'
 import Faqs from '../components/Faqs'
 import Footer from '../components/Footer'
@@ -27,6 +28,7 @@ export default function Home() {
 			<div className='section-spacer'></div>
 			<Faqs />
 			<div className='section-spacer'></div>
+			<Community />
 			<Footer />
 		</div>
 	)
