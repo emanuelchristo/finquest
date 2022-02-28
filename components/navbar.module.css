@@ -37,7 +37,6 @@
 .menu-icon {
 	display: none;
 	font-size: 1.6rem;
-	margin-right: 1rem;
 }
 
 @media (max-width: 1279px) {
@@ -62,24 +61,17 @@
 	.navbar {
 		padding: 2rem 1.5rem 1.5rem 1.5rem;
 	}
+	.talk-button {
+		display: none;
+	}
 }
 
 @media (max-width: 639px) {
 	.navbar {
-		padding: 1rem;
+		padding: 1.25rem;
 		padding-left: 0.75rem;
-	}
-	.talk-button {
-		height: 2.5rem;
-		padding: 0 1.25rem;
-	}
-	.talk-button svg {
-		width: 0.875rem;
 	}
 	.logo {
 		height: 28px;
-	}
-	.menu-icon {
-		margin-right: 0.6rem;
 	}
 }

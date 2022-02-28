@@ -1,5 +1,5 @@
 .footer {
-	background-color: #161818;
+	background-color: var(--footer-bg);
 	display: flex;
 	justify-content: space-between;
 	padding: 6rem 7rem;
@@ -71,7 +71,7 @@
 @media (max-width: 768px) {
 	.footer {
 		flex-direction: column;
-		padding: 3rem 2rem 1rem 2rem;
+		padding: 4rem 2rem 1rem 2rem;
 	}
 	.left {
 		margin-bottom: 3rem;
@@ -97,7 +97,7 @@
 	}
 	.footer {
 		flex-direction: column;
-		padding: 2.5rem 1.25rem 1rem 1.25rem;
+		padding: 4rem 1.25rem 1rem 1.25rem;
 	}
 	.link-group h3 {
 		font-size: 1.1rem;

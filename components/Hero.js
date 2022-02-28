@@ -1,5 +1,5 @@
 import { BsFillChatLeftFill, BsEasel } from 'react-icons/bs'
-import { FaRegHandshake } from 'react-icons/fa'
+import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import TypeAnimation from 'react-type-animation'
 import styles from './hero.module.css'
@@ -179,6 +179,20 @@ export default function Hero() {
 						transition: {
 							type: 'spring',
 							mass: 1.5,
+							delay: 1.5,
+						},
+					}}
+					className={styles['pill-img-2']}
+				></motion.div>
+				<motion.div
+					viewport={{ once: true }}
+					initial={{ scale: 0, rotate: -90 }}
+					animate={{
+						scale: 1,
+						rotate: 20,
+						transition: {
+							type: 'spring',
+							mass: 1.5,
 							delay: 2,
 						},
 					}}
@@ -201,7 +215,7 @@ export default function Hero() {
 			>
 				Start learning how to invest &amp; trade in stock market easily.
 			</motion.p>
-			<div className='flex items-center'>
+			<div className='flex items-center sm:flex-col sm:w-[65%]'>
 				<motion.button
 					initial={{ scale: 0 }}
 					animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.5 } }}
@@ -209,8 +223,8 @@ export default function Hero() {
 					whileTap={{ scale: 0.95 }}
 					className={styles['talk-button']}
 				>
-					<BsFillChatLeftFill />
-					<span>Talk to us</span>
+					<MdCardMembership className={styles['membership-icon']} />
+					<span>Memberships</span>
 				</motion.button>
 				<motion.button
 					initial={{ scale: 0 }}
@@ -219,10 +233,11 @@ export default function Hero() {
 					whileTap={{ scale: 0.95 }}
 					className={styles['consultation-button']}
 				>
-					<FaRegHandshake className={styles['consultation-icon']} />
-					<span>Consultation</span>
+					<BsFillChatLeftFill className={styles['consultation-icon']} />
+					<span>Talk to us</span>
 				</motion.button>
 			</div>
+			<img className={styles['hero-arrow']} src='/icons/hero-arrow.svg' width={32} height='auto' alt='' />
 		</div>
 	)
 }

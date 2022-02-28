@@ -1,6 +1,7 @@
 import About from '../components/About'
 import Associated from '../components/Associated'
 import Benefits from '../components/Benefits'
+import Community from '../components/Community'
 import Consultation from '../components/Consultation'
 import Faqs from '../components/Faqs'
 import Footer from '../components/Footer'
@@ -13,7 +14,7 @@ export default function Home() {
 	return (
 		<div>
 			<Header />
-			<div className='section-spacer'></div>
+			{/* <div className='section-spacer'></div> */}
 			<Associated />
 			<div className='section-spacer'></div>
 			<About />
@@ -28,8 +29,12 @@ export default function Home() {
 			<div className='section-spacer'></div>
 			<Faqs />
 			<div className='section-spacer'></div>
+
 			<Letstalk />
 			<div className='section-spacer'></div>
+
+			<Community />
+
 			<Footer />
 		</div>
 	)
