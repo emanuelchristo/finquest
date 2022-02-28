@@ -18,17 +18,18 @@ export default function Community() {
 				<img
 					className={styles['arrow-1']}
 					src='/images/community-arrow.svg'
-					width='155px'
+					width='140px'
 					height='auto'
 					alt=''
 				/>
 				<img
 					className={styles['arrow-2']}
 					src='/images/community-arrow.svg'
-					width='155px'
+					width='140px'
 					height='auto'
 					alt=''
 				/>
+				<div className={styles['footer-bar']}></div>
 			</section>
 		</div>
 	)

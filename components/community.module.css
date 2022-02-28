@@ -9,8 +9,11 @@
 	border-radius: 1.5rem;
 	padding: 7rem 1.5rem 5rem 1.5rem;
 	position: relative;
-	margin-bottom: -12rem;
-	margin-top: 12rem;
+	margin-top: 8rem;
+}
+
+.community > * {
+	z-index: 2;
 }
 
 .image {
@@ -20,7 +23,8 @@
 
 .community h2 {
 	font-size: 3rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
+	line-height: 1.1;
 }
 
 .community p {
@@ -28,6 +32,7 @@
 	max-width: 550px;
 	line-height: 1.5;
 	margin-bottom: 1.5rem;
+	padding: 0 1rem;
 }
 
 .pills-wrapper {
@@ -38,7 +43,7 @@
 
 .pill {
 	padding: 0.75rem 1.125rem;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: #3d83ea;
 	border-radius: 100px;
 	width: fit-content;
 	font-size: 1rem;
@@ -55,6 +60,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 1.5rem;
+	z-index: 1;
 }
 
 .arrow-2 {
@@ -62,4 +68,55 @@
 	right: 1.5rem;
 	top: 0;
 	transform: rotate(180deg);
+	z-index: 1;
+}
+
+.footer-bar {
+	position: absolute;
+	width: 100vw;
+	min-width: 360px;
+	height: 45%;
+	margin-bottom: -0.25rem;
+	background-color: var(--footer-bg);
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (max-width: 1023px) {
+	.arrow-1,
+	.arrow-2 {
+		width: 120px;
+	}
+
+	.community {
+	}
+	.image {
+		width: 220px;
+		top: -6rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.community h2 {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.arrow-1,
+	.arrow-2 {
+		width: 90px;
+	}
+	.arrow-1 {
+		left: 1rem;
+	}
+	.arrow-2 {
+		right: 1rem;
+	}
+	.image {
+		width: 185px;
+	}
+	.community {
+		padding-top: 6rem;
+	}
 }
