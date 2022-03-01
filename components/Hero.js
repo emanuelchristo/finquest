@@ -1,5 +1,5 @@
 import { BsFillChatLeftFill, BsEasel } from 'react-icons/bs'
-import { MdCardMembership } from 'react-icons/md'
+import { FaMedal } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import TypeAnimation from 'react-type-animation'
@@ -225,7 +225,7 @@ export default function Hero() {
 						whileTap={{ scale: 0.95 }}
 						className={styles['talk-button']}
 					>
-						<MdCardMembership className={styles['membership-icon']} />
+						<FaMedal className={styles['membership-icon']} />
 						<span>Memberships</span>
 					</motion.button>
 				</Link>

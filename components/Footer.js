@@ -85,6 +85,9 @@ export default function Footer() {
 							<li>
 								<a>Terms of Service</a>
 							</li>
+							<li>
+								<a>Refund &amp; Cancellation</a>
+							</li>
 						</ul>
 					</div>
 				</div>

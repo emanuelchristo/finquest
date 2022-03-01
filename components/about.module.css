@@ -18,22 +18,22 @@
 	width: fit-content;
 }
 .square {
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 1.25rem;
+	height: 1.25rem;
 	background-color: #facf38;
 	transform: rotate(30deg);
 	position: absolute;
 	right: -1.25rem;
-	top: -0.5rem;
+	top: -3.5rem;
 }
 .circle {
-	width: 1rem;
-	height: 1rem;
+	width: 0.75rem;
+	height: 0.75rem;
 	border-radius: 50%;
 	background-color: #f555a0;
 	position: absolute;
-	right: -3rem;
-	top: 1.5rem;
+	left: -2rem;
+	top: -2rem;
 }
 
 .spacer {
@@ -72,14 +72,14 @@
 	.square {
 		width: 1.25rem;
 		height: 1.25rem;
-		right: -1.5rem;
-		top: -0.5rem;
+		left: 0.5rem;
+		top: -4rem;
 	}
 	.circle {
 		width: 0.75rem;
 		height: 0.75rem;
-		right: -2.5rem;
-		top: 1.25rem;
+		left: 2.5rem;
+		top: -2rem;
 	}
 }
 

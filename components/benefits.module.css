@@ -1,3 +1,6 @@
+.benefits {
+	margin: 4rem 0;
+}
 .benefits h2 {
 	margin-bottom: 3.5rem;
 }
@@ -22,6 +25,7 @@
 }
 .benefit p {
 	line-height: 1.6;
+	font-size: 1.15rem;
 }
 
 @media (max-width: 1279px) {
@@ -33,6 +37,9 @@
 }
 
 @media (max-width: 1023px) {
+	.benefits {
+		margin: 1rem 0;
+	}
 	.content-wrapper {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 2rem;

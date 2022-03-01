@@ -4,7 +4,7 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	width: fit-content;
-	margin: 0 auto;
+	margin: 1rem auto;
 }
 .associated > * {
 	margin: 1rem 1.5rem;

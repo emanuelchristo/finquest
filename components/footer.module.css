@@ -92,6 +92,9 @@
 	.link-group {
 		margin-right: 3rem;
 	}
+	.link-group:last-child {
+		margin-right: 0;
+	}
 }
 
 @media (max-width: 768px) {

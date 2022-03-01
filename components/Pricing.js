@@ -21,7 +21,7 @@ const plans = [
 		duration: '1 Month',
 		color: 'yellow',
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],
-		tag: 'Most Popular',
+		tag: 'Most Enrolled',
 		tagColor: '#D22C2C',
 	},
 	{

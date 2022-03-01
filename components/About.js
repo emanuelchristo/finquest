@@ -10,7 +10,7 @@ export default function About() {
 					<div className={styles['heading-wrapper']}>
 						<div className={styles['square']}></div>
 						<div className={styles['circle']}></div>
-						<h2>About us</h2>
+						{/* <h2>About us</h2> */}
 					</div>
 					<p>
 						We have been running finQ programs and have instructed 150 Professionals and Future Leaders in
