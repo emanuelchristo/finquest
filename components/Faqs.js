@@ -24,6 +24,26 @@ export default function Faqs() {
 			question: 'How do I pay fees for the courses?',
 			answer: `We accept all credit cards, debit cards and UPI. International clients can use Razorpay or Paypal.`,
 		},
+		{
+			open: false,
+			question: 'I am in a different time-zone. Can I join the program?',
+			answer: `We live in a flat world; as long as you can manage your joining time, we welcome you to join the program. (Eg: USA, APAC, Middle East, etc.)`,
+		},
+		{
+			open: false,
+			question: 'How is this worth the price?',
+			answer: `Quite frankly, because it works, we measure your success by program KPIs. Our program has many sessions and each session has an outcome. We have been getting a 91 NPS score for our program structure and process to help them achieve several outcomes. Twenty incredible Traders who have built huge portfolios or have super expertise will be in this program to coach you. As a result, you will gain high value and several outcomes.`,
+		},
+		{
+			open: false,
+			question: 'Will I get access to mentors?',
+			answer: `The program mentors will host their expertise sessions to share learnings, best practices and Q&A sessions for the cohort. You get to interact with them during their session and when they are available in the community hub`,
+		},
+		{
+			open: false,
+			question: 'I am working in a company, can I attend?',
+			answer: `Yes, this program is designed for Professionals, Founders, CXOs and Leaders.`,
+		},
 	])
 
 	function handleClick(index) {

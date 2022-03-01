@@ -11,6 +11,8 @@
 	justify-content: center;
 	margin-left: 1rem;
 	font-size: 1.25rem;
+	line-height: 1;
+	padding-top: 0.125rem;
 	font-weight: 500;
 	background-color: #fbd929;
 	border-radius: 50%;
