@@ -40,17 +40,23 @@ export default function Letstalk() {
 						<p>A nunc lacus nisl, neque, quam. Vitae leo</p>
 					</div>
 					<div className={styles['letstalk-contact']}>
-						<div className={styles['contact-div']}>
-							<HiPhone />
-							<span>+91 80751 45434</span>
-						</div>
-						<div className={styles['contact-div']}>
-							<HiPhone />
-							<span>+91 73562 66418</span>
-						</div>
-						<div className={styles['contact-div2']}>
-							<MdMail /> <span>hellofinquest@gmail.com</span>
-						</div>
+						<a href='tel:+918075145434'>
+							<div className={styles['contact-div']}>
+								<HiPhone />
+								<span>+91 80751 45434</span>
+							</div>
+						</a>
+						<a href='tel:+917356266418'>
+							<div className={styles['contact-div']}>
+								<HiPhone />
+								<span>+91 73562 66418</span>
+							</div>
+						</a>
+						<a href='mailto:hellofinquest@gmail.com'>
+							<div className={styles['contact-div2']}>
+								<MdMail /> <span>hellofinquest@gmail.com</span>
+							</div>
+						</a>
 					</div>
 					<div className={styles['contact-icons-wrap']}>
 						{social.map((item, index) => (

@@ -296,6 +296,7 @@
 		position: absolute;
 		display: inline-block;
 		bottom: 2rem;
+		opacity: 0.25;
 		animation: updown 0.75s ease infinite alternate;
 	}
 

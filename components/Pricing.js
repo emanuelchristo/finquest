@@ -9,18 +9,20 @@ const plans = [
 		price: 4499,
 		cutPrice: 4940,
 		discount: '10% off',
-		duration: 'Month',
+		duration: '1 Month',
 		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
 	},
 	{
 		imageLink: '/images/student-plan.png',
-		planName: 'Student',
+		planName: 'Starter',
 		price: 7499,
 		cutPrice: 8999,
 		discount: '20% off',
-		duration: 'Month',
+		duration: '1 Month',
 		color: 'yellow',
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],
+		tag: 'Most Popular',
+		tagColor: '#D22C2C',
 	},
 	{
 		imageLink: '/images/professional-plan.png',
@@ -37,6 +39,8 @@ const plans = [
 			'Option buying',
 			'Option selling',
 		],
+		tag: 'Popular Program',
+		tagColor: '#790DE5',
 	},
 ]
 
@@ -60,6 +64,8 @@ export default function Pricing() {
 							duration={item.duration}
 							features={item.features}
 							color={item.color}
+							tag={item.tag}
+							tagColor={item.tagColor}
 						/>
 					))}
 					<div className={styles['twinkle-wrapper-1']}>
@@ -93,9 +99,14 @@ export default function Pricing() {
 	)
 }
 
-function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color }) {
+function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color, tag, tagColor }) {
 	return (
 		<div className={`${styles['card']} ${color === 'yellow' ? styles['yellow-card'] : ''}`}>
+			{tag && (
+				<div className={styles['tag']} style={{ backgroundColor: tagColor }}>
+					{tag}
+				</div>
+			)}
 			<div className={styles['image-container']} style={{ backgroundImage: `url('${imageLink}')` }}></div>
 			<p className={styles['plan-name']}>{planName}</p>
 			<div className='flex items-center mb-2'>

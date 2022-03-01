@@ -12,7 +12,7 @@ export default function Community() {
 						Free unlimited access for enrolled members
 					</div>
 					<div className={styles['pill']}>
-						<span style={{ fontWeight: 600 }}>₹499</span> per month for others
+						<span style={{ fontWeight: 600 }}>₹499</span> per year for others
 					</div>
 				</div>
 				<img

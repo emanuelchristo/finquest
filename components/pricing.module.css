@@ -44,8 +44,21 @@
 	padding-top: 1.5rem;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	flex: 1;
 	flex-shrink: 0;
+	overflow: hidden;
+}
+.tag {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0.5rem 0.75rem 0.4rem 0.75rem;
+	border-radius: 0 0 0.65rem 0;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
 }
 .yellow-card {
 	background-color: #ffe767;
@@ -96,7 +109,7 @@
 .price-wrapper {
 	display: flex;
 	align-items: flex-end;
-	margin-bottom: 2.5rem;
+	margin-bottom: 1.75rem;
 }
 .price-wrapper h3 {
 	font-size: 3.25rem;
@@ -121,6 +134,7 @@
 }
 .features p {
 	color: #000;
+	font-size: 1.15rem;
 }
 .tick-icon {
 	font-size: 1.25rem;
@@ -276,7 +290,7 @@
 	}
 
 	.twinkle-wrapper-1 {
-		top: 65%;
+		top: 68%;
 		left: -1rem;
 	}
 	.twinkle-wrapper-2 {

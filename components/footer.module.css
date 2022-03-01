@@ -1,8 +1,27 @@
 .footer {
 	background-color: var(--footer-bg);
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	padding: 6rem 7rem;
+	padding-bottom: 0;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+.bottom {
+	display: flex;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	background-color: rgba(255, 255, 255, 0.01);
+	padding: 2rem 0;
+	justify-content: center;
+	margin: 0 -10rem;
+	margin-top: 4rem;
+}
+.bottom p {
+	text-align: center;
+	font-size: 1rem;
 }
 
 .left {
@@ -58,6 +77,7 @@
 @media (max-width: 1279px) {
 	.footer {
 		padding: 5rem;
+		padding-bottom: 0;
 	}
 	.link-group {
 		margin-right: 5rem;
@@ -67,6 +87,7 @@
 @media (max-width: 1023px) {
 	.footer {
 		padding: 5rem 3rem;
+		padding-bottom: 0;
 	}
 	.link-group {
 		margin-right: 3rem;
@@ -75,8 +96,16 @@
 
 @media (max-width: 768px) {
 	.footer {
+		padding: 4rem 2rem 0 2rem;
+	}
+	.bottom {
+		margin-top: 0;
+		padding: 1.5rem 0;
+		font-size: 0.875rem;
+		justify-content: center;
+	}
+	.top {
 		flex-direction: column;
-		padding: 4rem 2rem 1rem 2rem;
 	}
 	.left {
 		margin-bottom: 3rem;
@@ -102,7 +131,7 @@
 	}
 	.footer {
 		flex-direction: column;
-		padding: 4rem 1.25rem 1rem 1.25rem;
+		padding: 4rem 1.25rem 0rem 1.25rem;
 	}
 	.link-group h3 {
 		font-size: 1.1rem;
