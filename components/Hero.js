@@ -43,7 +43,7 @@ export default function Hero() {
 								transition: {
 									type: 'spring',
 									mass: 1,
-									delay: 1.25,
+									delay: 0.75,
 								},
 							}}
 							className={styles['in-text-img']}
