@@ -46,7 +46,7 @@ export default function Pricing() {
 			<section className={styles['pricing']}>
 				<div className={styles['heading-wrapper']}>
 					<h2>Memberships</h2>
-					<p>A nunc lacus nisl, neque, quam. Vitae leo, eu nibh non in fermentum tincidunt.</p>
+					<p>It&apos;s easy, it&apos;s comprehensive and best of all, it&apos;s here for a lifetime!</p>
 				</div>
 				<div className={styles['cards-wrapper']}>
 					{plans.map((item, index) => (
