@@ -1,4 +1,4 @@
-import { BsInstagram, BsTwitter, BsWhatsapp, BsLinkedin } from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp, BsYoutube } from 'react-icons/bs'
 import Link from 'next/link'
 import styles from './footer.module.css'
 
@@ -43,7 +43,11 @@ export default function Footer() {
 						<h3>Social</h3>
 						<ul>
 							<li>
-								<a>
+								<a
+									href='https://instagram.com/finquest_?utm_medium=copy_link'
+									rel='noreferrer'
+									target='_blank'
+								>
 									<div className={styles['social-wrapper']}>
 										<BsInstagram className={styles['social-icon']} />
 										<span>Instagram</span>
@@ -51,26 +55,34 @@ export default function Footer() {
 								</a>
 							</li>
 							<li>
-								<a>
+								<a
+									href='https://www.youtube.com/channel/UC9U93Qk1XZcDbp36iSj6Fcg'
+									rel='noreferrer'
+									target='_blank'
+								>
+									<div className={styles['social-wrapper']}>
+										<BsYoutube className={styles['social-icon']} />
+										<span>Youtube</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a
+									href='https://www.facebook.com/Finquest-102198582285743/'
+									rel='noreferrer'
+									target='_blank'
+								>
+									<div className={styles['social-wrapper']}>
+										<BsFacebook className={styles['social-icon']} />
+										<span>Facebook</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href='https://twitter.com' rel='noreferrer' target='_blank'>
 									<div className={styles['social-wrapper']}>
 										<BsTwitter className={styles['social-icon']} />
 										<span>Twitter</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a>
-									<div className={styles['social-wrapper']}>
-										<BsWhatsapp className={styles['social-icon']} />
-										<span>Whatsapp</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a>
-									<div className={styles['social-wrapper']}>
-										<BsLinkedin className={styles['social-icon']} />
-										<span>LinkedIn</span>
 									</div>
 								</a>
 							</li>

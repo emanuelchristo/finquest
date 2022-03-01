@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { BsFillChatLeftFill } from 'react-icons/bs'
-import { IoMdMenu } from 'react-icons/io'
+import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
 import Link from 'next/link'
@@ -22,6 +23,8 @@ const item = {
 }
 
 export default function Navbar() {
+	const [showMenu, setShowMenu] = useState(false)
+
 	return (
 		<motion.nav variants={container} initial='hide' animate='show' className={styles['navbar']}>
 			<Link href='/' passHref>
@@ -33,7 +36,7 @@ export default function Navbar() {
 					width='auto'
 				/>
 			</Link>
-			<motion.span variants={item} className='hidden md:inline-block'>
+			<motion.span className={styles['menu-icon-wrapper']} variants={item} onClick={() => setShowMenu(true)}>
 				<IoMdMenu className={styles['menu-icon']} />
 			</motion.span>
 
@@ -70,6 +73,39 @@ export default function Navbar() {
 					<span>Talk</span>
 				</motion.button>
 			</Link>
+			{showMenu && <Menu onClose={() => setShowMenu(false)} />}
 		</motion.nav>
+	)
+}
+
+function Menu({ onClose }) {
+	return (
+		<div className={styles['menu']}>
+			<div className={styles['menu-close-wrapper']} onClick={onClose}>
+				<IoMdClose className={styles['menu-close-icon']} />
+			</div>
+			<ul className={styles['menu-links-list']} onClick={onClose}>
+				<motion.li variants={item}>
+					<Link href='#about'>
+						<a>About us</a>
+					</Link>
+				</motion.li>
+				<motion.li variants={item}>
+					<Link href='#benefits'>
+						<a>Benefits</a>
+					</Link>
+				</motion.li>
+				<motion.li variants={item}>
+					<Link href='#memberships'>
+						<a>Memberships</a>
+					</Link>
+				</motion.li>
+				<motion.li variants={item}>
+					<Link href='#faqs'>
+						<a>FAQs</a>
+					</Link>
+				</motion.li>
+			</ul>
+		</div>
 	)
 }

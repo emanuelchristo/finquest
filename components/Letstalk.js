@@ -7,17 +7,23 @@ const social = [
 	{
 		alt: 'Instagram',
 		img: '/icons/instagram.svg',
-		href: 'https://instagram.com',
+		href: 'https://instagram.com/finquest_?utm_medium=copy_link',
 	},
 	{
-		alt: 'Twitter',
-		img: '/icons/twitter.svg',
-		href: 'https://twitter.com',
+		alt: 'Youtube',
+		img: '/icons/youtube.svg',
+		href: 'https://www.youtube.com/channel/UC9U93Qk1XZcDbp36iSj6Fcg',
 	},
 	{
 		alt: 'Facebook',
 		img: '/icons/facebook.svg',
-		href: 'https://facebook.com',
+		href: 'https://www.facebook.com/Finquest-102198582285743/',
+	},
+
+	{
+		alt: 'Twitter',
+		img: '/icons/twitter.svg',
+		href: 'https://twitter.com',
 	},
 ]
 
