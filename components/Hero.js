@@ -1,6 +1,7 @@
 import { BsFillChatLeftFill, BsEasel } from 'react-icons/bs'
 import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import TypeAnimation from 'react-type-animation'
 import styles from './hero.module.css'
 
@@ -216,26 +217,30 @@ export default function Hero() {
 				Start learning how to invest &amp; trade in stock market easily.
 			</motion.p>
 			<div className='flex items-center sm:flex-col sm:w-[65%]'>
-				<motion.button
-					initial={{ scale: 0 }}
-					animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.5 } }}
-					whileHover={{ scale: 1.05 }}
-					whileTap={{ scale: 0.95 }}
-					className={styles['talk-button']}
-				>
-					<MdCardMembership className={styles['membership-icon']} />
-					<span>Memberships</span>
-				</motion.button>
-				<motion.button
-					initial={{ scale: 0 }}
-					animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.65 } }}
-					whileHover={{ scale: 1.05 }}
-					whileTap={{ scale: 0.95 }}
-					className={styles['consultation-button']}
-				>
-					<BsFillChatLeftFill className={styles['consultation-icon']} />
-					<span>Talk to us</span>
-				</motion.button>
+				<Link href='/#memberships' passHref>
+					<motion.button
+						initial={{ scale: 0 }}
+						animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.5 } }}
+						whileHover={{ scale: 1.05 }}
+						whileTap={{ scale: 0.95 }}
+						className={styles['talk-button']}
+					>
+						<MdCardMembership className={styles['membership-icon']} />
+						<span>Memberships</span>
+					</motion.button>
+				</Link>
+				<Link href='/#contact' passHref>
+					<motion.button
+						initial={{ scale: 0 }}
+						animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.65 } }}
+						whileHover={{ scale: 1.05 }}
+						whileTap={{ scale: 0.95 }}
+						className={styles['consultation-button']}
+					>
+						<BsFillChatLeftFill className={styles['consultation-icon']} />
+						<span>Talk to us</span>
+					</motion.button>
+				</Link>
 			</div>
 			<img className={styles['hero-arrow']} src='/icons/hero-arrow.svg' width={32} height='auto' alt='' />
 		</div>

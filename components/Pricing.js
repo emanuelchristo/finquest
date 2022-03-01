@@ -42,7 +42,7 @@ const plans = [
 
 export default function Pricing() {
 	return (
-		<div id="membership" className='margin'>
+		<div id='memberships' className='margin'>
 			<section className={styles['pricing']}>
 				<div className={styles['heading-wrapper']}>
 					<h2>Memberships</h2>

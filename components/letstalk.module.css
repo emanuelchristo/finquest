@@ -66,6 +66,10 @@
 	align-items: center;
 	margin-left: 1rem;
 }
+.letstalk-icon img {
+	width: 40px;
+	height: auto;
+}
 
 @media (max-width: 1023px) {
 	.letstalk {

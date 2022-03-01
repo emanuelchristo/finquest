@@ -3,72 +3,72 @@
 @tailwind utilities;
 
 * {
-  font-family: "Gilroy", Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', Helvetica, Arial, sans-serif;
 }
 
 html,
 body {
-  overflow-x: hidden;
-  width: 100vw;
-  min-width: 360px;
-  scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+	overflow-x: hidden;
+	width: 100vw;
+	min-width: 360px;
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
 }
 
 .margin {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 7rem;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 7rem;
 }
 
 h2 {
-  font-size: 4rem;
-  font-weight: 600;
+	font-size: 4rem;
+	font-weight: 600;
 }
 
 p {
-  font-size: 1.25rem;
-  color: var(--text-grey);
-  line-height: 1.75;
+	font-size: 1.25rem;
+	color: var(--text-grey);
+	line-height: 1.75;
 }
 
 .section-spacer {
-  height: 5rem;
+	height: 5rem;
 }
 
 @media (max-width: 1279px) {
-  .margin {
-    padding: 0 5rem;
-  }
+	.margin {
+		padding: 0 5rem;
+	}
 }
 
 @media (max-width: 1023px) {
-  .margin {
-    padding: 0 3rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1.125rem;
-  }
+	.margin {
+		padding: 0 3rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1.125rem;
+	}
 }
 
 @media (max-width: 767px) {
-  .margin {
-    padding: 0 2rem;
-  }
+	.margin {
+		padding: 0 2rem;
+	}
 }
 
 @media (max-width: 639px) {
-  .margin {
-    padding: 0 1.125rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
+	.margin {
+		padding: 0 1.125rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1.1rem;
+		line-height: 1.6;
+	}
 }

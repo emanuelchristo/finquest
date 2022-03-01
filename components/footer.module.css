@@ -11,6 +11,7 @@
 
 .logo {
 	margin-bottom: 0.5rem;
+	cursor: pointer;
 }
 .copyright {
 	font-size: 1.125rem;
@@ -40,6 +41,10 @@
 	color: rgba(255, 255, 255, 0.5);
 	margin-bottom: 0.5rem;
 	white-space: nowrap;
+	transition: 0.15s ease color;
+}
+.link-group ul li:hover {
+	color: #fff;
 }
 
 .social-wrapper {

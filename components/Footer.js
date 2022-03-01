@@ -1,11 +1,14 @@
 import { BsInstagram, BsTwitter, BsWhatsapp, BsLinkedin } from 'react-icons/bs'
+import Link from 'next/link'
 import styles from './footer.module.css'
 
 export default function Footer() {
 	return (
 		<footer className={styles['footer']}>
 			<div className={styles['left']}>
-				<img className={styles['logo']} src='/images/logo-white.svg' height='32px' width='auto' />
+				<Link href='/' passHref>
+					<img className={styles['logo']} src='/images/logo-white.svg' height='32px' width='auto' />
+				</Link>
 				<span className={styles['copyright']}>&copy; 2022 - All rights reserved</span>
 			</div>
 			<div className={styles['right']}>
@@ -13,16 +16,24 @@ export default function Footer() {
 					<h3>Site</h3>
 					<ul>
 						<li>
-							<a>Home</a>
+							<Link href='/'>
+								<a>Home</a>
+							</Link>
 						</li>
 						<li>
-							<a>About us</a>
+							<Link href='/#about'>
+								<a>About us</a>
+							</Link>
 						</li>
 						<li>
-							<a>Pricing</a>
+							<Link href='/#memberships'>
+								<a>Memberships</a>
+							</Link>
 						</li>
 						<li>
-							<a>FAQs</a>
+							<Link href='/#faqs'>
+								<a>FAQs</a>
+							</Link>
 						</li>
 					</ul>
 				</div>

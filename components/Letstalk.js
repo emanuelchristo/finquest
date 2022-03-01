@@ -1,22 +1,29 @@
-import styles from './letstalk.module.css'
 import { HiPhone } from 'react-icons/hi'
 import { MdMail } from 'react-icons/md'
+import { motion } from 'framer-motion'
+import styles from './letstalk.module.css'
 
-const icons = [
+const social = [
 	{
+		alt: 'Instagram',
 		img: '/icons/instagram.svg',
+		href: 'https://instagram.com',
 	},
 	{
+		alt: 'Twitter',
 		img: '/icons/twitter.svg',
+		href: 'https://twitter.com',
 	},
 	{
-		img: '/icons/linkedin.svg',
+		alt: 'Facebook',
+		img: '/icons/facebook.svg',
+		href: 'https://facebook.com',
 	},
 ]
 
 export default function Letstalk() {
 	return (
-		<div className='margin'>
+		<div id='contact' className='margin'>
 			<section className={styles['letstalk']}>
 				<div className={styles['heading-wrapper']}>
 					<img
@@ -46,10 +53,16 @@ export default function Letstalk() {
 						</div>
 					</div>
 					<div className={styles['contact-icons-wrap']}>
-						{icons.map((icon, index) => (
-							<div key={index} className={styles['letstalk-icon']}>
-								<img src={icon.img} alt='' />
-							</div>
+						{social.map((item, index) => (
+							<a key={index} href={item.href} target='_blank' rel='noreferrer noopener'>
+								<motion.div
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95 }}
+									className={styles['letstalk-icon']}
+								>
+									<img src={item.img} alt={item.alt} />
+								</motion.div>
+							</a>
 						))}
 					</div>
 				</div>

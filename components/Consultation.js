@@ -17,7 +17,7 @@ export default function Consultation() {
 						className={styles['whatsapp-button']}
 					>
 						<ImWhatsapp className={styles['whatsapp-icon']} />
-						<span>Book a free session</span>
+						<span>Book free consultation</span>
 					</motion.button>
 				</div>
 			</section>

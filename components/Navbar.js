@@ -24,8 +24,15 @@ const item = {
 export default function Navbar() {
 	return (
 		<motion.nav variants={container} initial='hide' animate='show' className={styles['navbar']}>
-			<motion.img variants={item} src='/images/logo.svg' height={32} width='auto' className={styles['logo']} />
-
+			<Link href='/' passHref>
+				<motion.img
+					className=' cursor-pointer'
+					variants={item}
+					src='/images/logo.svg'
+					height={32}
+					width='auto'
+				/>
+			</Link>
 			<motion.span variants={item} className='hidden md:inline-block'>
 				<IoMdMenu className={styles['menu-icon']} />
 			</motion.span>
@@ -42,25 +49,27 @@ export default function Navbar() {
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href='#membership'>
-						<a>Membership</a>
+					<Link href='#memberships'>
+						<a>Memberships</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href='#faq'>
+					<Link href='#faqs'>
 						<a>FAQs</a>
 					</Link>
 				</motion.li>
 			</ul>
-			<motion.button
-				variants={item}
-				whileHover={{ scale: 1.05 }}
-				whileTap={{ scale: 0.95 }}
-				className={styles['talk-button']}
-			>
-				<BsFillChatLeftFill />
-				<span>Talk</span>
-			</motion.button>
+			<Link href='/#contact' passHref>
+				<motion.button
+					variants={item}
+					whileHover={{ scale: 1.05 }}
+					whileTap={{ scale: 0.95 }}
+					className={styles['talk-button']}
+				>
+					<BsFillChatLeftFill />
+					<span>Talk</span>
+				</motion.button>
+			</Link>
 		</motion.nav>
 	)
 }

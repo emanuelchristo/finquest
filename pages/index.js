@@ -12,7 +12,7 @@ import Reviews from '../components/Reviews'
 
 export default function Home() {
 	return (
-		<div>
+		<div id='home'>
 			<Header />
 			{/* <div className='section-spacer'></div> */}
 			<Associated />
