@@ -17,6 +17,7 @@ export default function Home() {
 		<div id='home'>
 			<Head>
 				<title>Finquest - Start learning how to invest &amp; trade in stock market easily.</title>
+				<link rel='icon' type='image/png' href='/favicon.png'></link>
 			</Head>
 			<Header />
 			<Associated />
