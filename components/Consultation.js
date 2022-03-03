@@ -1,4 +1,4 @@
-import { ImWhatsapp } from 'react-icons/im'
+import { MdCalendarToday } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import styles from './consultation.module.css'
 
@@ -11,14 +11,16 @@ export default function Consultation() {
 				<div className={styles['content']}>
 					<h2>Consultation</h2>
 					<p>Chat with us on WhatsApp or schedule a free 30-minutes call with our team</p>
-					<motion.button
-						whileHover={{ scale: 1.05 }}
-						whileTap={{ scale: 0.95 }}
-						className={styles['whatsapp-button']}
-					>
-						<ImWhatsapp className={styles['whatsapp-icon']} />
-						<span>Book free consultation</span>
-					</motion.button>
+					<a href='https://calendly.com/finquest' target='_blank' rel='noreferrer noopener'>
+						<motion.button
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}
+							className={styles['whatsapp-button']}
+						>
+							<MdCalendarToday className={styles['whatsapp-icon']} />
+							<span>Book free consultation</span>
+						</motion.button>
+					</a>
 				</div>
 			</section>
 		</div>

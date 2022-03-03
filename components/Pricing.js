@@ -11,6 +11,7 @@ const plans = [
 		discount: '10% off',
 		duration: '1 Month',
 		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
+		message: "I would like to join the 'Options trading' plan",
 	},
 	{
 		imageLink: '/images/student-plan.png',
@@ -23,6 +24,7 @@ const plans = [
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],
 		tag: 'Most Enrolled',
 		tagColor: '#D22C2C',
+		message: "I would like to join the 'Starter' plan",
 	},
 	{
 		imageLink: '/images/professional-plan.png',
@@ -41,6 +43,7 @@ const plans = [
 		],
 		tag: 'Popular Program',
 		tagColor: '#790DE5',
+		message: "I would like to join the 'Professional' plan",
 	},
 ]
 
@@ -66,6 +69,7 @@ export default function Pricing() {
 							color={item.color}
 							tag={item.tag}
 							tagColor={item.tagColor}
+							message={item.message}
 						/>
 					))}
 					<div className={styles['twinkle-wrapper-1']}>
@@ -99,7 +103,15 @@ export default function Pricing() {
 	)
 }
 
-function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color, tag, tagColor }) {
+function waLink(msg) {
+	let url = 'https://api.whatsapp.com/send?'
+	let params = new URLSearchParams('')
+	params.append('phone', '918075145434')
+	params.append('text', msg)
+	return url + params.toString()
+}
+
+function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color, tag, tagColor, message }) {
 	return (
 		<div className={`${styles['card']} ${color === 'yellow' ? styles['yellow-card'] : ''}`}>
 			{tag && (
@@ -124,9 +136,15 @@ function Card({ imageLink, planName, price, cutPrice, discount, duration, featur
 					</li>
 				))}
 			</ul>
-			<motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className={styles['action-button']}>
-				JOIN NOW
-			</motion.button>
+			<a href={waLink(message)} target='_blank' rel='noreferrer noopener'>
+				<motion.button
+					whileHover={{ scale: 1.05 }}
+					whileTap={{ scale: 0.95 }}
+					className={styles['action-button']}
+				>
+					JOIN NOW
+				</motion.button>
+			</a>
 		</div>
 	)
 }

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import About from '../components/About'
 import Associated from '../components/Associated'
 import Benefits from '../components/Benefits'
@@ -13,8 +14,10 @@ import Reviews from '../components/Reviews'
 export default function Home() {
 	return (
 		<div id='home'>
+			<Head>
+				<title>Finquest - Start learning how to invest &amp; trade in stock market easily.</title>
+			</Head>
 			<Header />
-			{/* <div className='section-spacer'></div> */}
 			<Associated />
 			<div className='section-spacer'></div>
 			<About />

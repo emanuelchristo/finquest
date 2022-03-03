@@ -45,7 +45,7 @@
 	border-radius: 50%;
 }
 
-.menu-icon {
+.menu-icon-wrapper {
 	display: none;
 	font-size: 1.6rem;
 }
@@ -67,8 +67,9 @@
 }
 
 @media (max-width: 767px) {
-	.menu-icon {
-		display: inline-block;
+	.menu-icon-wrapper {
+		display: flex;
+		font-size: 1.6rem;
 	}
 	.menu {
 		display: flex;

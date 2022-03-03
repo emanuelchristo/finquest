@@ -21,6 +21,11 @@ const benefits = [
 		title: 'Community access',
 		body: "Join more traders like you. Explore what's new and get updates on the recent trends of trading and investing.",
 	},
+	{
+		iconLink: '/icons/benefit-pace.png',
+		title: 'Learn at your own pace',
+		body: 'This course is designed to be very easy to learn. You can take the course at a time convenient for you. We also offer weekend parties if you are a full-time or  student.',
+	},
 
 	{
 		iconLink: '/icons/benefit-3.png',
@@ -31,7 +36,13 @@ const benefits = [
 	{
 		iconLink: '/icons/benefit-5.png',
 		title: 'Trading camps',
-		body: "We provide our students with an experience of a destination trading camp's are held we plan to locations like HImalayas, Wayanad or Munnar.",
+		body: "An experience of a destination trading camp's at Himalayas, Wayanad or Munnar. These camps help to generate a very power-packed brainstorm section, to develop ideas & indeed connection to earn trade better.",
+	},
+
+	{
+		iconLink: '/icons/benefit-goal.png',
+		title: 'Set & achieve goals',
+		body: "Plan and save funds for your short and long term needs. Set goals and start investing to complete them early through SIP's.",
 	},
 ]
 
@@ -39,7 +50,7 @@ export default function Benefits() {
 	return (
 		<div id='benefits' className='margin'>
 			<section className={styles['benefits']}>
-				<h2>The finQ experience</h2>
+				<h2>Benefits</h2>
 				<div className={styles['content-wrapper']}>
 					{benefits.map((item, index) => (
 						<Benefit key={index} iconLink={item.iconLink} title={item.title} body={item.body} />
