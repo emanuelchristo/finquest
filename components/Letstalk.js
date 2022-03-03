@@ -10,9 +10,9 @@ const social = [
 		href: 'https://instagram.com/finquest_?utm_medium=copy_link',
 	},
 	{
-		alt: 'Youtube',
-		img: '/icons/youtube.svg',
-		href: 'https://www.youtube.com/channel/UC9U93Qk1XZcDbp36iSj6Fcg',
+		alt: 'Whatsapp',
+		img: '/icons/whatsapp.svg',
+		href: 'https://api.whatsapp.com/send?phone=918075145434',
 	},
 	{
 		alt: 'Facebook',

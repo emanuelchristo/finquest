@@ -8,11 +8,10 @@ export default function Quote() {
 					<h3>
 						Program designed and led by Incredible<span> Founders &amp; Leaders</span>
 					</h3>
-					<p>
-						We have been running Cohort programs and have coached 400+ Founders &amp; Leaders in various
-						programs to scale their startup &amp; business ideas. We have been getting a 91+ NPS score for
-						our program structure and process. Our Founders and Leaders network helps each other in the
-						community to overcome challenges and grow their businesses.
+					<p className=' max-w-2xl'>Program designed and led by incredible Traders &amp; Leaders</p>
+					<p className='  max-w-2xl mt-3'>
+						Traders and leaders who are market ready to earn profit in the stock market through thier
+						dynamic trading methods.
 					</p>
 				</div>
 				<img src='/images/quote.png' alt='' width='368px' height='auto' className={styles['image']} />
