@@ -19,12 +19,13 @@
 	line-height: 1.15;
 	margin-bottom: 2rem;
 }
-.quote h3 span {
+.quote h3 span.blue {
 	color: var(--blue);
 }
 
 .quote p {
 	font-weight: 500;
+	max-width: 620px;
 }
 .image {
 	margin-left: -10rem;
@@ -43,7 +44,7 @@
 
 @media (max-width: 1023px) {
 	.quote h3 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		margin-bottom: 1rem;
 	}
 	.quote {
@@ -81,6 +82,6 @@
 		padding-top: 6.5em;
 	}
 	.quote h3 {
-		font-size: 2.25rem;
+		font-size: 1.8rem;
 	}
 }

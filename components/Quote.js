@@ -6,10 +6,10 @@ export default function Quote() {
 			<section className={styles['quote']}>
 				<div className={styles['content']}>
 					<h3>
-						Program designed and led by Incredible<span> Founders &amp; Leaders</span>
+						Program designed and led by incredible{' '}
+						<span className={styles['blue']}>Traders &amp; Leaders</span>
 					</h3>
-					<p className=' max-w-2xl'>Program designed and led by incredible Traders &amp; Leaders</p>
-					<p className='  max-w-2xl mt-3'>
+					<p>
 						Traders and leaders who are market ready to earn profit in the stock market through thier
 						dynamic trading methods.
 					</p>

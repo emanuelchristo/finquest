@@ -91,7 +91,7 @@ export default function Navbar() {
 					className={styles['talk-button']}
 				>
 					<BsWhatsapp className=' mb-[0.125rem]' />
-					<span>Talk</span>
+					<span>Chat</span>
 				</motion.button>
 			</Link>
 			{showMenu && <Menu onClose={() => setShowMenu(false)} />}
