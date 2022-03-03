@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .content {
@@ -61,6 +61,9 @@
 }
 
 @media (max-width: 767px) {
+	.quote {
+		margin-bottom: 0;
+	}
 	.content {
 		border-radius: 1.25rem;
 		padding: 2rem;
