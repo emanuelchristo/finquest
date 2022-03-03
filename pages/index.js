@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Letstalk from '../components/Letstalk'
 import Pricing from '../components/Pricing'
+import Quote from '../components/Quote'
 import Reviews from '../components/Reviews'
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
 			<About />
 			<div className='section-spacer'></div>
 			<Benefits />
+			<div className='section-spacer'></div>
+			<Quote />
 			<div className='section-spacer'></div>
 			<Pricing />
 			<div className='section-spacer'></div>

@@ -1,0 +1,79 @@
+.quote {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 4rem;
+}
+
+.content {
+	width: 95%;
+	background-color: var(--card-bg);
+	padding: 4rem;
+	border-radius: 2rem;
+	padding-right: 10rem;
+}
+.quote h3 {
+	font-size: 3.5rem;
+	font-weight: 600;
+	line-height: 1.15;
+	margin-bottom: 2rem;
+}
+.quote h3 span {
+	color: var(--blue);
+}
+
+.quote p {
+	font-weight: 500;
+}
+.image {
+	margin-left: -10rem;
+}
+
+@media (max-width: 1279px) {
+	.content {
+		padding: 3rem;
+		padding-right: 6rem;
+	}
+	.image {
+		margin-left: -5rem;
+		width: 320px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.quote h3 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	.quote {
+		flex-direction: column-reverse;
+	}
+	.content {
+		padding: 3rem;
+		padding-top: 7rem;
+	}
+	.image {
+		margin-left: 0;
+		margin-bottom: -5rem;
+		width: 70%;
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 767px) {
+	.content {
+		border-radius: 1.25rem;
+		padding: 2rem;
+		padding-top: 7rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.content {
+		padding: 1.5rem;
+		padding-top: 6.5em;
+	}
+	.quote h3 {
+		font-size: 2.25rem;
+	}
+}
