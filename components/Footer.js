@@ -79,7 +79,7 @@ export default function Footer() {
 								</a>
 							</li>
 							<li>
-								<a href='https://twitter.com' rel='noreferrer' target='_blank'>
+								<a href='https://twitter.com/Finquestsip' rel='noreferrer' target='_blank'>
 									<div className={styles['social-wrapper']}>
 										<BsTwitter className={styles['social-icon']} />
 										<span>Twitter</span>

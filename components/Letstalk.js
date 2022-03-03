@@ -23,7 +23,7 @@ const social = [
 	{
 		alt: 'Twitter',
 		img: '/icons/twitter.svg',
-		href: 'https://twitter.com',
+		href: 'https://twitter.com/Finquestsip',
 	},
 ]
 

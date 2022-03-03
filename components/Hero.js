@@ -229,7 +229,7 @@ export default function Hero() {
 						<span>Memberships</span>
 					</motion.button>
 				</Link>
-				<Link href='/#contact' passHref>
+				<Link href='https://api.whatsapp.com/send?phone=918075145434' passHref>
 					<motion.button
 						initial={{ scale: 0 }}
 						animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.65 } }}
@@ -238,7 +238,7 @@ export default function Hero() {
 						className={styles['consultation-button']}
 					>
 						<BsWhatsapp className={styles['consultation-icon']} />
-						<span>Get in touch</span>
+						<span>Chat with us</span>
 					</motion.button>
 				</Link>
 			</div>
