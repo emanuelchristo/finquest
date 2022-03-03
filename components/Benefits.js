@@ -28,7 +28,7 @@ const benefits = [
 	},
 
 	{
-		iconLink: '/icons/benefit-3.png',
+		iconLink: '/icons/benefit-hack.png',
 		title: 'Learn financial hacks',
 		body: 'Learn how money works & how you can take advantage of it. Promise, no boring classes/lessons included.',
 	},
