@@ -2,7 +2,7 @@ import styles from './community.module.css'
 
 export default function Community() {
 	return (
-		<div className='margin'>
+		<div className='margin' id='community'>
 			<section className={styles['community']}>
 				<img className={styles['image']} src='/images/community.png' alt='' width='260px' height='auto' />
 				<h2>Join the community</h2>

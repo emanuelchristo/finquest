@@ -78,7 +78,7 @@
 		right: 0.75rem;
 		padding: 0rem 1.5rem;
 		z-index: 10000;
-		width: 200px;
+		width: 250px;
 		border-radius: 0.75rem;
 		background-color: #fff;
 		box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -87,6 +87,16 @@
 		font-size: 1.1rem;
 		font-weight: 500;
 		margin: 1.5rem 0;
+	}
+	.menu-links-list li a {
+		display: flex;
+		align-items: center;
+	}
+	.menu-links-list li a span {
+		margin-top: 0.25rem;
+	}
+	.menu-item-icon {
+		margin-right: 0.75rem;
 	}
 	.menu-close-wrapper {
 		position: absolute;

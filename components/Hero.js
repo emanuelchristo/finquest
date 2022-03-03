@@ -238,7 +238,7 @@ export default function Hero() {
 						className={styles['consultation-button']}
 					>
 						<BsWhatsapp className={styles['consultation-icon']} />
-						<span>Talk to us</span>
+						<span>Get in touch</span>
 					</motion.button>
 				</Link>
 			</div>

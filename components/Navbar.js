@@ -5,6 +5,9 @@ import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 
+import { FaBuilding, FaStar, FaQuestion, FaAward } from 'react-icons/fa'
+import { BsPeopleFill } from 'react-icons/bs'
+
 const container = {
 	hide: {},
 	show: {
@@ -18,6 +21,24 @@ const container = {
 }
 
 const item = {
+	hide: { opacity: 0, y: -50 },
+	show: { opacity: 1, y: 0, transition: { type: 'spring', mass: 1 } },
+}
+
+const menu = {
+	hide: { opacity: 0, y: -50 },
+	show: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			type: 'spring',
+			mass: 1,
+			staggerChildren: 0.05,
+		},
+	},
+}
+
+const menuItem = {
 	hide: { opacity: 0, y: -50 },
 	show: { opacity: 1, y: 0, transition: { type: 'spring', mass: 1 } },
 }
@@ -80,32 +101,52 @@ export default function Navbar() {
 
 function Menu({ onClose }) {
 	return (
-		<div className={styles['menu']}>
+		<motion.div variants={menu} initial='hide' animate='show' className={styles['menu']}>
 			<div className={styles['menu-close-wrapper']} onClick={onClose}>
 				<IoMdClose className={styles['menu-close-icon']} />
 			</div>
 			<ul className={styles['menu-links-list']} onClick={onClose}>
-				<motion.li variants={item}>
+				<motion.li variants={menuItem}>
 					<Link href='#about'>
-						<a>About us</a>
+						<a>
+							<FaBuilding className={styles['menu-item-icon']} style={{ color: '#1963ed' }} />
+							<span>About us</span>
+						</a>
 					</Link>
 				</motion.li>
-				<motion.li variants={item}>
+				<motion.li variants={menuItem}>
 					<Link href='#benefits'>
-						<a>Benefits</a>
+						<a>
+							<FaStar className={styles['menu-item-icon']} style={{ color: '#f1b915' }} />
+							<span>Benefits</span>
+						</a>
 					</Link>
 				</motion.li>
-				<motion.li variants={item}>
+				<motion.li variants={menuItem}>
 					<Link href='#memberships'>
-						<a>Memberships</a>
+						<a>
+							<FaAward className={styles['menu-item-icon']} style={{ color: '#0bab2e' }} />
+							<span>Memberships</span>
+						</a>
 					</Link>
 				</motion.li>
-				<motion.li variants={item}>
+				<motion.li variants={menuItem}>
 					<Link href='#faqs'>
-						<a>FAQs</a>
+						<a>
+							<FaQuestion className={styles['menu-item-icon']} style={{ color: '#e71628' }} />
+							<span>FAQs</span>
+						</a>
+					</Link>
+				</motion.li>
+				<motion.li variants={menuItem}>
+					<Link href='#community'>
+						<a>
+							<BsPeopleFill className={styles['menu-item-icon']} style={{ color: '#8117f3' }} />
+							<span>Community</span>
+						</a>
 					</Link>
 				</motion.li>
 			</ul>
-		</div>
+		</motion.div>
 	)
 }
