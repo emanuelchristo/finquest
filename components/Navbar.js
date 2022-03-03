@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BsFillChatLeftFill } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
@@ -69,7 +69,7 @@ export default function Navbar() {
 					whileTap={{ scale: 0.95 }}
 					className={styles['talk-button']}
 				>
-					<BsFillChatLeftFill />
+					<BsWhatsapp className=' mb-[0.125rem]' />
 					<span>Talk</span>
 				</motion.button>
 			</Link>

@@ -1,4 +1,4 @@
-import { BsFillChatLeftFill, BsEasel } from 'react-icons/bs'
+import { BsFillChatLeftFill, BsWhatsapp } from 'react-icons/bs'
 import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -237,7 +237,7 @@ export default function Hero() {
 						whileTap={{ scale: 0.95 }}
 						className={styles['consultation-button']}
 					>
-						<BsFillChatLeftFill className={styles['consultation-icon']} />
+						<BsWhatsapp className={styles['consultation-icon']} />
 						<span>Talk to us</span>
 					</motion.button>
 				</Link>

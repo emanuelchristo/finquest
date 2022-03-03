@@ -43,7 +43,7 @@ export default function Letstalk() {
 				</div>
 				<div className={styles['content-wrapper']}>
 					<div className={styles['letstalk-text']}>
-						<p>A nunc lacus nisl, neque, quam. Vitae leo</p>
+						<p>Here&apos;s our contact information</p>
 					</div>
 					<div className={styles['letstalk-contact']}>
 						<a href='tel:+918075145434'>
