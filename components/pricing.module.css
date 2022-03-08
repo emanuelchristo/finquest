@@ -278,6 +278,9 @@
 		padding: 1.5rem;
 		padding-top: 1.125rem;
 	}
+	.features{
+		height: fit-content !important;
+	}
 	.features li {
 		margin-bottom: 1rem;
 	}

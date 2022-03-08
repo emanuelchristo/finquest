@@ -61,7 +61,7 @@ export default function Hero() {
 							cursor={true}
 							repeat={Infinity}
 							sequence={[
-								'everyone',
+								'everyone!',
 								DELAY,
 								'students',
 								DELAY,
