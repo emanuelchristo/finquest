@@ -54,7 +54,7 @@ export default function Pricing() {
 			max = e.features.length;
 		}
 	})
-	alert(max);
+
 	return (
 		<div id='memberships' className='margin'>
 			<section className={styles['pricing']}>
