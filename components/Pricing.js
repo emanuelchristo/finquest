@@ -39,7 +39,7 @@ const plans = [
 			'Long term',
 			'FNO trading',
 			'Option buying',
-			'Option selling',
+			'Option selling',		
 		],
 		tag: 'Popular Program',
 		tagColor: '#790DE5',
@@ -48,6 +48,13 @@ const plans = [
 ]
 
 export default function Pricing() {
+	let max = 0;
+	plans.forEach((e)=>{
+		if(e.features.length >max){
+			max = e.features.length;
+		}
+	})
+	alert(max);
 	return (
 		<div id='memberships' className='margin'>
 			<section className={styles['pricing']}>
@@ -70,6 +77,7 @@ export default function Pricing() {
 							tag={item.tag}
 							tagColor={item.tagColor}
 							message={item.message}
+							maxFeatLen={max}
 						/>
 					))}
 					<div className={styles['twinkle-wrapper-1']}>
@@ -111,7 +119,7 @@ function waLink(msg) {
 	return url + params.toString()
 }
 
-function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color, tag, tagColor, message }) {
+function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color, tag, tagColor, message,maxFeatLen }) {
 	return (
 		<div className={`${styles['card']} ${color === 'yellow' ? styles['yellow-card'] : ''}`}>
 			{tag && (
@@ -129,7 +137,7 @@ function Card({ imageLink, planName, price, cutPrice, discount, duration, featur
 				<h3>₹{price}</h3>
 				<span>{'/ ' + duration}</span>
 			</div>
-			<ul className={styles['features']}>
+			<ul style={{"height":String(maxFeatLen*45)+"px"}} className={styles['features']}>
 				{features.map((item, index) => (
 					<li key={index}>
 						<BsFillCheckCircleFill className={styles['tick-icon']} /> <p>{item}</p>

@@ -1,0 +1,28 @@
+.main{
+    background: #fffbe6;
+    color: rgb(226, 4, 4) ;
+    font-weight:400;
+    position: relative;
+    
+    
+
+    
+}
+.snack-text{
+    color: black;
+    font-size: medium;
+    text-align: center;
+    padding: 5px;
+}
+.snack-close{
+    right: 0px;
+    top:0px;
+    padding: 5px;
+    padding-right: 25px;
+    position: absolute;
+    color: black;
+    /* font-size: medium; */
+}
+.snack-close:hover{
+    color: rgb(173, 173, 173);
+}

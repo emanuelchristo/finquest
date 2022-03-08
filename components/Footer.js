@@ -10,7 +10,7 @@ export default function Footer() {
 					<Link href='/' passHref>
 						<img className={styles['logo']} src='/images/logo-white.svg' height='32px' width='auto' />
 					</Link>
-					<span className={styles['copyright']}>&copy; 2022 - All rights reserved</span>
+					{/* <span className={styles['copyright']}>&copy; 2022 - All rights reserved</span> */}
 				</div>
 				<div className={styles['right']}>
 					<div className={styles['link-group']}>
@@ -105,7 +105,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className={styles['bottom']}>
-				<p>Built with ❤️ and lots of ☕️ in Kerala</p>
+				<p>Build with ❤️ for 🇮🇳 who love to invest {"s"} trade</p>
 			</div>
 		</footer>
 	)

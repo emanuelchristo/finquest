@@ -11,6 +11,7 @@ import Letstalk from '../components/Letstalk'
 import Pricing from '../components/Pricing'
 import Quote from '../components/Quote'
 import Reviews from '../components/Reviews'
+import Snackbar from '../components/SnackBar'
 
 export default function Home() {
 	return (
@@ -19,6 +20,7 @@ export default function Home() {
 				<title>Finquest - Start learning how to invest &amp; trade in stock market easily.</title>
 				<link rel='icon' type='image/png' href='/favicon.png'></link>
 			</Head>
+			<Snackbar message=" 🎉  Lorem epsum is a total waste of time"/>
 			<Header />
 			<Associated />
 			<div className='section-spacer'></div>
