@@ -2,7 +2,10 @@
     background: #fffbe6;
     color: rgb(226, 4, 4) ;
     font-weight:400;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    
     
     
 
@@ -10,7 +13,7 @@
 }
 .snack-text{
     color: black;
-    font-size: medium;
+    font-size: small;
     text-align: center;
     padding: 5px;
 }

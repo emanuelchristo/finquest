@@ -9,7 +9,7 @@ export default function Snackbar(props) {
 				<p className={styles["snack-text"]}>{props.message} </p>
                 <button className={styles["snack-close"]} onClick={(e)=>{
                     setHidden(!hidden);
-                }}>X</button>
+                }}>x</button>
            
 		</div>
 	)

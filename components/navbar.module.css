@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 2.5rem 4.5rem 1.5rem 4.5rem;
+	padding: 3.1rem 4.5rem 1.5rem 4.5rem;
 	position: relative;
 }
 
@@ -59,7 +59,7 @@
 
 @media (max-width: 1023px) {
 	.navbar {
-		padding: 2rem 2rem 1.5rem 2rem;
+		padding: 3rem 2rem 1.5rem 2rem;
 	}
 	.links-list li {
 		margin-right: 1.5rem;
@@ -127,7 +127,7 @@
 
 @media (max-width: 639px) {
 	.navbar {
-		padding: 1.25rem;
+		padding: 3.0rem 1.25rem 1.25rem 1.25rem;
 	}
 	.logo {
 		height: 28px;
