@@ -1,8 +1,13 @@
 .heading-wrapper {
 	display: flex;
 	align-items: center;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
+
+.tab-wrapper {
+	margin-bottom: 2rem;
+}
+
 .faqs-count {
 	width: 2.5rem;
 	height: 2.5rem;

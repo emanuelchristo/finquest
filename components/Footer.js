@@ -105,7 +105,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className={styles['bottom']}>
-				<p>Build with ❤️ for 🇮🇳 who love to invest {"s"} trade</p>
+				<p>Build with ❤️ for 🇮🇳 who love to invest &amp; trade</p>
 			</div>
 		</footer>
 	)
