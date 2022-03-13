@@ -12,11 +12,7 @@ export default function Consultation() {
 					<h2>Consultation</h2>
 					<p>Chat with us on WhatsApp or schedule a free 30-minutes call with our team</p>
 					<a href='https://calendly.com/finquest' target='_blank' rel='noreferrer noopener'>
-						<motion.button
-							whileHover={{ scale: 1.05 }}
-							whileTap={{ scale: 0.95 }}
-							className={styles['whatsapp-button']}
-						>
+						<motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
 							<MdCalendarToday className={styles['whatsapp-icon']} />
 							<span>Book free consultation</span>
 						</motion.button>

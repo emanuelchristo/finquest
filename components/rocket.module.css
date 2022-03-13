@@ -1,5 +1,6 @@
 .rocket {
 	margin-top: 3rem;
+	position: relative;
 }
 
 .heading-wrapper {
@@ -62,6 +63,99 @@
 }
 .item:nth-child(2) {
 	margin-top: 8rem;
+}
+
+.decorations {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.decorations > * {
+	position: absolute;
+}
+.blue-red {
+	width: 45px;
+	bottom: -10%;
+	left: 50%;
+}
+.violet-yellow {
+	width: 54px;
+	bottom: 0;
+	left: 10%;
+}
+.twinkle-1,
+.twinkle-2 {
+	width: 74px;
+}
+.rupee {
+	top: 28%;
+	left: 18%;
+}
+.safe {
+	top: 45%;
+	left: -5%;
+}
+.bank {
+	bottom: -3%;
+	left: -3%;
+}
+.piggy-bank {
+	bottom: -4%;
+	left: 27%;
+}
+.trend-up {
+	bottom: -8%;
+	right: 25%;
+}
+.rocket {
+	right: 0;
+	bottom: 0;
+}
+.wallet {
+	right: -3%;
+	bottom: 25%;
+}
+.coins {
+	right: 17%;
+	top: 21%;
+}
+.curly-1 {
+	left: 22%;
+	top: 3%;
+}
+.curly-2 {
+	right: 27%;
+	top: 24%;
+	transform: scale(-1, 1);
+}
+.twinkle-1 {
+	top: 30%;
+}
+.twinkle-2 {
+	right: 12%;
+	bottom: -8%;
+	transform: rotate(90deg);
+}
+.green {
+	width: 20px;
+	height: 20px;
+	background-color: #2db24e;
+	border-radius: 50%;
+	left: 32%;
+	top: 55%;
+}
+.violet {
+	width: 12px;
+	height: 24px;
+	background-color: #875efb;
+	transform: rotate(45deg);
+	top: 45%;
+	right: 35%;
 }
 
 @media (max-width: 1535px) {

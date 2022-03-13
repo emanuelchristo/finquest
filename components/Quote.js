@@ -1,4 +1,5 @@
 import { MdPeopleAlt } from 'react-icons/md'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 import styles from './quote.module.css'
@@ -17,10 +18,14 @@ export default function Quote() {
 						dynamic trading methods.
 					</p>
 					<Link href='#community' passHref>
-						<button className={styles['community-button']}>
+						<motion.button
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}
+							className={styles['community-button']}
+						>
 							<MdPeopleAlt className={styles['community-icon']} />
 							<span>Join community</span>
-						</button>
+						</motion.button>
 					</Link>
 				</div>
 				<img src='/images/quote.png' alt='' width='368px' height='auto' className={styles['image']} />
