@@ -1,3 +1,4 @@
+import { FaChalkboardTeacher, FaPoll, FaHistory, FaUsers } from 'react-icons/fa'
 import styles from './community.module.css'
 
 export default function Community() {
@@ -13,6 +14,32 @@ export default function Community() {
 					</div>
 					<div className={styles['pill']}>
 						<span style={{ fontWeight: 600 }}>₹499</span> per year for others
+					</div>
+				</div>
+				<div className={styles['features-wrapper']}>
+					<div className={styles['feature']}>
+						<div className={styles['icon-wrapper']}>
+							<FaChalkboardTeacher className={styles['icon']} />
+						</div>
+						<span>Expert mentorship</span>
+					</div>
+					<div className={styles['feature']}>
+						<div className={styles['icon-wrapper']}>
+							<FaPoll className={styles['icon']} />
+						</div>
+						<span>Daily analysis</span>
+					</div>
+					<div className={styles['feature']}>
+						<div className={styles['icon-wrapper']}>
+							<FaHistory className={styles['icon']} />
+						</div>
+						<span>Daily updates</span>
+					</div>
+					<div className={styles['feature']}>
+						<div className={styles['icon-wrapper']}>
+							<FaUsers className={styles['icon']} />
+						</div>
+						<span>Like minded people</span>
 					</div>
 				</div>
 				<img
