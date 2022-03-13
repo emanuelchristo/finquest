@@ -17,7 +17,6 @@
 	font-size: 3.5rem;
 	font-weight: 600;
 	line-height: 1.15;
-	margin-bottom: 2rem;
 }
 .quote h3 span.blue {
 	color: var(--blue);
@@ -26,9 +25,26 @@
 .quote p {
 	font-weight: 500;
 	max-width: 620px;
+	margin: 2rem 0;
 }
 .image {
 	margin-left: -10rem;
+}
+
+.community-button {
+	height: 3.75rem;
+	display: flex;
+	align-items: center;
+	border-radius: 100px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #fff;
+	background-color: var(--blue);
+	padding: 0 2rem;
+}
+.community-icon {
+	font-size: 1.3rem;
+	margin-right: 0.5rem;
 }
 
 @media (max-width: 1279px) {
@@ -45,7 +61,9 @@
 @media (max-width: 1023px) {
 	.quote h3 {
 		font-size: 2.5rem;
-		margin-bottom: 1rem;
+	}
+	.quote p {
+		margin: 1.5rem 0;
 	}
 	.quote {
 		flex-direction: column-reverse;
@@ -53,6 +71,7 @@
 	.content {
 		padding: 3rem;
 		padding-top: 7rem;
+		padding-bottom: 4rem;
 	}
 	.image {
 		margin-left: 0;
@@ -69,7 +88,13 @@
 	.content {
 		border-radius: 1.25rem;
 		padding: 2rem;
+		padding-bottom: 3rem;
 		padding-top: 7rem;
+	}
+
+	.community-button {
+		height: 3.25rem;
+		padding: 0 1.5rem;
 	}
 }
 
@@ -79,6 +104,7 @@
 	}
 	.content {
 		padding: 1.5rem;
+		padding-bottom: 2rem;
 		padding-top: 6.5em;
 	}
 	.quote h3 {

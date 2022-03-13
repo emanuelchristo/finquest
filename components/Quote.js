@@ -1,3 +1,6 @@
+import { MdPeopleAlt } from 'react-icons/md'
+import Link from 'next/link'
+
 import styles from './quote.module.css'
 
 export default function Quote() {
@@ -13,6 +16,12 @@ export default function Quote() {
 						Traders and leaders who are market ready to earn profit in the stock market through thier
 						dynamic trading methods.
 					</p>
+					<Link href='#community' passHref>
+						<button className={styles['community-button']}>
+							<MdPeopleAlt className={styles['community-icon']} />
+							<span>Join community</span>
+						</button>
+					</Link>
 				</div>
 				<img src='/images/quote.png' alt='' width='368px' height='auto' className={styles['image']} />
 			</section>
