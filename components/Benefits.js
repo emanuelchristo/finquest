@@ -64,8 +64,10 @@ export default function Benefits() {
 function Benefit({ iconLink, title, body }) {
 	return (
 		<div className={styles['benefit']}>
-			<img src={iconLink} width='60px' height='auto' />
-			<h3>{title}</h3>
+			<div className={styles['heading-wrapper']}>
+				<img src={iconLink} width='60px' height='auto' />
+				<h3>{title}</h3>
+			</div>
 			<p>{body}</p>
 		</div>
 	)
