@@ -6,7 +6,7 @@ export default function Community() {
 			<section className={styles['community']}>
 				<img className={styles['image']} src='/images/community.png' alt='' width='260px' height='auto' />
 				<h2>Join the community</h2>
-				<p>Explore what&apos;s new and get updates on the recent trends of trading and investing.</p>
+				<p>A community to empower traders &amp; investors to make a living out of their passion</p>
 				<div className={styles['pills-wrapper']}>
 					<div className={`${styles['pill']} ${styles['white']}`}>
 						Free unlimited access for enrolled members

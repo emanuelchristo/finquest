@@ -19,7 +19,7 @@ const benefits = [
 	{
 		iconLink: '/icons/benefit-1.svg',
 		title: 'Community access',
-		body: "Join more traders like you. Explore what's new and get updates on the recent trends of trading and investing.",
+		body: 'Community for traders and investors to find peers, seek mentorship and discover best practices. We empower young traders and investors to make their road to success more delightful and less lonely.',
 	},
 	{
 		iconLink: '/icons/benefit-pace.png',

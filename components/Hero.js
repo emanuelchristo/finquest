@@ -226,7 +226,7 @@ export default function Hero() {
 						className={styles['talk-button']}
 					>
 						<MdCardMembership className={styles['membership-icon']} />
-						<span>Memberships</span>
+						<span>Start learning</span>
 					</motion.button>
 				</Link>
 				<Link href='https://api.whatsapp.com/send?phone=918075145434' passHref>
