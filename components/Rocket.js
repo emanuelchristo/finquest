@@ -6,7 +6,7 @@ import styles from './rocket.module.css'
 
 export default function Rocket() {
 	return (
-		<div className='margin'>
+		<div className='margin relative'>
 			<section className={styles['rocket']}>
 				<div className={styles['heading-wrapper']}>
 					<img src='/images/rocket.png' width='64px' height='auto' alt='' />

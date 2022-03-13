@@ -1,6 +1,5 @@
 .rocket {
 	margin-top: 3rem;
-	position: relative;
 }
 
 .heading-wrapper {
@@ -38,8 +37,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: -3rem;
 	margin: 0 auto;
+	margin-top: -3rem;
 }
 
 .item {
@@ -98,11 +97,11 @@
 }
 .safe {
 	top: 45%;
-	left: -5%;
+	left: -1%;
 }
 .bank {
 	bottom: -3%;
-	left: -3%;
+	left: -2%;
 }
 .piggy-bank {
 	bottom: -4%;
@@ -113,11 +112,11 @@
 	right: 25%;
 }
 .rocket {
-	right: 0;
+	right: 3%;
 	bottom: 0;
 }
 .wallet {
-	right: -3%;
+	right: -1%;
 	bottom: 25%;
 }
 .coins {
@@ -125,16 +124,17 @@
 	top: 21%;
 }
 .curly-1 {
-	left: 22%;
+	left: 18%;
 	top: 3%;
 }
 .curly-2 {
-	right: 27%;
-	top: 24%;
+	right: 28%;
+	top: 32%;
 	transform: scale(-1, 1);
 }
 .twinkle-1 {
 	top: 30%;
+	left: 5%;
 }
 .twinkle-2 {
 	right: 12%;
@@ -158,12 +158,6 @@
 	right: 35%;
 }
 
-@media (max-width: 1535px) {
-}
-
-@media (max-width: 1279px) {
-}
-
 @media (max-width: 1023px) {
 	.heading-wrapper h2 {
 		font-size: 3rem;
@@ -178,6 +172,63 @@
 	}
 	.item:nth-child(2) {
 		margin-top: 1rem;
+	}
+
+	.curly-1 {
+		left: 10%;
+	}
+	.curly-2 {
+		top: 20%;
+		right: 20%;
+	}
+	.coins {
+		top: 15%;
+		right: 5%;
+	}
+	.twinkle-1 {
+		top: 20%;
+	}
+	.rupee {
+		left: 15%;
+		top: 15%;
+	}
+	.safe {
+		top: 70%;
+		left: 5%;
+	}
+	.green {
+		top: 67%;
+		left: 28%;
+	}
+	.violet {
+		right: 45%;
+		top: 35%;
+	}
+	.violet-yellow {
+		left: 20%;
+		bottom: 10%;
+	}
+	.twinkle-2 {
+		bottom: 15%;
+	}
+	.blue-red {
+		display: none;
+	}
+	.piggy-bank {
+		bottom: 55%;
+		left: 2%;
+	}
+	.rocket {
+		right: 12%;
+		bottom: 2%;
+	}
+	.bank {
+		left: 10%;
+		bottom: 0%;
+	}
+	.trend-up {
+		right: -1%;
+		bottom: 50%;
 	}
 }
 
@@ -196,13 +247,61 @@
 		height: 3.25rem;
 		padding: 0 1.5rem;
 	}
+
+	.violet-yellow {
+		left: 12%;
+	}
 }
 
 @media (max-width: 639px) {
+	.rocket {
+		margin-bottom: 3rem;
+	}
 	.heading-wrapper h2 {
 		font-size: 2.25rem;
 	}
 	.item {
 		max-width: 300px;
+	}
+
+	.green {
+		top: 50%;
+		left: 20%;
+	}
+	.violet-yellow {
+		bottom: 17%;
+	}
+	.twinkle-1 {
+		top: 25%;
+	}
+	.bank {
+		left: 3%;
+	}
+	.curly-1 {
+		top: 0;
+		transform: scale(0.8);
+	}
+	.curly-2 {
+		right: 18%;
+		top: 19%;
+		transform: scale(0.8);
+	}
+	.bank {
+		bottom: -4%;
+	}
+	.rocket {
+		bottom: -3%;
+		right: 4%;
+	}
+	.safe {
+		top: 55%;
+		left: 2%;
+	}
+	.rupee {
+		top: 17%;
+		left: 11%;
+	}
+	.piggy-bank {
+		display: none;
 	}
 }

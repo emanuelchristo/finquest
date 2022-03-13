@@ -27,7 +27,6 @@ export default function Home() {
 			<div className='section-spacer'></div>
 			<About />
 			<div className='section-spacer'></div>
-			<div className='section-spacer'></div>
 			<Rocket />
 			<div className='section-spacer'></div>
 			<Benefits />
