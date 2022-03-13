@@ -6,7 +6,7 @@ export default function Consultation() {
 	return (
 		<div className='margin'>
 			<section className={styles['consultation']}>
-				<img className={styles['image']} src='/images/consultation.png' alt='' width='440px' height='auto' />
+				<img className={styles['image']} src='/images/consultation.webp' alt='' width='440px' height='auto' />
 				<div className={styles['spacer']}></div>
 				<div className={styles['content']}>
 					<h2>Consultation</h2>

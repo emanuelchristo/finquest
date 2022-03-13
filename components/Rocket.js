@@ -24,12 +24,12 @@ export default function Rocket() {
 				</div>
 				<div className={styles['content']}>
 					<div className={styles['item']}>
-						<img alt='Super women' src='/images/super-women.png' width='220px' height='auto' />
+						<img alt='Super women' src='/images/super-women.webp' width='220px' height='auto' />
 						<h3>Super women</h3>
 						<p>Your money, your way - kerala&apos;s stock market learning destination for women!</p>
 					</div>
 					<div className={styles['item']}>
-						<img alt='Student trader' src='/images/student-trader.png' width='220px' height='auto' />
+						<img alt='Student trader' src='/images/student-trader.webp' width='220px' height='auto' />
 						<h3>Student trader</h3>
 						<p>
 							Grow your pocket money - Be smarter by learning to invest early in life. When you turn 18,
@@ -37,7 +37,7 @@ export default function Rocket() {
 						</p>
 					</div>
 					<div className={styles['item']}>
-						<img alt='Veterans' src='/images/veterans.png' width='220px' height='auto' />
+						<img alt='Veterans' src='/images/veterans.webp' width='220px' height='auto' />
 						<h3>Veterans</h3>
 						<p>
 							Nibh felis auctor fusce massa senectus mauris maecenas. At nunc egestas facilisis vestibulum

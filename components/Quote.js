@@ -28,7 +28,7 @@ export default function Quote() {
 						</motion.button>
 					</Link>
 				</div>
-				<img src='/images/quote.png' alt='' width='368px' height='auto' className={styles['image']} />
+				<img src='/images/quote.webp' alt='' width='368px' height='auto' className={styles['image']} />
 			</section>
 		</div>
 	)
