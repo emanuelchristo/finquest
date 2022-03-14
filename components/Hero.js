@@ -1,4 +1,4 @@
-import { BsFillChatLeftFill, BsWhatsapp } from 'react-icons/bs'
+import { BsFillStarFill, BsWhatsapp } from 'react-icons/bs'
 import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -242,6 +242,7 @@ export default function Hero() {
 					</motion.button>
 				</Link>
 			</div>
+
 			<img className={styles['hero-arrow']} src='/icons/hero-arrow.svg' width={32} height='auto' alt='' />
 		</div>
 	)

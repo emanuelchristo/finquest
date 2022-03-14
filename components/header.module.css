@@ -1,6 +1,6 @@
 .header {
 	height: 100vh;
-	min-height: 780px;
+	min-height: 820px;
 	max-height: 1024px;
 	display: flex;
 	flex-direction: column;
