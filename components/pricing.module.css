@@ -108,7 +108,7 @@
 }
 .price-wrapper {
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
 	margin-bottom: 1.75rem;
 }
 .price-wrapper h3 {
@@ -117,9 +117,14 @@
 	line-height: 1;
 }
 .price-wrapper span {
-	font-weight: 500;
-	color: rgba(0, 0, 0, 0.5);
-	margin-left: 0.5rem;
+	margin-top: 1.25rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.836);
+	background-color: rgba(0, 0, 0, 0.09);
+	padding: 0.35rem 1rem;
+	border-radius: 100px;
+	width: fit-content;
 	text-transform: uppercase;
 	white-space: nowrap;
 }

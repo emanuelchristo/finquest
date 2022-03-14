@@ -9,8 +9,9 @@ const plans = [
 		price: 10399,
 		cutPrice: 11959,
 		discount: '15% off',
-		duration: '2 Months',
+		duration: '2 months',
 		features: [
+			// 'Course duration - 1 month',
 			'Intraday & swing trading',
 			'Commodity',
 			'Long term',
@@ -28,7 +29,7 @@ const plans = [
 		price: 7499,
 		cutPrice: 8999,
 		discount: '20% off',
-		duration: '1 Month',
+		duration: '1 month',
 		color: 'yellow',
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],
 		tag: 'Most Enrolled',
@@ -41,7 +42,7 @@ const plans = [
 		price: 4499,
 		cutPrice: 4940,
 		discount: '10% off',
-		duration: '1 Month',
+		duration: '1 month',
 		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
 		message: "I would like to join the 'Options trading' plan",
 	},
@@ -148,7 +149,7 @@ function Card({
 			</div>
 			<div className={styles['price-wrapper']}>
 				<h3>₹{price}</h3>
-				<span>{'/ ' + duration}</span>
+				<span>{duration + ' duration'}</span>
 			</div>
 			<ul style={{ height: String(maxFeatLen * 45) + 'px' }} className={styles['features']}>
 				{features.map((item, index) => (
