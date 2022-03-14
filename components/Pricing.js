@@ -4,14 +4,23 @@ import styles from './pricing.module.css'
 
 const plans = [
 	{
-		imageLink: '/images/options-trading-plan.png',
-		planName: 'Options Trading',
-		price: 4499,
-		cutPrice: 4940,
-		discount: '10% off',
-		duration: '1 Month',
-		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
-		message: "I would like to join the 'Options trading' plan",
+		imageLink: '/images/professional-plan.png',
+		planName: 'Professional',
+		price: 10399,
+		cutPrice: 11959,
+		discount: '15% off',
+		duration: '2 Months',
+		features: [
+			'Intraday & swing trading',
+			'Commodity',
+			'Long term',
+			'FNO trading',
+			'Option buying',
+			'Option selling',
+		],
+		tag: 'Popular Program',
+		tagColor: '#790DE5',
+		message: "I would like to join the 'Professional' plan",
 	},
 	{
 		imageLink: '/images/student-plan.png',
@@ -27,31 +36,22 @@ const plans = [
 		message: "I would like to join the 'Starter' plan",
 	},
 	{
-		imageLink: '/images/professional-plan.png',
-		planName: 'Professional',
-		price: 10399,
-		cutPrice: 11959,
-		discount: '15% off',
-		duration: '2 Months',
-		features: [
-			'Intraday & swing trading',
-			'Commodity',
-			'Long term',
-			'FNO trading',
-			'Option buying',
-			'Option selling',		
-		],
-		tag: 'Popular Program',
-		tagColor: '#790DE5',
-		message: "I would like to join the 'Professional' plan",
+		imageLink: '/images/options-trading-plan.png',
+		planName: 'Options Trading',
+		price: 4499,
+		cutPrice: 4940,
+		discount: '10% off',
+		duration: '1 Month',
+		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
+		message: "I would like to join the 'Options trading' plan",
 	},
 ]
 
 export default function Pricing() {
-	let max = 0;
-	plans.forEach((e)=>{
-		if(e.features.length >max){
-			max = e.features.length;
+	let max = 0
+	plans.forEach((e) => {
+		if (e.features.length > max) {
+			max = e.features.length
 		}
 	})
 
@@ -119,7 +119,20 @@ function waLink(msg) {
 	return url + params.toString()
 }
 
-function Card({ imageLink, planName, price, cutPrice, discount, duration, features, color, tag, tagColor, message,maxFeatLen }) {
+function Card({
+	imageLink,
+	planName,
+	price,
+	cutPrice,
+	discount,
+	duration,
+	features,
+	color,
+	tag,
+	tagColor,
+	message,
+	maxFeatLen,
+}) {
 	return (
 		<div className={`${styles['card']} ${color === 'yellow' ? styles['yellow-card'] : ''}`}>
 			{tag && (
@@ -137,7 +150,7 @@ function Card({ imageLink, planName, price, cutPrice, discount, duration, featur
 				<h3>₹{price}</h3>
 				<span>{'/ ' + duration}</span>
 			</div>
-			<ul style={{"height":String(maxFeatLen*45)+"px"}} className={styles['features']}>
+			<ul style={{ height: String(maxFeatLen * 45) + 'px' }} className={styles['features']}>
 				{features.map((item, index) => (
 					<li key={index}>
 						<BsFillCheckCircleFill className={styles['tick-icon']} /> <p>{item}</p>
