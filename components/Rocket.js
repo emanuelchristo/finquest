@@ -39,10 +39,7 @@ export default function Rocket() {
 					<div className={styles['item']}>
 						<img alt='Veterans' src='/images/veterans.webp' width='220px' height='auto' />
 						<h3>Veterans</h3>
-						<p>
-							Nibh felis auctor fusce massa senectus mauris maecenas. At nunc egestas facilisis vestibulum
-							nullam integer
-						</p>
+						<p>A source of income one can depend on</p>
 					</div>
 				</div>
 				<div className={styles['decorations']}>
