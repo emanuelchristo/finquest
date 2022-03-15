@@ -78,14 +78,14 @@
 	position: absolute;
 }
 .circle-img-1 {
-	background-color: #90d9f0;
+	background-color: #8bad56;
 	background-image: url('/images/hero-circle-1.webp');
 	transform: rotate(-20deg);
 	left: -4rem;
 	top: -2rem;
 }
 .circle-img-2 {
-	background-color: #f090cb;
+	background-color: #fd747f;
 	background-image: url('/images/hero-circle-2.webp');
 	transform: rotate(13deg);
 	bottom: -1rem;
@@ -97,7 +97,7 @@
 	height: 5.75rem;
 	border-radius: 200px;
 	flex-shrink: 0;
-	background-color: #d8c9f3;
+	background-color: #65bccb;
 	background-image: url('/images/hero-pill-1.webp');
 	position: absolute;
 	bottom: -2rem;
@@ -105,6 +105,7 @@
 	transform: rotate(-26deg);
 }
 .pill-img-2 {
+	background-color: #29a2d8;
 	background-image: url('/images/hero-in-text.webp');
 	background-size: cover;
 	display: none;
@@ -116,7 +117,7 @@
 	margin: 0 1.5rem;
 	border-radius: 200px;
 	background-image: url('/images/hero-in-text.webp');
-	background-color: rgb(255, 187, 0);
+	background-color: #29a2d8;
 }
 
 .circle-img-1,
