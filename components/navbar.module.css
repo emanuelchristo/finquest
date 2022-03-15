@@ -36,8 +36,8 @@
 }
 
 .menu-icon-wrapper {
-	width: 3rem;
-	height: 3rem;
+	width: 2.65rem;
+	height: 2.65rem;
 	background-color: var(--card-bg);
 	display: flex;
 	align-items: center;
@@ -69,7 +69,7 @@
 @media (max-width: 767px) {
 	.menu-icon-wrapper {
 		display: flex;
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
 	.menu {
 		display: flex;
@@ -127,7 +127,7 @@
 
 @media (max-width: 639px) {
 	.navbar {
-		padding: 3.0rem 1.25rem 1.25rem 1.25rem;
+		padding: 1rem 1.25rem 1.5rem 1.25rem;
 	}
 	.logo {
 		height: 28px;
