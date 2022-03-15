@@ -38,6 +38,7 @@ p {
 
 button {
 	user-select: none !important;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 @media (max-width: 1279px) {

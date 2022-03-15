@@ -163,7 +163,7 @@ function Card({
 					</li>
 				))}
 			</ul>
-			<a href={waLink(message)} target='_blank' rel='noreferrer noopener'>
+			<a className={styles['action-link']} href={waLink(message)} target='_blank' rel='noreferrer noopener'>
 				<motion.button
 					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.95 }}
