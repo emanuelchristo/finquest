@@ -86,7 +86,7 @@
 }
 .circle-img-2 {
 	background-color: #f090cb;
-	background-image: url('/images/hero-circle-2.png');
+	background-image: url('/images/hero-circle-2.webp');
 	transform: rotate(13deg);
 	bottom: -1rem;
 	right: -6rem;
