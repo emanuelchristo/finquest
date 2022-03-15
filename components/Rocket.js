@@ -9,7 +9,7 @@ export default function Rocket() {
 		<div className='margin relative'>
 			<section className={styles['rocket']}>
 				<div className={styles['heading-wrapper']}>
-					<img src='/images/rocket.png' width='64px' height='auto' alt='' />
+					<img src='/images/rocket.webp' width='64px' height='auto' alt='' />
 					<h2>Join the stock market rocketship</h2>
 					<Link href='#memberships' passHref>
 						<motion.button

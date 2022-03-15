@@ -98,14 +98,14 @@
 	border-radius: 200px;
 	flex-shrink: 0;
 	background-color: #d8c9f3;
-	background-image: url('/images/hero-pill-1.png');
+	background-image: url('/images/hero-pill-1.webp');
 	position: absolute;
 	bottom: -2rem;
 	left: -8rem;
 	transform: rotate(-26deg);
 }
 .pill-img-2 {
-	background-image: url('/images/hero-in-text.png');
+	background-image: url('/images/hero-in-text.webp');
 	background-size: cover;
 	display: none;
 }
@@ -115,7 +115,7 @@
 	height: 5.75rem;
 	margin: 0 1.5rem;
 	border-radius: 200px;
-	background-image: url('/images/hero-in-text.png');
+	background-image: url('/images/hero-in-text.webp');
 	background-color: rgb(255, 187, 0);
 }
 
@@ -246,6 +246,7 @@
 		top: -7rem;
 		height: 5.5rem;
 		width: 7rem;
+		background-position: -13px 0;
 	}
 	.circle-img-1 {
 		top: -7rem;
@@ -265,6 +266,7 @@
 		bottom: -9rem;
 		height: 5.125rem;
 		width: 7rem;
+		background-position: -10px 0;
 	}
 	.twinkle-wrapper {
 		right: 30%;
