@@ -36,6 +36,10 @@ p {
 	height: 5rem;
 }
 
+button {
+	user-select: none !important;
+}
+
 @media (max-width: 1279px) {
 	.margin {
 		padding: 0 5rem;
