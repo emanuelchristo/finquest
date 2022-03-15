@@ -96,11 +96,17 @@
 		padding: 1.5rem 0;
 	}
 	.question {
-		font-size: 1.4rem;
+		font-size: 1.25rem;
 	}
 	.arrow-wrapper {
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 2.25rem;
+		height: 2.25rem;
 		margin-left: 1rem;
+	}
+	.arrow-wrapper svg {
+		width: 14px;
+	}
+	.arrow-wrapper svg path {
+		stroke-width: 2.5;
 	}
 }

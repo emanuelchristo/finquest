@@ -292,21 +292,30 @@
 		font-size: 2.65rem;
 	}
 	.card {
-		padding: 1.5rem;
+		padding: 1.25rem;
 		padding-top: 1.125rem;
 	}
 	.features {
 		height: fit-content !important;
 	}
+	.tick-icon {
+		font-size: 1.2rem;
+	}
+	.features p {
+		font-size: 1rem;
+	}
 	.features li {
 		margin-bottom: 1rem;
 	}
 	.price-wrapper {
-		margin-bottom: 1.75rem;
+		margin-bottom: 1.5rem;
 	}
 	.price-wrapper span {
-		font-size: 0.875rem;
-		margin-left: 0.25rem;
+		font-size: 0.8rem;
+		margin-top: 0.75rem;
+	}
+	.action-button {
+		margin-top: 1.5rem;
 	}
 
 	.twinkle-wrapper-1 {

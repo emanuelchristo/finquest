@@ -24,7 +24,7 @@
 .community h2 {
 	font-size: 3rem;
 	margin-bottom: 1rem;
-	line-height: 1.1;
+	line-height: 1;
 }
 
 .community p {
@@ -145,11 +145,17 @@
 		width: 185px;
 	}
 	.community {
+		margin-top: 6rem;
+		margin-left: -0.25rem;
+		margin-right: -0.25rem;
 		padding-top: 6rem;
+		border-radius: 1rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
 	}
 
 	.features-wrapper {
 		grid-template-columns: 1fr;
-		gap: 1rem;
+		gap: 0.875rem;
 	}
 }
