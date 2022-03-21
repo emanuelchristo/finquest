@@ -1,0 +1,12 @@
+.privacy-policy {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+
+.privacy-policy h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 3rem 0;
+}
