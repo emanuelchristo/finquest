@@ -20,42 +20,12 @@ export default function Hero() {
 		<div className={styles['hero']}>
 			<div className={styles['heading-wrapper']}>
 				<h1>
-					<motion.span
-						viewport={{ once: true }}
-						initial={{ y: 60, opacity: 0 }}
-						animate={{ y: 0, opacity: 1, transition: { type: 'spring', mass: 1.25, delay: 0.5 } }}
-					>
-						Stock market
-					</motion.span>
-					<motion.span
-						viewport={{ once: true }}
-						initial={{ y: 60, opacity: 0 }}
-						animate={{ y: 0, opacity: 1, transition: { type: 'spring', mass: 1.25, delay: 0.75 } }}
-					>
+					<span>Stock market</span>
+					<span>
 						learning
-						<motion.span
-							viewport={{ once: true }}
-							initial={{ scale: 0, opacity: 0, y: 30 }}
-							animate={{
-								scale: 1,
-								opacity: 1,
-								y: 0,
-								transition: {
-									type: 'spring',
-									mass: 1,
-									delay: 0.75,
-								},
-							}}
-							className={styles['in-text-img']}
-						></motion.span>{' '}
-						for
-					</motion.span>
-					<motion.span
-						viewport={{ once: true }}
-						initial={{ y: 60, opacity: 0 }}
-						animate={{ y: 0, opacity: 1, transition: { type: 'spring', mass: 1.25, delay: 1 } }}
-						className={styles['changing-text']}
-					>
+						<span className={styles['in-text-img']}></span> for
+					</span>
+					<span className={styles['changing-text']}>
 						<TypeAnimation
 							wrapper='span'
 							cursor={true}
@@ -75,152 +45,23 @@ export default function Hero() {
 								DELAY,
 							]}
 						/>
-					</motion.span>
+					</span>
 				</h1>
 				<div className={styles['twinkle-wrapper']}>
-					<motion.img
-						viewport={{ once: true }}
-						initial={{ scale: 0, rotate: -90 }}
-						animate={{
-							scale: 1,
-							rotate: 20,
-							transition: {
-								type: 'spring',
-								mass: 1.5,
-								delay: 1.8,
-							},
-						}}
-						className={styles['twinkle-1']}
-						src='/images/twinkle.svg'
-						width='40px'
-						height='auto'
-						alt=''
-					/>
-					<motion.img
-						viewport={{ once: true }}
-						initial={{ scale: 0, rotate: 90 }}
-						animate={{
-							scale: 1,
-							rotate: -20,
-							transition: {
-								type: 'spring',
-								mass: 1.5,
-								delay: 2,
-							},
-						}}
-						className={styles['twinkle-2']}
-						src='/images/twinkle.svg'
-						width='40px'
-						height='auto'
-						alt=''
-					/>
+					<img className={styles['twinkle-1']} src='/images/twinkle.svg' width='40px' height='auto' alt='' />
+					<img className={styles['twinkle-2']} src='/images/twinkle.svg' width='40px' height='auto' alt='' />
 				</div>
-				<motion.div
-					viewport={{ once: true }}
-					initial={{ scale: 0, rotate: 100 }}
-					animate={{
-						scale: 1,
-						rotate: -20,
-						transition: {
-							type: 'spring',
-							mass: 1.5,
-							delay: 1.75,
-						},
-					}}
-					className={styles['square']}
-				></motion.div>
-				<motion.div
-					viewport={{ once: true }}
-					initial={{ scale: 0, x: -20 }}
-					animate={{
-						scale: 1,
-						x: 0,
-						transition: {
-							type: 'spring',
-							mass: 1.5,
-							delay: 1.5,
-						},
-					}}
-					className={styles['circle']}
-				></motion.div>
-				<motion.div
-					viewport={{ once: true }}
-					initial={{ scale: 0, rotate: 100 }}
-					animate={{
-						scale: 1,
-						rotate: -20,
-						transition: {
-							type: 'spring',
-							mass: 1.5,
-							delay: 1.25,
-						},
-					}}
-					className={styles['circle-img-1']}
-				></motion.div>
-				<motion.div
-					viewport={{ once: true }}
-					initial={{ scale: 0, rotate: 100 }}
-					animate={{
-						scale: 1,
-						rotate: 15,
-						transition: {
-							type: 'spring',
-							mass: 1.5,
-							delay: 1.5,
-						},
-					}}
-					className={styles['circle-img-2']}
-				></motion.div>
-				<motion.div
-					viewport={{ once: true }}
-					initial={{ scale: 0, rotate: -90 }}
-					animate={{
-						scale: 1,
-						rotate: 20,
-						transition: {
-							type: 'spring',
-							mass: 1.5,
-							delay: 1.5,
-						},
-					}}
-					className={styles['pill-img-2']}
-				></motion.div>
-				<motion.div
-					viewport={{ once: true }}
-					initial={{ scale: 0, rotate: -90 }}
-					animate={{
-						scale: 1,
-						rotate: 20,
-						transition: {
-							type: 'spring',
-							mass: 1.5,
-							delay: 2,
-						},
-					}}
-					className={styles['pill-img-1']}
-				></motion.div>
+				<div className={styles['square']}></div>
+				<div className={styles['circle']}></div>
+				<div className={styles['circle-img-1']}></div>
+				<div className={styles['circle-img-2']}></div>
+				<div className={styles['pill-img-2']}></div>
+				<div className={styles['pill-img-1']}></div>
 			</div>
-			<motion.p
-				viewport={{ once: true }}
-				initial={{ opacity: 0, y: 50 }}
-				animate={{
-					opacity: 1,
-					y: 0,
-					transition: {
-						type: 'spring',
-						mass: 1,
-						delay: 1.85,
-					},
-				}}
-				className={styles['description']}
-			>
-				Start learning how to invest &amp; trade in stock market easily.
-			</motion.p>
+			<p className={styles['description']}>Start learning how to invest &amp; trade in stock market easily.</p>
 			<div className='flex items-center sm:flex-col sm:w-[65%]'>
 				<Link href='/#memberships' passHref>
 					<motion.button
-						initial={{ scale: 0 }}
-						animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.5 } }}
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95 }}
 						className={styles['talk-button']}
@@ -231,8 +72,6 @@ export default function Hero() {
 				</Link>
 				<Link href='https://api.whatsapp.com/send?phone=918075145434' passHref>
 					<motion.button
-						initial={{ scale: 0 }}
-						animate={{ scale: 1, transition: { type: 'spring', mass: 1.15, delay: 1.65 } }}
 						whileHover={{ scale: 1.05 }}
 						whileTap={{ scale: 0.95 }}
 						className={styles['consultation-button']}
