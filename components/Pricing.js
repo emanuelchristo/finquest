@@ -4,7 +4,7 @@ import styles from './pricing.module.css'
 
 const plans = [
 	{
-		imageLink: '/images/professional-plan.png',
+		imageLink: '/images/professional-plan.webp',
 		planName: 'Professional',
 		price: 10399,
 		cutPrice: 11959,
@@ -24,7 +24,7 @@ const plans = [
 		message: "I would like to join the 'Professional' plan",
 	},
 	{
-		imageLink: '/images/student-plan.png',
+		imageLink: '/images/student-plan.webp',
 		planName: 'Starter',
 		price: 7499,
 		cutPrice: 8999,
@@ -37,7 +37,7 @@ const plans = [
 		message: "I would like to join the 'Starter' plan",
 	},
 	{
-		imageLink: '/images/options-trading-plan.png',
+		imageLink: '/images/options-trading-plan.webp',
 		planName: 'Options Trading',
 		price: 4499,
 		cutPrice: 4940,
