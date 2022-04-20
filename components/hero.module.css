@@ -5,7 +5,7 @@
 	flex-direction: column;
 	position: relative;
 	flex: 1;
-	margin-top: -7rem;
+	margin-top: -8rem;
 }
 
 .hero h1 {
@@ -219,6 +219,7 @@
 @media (max-width: 639px) {
 	.hero {
 		padding: 0 1rem;
+		margin-top: -14rem;
 	}
 	.heading-wrapper {
 		width: 100%;

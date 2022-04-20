@@ -4,6 +4,7 @@
 	justify-content: space-between;
 	padding: 3.1rem 4.5rem 1.5rem 4.5rem;
 	position: relative;
+	z-index: 10;
 }
 
 .links-list {
@@ -59,6 +60,7 @@
 
 @media (max-width: 1023px) {
 	.navbar {
+		margin-top: 1.5rem;
 		padding: 3rem 2rem 1.5rem 2rem;
 	}
 	.links-list li {
@@ -127,7 +129,8 @@
 
 @media (max-width: 639px) {
 	.navbar {
-		padding: 1rem 1.25rem 1.5rem 1.25rem;
+		margin-top: 1.5rem;
+		padding: 1rem 1.25rem 0rem 1.25rem;
 	}
 	.logo {
 		height: 28px;
