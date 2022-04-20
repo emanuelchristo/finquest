@@ -97,7 +97,7 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link href='/terms-and-conditions'>
+								<Link href='/terms-of-service'>
 									<a>Terms of Service</a>
 								</Link>
 							</li>

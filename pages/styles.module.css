@@ -7,6 +7,22 @@
 	max-width: 1440px;
 }
 
+.pricing span {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+	color: black;
+}
+.pricing p {
+	line-height: 1.6;
+	font-size: 1.15rem;
+}
+.pricing b {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+	color: black;
+}
 .heading-wrapper {
 	display: flex;
 	align-items: center;
@@ -84,6 +100,12 @@
 	}
 	.heading-wrapper p {
 		max-width: 400px;
+	}
+	.pricing span {
+		font-size: 1.35rem;
+	}
+	.pricing p {
+		font-size: 1rem;
 	}
 
 

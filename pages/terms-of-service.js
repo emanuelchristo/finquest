@@ -18,16 +18,19 @@ export default function Terms() {
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
-                        <h2>Terms and Condition</h2>
+                        <h2>Terms of Service</h2>
                     </div>
                     <p>
-                        <b> 1. Using the website</b><br />
+                        <span> 1. Using the website</span>
+
+                        <br />
 
                         ‍By using our Website, you are deemed to have accepted the following terms and conditions. If you do not want to be legally bound by these terms and conditions, please do not access or use the Website. We reserve the right to change these terms and conditions at any time and you are advised to review these terms regularly to ensure you are aware of any changes. Your continued use of the Website after such changes are posted will be deemed agreement on your part to these terms and conditions as amended.
                         ‍<br /><br />
-                        <b>
+                        <span>
                             2. Intellectual property
-                        </b><br />
+                        </span>
+                        <br />
                         ‍2.1  Copyright and all intellectual property rights in the content of the website are vested in Finquest and reserved, unless indicated otherwise. The content of the Website belongs to Finquest unless indicated otherwise. You may use the content of the Website subject to the following conditions:<br />
                         (a) It is used for information purposes only<br />
                         (b) It is used only for your own personal, non-commercial use<br />
@@ -35,10 +38,10 @@ export default function Terms() {
                         2.2  Except as expressly provided above, nothing contained on this Website should be construed as conferring any licence or right to use any trade mark or copyright of Finquest's or any third party.<br />
                         ‍<br /><br />
 
-                        <b>
+                        <span>
 
                             ‍3. Submission of comments/contributions to the website and Finquest's blogs
-                        </b><br />
+                        </span><br />
                         ‍3.1  You may submit comments to Finquest, including without limitation for publication on our Blogs.<br />
                         3.2  Any comments submitted in connection with our Blogs are submitted on the basis that we will review and may edit such comments prior to publication on the Website, and that not all submissions will be published. Publication is entirely at the discretion of Finquest. We accept no responsibility or liability in relation to the content of any material posted or published on this Web site by third parties or in relation to contributions by third parties which we publish on the Web site. You are entirely liable for all activities conducted by you or by others authorised by you or otherwise on your behalf.<br />
                         3.3  If and to the extent that you submit any personal data(such as your name and email address) to Finquest through the Blogs, Finquest confirms that it will only use any such personal data for the purposes for which you have provided it.<br />
