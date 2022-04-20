@@ -1,18 +1,9 @@
-import Head from 'next/head'
-import Footer from '../components/Footer'
-import Snackbar from '../components/SnackBar'
-import Navbar from '../components/Navbar'
+
 import styles from './styles.module.css'
 
 export default function Refund() {
     return (
         <div id='home'>
-            <Head>
-                <title>Finquest - Start learning how to invest &amp; trade in stock market easily.</title>
-                <link rel='icon' type='image/png' href='/favicon.png'></link>
-            </Head>
-            <Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
-            <Navbar />
 
 
             <div id='memberships' className='margin'>
@@ -35,7 +26,7 @@ export default function Refund() {
 
 
 
-            <Footer />
+
         </div>
     )
 }
