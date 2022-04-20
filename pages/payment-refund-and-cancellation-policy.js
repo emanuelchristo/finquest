@@ -9,6 +9,7 @@ export default function Refund() {
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
+                        <br /><br />
                         <h2>Refund & Cancellation</h2>
                     </div>
                     <p>
@@ -19,6 +20,7 @@ export default function Refund() {
                         <b>3.</b>  Finquest does not store any of your payment information (debit card, credit card, net banking, etc.) or such other information restricted by the Reserve Bank of India (RBI) for processing payment and has partnered with payment gateways for the payment towards the services In case of any other payment, refund or cancellation issues, decisions will be taken on a case by case basis and Finquest's decision will be final and binding. <br /><br />
                         <b>4.</b>  For any concerns related to payment or refunds, kindly write to hellofinquest@gmail.com <br /><br />
                     </p>
+                    <br /><br />
                 </section>
 
             </div>

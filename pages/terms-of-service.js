@@ -13,6 +13,7 @@ export default function Terms() {
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
+                        <br /><br />
                         <h2>Terms of Service</h2>
                     </div>
                     <p>
@@ -56,7 +57,7 @@ export default function Terms() {
                         3.11 Should you have any complaint regarding any material published on the Website, you can notify us of then a ture and details of your complaint by emailing hellofinquest@gmail.com<br />
                         ‍<br /><br />
 
-                    </p>
+                    </p><br /><br />
                 </section>
 
             </div>

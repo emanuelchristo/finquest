@@ -9,6 +9,7 @@ export default function Privacy() {
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
+                        <br /><br />
                         <h2>Privacy Policy</h2>
                     </div>
 
@@ -59,6 +60,7 @@ export default function Privacy() {
                         ‍If there are changes or additions to this Privacy Policy, we will notify you by posting those changes here. Changes and additions to this Privacy Policy are effective when they are posted. Please check this web page periodically to see any changes we have made to our Privacy Policy.
 
                     </p><br />
+                    <br /><br />
                 </section>
 
             </div>
