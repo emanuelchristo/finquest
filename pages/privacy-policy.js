@@ -21,11 +21,11 @@ export default function Privacy() {
                     </div>
                     <p>
 
-                        <b>The Product Folks</b>  <br />
-                        The Product Folks(“The Product Folks” or “We”) is committed to protecting the privacy of the personally identifiable information that we collect from you as you use this website. The scope of our commitment is detailed in this privacy policy. By submitting information on the website, you agree to our use of such information as described herein.
+                        <b>Finquest</b>  <br />
+                        Finquest(“Finquest” or “We”) is committed to protecting the privacy of the personally identifiable information that we collect from you as you use this website. The scope of our commitment is detailed in this privacy policy. By submitting information on the website, you agree to our use of such information as described herein.
 
                         <br /><br /><b>Minor</b>  <br />
-                        ‍This website is not intentionally designed for or directed at persons 18 years of age or younger, and The Product Folks will not intentionally collect or maintain information about anyone under the age of 18.
+                        ‍This website is not intentionally designed for or directed at persons 18 years of age or younger, and Finquest will not intentionally collect or maintain information about anyone under the age of 18.
                         <br /><br /><b>What personal information do you collect when I visit theproductfolks.com?</b>  <br />
                         What personal information do you collect when I visit theproductfolks.com?
                         ‍We do not require registration for access to theproductfolks.com, but if you participate in any of the activities or services offered by theproductfolks.com, we will collect the personal information that we need in order to provide you with those services. Failure to provide the information that we require in order to complete the registration may prevent or delay the provision of any services to you. The categories of information that we collect from you are:·      Contact details, such as your name, location, IP address, job title, email address and employer's name Information     that you give us relating to the services we provide, such as details of     your requests or queries.
@@ -58,10 +58,10 @@ export default function Privacy() {
                         ‍We may modify or update this Privacy Statement from time to time. You will be able to see when we last updated the Privacy Statement because we will include a revision date. Changes and additions to this Privacy Statement are effective from the date on which they are posted.
                         <br /><br /><b>Security</b>  <br />
 
-                        ‍The Product Folks has implemented generally accepted standards of technology and operation security in order to protectpersonally identifiable information from loss, misuse, alteration or destruction. Notwithstanding these precautions, we cannot guarantee thatunauthorized persons will not obtain access to your personally identifiable information.
+                        ‍Finquest has implemented generally accepted standards of technology and operation security in order to protectpersonally identifiable information from loss, misuse, alteration or destruction. Notwithstanding these precautions, we cannot guarantee thatunauthorized persons will not obtain access to your personally identifiable information.
                         <br /><br /><b>Contact</b>  <br />
 
-                        ‍If you have any questions about this Privacy Statement you can contact us via email at team@theproductfolks.comor using the contact us link.
+                        ‍If you have any questions about this Privacy Statement you can contact us via email at hellofinquest@gamil.com or using the contact us link.
                         <br /><br /><b>Will This Privacy Policy Change?</b>  <br />
 
                         ‍If there are changes or additions to this Privacy Policy, we will notify you by posting those changes here. Changes and additions to this Privacy Policy are effective when they are posted. Please check this web page periodically to see any changes we have made to our Privacy Policy.
