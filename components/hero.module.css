@@ -5,6 +5,7 @@
 	flex-direction: column;
 	position: relative;
 	flex: 1;
+	margin-top: -7rem;
 }
 
 .hero h1 {
