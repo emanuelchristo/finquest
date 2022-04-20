@@ -92,13 +92,19 @@ export default function Footer() {
 						<h3>Company</h3>
 						<ul>
 							<li>
-								<a>Privacy Policy</a>
+								<Link href='/privacy-policy'>
+									<a>Privacy Policy</a>
+								</Link>
 							</li>
 							<li>
-								<a>Terms of Service</a>
+								<Link href='/terms-of-service'>
+									<a>Terms of Service</a>
+								</Link>
 							</li>
 							<li>
-								<a>Refund &amp; Cancellation</a>
+								<Link href='/payment-refund-and-cancellation-policy'>
+									<a>Refund &amp; Cancellation</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

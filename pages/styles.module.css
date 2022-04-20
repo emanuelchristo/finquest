@@ -1,0 +1,113 @@
+.pricing {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	max-width: 1440px;
+}
+
+.pricing span {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+	color: black;
+}
+.pricing p {
+	line-height: 1.6;
+	font-size: 1.15rem;
+}
+.pricing b {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 500;
+	color: black;
+}
+.heading-wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 4rem;
+}
+.heading-wrapper p {
+	margin-top: 1rem;
+	max-width: 470px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+
+
+
+.grid-pattern-1 {
+	position: absolute;
+	top: 6.5rem;
+	left: -7rem;
+	z-index: -1;
+}
+.grid-pattern-2 {
+	position: absolute;
+	bottom: -6.75rem;
+	right: -5rem;
+	z-index: -1;
+}
+
+.pricing-arrow {
+	min-width: 110%;
+	position: absolute;
+	top: 38%;
+	z-index: -1;
+}
+
+@media (max-width: 1356px) {
+	.grid-pattern-2 {
+		right: 15%;
+	}
+
+
+
+}
+
+@media (max-width: 1023px) {
+	.grid-pattern-2 {
+		right: 5%;
+	}
+	.grid-pattern-1 {
+		left: -20%;
+	}
+
+}
+
+
+
+@media (max-width: 767px) {
+	.price-wrapper h3 {
+		font-size: 3rem;
+	}
+
+	.grid-pattern-1 {
+		left: -5rem;
+	}
+	.grid-pattern-2 {
+		right: 0;
+	}
+}
+
+@media (max-width: 639px) {
+	.heading-wrapper {
+		margin-bottom: 2.5rem;
+	}
+	.heading-wrapper p {
+		max-width: 400px;
+	}
+	.pricing span {
+		font-size: 1.35rem;
+	}
+	.pricing p {
+		font-size: 1rem;
+	}
+
+
+
+}
