@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
 				<link rel='icon' type='image/png' href='/favicon.png'></link>
 			</Head>
 			<Navbar />
-			<Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
 			<Component {...pageProps} />
 			<Footer />
 
