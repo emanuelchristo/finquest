@@ -12,6 +12,7 @@ import Quote from '../components/Quote'
 import Reviews from '../components/Reviews'
 import Rocket from '../components/Rocket'
 
+
 export default function Home() {
 	return (
 		<div id='home'>
