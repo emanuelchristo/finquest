@@ -17,23 +17,18 @@ export default function Footer() {
 						<h3>Site</h3>
 						<ul>
 							<li>
-								<Link href='/'>
-									<a>Home</a>
+								<Link href='/privacy-policy'>
+									<a>Privacy Policy</a>
 								</Link>
 							</li>
 							<li>
-								<Link href='/#about'>
-									<a>About us</a>
+								<Link href='/terms-and-conditions'>
+									<a>Terms of Service</a>
 								</Link>
 							</li>
 							<li>
-								<Link href='/#memberships'>
-									<a>Memberships</a>
-								</Link>
-							</li>
-							<li>
-								<Link href='/#faqs'>
-									<a>FAQs</a>
+								<Link href='/payment-refund-and-cancellation-policy'>
+									<a>Refund &amp; Cancellation</a>
 								</Link>
 							</li>
 						</ul>

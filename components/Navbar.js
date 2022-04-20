@@ -63,22 +63,22 @@ export default function Navbar() {
 
 			<ul className={styles['links-list']}>
 				<motion.li variants={item}>
-					<Link href='#about'>
+					<Link href='/#about'>
 						<a>About us</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href='#benefits'>
+					<Link href='/#benefits'>
 						<a>Benefits</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href='#memberships'>
+					<Link href='/#memberships'>
 						<a>Memberships</a>
 					</Link>
 				</motion.li>
 				<motion.li variants={item}>
-					<Link href='#faqs'>
+					<Link href='/#faqs'>
 						<a>FAQs</a>
 					</Link>
 				</motion.li>
@@ -107,7 +107,7 @@ function Menu({ onClose }) {
 			</div>
 			<ul className={styles['menu-links-list']} onClick={onClose}>
 				<motion.li variants={menuItem}>
-					<Link href='#about'>
+					<Link href='/#about'>
 						<a>
 							<FaBuilding className={styles['menu-item-icon']} style={{ color: '#1963ed' }} />
 							<span>About us</span>
@@ -115,7 +115,7 @@ function Menu({ onClose }) {
 					</Link>
 				</motion.li>
 				<motion.li variants={menuItem}>
-					<Link href='#benefits'>
+					<Link href='/#benefits'>
 						<a>
 							<FaStar className={styles['menu-item-icon']} style={{ color: '#f1b915' }} />
 							<span>Benefits</span>
@@ -123,7 +123,7 @@ function Menu({ onClose }) {
 					</Link>
 				</motion.li>
 				<motion.li variants={menuItem}>
-					<Link href='#memberships'>
+					<Link href='/#memberships'>
 						<a>
 							<FaAward className={styles['menu-item-icon']} style={{ color: '#0bab2e' }} />
 							<span>Memberships</span>
@@ -131,7 +131,7 @@ function Menu({ onClose }) {
 					</Link>
 				</motion.li>
 				<motion.li variants={menuItem}>
-					<Link href='#faqs'>
+					<Link href='/#faqs'>
 						<a>
 							<FaQuestion className={styles['menu-item-icon']} style={{ color: '#e71628' }} />
 							<span>FAQs</span>
@@ -139,7 +139,7 @@ function Menu({ onClose }) {
 					</Link>
 				</motion.li>
 				<motion.li variants={menuItem}>
-					<Link href='#community'>
+					<Link href='/#community'>
 						<a>
 							<BsPeopleFill className={styles['menu-item-icon']} style={{ color: '#8117f3' }} />
 							<span>Community</span>
