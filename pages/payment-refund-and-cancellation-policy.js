@@ -1,15 +1,15 @@
 
 import styles from './styles.module.css'
-
+import Navbar from '../components/Navbar'
 export default function Refund() {
     return (
-        <div id='home'>
+        <div id='home' className={styles['home']}>
 
-
+            <Navbar />
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
-                        <br /><br />
+                        <br />
                         <h2>Refund & Cancellation</h2>
                     </div>
                     <p>

@@ -13,10 +13,10 @@ import Reviews from '../components/Reviews'
 import Rocket from '../components/Rocket'
 
 
+
 export default function Home() {
 	return (
 		<div id='home'>
-
 			<Header />
 			<Associated />
 			<div className='section-spacer'></div>

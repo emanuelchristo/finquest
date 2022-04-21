@@ -49,7 +49,6 @@ export default function Navbar() {
 
 	return (
 		<div>
-			<Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
 
 			<motion.nav variants={container} initial='hide' animate='show' className={styles['navbar']}>
 				<Link href='/' passHref>

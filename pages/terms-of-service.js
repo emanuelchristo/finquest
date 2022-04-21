@@ -1,19 +1,18 @@
-import Head from 'next/head'
-import Footer from '../components/Footer'
-import Snackbar from '../components/SnackBar'
-import Navbar from '../components/Navbar'
+
 import styles from './styles.module.css'
+import Navbar from '../components/Navbar'
 
 export default function Terms() {
     return (
-        <div id='home'>
+        <div id='home' className={styles['home']}>
+            <Navbar />
 
 
 
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
-                        <br /><br />
+                        <br />
                         <h2>Terms of Service</h2>
                     </div>
                     <p>

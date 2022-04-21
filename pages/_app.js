@@ -3,7 +3,6 @@ import '../styles/variables.css'
 import '../styles/global.css'
 import Head from 'next/head'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import Snackbar from '../components/SnackBar'
 
 function MyApp({ Component, pageProps }) {
@@ -13,8 +12,9 @@ function MyApp({ Component, pageProps }) {
 				<title>Finquest - Start learning how to invest &amp; trade in stock market easily.</title>
 				<link rel='icon' type='image/png' href='/favicon.png'></link>
 			</Head>
-			<Navbar />
 			<Component {...pageProps} />
+
+			<Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
 			<Footer />
 
 		</div>

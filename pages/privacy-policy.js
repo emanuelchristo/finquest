@@ -1,15 +1,16 @@
 
 import styles from './styles.module.css'
-
+import Navbar from '../components/Navbar'
 export default function Privacy() {
     return (
-        <div id='home'>
+        <div id='home' className={styles['home']}>
 
 
+            <Navbar />
             <div id='memberships' className='margin'>
                 <section className={styles['pricing']}>
                     <div className={styles['heading-wrapper']}>
-                        <br /><br />
+                        <br />
                         <h2>Privacy Policy</h2>
                     </div>
 

@@ -92,6 +92,9 @@
 	.grid-pattern-2 {
 		right: 0;
 	}
+	.home{
+		margin-top: 1.5rem;
+	}
 }
 
 @media (max-width: 639px) {
