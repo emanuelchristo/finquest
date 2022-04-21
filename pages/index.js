@@ -18,6 +18,7 @@ export default function Home() {
 	return (
 		<div id='home'>
 			<Header />
+
 			<Associated />
 			<div className='section-spacer'></div>
 			<About />
