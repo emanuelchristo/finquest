@@ -1,11 +1,11 @@
 import styles from './whyus2.module.css'
-
+import WhyUs1 from './WhyUs1'
 export default function WhyUs2() {
     return (
         <div id='about' className='margin'>
-
+            <WhyUs1 />
             <section className={styles['about']}>
-                <div className={styles['spacer']}></div>
+
                 <div className={styles['content']}>
                     <div className={styles['heading-wrapper']}>
 

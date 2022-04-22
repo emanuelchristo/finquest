@@ -12,7 +12,6 @@ export default function AboutUs() {
             <Navbar />
             <About1 />
             <About2 />
-            <WhyUs1 />
             <WhyUs2 />
             <WhyUs3 />
 
