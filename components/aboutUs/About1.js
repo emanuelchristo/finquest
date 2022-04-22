@@ -8,7 +8,7 @@ export default function About1() {
                     <div className={styles['heading-wrapper']}>
                         <img
                             className={styles['decoration']}
-                            src='/images/lets-talk-decoration.svg'
+                            src='/images/about-us-decoration.svg'
                             width='60px'
                             height='auto'
                             alt=''
