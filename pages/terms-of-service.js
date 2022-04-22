@@ -20,24 +20,24 @@ export default function Terms() {
 
                         <br />
 
-                        ‍By using our Website, you are deemed to have accepted the following terms and conditions. If you do not want to be legally bound by these terms and conditions, please do not access or use the Website. We reserve the right to change these terms and conditions at any time and you are advised to review these terms regularly to ensure you are aware of any changes. Your continued use of the Website after such changes are posted will be deemed agreement on your part to these terms and conditions as amended.
-                        ‍<br /><br />
+                        By using our Website, you are deemed to have accepted the following terms and conditions. If you do not want to be legally bound by these terms and conditions, please do not access or use the Website. We reserve the right to change these terms and conditions at any time and you are advised to review these terms regularly to ensure you are aware of any changes. Your continued use of the Website after such changes are posted will be deemed agreement on your part to these terms and conditions as amended.
+                        <br /><br />
                         <span>
                             2. Intellectual property
                         </span>
                         <br />
-                        ‍2.1  Copyright and all intellectual property rights in the content of the website are vested in Finquest and reserved, unless indicated otherwise. The content of the Website belongs to Finquest unless indicated otherwise. You may use the content of the Website subject to the following conditions:<br />
+                        2.1  Copyright and all intellectual property rights in the content of the website are vested in Finquest and reserved, unless indicated otherwise. The content of the Website belongs to Finquest unless indicated otherwise. You may use the content of the Website subject to the following conditions:<br />
                         (a) It is used for information purposes only<br />
                         (b) It is used only for your own personal, non-commercial use<br />
                         (c) Any copies or downloads of any content from the Website must include a notice that copyright in the relevant material is owned by Finquest<br />
-                        2.2  Except as expressly provided above, nothing contained on this Website should be construed as conferring any licence or right to use any trade mark or copyright of Finquest's or any third party.<br />
-                        ‍<br /><br />
+                        2.2  Except as expressly provided above, nothing contained on this Website should be construed as conferring any licence or right to use any trade mark or copyright of Finquest&apos;s or any third party.<br />
+                        <br /><br />
 
                         <span>
 
-                            ‍3. Submission of comments/contributions to the website and Finquest's blogs
+                            3. Submission of comments/contributions to the website and Finquest&apos;s blogs
                         </span><br />
-                        ‍3.1  You may submit comments to Finquest, including without limitation for publication on our Blogs.<br />
+                        3.1  You may submit comments to Finquest, including without limitation for publication on our Blogs.<br />
                         3.2  Any comments submitted in connection with our Blogs are submitted on the basis that we will review and may edit such comments prior to publication on the Website, and that not all submissions will be published. Publication is entirely at the discretion of Finquest. We accept no responsibility or liability in relation to the content of any material posted or published on this Web site by third parties or in relation to contributions by third parties which we publish on the Web site. You are entirely liable for all activities conducted by you or by others authorised by you or otherwise on your behalf.<br />
                         3.3  If and to the extent that you submit any personal data(such as your name and email address) to Finquest through the Blogs, Finquest confirms that it will only use any such personal data for the purposes for which you have provided it.<br />
                         3.4  Any communications which we receive from you in connection with the Blogs and any material that you transmit or post or submit via this Web site will be deemed non-confidential and non-proprietary and we reserve the right to use the content of such communications for any purpose whatsoever. In relation to such contributions you grant us a perpetual, royalty-free, non-exclusive, sub-licensable right and license to publish, adapt, use, modify ,reproduce, edit, and exercise all copyright and publicity rights with respect to such work world-wide and/or to incorporate it in other works in any media now known or later developed for the full term of any rights that may exist in such content, consistent with the privacy restrictions set forth in the Privacy Policy. If you do not wish to grant such rights to Finquest please do not submit your contribution to this Web site. By submitting your contribution to this Website, you also:<br />
@@ -54,7 +54,7 @@ export default function Terms() {
                         3.9 Finquest reserves the right to fail any messages and/or remove any material whatsoever submitted to our Blogs or otherwise to the Website for any reason. Finquest will not notify the contributor of the material of such failure or removal.<br />
                         3.10 Finquest reserves the right to take any action against any account or user, at any time, for any reason. We may at our discretion terminate your access to the Website or to the registration areas of the Web site, or prevent you from submitting comments via the Website immediately and without giving you advance notice. If you engage in behaviour which breaches these terms and conditions, and we consider such behaviour to be serious and/or repeated, we may use whatever information is available to us to prevent further breaches. If your access to the Website or to registration areas of the Web site is terminated, you may not open another account with us or register again and we reserve the right to terminate any such account or cancel any such registration.<br />
                         3.11 Should you have any complaint regarding any material published on the Website, you can notify us of then a ture and details of your complaint by emailing hellofinquest@gmail.com<br />
-                        ‍<br /><br />
+                        <br /><br />
 
                     </p><br /><br />
                 </section>
