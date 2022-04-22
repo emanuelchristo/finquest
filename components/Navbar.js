@@ -66,7 +66,7 @@ export default function Navbar() {
 
 				<ul className={styles['links-list']}>
 					<motion.li variants={item}>
-						<Link href='/#about'>
+						<Link href='/about'>
 							<a>About us</a>
 						</Link>
 					</motion.li>
@@ -110,7 +110,7 @@ function Menu({ onClose }) {
 			</div>
 			<ul className={styles['menu-links-list']} onClick={onClose}>
 				<motion.li variants={menuItem}>
-					<Link href='/#about'>
+					<Link href='/about'>
 						<a>
 							<FaBuilding className={styles['menu-item-icon']} style={{ color: '#1963ed' }} />
 							<span>About us</span>

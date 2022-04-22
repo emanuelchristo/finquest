@@ -1,5 +1,5 @@
 import styles from './whyus.module.css'
-export default function WhyUs2() {
+export default function WhyUs1() {
     return (
         <div id='about' className='margin'>
             <section className={styles['benefits']}>

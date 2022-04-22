@@ -1,5 +1,5 @@
-.nav-spacer{
-	height: 1rem;
+.about-spacer{
+	height: 2rem;
 
 }
 .pricing {
@@ -115,6 +115,9 @@
 		font-size: 1rem;
 	}
 
-
+	.nav-spacer{
+		height: .5rem;
+	
+	}
 
 }

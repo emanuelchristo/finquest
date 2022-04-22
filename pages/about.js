@@ -11,8 +11,11 @@ export default function AboutUs() {
         <div id='home'>
             <div id='home' className={styles['nav-spacer']}></div>
             <Navbar />
+            <div id='home' className={styles['about-spacer']}></div>
             <About1 />
+            <div id='home' className={styles['about-spacer']}></div>
             <About2 />
+            <div id='home' className={styles['about-spacer']}></div>
             <WhyUs1 />
             <WhyUs2 />
 

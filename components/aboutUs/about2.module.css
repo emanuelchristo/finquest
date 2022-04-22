@@ -1,3 +1,6 @@
+.spacer{
+	height: 2rem;
+}
 .about {
 	display: flex;
 	align-items: center;

@@ -11,6 +11,8 @@ export default function About2() {
 
                         {/* <h2>About us</h2> */}
                     </div>
+
+
                     <p>
                         We have been running finQ programs and have instructed 150 Professionals and Future Leaders in
                         various methods in the stock market to scale their game. We&apos;ve been getting a 100% student
@@ -22,6 +24,8 @@ export default function About2() {
             </section>
             <section className={styles['text']}>
                 <div className={styles['description']}>
+
+
                     <p>
                         At finQ we understand what Indian investors lack,
                         this is not their fault they are just unaware of the methods
