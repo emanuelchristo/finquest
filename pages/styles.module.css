@@ -1,3 +1,7 @@
+.nav-spacer{
+	height: 1rem;
+
+}
 .pricing {
 	margin: 0 auto;
 	display: flex;

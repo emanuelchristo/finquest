@@ -89,6 +89,7 @@
 	}
 	.content {
 		max-width: 490px;
+		text-align: justify;
 	}
 
 	.square {

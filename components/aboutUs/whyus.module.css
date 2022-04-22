@@ -110,11 +110,14 @@
 	.content1 {
 		max-width: 490px;
 		margin: 4rem 0 -4rem 0;
+		text-align: justify;
+		
 
 	}
 	.content2 {
 	max-width: 490px;
 	margin: 1rem 0 0rem 0;
+	text-align: justify;
 
 	}
 
