@@ -1,0 +1,107 @@
+.letstalk {
+	margin: 4rem 0;
+}
+.heading-wrapper {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+}
+.decoration {
+	position: absolute;
+	right: -4rem;
+	top: -2rem;
+}
+.letstalk h2 {
+	text-align: center;
+}
+.letstalk-text {
+	max-width: 470px;
+	margin: auto;
+	text-align: center;
+	line-height: 1.5;
+	font-weight: 500;
+	padding: 0 1rem;
+}
+.letstalk-contact {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.75rem;
+	flex-wrap: wrap;
+}
+.contact-div,
+.contact-div2 {
+	display: flex;
+	align-items: center;
+	padding: 10px 16px;
+	border-radius: 65px;
+	margin: 0.5rem;
+	font-weight: 500;
+	font-size: 16px;
+	white-space: nowrap;
+}
+.contact-div {
+	background: #f4f7f9;
+}
+.contact-div2 {
+	background: #ffe767;
+}
+.contact-div span,
+.contact-div2 span {
+	margin-left: 0.5rem;
+}
+
+.contact-icons-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+.letstalk-icon {
+	height: 72px;
+	width: 72px;
+	border-radius: 100%;
+	background: #f4f7f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0.35rem;
+}
+
+.letstalk-icon img {
+	width: 40px;
+	height: auto;
+}
+
+@media (max-width: 1023px) {
+	.letstalk {
+		margin: 2rem 0 1rem 0;
+	}
+	.decoration {
+		width: 44px;
+		top: -1.5rem;
+		right: -3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.letstalk-icon {
+		width: 64px;
+		height: 64px;
+	}
+
+	.letstalk-icon img {
+		width: 36px;
+		height: auto;
+	}
+}
+
+@media (max-width: 639px) {
+	.letstalk {
+		margin-top: 1.5rem;
+	}
+	.decoration {
+		width: 36px;
+		top: -1.125rem;
+		right: -2.5rem;
+	}
+}
