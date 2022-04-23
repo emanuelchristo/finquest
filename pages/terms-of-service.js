@@ -36,10 +36,10 @@ export default function Terms() {
 						in the relevant material is owned by Finquest learning
 						<br />
 						2.2 Except as expressly provided above, nothing contained on this Website should be construed as
-						conferring any licence or right to use any trade mark or copyright of Finquest learning's or any
-						third party.
+						conferring any licence or right to use any trade mark or copyright of Finquest learning&apos;s
+						or any third party.
 						<br />
-						‍3. Submission of comments/contributions to the website and Finquest learning's blogs
+						‍3. Submission of comments/contributions to the website and Finquest learning&apos;s blogs
 						<br />
 						‍3.1 You may submit comments to Finquest learning, including without limitation for publication
 						on our Blogs.
@@ -79,8 +79,8 @@ export default function Terms() {
 						includes, without limitation, conduct which is unlawful or which may harass or cause distress to
 						any person and the submission or transmission of content which is defamatory, indecent,
 						discriminatory, offensive, abusive, obscene, pornographic, inflammatory, in breach of confidence
-						or privacy or which in the opinion of Finquest learning's may cause offence to any person or
-						damage our reputation. You must not use any abusive or aggressive language, swear, threaten,
+						or privacy or which in the opinion of Finquest learning&apos;s may cause offence to any person
+						or damage our reputation. You must not use any abusive or aggressive language, swear, threaten,
 						harass or abuse any other person, including other users;
 						<br />
 						3.4.4 Agree to indemnify, defend and hold harmless Finquest learning against any claim,
@@ -124,7 +124,7 @@ export default function Terms() {
 						<br />
 						‍<br />
 						<br />
-						<span>‍3. Submission of comments/contributions to the website and Finquest's blogs</span>
+						<span>‍3. Submission of comments/contributions to the website and Finquest&apos;s blogs</span>
 						<br />
 						‍3.1 You may submit comments to Finquest, including without limitation for publication on our
 						Blogs.
