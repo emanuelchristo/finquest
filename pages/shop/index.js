@@ -7,6 +7,8 @@ import ProductLeft from "../../components/shop/ProductLeft";
 import ProductRight from "../../components/shop/ProductRight";
 import Head from 'next/head'
 import Features from "../../components/shop/Features";
+import Navbar from '../../components/Navbar'
+
 
 const Home = ({ inventoryData = [] }) => {
     const inventory = inventoryData.slice(0, 4)
@@ -16,10 +18,8 @@ const Home = ({ inventoryData = [] }) => {
                 <title>Finquest - Start learning how to invest &amp; trade in stock market easily.</title>
                 <link rel='icon' type='image/png' href='/favicon.png'></link>
             </Head>
-            <div className='section-spacer'></div>
-
+            <Navbar />
             <Hero />
-
             <Features />
             <CartLink />
             <div id='products' className='margin'>

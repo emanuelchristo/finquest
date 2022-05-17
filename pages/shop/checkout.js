@@ -7,12 +7,7 @@ import Link from "next/link"
 import Image from "../../components/shop/Image"
 import { v4 as uuid } from "uuid"
 
-import {
-  CardElement,
-  Elements,
-  useStripe,
-  useElements,
-} from "@stripe/react-stripe-js"
+import { CardElement, Elements, useStripe, useElements } from "@stripe/react-stripe-js"
 import { loadStripe } from "@stripe/stripe-js"
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid

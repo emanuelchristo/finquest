@@ -7,6 +7,7 @@ import QuantityPicker from '../../components/shop/QuantityPicker'
 import Image from '../../components/shop/Image'
 import Head from 'next/head'
 import './cart.module.css'
+import Navbar from '../../components/Navbar'
 
 const Cart = ({ context }) => {
   const [renderClientSideComponent, setRenderClientSideComponent] = useState(false)
@@ -38,6 +39,7 @@ const Cart = ({ context }) => {
         <meta name="description" content={`finquest ECommerce - Shopping cart`} />
         <meta property="og:title" content="finquest ECommerce - Cart" key="title" />
       </Head>
+      <Navbar />
       <div className="bg-white py-6 sm:py-8 lg:py-12">
         <div className="max-w-screen-lg px-4 md:px-8 mx-auto">
           <div className="mb-6 sm:mb-10 lg:mb-16">

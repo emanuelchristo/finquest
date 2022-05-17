@@ -4,7 +4,6 @@ import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
 import Link from 'next/link'
-import Snackbar from '../components/SnackBar'
 
 import { FaBuilding, FaStar, FaQuestion, FaAward } from 'react-icons/fa'
 import { BsPeopleFill } from 'react-icons/bs'

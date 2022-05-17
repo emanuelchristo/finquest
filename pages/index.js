@@ -20,7 +20,6 @@ export default function Home() {
 		<div id='home'>
 			<Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
 			<Navbar />
-			<div className='section-spacer'></div>
 			<Header />
 			<Associated />
 			<About />

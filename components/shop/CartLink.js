@@ -1,6 +1,7 @@
 import { useState, useEffect, Fragment } from 'react'
 import { ContextProviderComponent, SiteContext } from '../../context/mainContext'
 import { FaShoppingCart, FaCircle, FaArrowRight } from 'react-icons/fa';
+import { MdDeleteOutline } from 'react-icons/md';
 import { colors } from '../../theme'
 import styles from './cart.module.css'
 import { Dialog, Transition } from '@headlessui/react'
@@ -84,9 +85,9 @@ function CartLink({ context }) {
                   leaveFrom="translate-x-0"
                   leaveTo="translate-x-full"
                 >
-                  <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
-                      <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
+                  <Dialog.Panel className="pointer-events-auto w-screen max-w-md ">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl xsm:pr-1 xsm:max-w-md ">
+                      <div className="flex-1 overflow-y-auto  sm:px-6 m-5">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-lg font-medium text-gray-900"> Shopping cart </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
@@ -122,7 +123,9 @@ function CartLink({ context }) {
                                         <div>
                                           <div className="flex justify-between text-base font-medium text-gray-900">
                                             <h3>
-                                              <a href={`/product/${slugify(item.name)}`}> {item.name} </a>
+                                              <Link href={`/product/${slugify(item.name)}`}>
+                                                <a > {item.name} </a>
+                                              </Link>
                                             </h3>
                                             <p className="ml-4">{DENOMINATION + item.price * item.quantity}</p>
                                           </div>
@@ -144,9 +147,9 @@ function CartLink({ context }) {
                                             <button
                                               onClick={() => removeFromCart(item)}
                                               type="button"
-                                              className="font-medium text-indigo-600 hover:text-indigo-500"
+                                              className="text-2xl text-red-600 hover:text-indigo-500"
                                             >
-                                              Remove
+                                              <MdDeleteOutline />
                                             </button>
                                           </div>
                                         </div>

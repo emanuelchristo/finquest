@@ -14,15 +14,15 @@ export default function QuantityPicker({
     }
 
     <button className="
-w-10 h-10 text-xl md:w-8 md:h-8 md:text-sm cursor-pointer text-center border pb-.5 hover:bg-gray-900 hover:text-white focus:outline-none "
+w-10 h-10 text-xl md:w-8 md:h-8 md:text-sm xsm:w-7 xsm:h-7 xsm:text-md cursor-pointer text-center border pb-.5 hover:bg-gray-900 hover:text-white focus:outline-none "
       onClick={
         increment
       }
 
     >+</button> <p className="
-w-10 h-10 pt-2 text-base md:w-8 md:h-8 md:pt-2 md:text-xs m-0 border-t border-b text-center">{numberOfitems}</p>
+w-10 h-10 pt-2 text-base md:w-8 md:h-8 md:pt-2 md:text-sm xsm:w-7 xsm:h-7 xsm:pt-1 xsm:text-md m-0 border-t border-b text-center">{numberOfitems}</p>
     <button className="
-w-10 h-10 text-2xl md:w-8 md:h-8 md:text-sm cursor-pointer text-center border pb-.5 hover:bg-gray-900 hover:text-white focus:outline-none "
+w-10 h-10 text-2xl md:w-8 md:h-8 md:text-sm xsm:w-7 xsm:h-7 xsm:text-md cursor-pointer text-center border pb-.5 hover:bg-gray-900 hover:text-white focus:outline-none "
       onClick={
         decrement
       }

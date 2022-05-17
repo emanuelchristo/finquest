@@ -12,6 +12,7 @@ import productsColors from '../../utils/products-colors';
 import productsSizes from '../../utils/products-sizes';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from '../../components/Navbar'
 
 const ItemView = (props) => {
   const [numberOfitems, updateNumberOfItems] = useState(1)
@@ -58,6 +59,7 @@ const ItemView = (props) => {
 
   return (
     <>
+      <Navbar />
       <CartLink />
       <ToastContainer />
       <Head>

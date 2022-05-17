@@ -3,8 +3,7 @@ import '../styles/variables.css'
 import '../styles/global.css'
 import Head from 'next/head'
 import Footer from '../components/Footer'
-import Snackbar from '../components/SnackBar'
-import Navbar from '../components/Navbar'
+
 
 function MyApp({ Component, pageProps }) {
 	return (

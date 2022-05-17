@@ -1,4 +1,4 @@
-import { BsFillStarFill, BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ const anim = {
 	rotate: [null, -10, 10],
 	transition: { repeat: Infinity, repeatType: 'reverse', duration: 4 },
 }
-
+console.log(anim);
 export default function Hero() {
 	return (
 		<div className={styles['hero']}>

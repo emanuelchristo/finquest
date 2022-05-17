@@ -28,7 +28,7 @@ export default function ProductLeft({ imageSrc, title, link, price }) {
                     {/* <p>{desc}
                     </p> */}
                     <div className="flex items-end gap-2">
-                        <span className="text-gray-800 text-xl md:text-4xl sm:text-4xl font-bold">
+                        <span className="text-gray-800 text-xl md:text-4xl sm:text-4xl xsm:text-4xl font-bold">
                             ₹{price}
                         </span>
                         <span className="text-red-500 text-xl line-through mb-0.5">₹{price * 1.25}</span>
