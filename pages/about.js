@@ -5,11 +5,13 @@ import WhyUs1 from '../components/aboutUs/WhyUs1'
 import WhyUs2 from '../components/aboutUs/WhyUs2'
 import Navbar from '../components/Navbar'
 import styles from './styles.module.css'
+import Snackbar from '../components/SnackBar'
 
 export default function AboutUs() {
     return (
         <div id='home'>
             <div id='home' className={styles['nav-spacer']}></div>
+            <Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
             <Navbar />
             <div id='home' className={styles['about-spacer']}></div>
             <About1 />

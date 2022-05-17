@@ -1,0 +1,43 @@
+.section {
+    margin-bottom: 70px;
+}
+.section 767px {
+    margin-bottom: 150px;
+}
+.section .section__intro {
+    margin-bottom: 36px;
+}
+.section .section__intro 767px {
+    margin-bottom: 93px;
+}
+.section .section__intro h4 {
+    font-size: 23px;
+    font-weight: 300;
+    text-align: center;
+}
+.section .section__intro h4 767px {
+    font-size: 29px;
+}
+.container {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.container 767px {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container 1024px {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container 1202px {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

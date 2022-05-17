@@ -1,8 +1,11 @@
 import styles from './styles.module.css'
+import Snackbar from '../components/SnackBar'
 import Navbar from '../components/Navbar'
+
 export default function Privacy() {
 	return (
 		<div id='home' className={styles['home']}>
+			<Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
 			<Navbar />
 			<div id='memberships' className='margin'>
 				<section className={styles['pricing']}>

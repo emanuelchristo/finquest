@@ -1,0 +1,457 @@
+.action-link {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.action-button {
+    width: 30%;
+    height: 2.875rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d64e5;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.rocket {
+    margin-top: 3rem;
+}
+
+.heading-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.membership-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: -3rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex-shrink: 0;
+}
+
+.item img {
+    margin-bottom: 2rem;
+    align-self: center;
+    width: 1200px;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.item p {
+    font-size: 1rem;
+}
+
+.item:nth-child(2) {
+    margin-top: 8rem;
+}
+
+.decorations {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+}
+
+.decorations>* {
+    position: absolute;
+}
+
+.blue-red {
+    width: 45px;
+    bottom: -10%;
+    left: 50%;
+}
+
+.violet-yellow {
+    width: 54px;
+    bottom: 0;
+    left: 10%;
+}
+
+.twinkle-1,
+.twinkle-2 {
+    width: 74px;
+}
+
+.rupee {
+    top: 28%;
+    left: 18%;
+}
+
+.safe {
+    top: 45%;
+    left: -1%;
+}
+
+.bank {
+    bottom: -3%;
+    left: -2%;
+}
+
+.piggy-bank {
+    bottom: -4%;
+    left: 27%;
+}
+
+.trend-up {
+    bottom: -8%;
+    right: 25%;
+}
+
+.rocket {
+    right: 3%;
+    bottom: 0;
+}
+
+.wallet {
+    right: -1%;
+    bottom: 25%;
+}
+
+.coins {
+    right: 17%;
+    top: 21%;
+}
+
+.curly-1 {
+    left: 18%;
+    top: 3%;
+}
+
+.curly-2 {
+    right: 28%;
+    top: 32%;
+    transform: scale(-1, 1);
+}
+
+.twinkle-1 {
+    top: 30%;
+    left: 5%;
+}
+
+.twinkle-2 {
+    right: 12%;
+    bottom: -8%;
+    transform: rotate(90deg);
+}
+
+.green {
+    width: 20px;
+    height: 20px;
+    background-color: #2db24e;
+    border-radius: 50%;
+    left: 32%;
+    top: 55%;
+}
+
+.violet {
+    width: 12px;
+    height: 24px;
+    background-color: #875efb;
+    transform: rotate(45deg);
+    top: 45%;
+    right: 35%;
+}
+
+@media (max-width: 1023px) {
+    .decorations {
+        top: 4rem;
+        height: 23rem;
+    }
+
+    .blue-red,
+    .violet-yellow,
+    .twinkle-1,
+    .twinkle-2,
+    .rupee,
+    .safe,
+    .bank,
+    .piggy-bank,
+    .trend-up,
+    .rocket,
+    .wallet,
+    .coins,
+    .curly-1,
+    .curly-2,
+    .twinkle-1,
+    .twinkle-2,
+    .green,
+    .violet {
+        width: 2.5rem;
+
+    }
+
+    .heading-wrapper h2 {
+        font-size: 3rem;
+    }
+
+    .content {
+        margin-top: 2rem;
+        max-width: 768px;
+        flex-wrap: wrap;
+    }
+
+    .item img {
+        width: 800px;
+    }
+
+    .item:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .curly-1 {
+        left: 10%;
+    }
+
+    .curly-2 {
+        top: 20%;
+        right: 20%;
+    }
+
+    .coins {
+        top: 15%;
+        right: 5%;
+    }
+
+    .twinkle-1 {
+        top: 20%;
+    }
+
+    .rupee {
+        left: 15%;
+        top: 15%;
+    }
+
+    .safe {
+        top: 70%;
+        left: 5%;
+    }
+
+    .green {
+        top: 67%;
+        left: 28%;
+    }
+
+    .violet {
+        right: 45%;
+        top: 35%;
+    }
+
+    .violet-yellow {
+        left: 20%;
+        bottom: 10%;
+    }
+
+    .twinkle-2 {
+        bottom: 15%;
+    }
+
+    .blue-red {
+        display: none;
+    }
+
+    .piggy-bank {
+        bottom: 55%;
+        left: 2%;
+    }
+
+    .rocket {
+        right: 12%;
+        bottom: 2%;
+    }
+
+    .bank {
+        left: 10%;
+        bottom: 0%;
+    }
+
+    .trend-up {
+        right: -1%;
+        bottom: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .item img {
+        width: 1000px;
+    }
+
+    .heading-wrapper {
+        max-width: 500px;
+    }
+
+    .heading-wrapper img {
+        width: 52px;
+    }
+
+    .heading-wrapper h2 {
+        margin: 1.25rem 0;
+        font-size: 2.5rem;
+    }
+
+    .heading-wrapper button {
+        height: 3.25rem;
+        padding: 0 1.5rem;
+    }
+
+    .violet-yellow {
+        left: 12%;
+    }
+
+    .blue-red,
+    .violet-yellow,
+    .twinkle-1,
+    .twinkle-2,
+    .rupee,
+    .safe,
+    .bank,
+    .piggy-bank,
+    .trend-up,
+    .rocket,
+    .wallet,
+    .coins,
+    .curly-1,
+    .curly-2,
+    .twinkle-1,
+    .twinkle-2,
+    .green,
+    .violet {
+        width: 2.5rem;
+
+    }
+
+    .decorations {
+        top: 4rem;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 639px) {
+
+    .blue-red,
+    .violet-yellow,
+    .twinkle-1,
+    .twinkle-2,
+    .rupee,
+    .safe,
+    .bank,
+    .piggy-bank,
+    .trend-up,
+    .rocket,
+    .wallet,
+    .coins,
+    .curly-1,
+    .curly-2,
+    .twinkle-1,
+    .twinkle-2,
+    .green,
+    .violet {
+        width: 1.5rem;
+
+    }
+
+    .decorations {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        height: 16rem;
+        z-index: -1;
+    }
+
+    .decorations>* {
+        position: absolute;
+    }
+
+    .rocket {
+        margin-bottom: 3rem;
+    }
+
+    .heading-wrapper h2 {
+        font-size: 2.25rem;
+    }
+
+    .item {
+        max-width: 600px;
+    }
+
+    .green {
+        top: 50%;
+        left: 20%;
+    }
+
+    .violet-yellow {
+        bottom: 17%;
+    }
+
+    .twinkle-1 {
+        top: 25%;
+    }
+
+    .bank {
+        left: 3%;
+    }
+
+    .curly-1 {
+        top: 0;
+        transform: scale(0.8);
+    }
+
+    .curly-2 {
+        right: 18%;
+        top: 19%;
+        transform: scale(0.8);
+    }
+
+    .bank {
+        bottom: -4%;
+    }
+
+    .rocket {
+        bottom: -3%;
+        right: 4%;
+    }
+
+    .safe {
+        top: 55%;
+        left: 2%;
+    }
+
+    .rupee {
+        top: 17%;
+        left: 11%;
+    }
+
+    .piggy-bank {
+        display: none;
+    }
+}

@@ -81,6 +81,11 @@ export default function Navbar() {
 						</Link>
 					</motion.li>
 					<motion.li variants={item}>
+						<Link href='/shop'>
+							<a>Goodies</a>
+						</Link>
+					</motion.li>
+					<motion.li variants={item}>
 						<Link href='/#faqs'>
 							<a>FAQs</a>
 						</Link>
@@ -130,6 +135,14 @@ function Menu({ onClose }) {
 						<a>
 							<FaAward className={styles['menu-item-icon']} style={{ color: '#0bab2e' }} />
 							<span>Memberships</span>
+						</a>
+					</Link>
+				</motion.li>
+				<motion.li variants={menuItem}>
+					<Link href='/shop'>
+						<a>
+							<FaAward className={styles['menu-item-icon']} style={{ color: '#0bab2e' }} />
+							<span>Goodies</span>
 						</a>
 					</Link>
 				</motion.li>

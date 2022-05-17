@@ -216,7 +216,7 @@ export default function Hero() {
 			>
 				Start learning how to invest &amp; trade in stock market easily.
 			</motion.p>
-			<div className='flex items-center sm:flex-col sm:w-[65%]'>
+			<div className='flex w-2/3  flex-col sm:w-[65%] sm:flex-row sm:justify-center lg:justify-start gap-2.5'>
 				<Link href='/#memberships' passHref>
 					<motion.button
 						initial={{ scale: 0 }}

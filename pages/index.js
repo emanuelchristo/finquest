@@ -11,16 +11,18 @@ import Pricing from '../components/Pricing'
 import Quote from '../components/Quote'
 import Reviews from '../components/Reviews'
 import Rocket from '../components/Rocket'
-
+import Snackbar from '../components/SnackBar'
+import Navbar from '../components/Navbar'
 
 
 export default function Home() {
 	return (
 		<div id='home'>
-			<Header />
-
-			<Associated />
+			<Snackbar message=' 🎉  Flat ₹2499 off for first 50 people!' />
+			<Navbar />
 			<div className='section-spacer'></div>
+			<Header />
+			<Associated />
 			<About />
 			<div className='section-spacer'></div>
 			<Rocket />

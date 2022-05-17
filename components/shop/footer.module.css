@@ -1,0 +1,151 @@
+.footer {
+	background-color: var(--footer-bg);
+	display: flex;
+	flex-direction: column;
+	padding: 6rem 7rem;
+	padding-bottom: 0;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+.bottom {
+	display: flex;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	background-color: rgba(255, 255, 255, 0.01);
+	padding: 2rem 0;
+	justify-content: center;
+	margin: 0 -10rem;
+	margin-top: 4rem;
+}
+.bottom p {
+	text-align: center;
+	font-size: 1rem;
+}
+
+.left {
+	margin-right: 2rem;
+}
+
+.logo {
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+.copyright {
+	font-size: 1.125rem;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.right {
+	display: flex;
+}
+
+.link-group {
+	margin-right: 7rem;
+}
+.link-group:last-child {
+	margin-right: 3rem;
+}
+
+.link-group h3 {
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.link-group ul li {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 0.5rem;
+	white-space: nowrap;
+	transition: 0.15s ease color;
+}
+.link-group ul li:hover {
+	color: #fff;
+}
+
+.social-wrapper {
+	display: flex;
+	align-items: center;
+}
+.social-icon {
+	margin-right: 0.5rem;
+}
+
+@media (max-width: 1279px) {
+	.footer {
+		padding: 5rem;
+		padding-bottom: 0;
+	}
+	.link-group {
+		margin-right: 5rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	.footer {
+		padding: 5rem 3rem;
+		padding-bottom: 0;
+	}
+	.link-group {
+		margin-right: 3rem;
+	}
+	.link-group:last-child {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 4rem 2rem 0 2rem;
+	}
+	.bottom {
+		margin-top: 0;
+		padding: 1.5rem 0;
+		font-size: 0.875rem;
+		justify-content: center;
+	}
+	.top {
+		flex-direction: column;
+	}
+	.left {
+		margin-bottom: 3rem;
+	}
+	.right {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.link-group {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 639px) {
+	.logo {
+		height: 28px;
+	}
+	.copyright {
+		font-size: 1rem;
+	}
+	.left {
+		margin-bottom: 1.5rem;
+	}
+	.footer {
+		flex-direction: column;
+		padding: 4rem 1.25rem 0rem 1.25rem;
+	}
+	.link-group h3 {
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+	}
+	.link-group ul li {
+		font-size: 1rem;
+		margin-bottom: 0.325rem;
+	}
+
+	.bottom p {
+		padding: 0 12rem;
+	}
+}
