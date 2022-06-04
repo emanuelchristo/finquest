@@ -17,7 +17,7 @@ export default function WhyUs1() {
                         Collaboration and support are the keys to success. Learning is a lifelong
                         endeavor. We are, nevertheless, the finest at delivering everything we
                         recommend. Community-based training is a hidden gem that gives you a lot
-                        more than just basic skills when it comes to stock trading. Cosmic Wealth
+                        more than just basic skills when it comes to stock trading. Finquest
                         is a network that allows you to trade alongside the greatest in the country,
                         ensuring that you never fall behind the times.
                     </p>
