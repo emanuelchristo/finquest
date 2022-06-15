@@ -214,7 +214,7 @@ export default function Hero() {
 				}}
 				className={styles['description']}
 			>
-				Start learning how to invest &amp; trade in stock market easily.
+				The most affordable stock market  learning platform that cares about you.
 			</motion.p>
 			<div className='flex items-center sm:flex-col sm:w-[65%]'>
 				<Link href='/#memberships' passHref>
