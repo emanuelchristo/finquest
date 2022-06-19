@@ -6,9 +6,9 @@ const plans = [
 	{
 		imageLink: '/images/professional-plan.webp',
 		planName: 'Professional',
-		price: 10399,
+		price: 9499,
 		cutPrice: 11959,
-		discount: '15% off',
+		discount: '21% off',
 		duration: '2 months',
 		features: [
 			// 'Course duration - 1 month',
