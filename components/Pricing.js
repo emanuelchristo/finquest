@@ -26,9 +26,9 @@ const plans = [
 	{
 		imageLink: '/images/student-plan.webp',
 		planName: 'Starter',
-		price: 7499,
+		price: 6999,
 		cutPrice: 8999,
-		discount: '20% off',
+		discount: '23% off',
 		duration: '1 month',
 		color: 'yellow',
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],
