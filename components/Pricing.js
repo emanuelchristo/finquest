@@ -6,9 +6,9 @@ const plans = [
 	{
 		imageLink: '/images/professional-plan.webp',
 		planName: 'Professional',
-		price: 10399,
+		price: 9499,
 		cutPrice: 11959,
-		discount: '15% off',
+		discount: '21% off',
 		duration: '2 months',
 		features: [
 			// 'Course duration - 1 month',
@@ -26,9 +26,9 @@ const plans = [
 	{
 		imageLink: '/images/student-plan.webp',
 		planName: 'Starter',
-		price: 7499,
+		price: 6999,
 		cutPrice: 8999,
-		discount: '20% off',
+		discount: '23% off',
 		duration: '1 month',
 		color: 'yellow',
 		features: ['Intraday trading', 'Swing trading', 'Commodity', 'Long term'],

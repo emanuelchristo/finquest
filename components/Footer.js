@@ -32,6 +32,16 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
+								<Link href='/#shop'>
+									<a>Shop</a>
+								</Link>
+							</li>
+							<li>
+								<Link href='/about/#hiring'>
+									<a>Hiring</a>
+								</Link>
+							</li>
+							<li>
 								<Link href='/#faqs'>
 									<a>FAQs</a>
 								</Link>
