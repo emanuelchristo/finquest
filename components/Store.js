@@ -4,12 +4,13 @@ import { IoBagHandle } from 'react-icons/io5'
 
 export default function Store() {
 	return (
-		<div className='margin'>
+		<div className='margin' id='shop'>
 			<section className={styles['store']}>
 				<img className={styles['image']} src='/images/store.png' alt='' width='440px' height='auto' />
 				<div className={styles['spacer']}></div>
 				<div className={styles['content']}>
-					<h2>Checkout our store</h2>
+					<span className={styles['intro']}>INTRODUCING</span>
+					<h2>Finshop</h2>
 					<p>Our premium trader-wear store is here to give all traders something they’ll love.</p>
 					<div className={styles['coming-soon']}>
 						<a href='' onClick={(event) => event.preventDefault()} rel='noreferrer noopener'>
