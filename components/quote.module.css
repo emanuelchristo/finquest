@@ -31,6 +31,7 @@
 }
 .image {
 	margin-left: -10rem;
+	z-index: 10;
 }
 
 .community-button {
