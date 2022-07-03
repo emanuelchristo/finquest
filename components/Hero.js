@@ -216,7 +216,7 @@ export default function Hero() {
 			>
 				The most affordable stock market  learning platform that cares about you.
 			</motion.p>
-			<div className='flex items-center sm:flex-col sm:w-[65%]'>
+			<div className='flex w-2/3  flex-col sm:w-[65%] sm:flex-row justify-center gap-2.5'>
 				<Link href='/#memberships' passHref>
 					<motion.button
 						initial={{ scale: 0 }}
