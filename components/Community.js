@@ -1,20 +1,21 @@
 import { FaChalkboardTeacher, FaPoll, FaHistory, FaUsers } from 'react-icons/fa'
 import styles from './community.module.css'
-
 export default function Community() {
 	return (
 		<div className='margin' id='community'>
 			<section className={styles['community']}>
 				<img className={styles['image']} src='/images/community.webp' alt='' width='260px' height='auto' />
 				<h2>Join the community</h2>
-				<p>A community to empower traders &amp; investors to make a living out of their passion</p>
+				<p>Become a part of the fastest-growing community of stock market traders.</p>
 				<div className={styles['pills-wrapper']}>
 					<div className={`${styles['pill']} ${styles['white']}`}>
 						Free unlimited access for enrolled members
 					</div>
+
 					<div className={styles['pill']}>
-						<span style={{ fontWeight: 600 }}>₹499</span> per year for others
+						<span style={{ fontWeight: 600 }}>₹199</span> per year for others
 					</div>
+
 				</div>
 				<div className={styles['features-wrapper']}>
 					<div className={styles['feature']}>
