@@ -2,11 +2,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 3.1rem 4.5rem 1.5rem 4.5rem;
+	padding: 2rem 4.5rem 1.5rem 4.5rem;
 	position: relative;
 	z-index: 3;
-	margin-top: -2rem;
-
 }
 
 .links-list {
@@ -122,8 +120,7 @@
 	}
 	.navbar {
 		padding: 2rem 1.5rem 1.5rem 1.5rem;
-		margin-top: .3rem;
-
+		margin-top: 0.3rem;
 	}
 	.talk-button {
 		display: none;
@@ -134,17 +131,13 @@
 	.navbar {
 		padding: 1rem 1.25rem 0rem 1.25rem;
 		margin-top: -1.5rem;
-		
 	}
 	.logo {
 		height: 28px;
 	}
 }
 @media (max-width: 767px) {
-
 	.navbar {
-
 		margin-top: -1rem;
-		
 	}
 }

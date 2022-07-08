@@ -4,7 +4,6 @@ import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import styles from './navbar.module.css'
 import Link from 'next/link'
-import Snackbar from '../components/SnackBar'
 
 import { FaBuilding, FaStar, FaQuestion, FaAward } from 'react-icons/fa'
 import { BsPeopleFill } from 'react-icons/bs'
@@ -49,7 +48,6 @@ export default function Navbar() {
 
 	return (
 		<div>
-
 			<motion.nav variants={container} initial='hide' animate='show' className={styles['navbar']}>
 				<Link href='/' passHref>
 					<motion.img
@@ -98,7 +96,8 @@ export default function Navbar() {
 					</motion.button>
 				</Link>
 				{showMenu && <Menu onClose={() => setShowMenu(false)} />}
-			</motion.nav></div>
+			</motion.nav>
+		</div>
 	)
 }
 
