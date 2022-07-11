@@ -3,7 +3,6 @@ import { MdCardMembership } from 'react-icons/md'
 import Link from 'next/link'
 
 import styles from './rocket.module.css'
-
 export default function Rocket() {
 	return (
 		<div className='margin relative'>
