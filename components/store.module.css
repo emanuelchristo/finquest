@@ -8,17 +8,27 @@
 .coming-soon>span {
     background: #FBCD29;
     border-radius: 8px;
-    font-weight: 600;
-    font-size: 13px;
     padding: .5rem 1rem .5rem 1rem;
     line-height: 100%;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
 }
 
 .intro {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #343B45;
 }
 
 .store {
+
     display: flex;
     align-items: center;
     width: fit-content;
@@ -27,6 +37,23 @@
     flex-direction: row-reverse;
 
 }
+
+.heading-wrapper {
+    position: relative;
+    width: fit-content;
+
+}
+
+.store-decor {
+    position: absolute;
+    width: 4rem;
+    height: auto;
+    left: -4rem;
+    top: -4rem;
+
+}
+
+
 
 .image {
     width: 44%;
@@ -52,11 +79,18 @@
 .content p {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 175%;
+    color: #343B45;
 
 }
 
 .content h2 {
-    line-height: 1.1;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+
 }
 
 
@@ -133,5 +167,13 @@
     .phone-no {
         font-size: 1.1rem;
         margin-right: 1rem;
+    }
+
+    .store-decor {
+        width: 2rem;
+        height: auto;
+        left: -1.5rem;
+        top: -1.5rem;
+
     }
 }
