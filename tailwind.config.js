@@ -9,12 +9,12 @@ module.exports = {
         "primary-color": "#99d34f",
         "text-grey": "#959da8",
         "card-bg": "#f4f7f9",
-        "green": "#2db24e",
-        "blue": "#0d64e5",
-        "yellow": "#F5D627",
+        green: "#2db24e",
+        blue: "#0d64e5",
+        yellow: "#F5D627",
         "footer-bg": "#161818",
-        "buttonblue": "#163af4"
-        
+        buttonblue: "#163af4",
+        lightblue: "#f3fbff",
       },
     },
     screens: {
