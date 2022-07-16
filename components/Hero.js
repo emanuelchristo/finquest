@@ -1,4 +1,4 @@
-import { BsFillStarFill, BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 import { MdCardMembership } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import Link from 'next/link'

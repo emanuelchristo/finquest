@@ -1,137 +1,163 @@
 .coming-soon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
 }
 
-.coming-soon>span {
-    background: #FBCD29;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 13px;
-    padding: .5rem 1rem .5rem 1rem;
-    line-height: 100%;
+.coming-soon > span {
+	background: #fbcd29;
+	border-radius: 6px;
+	padding: 0.5rem 0.5rem 0.4rem 0.5rem;
+	line-height: 100%;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: default;
 }
 
 .intro {
-    font-size: 13px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 100%;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: var(--text-grey);
 }
 
 .store {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: row-reverse;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	margin: 0 auto;
+	width: 100%;
+	flex-direction: row-reverse;
+}
 
+.heading-wrapper {
+	position: relative;
+	width: fit-content;
+}
+
+.store-decor {
+	position: absolute;
+	width: 3.5rem;
+	height: auto;
+	left: -4rem;
+	top: -4rem;
 }
 
 .image {
-    width: 44%;
-    max-width: 100%;
-    background-image: url('/images/store.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-shrink: 2;
+	width: 44%;
+	max-width: 100%;
+	background-image: url('/images/store.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	flex-shrink: 2;
 }
 
 .spacer {
-    width: 5rem;
-    height: 5rem;
-    flex-shrink: 0;
+	width: 5rem;
+	height: 5rem;
+	flex-shrink: 0;
 }
 
 .content {
-    max-width: 32rem;
-    flex-shrink: 1;
+	max-width: 32rem;
+	flex-shrink: 1;
 }
 
 .content p {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-
+	margin: 1rem 0 1.5rem 0;
 }
 
 .content h2 {
-    line-height: 1.1;
+	font-weight: 600;
+	line-height: 1.2;
 }
 
-
 .phone-no {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    margin-right: 1.5rem;
-    white-space: nowrap;
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 1rem 0;
+	margin-right: 1.5rem;
+	white-space: nowrap;
 }
 
 .store-button {
-    height: 3.75rem;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    color: #fff;
-    border-radius: 100px;
-    background: #163AF4;
-    opacity: 0.6;
-    border-radius: 67px;
+	height: 3.75rem;
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+	color: #fff;
+	border-radius: 100px;
+	background: #163af4;
+	opacity: 0.6;
+	border-radius: 67px;
 }
 
 .whatsapp-icon {
-    font-size: 1.35rem;
+	font-size: 1.35rem;
 }
 
 .store-button span {
-    font-weight: 600;
-    margin-left: 0.6rem;
-    margin-top: 0.125rem;
+	font-weight: 600;
+	margin-left: 0.6rem;
+	margin-top: 0.125rem;
 }
 
 @media (max-width: 1279px) {
-    .spacer {
-        width: 3rem;
-        height: 3rem;
-    }
+	.spacer {
+		width: 3rem;
+		height: 3rem;
+	}
 }
 
 @media (max-width: 1023px) {
-    .spacer {
-        width: 2rem;
-        height: 2rem;
-    }
+	.spacer {
+		width: 2rem;
+		height: 2rem;
+	}
 
-    .phone-no {
-        font-size: 1.15rem;
-    }
+	.phone-no {
+		font-size: 1.15rem;
+	}
 }
 
 @media (max-width: 767px) {
-    .image {
-        width: 100%;
-        max-width: 400px;
-        padding: 0 1rem;
-    }
+	.image {
+		width: 100%;
+		max-width: 400px;
+		padding: 0 1rem;
+	}
 
-    .store {
-        flex-direction: column;
-    }
+	.store {
+		flex-direction: column;
+	}
 
-    .spacer {
-        height: 1rem;
-    }
+	.spacer {
+		height: 1rem;
+	}
 
-    .store-button {
-        height: 3.25rem;
-        padding: 0 1.5rem;
-    }
+	.store-button {
+		height: 3.25rem;
+		padding: 0 1.5rem;
+	}
 }
 
 @media (max-width: 639px) {
-    .phone-no {
-        font-size: 1.1rem;
-        margin-right: 1rem;
-    }
+	.phone-no {
+		font-size: 1.1rem;
+		margin-right: 1rem;
+	}
+
+	.store-decor {
+		width: 2.5rem;
+		height: auto;
+		left: 8rem;
+		top: -2rem;
+	}
 }

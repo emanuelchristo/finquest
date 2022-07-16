@@ -3,7 +3,7 @@ import styles from './reviews.module.css'
 const reviews = [
 	{
 		imageLink: '/images/jerry-james-vargheese.jpg',
-		name: 'Jerry James Varghese',
+		name: 'Jerry Zachariah James',
 		title: 'Air traffic controller, Chennai airport',
 		rating: 5,
 		review: `The stock market always fascinated me, but time was an issue for me due to my work. That is when finQ provided me with flexible timing,where I could learn anytime I wished.`,
