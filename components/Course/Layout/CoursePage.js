@@ -8,9 +8,11 @@ import Curriculum from '../CurriculumBuilt/Curriculum'
 import CommunityLayout from '../CommunityAccess/CommunityLayout'
 import GotAQuestion from '../GotAQuestion/GotAQuestion'
 import CourseFee from '../CourseFee/CourseFee'
+import Hero from '../Hero/Hero'
 const CoursePage = () => {
   return (
     <>
+    <Hero/>
 <WhatYouWillLearn/>
 
 <HowWillYouSpent/>

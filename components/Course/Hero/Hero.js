@@ -1,0 +1,50 @@
+// import React from 'react'
+// const Hero = () => {
+//   return (<>
+//     <div className="grid grid-cols-3">
+//         <div className='col-span-2'>
+//   <div className="bg-pink-400 text-white flex rounded-lg px-2 py-1 text-sm font-semibold max-w-fit">
+//           BEGINNER
+//         </div>
+
+//         <img src="/images/heroimage.png" alt="" srcset="" />
+//     </div>
+//     <img src="/images/ad.png" alt="hero" className="hero-image" />
+//     </>)
+import React from "react";
+import Button from "../common/Buttons/Button";
+import GrayBox from "./GrayBox";
+
+import { AiFillStar } from "react-icons/ai";
+import MainContent from "./MainContent";
+import DetailsAndReview from "./DetailsAndReview";
+import ButtonAndDiscount from "./ButtonAndDiscount";
+import Cards from "./Cards";
+import LastDate from "./LastDate";
+const Hero = () => {
+
+  return (
+    <>
+      <div className="grid grid-cols-3 margin space-x-12 space-y-10 md:auto-rows-max md:grid-cols-1">
+        <div className="col-span-2 md:row-start-2 md:row-end-3 md:col-span-1">
+          <div className="grid grid-row-4 space-y-8">
+            <MainContent/>
+           <DetailsAndReview/>
+            <ButtonAndDiscount/>
+            <div>
+              <Cards/>
+              <LastDate/>
+            </div>
+          </div>
+        </div>
+<div className="md:flex md:justify-center md:items-center">
+
+        <img src="/images/heroimage.png" alt="" width={454} height={579} className="md:h-[234px] md:w-auto " />
+</div>
+      </div>
+      <img src="/images/ad.png" alt="hero" className="hero-image" />
+    </>
+  );
+};
+
+export default Hero;

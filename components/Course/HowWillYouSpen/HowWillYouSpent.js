@@ -31,7 +31,7 @@ const HowWillYouSpent = () => {
   ];
   return (
     <>
-      <div className="container flex flex-col items-center justify-center gap-6 ">
+      <div className="container flex flex-col items-center justify-center gap-6 margin">
         <Image src="/images/hourglass.png" alt="" width="62px" height="62px"/>
         <h2 className="text-center">How Will You spend Your Time</h2>
         <div className="grid grid-cols-2 gap-5 justify-center items-center sm:grid-cols-1">

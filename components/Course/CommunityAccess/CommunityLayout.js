@@ -7,7 +7,9 @@ const CommunityLayout = () => {
     <>
 
         <Community />
-        <div className="grid justify-center items-center my-10">
+        <div className="margin">
+
+        <div className="flex justify-center items-center my-10">
 
         <Button
             ButtonText="Enroll for &#8377;5999"
@@ -15,6 +17,7 @@ const CommunityLayout = () => {
             BgColor="buttonyellow"
             TextColor="black"
           />
+        </div>
         </div>
     </>
   )

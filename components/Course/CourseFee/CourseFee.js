@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../common/Buttons/Button";
-import styles from "./CourseFee.module.css";
+import styles from "../common/css/CourseFee.module.css";
 const CourseFee = () => {
   return (
     <>
@@ -32,7 +32,7 @@ const CourseFee = () => {
             </div>
             <div className="grid grid-rows-2 md:justify-center md:items-center">
               <div className="grid grid-cols-2 lg:grid-cols-1">
-                <div className="flex md:justify-center md:items-center">
+                <div className="flex md:justify-center md:items-center justify-start items-center">
                   <div className="text-blue text-5xl font-bold leading-10 ">
                     &#8377;5999
                   </div>

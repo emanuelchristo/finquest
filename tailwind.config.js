@@ -15,6 +15,8 @@ module.exports = {
         "footer-bg": "#161818",
         buttonblue: "#163af4",
         lightblue: "#f3fbff",
+        lightgreen:"#E9FFCC",
+        lightblack:"#343B45"
       },
     },
     screens: {
