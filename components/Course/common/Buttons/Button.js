@@ -52,7 +52,7 @@ const Button = ({ ButtonText, IconName, BgColor, TextColor }) => {
     if(ButtonText.includes("Enroll for")){
       setredirecturl(waLink(data.message));
     }
-    if(ButtonText=="Curriculum"){
+    if(ButtonText=="Curriculum" || ButtonText=="curriculum"){
       setredirecturl(`/course/${courseid}`);
     }
     if(ButtonText==="Talk to us"){
