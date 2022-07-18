@@ -175,7 +175,10 @@ const CoursePageData = {
       },
     ],
     emiavailable: true,
-    message: "I would like to join the 'Options trading' plan"
+    message: "I would like to join the 'Options trading' plan",
+    curriculum:{
+      
+    }
   },
   starter: {
     id: "starter",
@@ -336,6 +339,9 @@ const CoursePageData = {
     ],
     emiavailable: true,
     message: "I would like to join the 'Starter' plan",
+    curriculum:{
+
+    }
   },
   professional: {
     id: "professional",
@@ -496,6 +502,9 @@ const CoursePageData = {
     ],
     emiavailable: true,
     message: "I would like to join the 'Professional' plan",
+    curriculum:{
+      
+    }
   },
 };
 
