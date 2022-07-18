@@ -2,7 +2,25 @@ import Image from "next/image";
 import React from "react";
 import Button from "../common/Buttons/Button";
 import styles from "../common/css/CourseFee.module.css";
+import CoursePageData from "../data/CoursePageData";
+import { useRouter } from "next/router";
 const CourseFee = () => {
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [data,setdata]=React.useState({});
+  React.useEffect(()=>{
+    switch(courseid){
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+       case "starter":
+        setdata(CoursePageData.starter);
+    }
+  },[courseid]);
+
   return (
     <>
       <div className="margin">
@@ -25,7 +43,8 @@ const CourseFee = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-2xl whitespace-nowrap">
-                  EMI Available
+              {data.emiavailable&&"EMI Available"}    
+              {!data.emiavailable&&"EMI Not Available"}
                 </h3>
                 <p>Contact us</p>
               </div>
@@ -34,19 +53,19 @@ const CourseFee = () => {
               <div className="grid grid-cols-2 lg:grid-cols-1 md:space-y-4">
                 <div className="flex md:justify-center md:items-center justify-start items-center md:space-x-3">
                   <div className="text-blue text-5xl font-bold leading-10 ">
-                    &#8377;5999
+                   {data.newprice}
                   </div>
                   <div className="flex flex-col items-center justify-center">
                     <span
                       className={`${styles.strikethrough} opacity-75 font-medium text-2xl`}
                     >
-                      &#8377;8999
+                     {data.oldprice}
                     </span>
                   </div>
                 </div>
                 <div className="flex flex-col justify-center items-start md:items-center">
                   <img
-                    src="/icons/50.png"
+                    src={data.offerimageurl}
                     alt=""
                     width="78px"
                     height="27px"

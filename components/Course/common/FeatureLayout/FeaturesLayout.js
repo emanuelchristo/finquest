@@ -1,45 +1,40 @@
 import styles from './featurelayout.module.css'
 import IconAndText from '../IconAndText/IconAndText'
-const features = [
-	{
-		iconLink: '/icons/benefit-6.png',
-		title: 'Money management techniques',
-		
-	},
-	{
-		iconLink: '/icons/benefit-2.png',
-		title: 'Price action strategies',
-		
-	},
-	{
-		iconLink: '/icons/benefit-4.png',
-		title: 'Momentum scanner tool',
-		
-	},
-	{
-		iconLink: '/icons/benefit-1.svg',
-		title: 'Chart pattern analysis',
-		
-	},
-	{
-		iconLink: '/icons/benefit-pace.png',
-		title: 'Position sizing'
-	},
+import { useRouter } from 'next/router'
+import CoursePageData from '../../data/CoursePageData'
+import React from 'react'
 
-	{
-		iconLink: '/icons/benefit-goal.png',
-		title: 'Intelligent target and stop loss',
-	},
-]
-
-export default function FeaturesLayout() {
+export default function FeaturesLayout({indicator}) {
+	const router = useRouter();
+	const { courseid } = router.query;
+	const [data,setdata]=React.useState({});
+	React.useEffect(()=>{
+	  switch(courseid){
+		case "options":
+		  setdata(CoursePageData.options);
+		  break;
+		case "professional":
+		  setdata(CoursePageData.professional);
+		  break;
+		 case "starter":
+		  setdata(CoursePageData.starter);
+	  }
+	},[courseid]);
+	const [indicatord,setindicatord]=React.useState(indicator);
+	console.log(data.whoisthisfor)
 	return (
 		<div id='benefits' className='margin'>
 			<section className={styles['benefits']}>
 				<div className={styles['content-wrapper']}>
-					{features.map((item, index) => (
+					{indicatord==="whatyouwilllearn" &&data[`whatyouwilllearn`]?.map((item, index) => (
 						<IconAndText key={index} iconLink={item.iconLink} title={item.title} body={item.body} />
 					))}
+					{indicatord==="whoisthisfor" &&data[`whoisthisfor`]?.map((item, index) => (
+						<IconAndText key={index} iconLink={item.iconLink} title={item.title} body={item.body} />
+					))}
+						
+					
+
 				</div>
 			</section>
 		</div>

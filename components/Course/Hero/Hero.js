@@ -12,16 +12,31 @@
 //     <img src="/images/ad.png" alt="hero" className="hero-image" />
 //     </>)
 import React from "react";
-import Button from "../common/Buttons/Button";
-import GrayBox from "./GrayBox";
 
-import { AiFillStar } from "react-icons/ai";
 import MainContent from "./MainContent";
 import DetailsAndReview from "./DetailsAndReview";
 import ButtonAndDiscount from "./ButtonAndDiscount";
 import Cards from "./Cards";
 import LastDate from "./LastDate";
+import { useRouter } from "next/router";
+import CoursePageData from "../data/CoursePageData";
+
 const Hero = () => {
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [data,setdata]=React.useState({});
+  React.useEffect(()=>{
+    switch(courseid){
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+       case "starter":
+        setdata(CoursePageData.starter);
+    }
+  },[courseid]);
 
   return (
     <>
@@ -30,7 +45,7 @@ const Hero = () => {
           <div className="grid grid-row-4 space-y-8">
             <div>
             <div className="bg-pink-400 text-white flex rounded-lg px-2 py-1 text-sm font-semibold max-w-fit">
-                BEGINNER
+                {data.toughness}
               </div>
             <MainContent/>
             </div>

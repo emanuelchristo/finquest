@@ -1,6 +1,7 @@
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import styles from './pricing.module.css'
+import Link from 'next/link'
 
 const plans = [
 	{
@@ -22,6 +23,7 @@ const plans = [
 		tag: 'Popular Program',
 		tagColor: '#790DE5',
 		message: "I would like to join the 'Professional' plan",
+		goto: '/professional',
 	},
 	{
 		imageLink: '/images/student-plan.webp',
@@ -35,6 +37,7 @@ const plans = [
 		tag: 'Most Enrolled',
 		tagColor: '#D22C2C',
 		message: "I would like to join the 'Starter' plan",
+		goto: '/starter',
 	},
 	{
 		imageLink: '/images/options-trading-plan.webp',
@@ -45,6 +48,7 @@ const plans = [
 		duration: '1 month',
 		features: ['FNO trading', 'Stock options', 'Option buying', 'Option selling'],
 		message: "I would like to join the 'Options trading' plan",
+		goto: '/options',
 	},
 ]
 
@@ -84,6 +88,8 @@ export default function Pricing() {
 							tagColor={item.tagColor}
 							message={item.message}
 							maxFeatLen={max}
+							goto={item.goto}
+
 						/>
 					))}
 					<div className={styles['twinkle-wrapper-1']}>
@@ -138,6 +144,7 @@ function Card({
 	tagColor,
 	message,
 	maxFeatLen,
+	goto
 }) {
 	return (
 		<div className={`${styles['card']} ${color === 'yellow' ? styles['yellow-card'] : ''}`}>
@@ -163,15 +170,18 @@ function Card({
 					</li>
 				))}
 			</ul>
-			<a className={styles['action-link']} href={waLink(message)} target='_blank' rel='noreferrer noopener'>
+			<Link href={`/course/${goto}`}>
+			<a className={styles['action-link']}  rel='noreferrer noopener'>
 				<motion.button
 					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.95 }}
 					className={styles['action-button']}
 				>
 					JOIN NOW
+				
 				</motion.button>
 			</a>
+			</Link>
 		</div>
 	)
 }

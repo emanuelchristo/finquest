@@ -2,21 +2,24 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import Detail from "./Detail";
 import Review from "./Review";
+import { useRouter } from "next/router";
+import CoursePageData from "../data/CoursePageData";
 const DetailsAndReview = () => {
-  const Detaildata = [
-    {
-      heading: "₹ 500",
-      content: "Min Capital",
-    },
-    {
-      heading: "Malayalam",
-      content: "Language",
-    },
-    {
-      heading: "1 month",
-      content: "Duration",
-    },
-  ];
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [data,setdata]=React.useState({});
+  React.useEffect(()=>{
+    switch(courseid){
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+       case "starter":
+        setdata(CoursePageData.starter);
+    }
+  },[courseid]);
   return (
     <div>
       
@@ -27,7 +30,7 @@ const DetailsAndReview = () => {
         
       <div className="flex space-x-16 md:space-x-0 md:space-x-10 md:justify-center">
 
-        {Detaildata.map((item, index) => {
+        {data["details"]?.map((item, index) => {
           return (
             <>
               <Detail
@@ -35,7 +38,7 @@ const DetailsAndReview = () => {
                 heading={item.heading}
                 content={item.content}
               />
-              {Detaildata.length - 1 !== index && (
+              {data["details"]- 1 !== index && (
                 <div className="w-2 border-r border-[#DCDCDC] h-12 flex items-center justify-center md:hidden "></div>
               )}
             </>

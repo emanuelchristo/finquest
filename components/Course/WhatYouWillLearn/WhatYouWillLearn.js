@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../common/Buttons/Button'
 import FeaturesLayout from '../common/FeatureLayout/FeaturesLayout'
 const WhatYouWillLearn = () => {
+
   return (
     <>
     <div className="margin">
@@ -11,7 +12,7 @@ const WhatYouWillLearn = () => {
 
     <Button ButtonText="Curriculum" IconName="Book" BgColor="buttongreen" TextColor="white"/>
     </div>
-<FeaturesLayout/>
+<FeaturesLayout indicator="whatyouwilllearn"/>
     </div>
     </>
   )

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import GrayWrapper from '../common/Wrappers/GrayWrapper'
 const Container = ({duration,title,content,color}) => {
+  
     const [bgcolor,setbgcolor]=React.useState(color)
     useEffect(()=>{
         if(color==='buttonblue'){

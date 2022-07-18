@@ -1,16 +1,29 @@
 import React from 'react'
-
+import { useRouter } from 'next/router'
+import CoursePageData from "../data/CoursePageData"
 const MainContent = () => {
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [data,setdata]=React.useState({});
+  React.useEffect(()=>{
+    switch(courseid){
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+       case "starter":
+        setdata(CoursePageData.starter);
+    }
+  },[courseid]);
   return (
     <>
              
     <div className='md:text-center md:flex md:flex-col md:justify-center md:items-center'>
-              <h2 className='md:w-[12ch] w-[15ch] '>Lorem ipsum dolor sit amet</h2>
+              <h2 className='md:w-[12ch] w-[15ch] '>{data.title}</h2>
               <p className='w-[60ch] xl:w-[50ch] lg:[35ch] md:w[25ch] sm:w-[35ch]'>
-                A 5 week cohort-based program that will build your knowledge
-                around Stock market, Personal finance, Money basics with a
-                community that is a hub for the Stock market experts &
-                enthusiasts.
+                {data.description}
               </p>
             </div>
             </>
