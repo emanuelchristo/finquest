@@ -4,7 +4,7 @@ import styles from "../common/css/CourseFee.module.css";
 const ButtonAndDiscount = () => {
   return (
     <div>
-    <div className="flex md:flex-col md:justify-center md:items-center">
+    <div className="flex md:flex-col md:justify-center md:items-center space-x-3">
       <Button
         ButtonText="Enroll for &#8377; 5999"
         IconName="card"

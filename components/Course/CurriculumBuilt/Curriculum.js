@@ -16,7 +16,7 @@ const Curriculum = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-5 margin">
       <Image src="/images/book.png" alt="" width="68px" height="68px" />
-      <h2>Curriculum built by the best</h2>
+      <h2 className="md:text-center">Curriculum built by the best</h2>
       <div className="flex gap-5 flex-wrap justify-center items-center">
         {data.map((item, index) => {
           return (<div key={index}>

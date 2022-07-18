@@ -19,7 +19,7 @@ const Cards = () => {
         },
       ];
   return (
-    <div className="flex space-x-6 md:flex-col md:space-y-6 flex-wrap md:space-x-0 md:space-y-6 md:justify-center md:items-center">
+    <div className="flex space-x-6 md:flex-col md:space-x-0 md:space-y-6 md:justify-center md:items-center mb-10">
     {carddata.map((item, index) => {
       return (
         <GrayBox

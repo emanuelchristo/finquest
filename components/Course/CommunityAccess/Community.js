@@ -3,7 +3,7 @@ import styles from './community.module.css'
 
 export default function Community() {
 	return (
-		<div className='margin' id='community'>
+		<div className='margin md:pt-10' id='community'>
 			<section className={styles['community']}>
 				<img className={styles['image']} src='/images/community.webp' alt='' width='260px' height='auto' />
 				<h2>Community access</h2>

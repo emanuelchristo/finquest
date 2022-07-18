@@ -19,12 +19,13 @@ const DetailsAndReview = () => {
   ];
   return (
     <div>
-      <div className="flex space-x-16 flex-wrap">
+      
+      <div className="flex space-x-16 md:grid md:space-x-0 md:space-y-3 xl:flex-wrap xl:space-y-5">
         
 
       <Review/>
         
-      <div className="flex space-x-16 md:space-x-0 md:flex-col md:text-center md:space-y-10">
+      <div className="flex space-x-16 md:space-x-0 md:flex-col md:text-center md:space-y-5 ">
 
         {Detaildata.map((item, index) => {
           return (

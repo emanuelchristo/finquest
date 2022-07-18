@@ -21,7 +21,7 @@ const Container = ({duration,title,content,color}) => {
    {duration}
   </div>
   <h3 className='font-semibold text-2xl'>{title}</h3>
-  <p className='w-[40ch] font-normal text-sm text-black'>{content}</p>
+  <p className='w-[40ch] font-normal text-sm text-black md:w-[30ch]'>{content}</p>
 </GrayWrapper>
   )
 }

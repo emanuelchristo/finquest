@@ -4,8 +4,8 @@ const Detail = ({heading,content}) => {
   return (
 
     <div>
-    <div className="font-semibold text-xl">{heading}</div>
-    <div className="font-medium text-base text-lightblack">
+    <div className="font-semibold text-xl whitespace-nowrap">{heading}</div>
+    <div className="font-medium text-base text-lightblack whitespace-nowrap">
    {content}
     </div>
         
