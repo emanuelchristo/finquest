@@ -7,7 +7,10 @@ const WhatYouWillLearn = () => {
     <div className="margin">
 
     <h2 className='md:text-center mb-2'>What You will Learn</h2>
+    <div className="flex">
+
     <Button ButtonText="Curriculum" IconName="Book" BgColor="buttongreen" TextColor="white"/>
+    </div>
 <FeaturesLayout/>
     </div>
     </>

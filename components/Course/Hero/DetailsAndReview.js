@@ -25,7 +25,7 @@ const DetailsAndReview = () => {
 
       <Review/>
         
-      <div className="flex space-x-16 md:space-x-0 md:flex-col md:text-center md:space-y-5 ">
+      <div className="flex space-x-16 md:space-x-0 md:space-x-10 md:justify-center">
 
         {Detaildata.map((item, index) => {
           return (

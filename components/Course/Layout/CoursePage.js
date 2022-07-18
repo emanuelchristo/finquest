@@ -19,8 +19,8 @@ const CoursePage = () => {
 <WhoIsThisFor/>
     <Curriculum/>
     <CommunityLayout/>
-    <Faqs/>
     <CourseFee/>
+    <Faqs/>
     <GotAQuestion/>
 
     
