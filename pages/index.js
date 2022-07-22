@@ -14,11 +14,11 @@ import Rocket from '../components/Rocket'
 import Store from '../components/Store'
 
 
+
 export default function Home() {
 	return (
 		<div id='home'>
 			<Header />
-
 			<Associated />
 			<div className='section-spacer'></div>
 			<About />
@@ -42,9 +42,13 @@ export default function Home() {
 
 			<Letstalk />
 			<div className='section-spacer'></div>
-
 			<Community />
 
 		</div>
 	)
 }
+
+
+
+
+
