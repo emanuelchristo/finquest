@@ -10,35 +10,13 @@ import { useState } from "react";
 import Modal from "./Modal";
 import { ToastContainer, toast } from "react-toastify";
 
-export default function Community({ notify }) {
+export default function Community() {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
-  if (notify) {
-    toast.success("🦄 Wow so easy!", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-  }
+
   return (
     <div className="margin" id="community">
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-      <ToastContainer />
       <section className={styles["community"]}>
         <img
           className={styles["image"]}
