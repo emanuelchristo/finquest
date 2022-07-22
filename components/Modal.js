@@ -4,7 +4,6 @@ import styles from "./modal.module.css";
 import { BsBookHalf } from "react-icons/bs";
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
-import Community from "./Community";
 
 const chat_id = process.env.chat_id;
 const bot_id = process.env.bot_id;
@@ -55,7 +54,6 @@ const Modal = ({ handleClose }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [formSubmitted, setFormSubmitted] = useState(false);
   function join(e) {
     e.preventDefault();
     sendMessage(
@@ -63,9 +61,7 @@ const Modal = ({ handleClose }) => {
       "html",
       chat_id
     );
-    setFormSubmitted(true);
     handleClose();
-    <Community notify={formSubmitted} />;
   }
 
   return (

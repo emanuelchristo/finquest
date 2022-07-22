@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    z-index: 99;
+    z-index: 999;
 }
 
 .popup {
