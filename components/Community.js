@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from "./community.module.css";
 import { useState } from "react";
 import Modal from "./Modal";
-import { ToastContainer, toast } from "react-toastify";
 
 export default function Community() {
   const [modalOpen, setModalOpen] = useState(false);

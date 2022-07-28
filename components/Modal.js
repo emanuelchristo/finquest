@@ -4,6 +4,7 @@ import styles from "./modal.module.css";
 import { BsBookHalf } from "react-icons/bs";
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const chat_id = process.env.chat_id;
 const bot_id = process.env.bot_id;
@@ -56,16 +57,46 @@ const Modal = ({ handleClose }) => {
   const [phone, setPhone] = useState("");
   function join(e) {
     e.preventDefault();
-    sendMessage(
-      `<a href="https://www.finqlearning.com/images/quote.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
-      "html",
-      chat_id
-    );
-    handleClose();
+    try {
+      sendMessage(
+        `<a href="https://www.finqlearning.com/images/quote.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
+        "html",
+        chat_id
+      );
+      toast.success("Hurray! we'll contact you shortly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } catch (error) {
+      toast.error("Sorry Something went wrong", {
+        position: "top-right",
+      });
+    }
+    setEmail("");
+    setName("");
+    setPhone("");
   }
 
   return (
     <Backdrop onClick={handleClose}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      {/* Same as */}
+      <ToastContainer />
       <motion.div
         onClick={(e) => e.stopPropagation()}
         className={styles["modal"]}
@@ -121,6 +152,7 @@ const Modal = ({ handleClose }) => {
                 type="text"
                 id="name"
                 name="name"
+                value={name}
                 placeholder="Enter your name"
                 required
                 onChange={(e) => {
@@ -133,6 +165,7 @@ const Modal = ({ handleClose }) => {
               <input
                 type="text"
                 id="email"
+                value={email}
                 name="email"
                 placeholder="Enter your email"
                 onChange={(e) => {
@@ -158,6 +191,7 @@ const Modal = ({ handleClose }) => {
                 name="phone"
                 placeholder="Enter your phone number"
                 required
+                value={phone}
                 onChange={(e) => {
                   setPhone(e.target.value);
                 }}
