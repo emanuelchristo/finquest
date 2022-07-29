@@ -129,7 +129,7 @@ const Modal = ({ handleClose }) => {
                 <span>
                   <p>
                     <img src="./images/modal-off-rect.svg" alt="" />
-                    <div>50% off</div>
+                    <div>67% off</div>
                   </p>
                 </span>
               </span>
