@@ -13,10 +13,10 @@ export default function Hiring() {
         />
         <span className={styles["text"]}>DEMO CLASS</span>
         <h2>Book a free live class now!</h2>
-        <p>We&apos;re looking for people who want make stock</p>
+        <p>Fill your details and select a date for your live class</p>
         <div className={styles["feature"]}>
           <a
-            href={waLink("Book me a free live class now!")}
+            href="https://calendly.com/finquest"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -47,11 +47,4 @@ export default function Hiring() {
       </section>
     </div>
   );
-}
-function waLink(msg) {
-  let url = "https://api.whatsapp.com/send?";
-  let params = new URLSearchParams("");
-  params.append("phone", "918075145434");
-  params.append("text", msg);
-  return url + params.toString();
 }
