@@ -9,7 +9,6 @@
     border-radius: 1.5rem;
     padding: 3rem 1.5rem 5rem 1.5rem;
     position: relative;
-    margin: 8rem 0;
 }
 
 .suitcase {
@@ -186,7 +185,6 @@
     }
 
     .consultation {
-        margin-top: 6rem;
         margin-left: -0.25rem;
         margin-right: -0.25rem;
         padding-top: 6rem;
@@ -198,5 +196,13 @@
     .features-wrapper {
         grid-template-columns: 1fr;
         gap: 0.875rem;
+    }
+}
+
+@media (max-width: 434px) {
+
+    .arrow-2,
+    .arrow-1 {
+        width: 5rem;
     }
 }
