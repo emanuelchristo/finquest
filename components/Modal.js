@@ -71,6 +71,9 @@ const Modal = ({ handleClose }) => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
+        onClose: setTimeout(() => {
+          handleClose();
+        }, 5000),
       });
     } catch (error) {
       toast.error("Sorry Something went wrong", {
