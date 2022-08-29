@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import styles from "./hero.module.css";
 
-const GrayBox = ({imagepath,content1,content2}) => {
+const GrayBox = ({ imagepath, content1, content2 }) => {
   return (
-   <div className='bg-card-bg flex flex-col items-center justify-center py-4 px-6 w-52 h-32 rounded-2xl'>
-   <img src={imagepath} alt="" width="20" height="20" />
-   <div className='text-center text-base font-semibold'>{content1}</div>
-   <div className='text-center text-base font-semibold'>{content2}</div>
-   </div>
-  )
-}
+    <div className={styles.greybox}>
+      <img src={imagepath} />
+      <div>
+        <div className={styles.greybox_text}>{content1}</div>
+        <div className={styles.greybox_text}>{content2}</div>
+      </div>
+    </div>
+  );
+};
 
-export default GrayBox
+export default GrayBox;

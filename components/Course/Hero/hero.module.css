@@ -5,6 +5,7 @@
     align-items: center;
     padding: 0px;
     gap: 8px;
+    margin: 0 3rem;
 
 }
 
@@ -113,12 +114,16 @@
     text-align: center;
     color: #FFFFFF;
 }
+
 /* ButtonAndDiscount */
 .strikethrough {
     position: relative;
-  }
-  
-  .strikethrough:before {
+    font-weight: 500;
+    font-size: 21.5361px;
+    line-height: 100%;
+}
+
+.strikethrough:before {
     position: absolute;
     content: "";
     left: 0;
@@ -131,7 +136,52 @@
     -ms-transform: rotate(-17deg);
     -o-transform: rotate(-17deg);
     transform: rotate(-17deg);
-  }
+}
+
+.buttons_and_discount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+}
+
+.greybox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 12px;
+    width: 12.563rem;
+    height: 8.063rem;
+    background: #F4F7F9;
+    border-radius: 16px;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.greybox>img {
+    width: 2.5rem;
+    height: auto;
+}
+
+.greybox_text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 115%;
+    text-align: center;
+    color: #000000;
+}
 
 @media (max-width: 1279px) {}
 
@@ -151,6 +201,21 @@
         margin: 2rem 0;
         align-items: center;
     }
+
+    /* ButtonAndDiscount */
+    .strikethrough {
+        font-size: 25px;
+    }
+
+    .buttons_and_discount {
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
 
 }
 
@@ -172,4 +237,44 @@
     }
 }
 
-@media (max-width: 639px) {}
+@media (max-width: 639px) {
+    .course {
+        margin: 2rem;
+    }
+
+    /* ButtonAndDiscount */
+    .strikethrough {
+        font-size: 30px;
+    }
+
+    .buttons_and_discount {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    .greybox {
+        gap: 12px;
+        width: 80%;
+        border-radius: 16px;
+        align-self: center;
+        padding: 5rem;
+    }
+
+    .greybox>img {
+        width: 3rem;
+    }
+
+    .greybox_text {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
