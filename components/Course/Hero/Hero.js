@@ -40,7 +40,7 @@ const Hero = () => {
           <img src="/images/heroimage.png" alt="image" />
         </div>
       </div>
-      <img src="/images/ad.png" alt="hero" className="my-10 md:my-0 md:mb-4" />
+      <img src="/images/ad.png" alt="hero" className={styles.logos} />
     </>
   );
 };
