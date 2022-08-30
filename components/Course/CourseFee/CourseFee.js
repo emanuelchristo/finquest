@@ -30,9 +30,31 @@ const CourseFee = () => {
           <div className={styles.fee}>
             <h2>Course fee</h2>
             <p>Tortor, ac enim aliquam turpis nibh tempus.</p>
-            <a href="">Enroll Now</a>
+            <Button
+              className={styles.button}
+              ButtonText={`Enroll Now`}
+              IconName="card"
+              BgColor="buttonyellow"
+              TextColor="black"
+            />
           </div>
-          <div className={styles.details}></div>
+          <div className={styles.details}>
+            <div>
+              <div>
+                <h3>4 Months</h3>
+                <span>Duration</span>
+              </div>
+              <div>
+                <h3>EMI Available</h3>
+                <span>Contact us</span>
+              </div>
+            </div>
+            <div>
+              <div>₹5999------------------</div>
+              <div>(Including GST)</div>
+              <div>Total price</div>
+            </div>
+          </div>
         </div>
       </div>
     </>

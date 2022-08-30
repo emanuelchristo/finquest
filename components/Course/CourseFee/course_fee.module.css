@@ -1,1 +1,31 @@
-.course_fee {}
+.course_fee {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+    gap: 19rem;
+    isolation: isolate;
+    width: fit-content;
+    background: #F3FBFF;
+    border-radius: 24px;
+
+}
+
+.course_fee>.fee>p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #343B45;
+    margin-bottom: 1rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.details>div:nth-child(1) {
+    display: flex;
+    gap: 3rem;
+}
