@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Button from "../common/Buttons/Button";
 // import styles from "../common/css/CourseFee.module.css";
@@ -60,14 +59,19 @@ const CourseFee = () => {
                 <span>Duration</span>
               </div>
               <div>
-                <h3>EMI Available</h3>
+                <h3>
+                  {data.emiavailable && "EMI Available"}
+                  {!data.emiavailable && "EMI Not Available"}
+                </h3>
                 <span>Contact us</span>
               </div>
             </div>
             <div className={styles.price}>
               <div>
-                <h2>₹5999</h2>
-                <div className={styles["cut-price-wrapper"]}>₹{8999}</div>
+                <h2>{data.newprice}</h2>
+                <div className={styles["cut-price-wrapper"]}>
+                  {data.oldprice}
+                </div>
 
                 <img
                   src={data["offerimageurl"]}

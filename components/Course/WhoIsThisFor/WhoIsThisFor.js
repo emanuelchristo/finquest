@@ -42,6 +42,7 @@ const WhoIsThisFor = () => {
           BgColor="buttonyellow"
           TextColor="black"
         />
+        <div style={{ marginBottom: "3rem" }}></div>
         <FeaturesLayout indicator="whoisthisfor" />
       </div>
     </>

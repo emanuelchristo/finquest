@@ -37,7 +37,6 @@ const DetailsAndReview = () => {
                 />
                 {data["details"] - 1 !== index && (
                   <div className={styles.separator}></div>
-                  // <div className="w-2 border-r border-[#DCDCDC] h-12 flex items-center justify-center md:hidden "></div>
                 )}
               </>
             );
