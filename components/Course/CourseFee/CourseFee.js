@@ -28,6 +28,21 @@ const CourseFee = () => {
       <div className="margin">
         <div className={styles.course_fee}>
           <div className={styles.fee}>
+            <img
+              className={styles["arrow-1"]}
+              src="/images/course_fee-arrow.svg"
+              width="140px"
+              height="auto"
+              alt=""
+            />
+            <img
+              className={styles["arrow-2"]}
+              src="/images/course_fee-arrow.svg"
+              width="140px"
+              height="auto"
+              alt=""
+            />
+
             <h2>Course fee</h2>
             <p>Tortor, ac enim aliquam turpis nibh tempus.</p>
             <Button
@@ -49,10 +64,21 @@ const CourseFee = () => {
                 <span>Contact us</span>
               </div>
             </div>
-            <div>
-              <div>₹5999------------------</div>
-              <div>(Including GST)</div>
-              <div>Total price</div>
+            <div className={styles.price}>
+              <div>
+                <h2>₹5999</h2>
+                <div className={styles["cut-price-wrapper"]}>₹{8999}</div>
+
+                <img
+                  src={data["offerimageurl"]}
+                  alt=""
+                  width="78px"
+                  height="27px"
+                  className="imageclass"
+                />
+              </div>
+              <h1>(Including GST)</h1>
+              <span>Total price</span>
             </div>
           </div>
         </div>

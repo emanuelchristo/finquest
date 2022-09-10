@@ -1,14 +1,20 @@
 .course_fee {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    align-content: stretch;
     padding: 4rem;
-    gap: 19rem;
+    /* gap: 19rem; */
     isolation: isolate;
-    width: fit-content;
     background: #F3FBFF;
     border-radius: 24px;
+    overflow: hidden;
 
+}
+
+.course_fee>.fee {
+    position: relative;
 }
 
 .course_fee>.fee>p {
@@ -28,4 +34,95 @@
 .details>div:nth-child(1) {
     display: flex;
     gap: 3rem;
+}
+
+.details>div>div>h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.details>div>div>span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #343B45;
+}
+
+.price>div {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.price>div:nth-child(1)>h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #0D64E5;
+}
+
+.price>h1 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.price>span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #343B45;
+}
+
+.arrow-1 {
+    position: absolute;
+    left: -3rem;
+    top: -7rem;
+    z-index: 1;
+    width: 9rem;
+    transform: rotate(180deg);
+}
+
+.arrow-2 {
+    position: absolute;
+    right: 0rem;
+    bottom: -5.5rem;
+    transform: rotate(360deg);
+    z-index: 1;
+    width: 9rem;
+}
+
+.cut-price-wrapper {
+    font-weight: 500;
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+.cut-price-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.9rem;
+    transform: rotate(-5deg);
+    display: inline-block;
+    width: 105%;
+    background-color: rgba(217, 15, 15, 0.9);
+    height: 3px;
+}
+
+@media (max-width: 767px) {
+    .course_fee {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
 }
