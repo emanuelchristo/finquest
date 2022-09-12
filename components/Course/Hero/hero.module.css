@@ -224,9 +224,7 @@
 }
 
 @media (max-width: 767px) {
-    .maincontent {
-        text-align: center;
-    }
+
 
     .maincontent>h2 {
         width: 100%;
@@ -247,16 +245,31 @@
 }
 
 @media (max-width: 639px) {
+    .maincontent>h2 {
+        font-size: 40px;
+    }
+
+
+    .toughness {
+        font-size: 11px;
+    }
+
+    .details_review {
+        margin: 0rem 0;
+
+    }
+
     .course {
         margin: 2rem;
     }
 
     /* ButtonAndDiscount */
     .strikethrough {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .buttons_and_discount {
+        margin-top: 2rem;
         justify-content: center;
         flex-wrap: wrap;
         align-self: center;
@@ -284,6 +297,6 @@
 
     .greybox_text {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
