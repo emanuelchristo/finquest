@@ -34,7 +34,8 @@
 
 .details>div:nth-child(1) {
     display: flex;
-    gap: 3rem;
+    justify-items: stretch;
+    justify-content: space-between;
 }
 
 .details>div>div>h3 {
@@ -56,7 +57,7 @@
 .price>div {
     display: flex;
     align-items: center;
-    gap: .6rem;
+    gap: 16px;
 }
 
 .price>div:nth-child(1)>h2 {
@@ -138,9 +139,50 @@
 
 }
 
-@media (max-width: 476px) {
+@media (max-width: 576px) {
     .arrow-2 {
         right: -3rem;
         bottom: -29.5rem;
+    }
+
+    .course_fee>.fee>p {
+        font-size: 16px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+
+    .details>div>div>h3 {
+        font-size: 20px;
+    }
+
+    .details>div>div>span {
+        font-size: 14px;
+    }
+
+    .price>div {
+        gap: 10px;
+    }
+
+    .price>div:nth-child(1)>h2 {
+        font-size: 38px;
+    }
+
+    .price>h1 {
+        font-size: 30px;
+    }
+
+    .price>span {
+        font-size: 14px;
+    }
+
+
+
+    .cut-price-wrapper {
+        font-size: 1.3rem;
     }
 }
