@@ -11,9 +11,8 @@
 
 .content {
     display: flex;
+    width: 100%;
     flex-direction: column;
-
-
 }
 
 .toughness {
@@ -245,6 +244,7 @@
 }
 
 @media (max-width: 639px) {
+
     .maincontent>h2 {
         font-size: 40px;
     }
@@ -298,5 +298,13 @@
     .greybox_text {
         font-weight: 600;
         font-size: 16px;
+    }
+}
+
+@media (max-width: 639px) {
+
+    .details {
+        justify-content: space-between;
+        gap: 0;
     }
 }
