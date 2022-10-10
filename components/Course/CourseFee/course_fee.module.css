@@ -96,7 +96,7 @@
 .arrow-2 {
     position: absolute;
     right: 0rem;
-    bottom: -5.5rem;
+    bottom: -6.5rem;
     transform: rotate(360deg);
     z-index: 1;
     width: 9rem;
@@ -140,9 +140,15 @@
 }
 
 @media (max-width: 576px) {
+    .arrow-1 {
+        width: 7rem;
+        top: -5rem;
+    }
+
     .arrow-2 {
+        width: 7rem;
         right: -3rem;
-        bottom: -29.5rem;
+        bottom: -21rem;
     }
 
     .course_fee>.fee>p {
@@ -184,5 +190,11 @@
 
     .cut-price-wrapper {
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .arrow-2 {
+        top: 35rem;
     }
 }
