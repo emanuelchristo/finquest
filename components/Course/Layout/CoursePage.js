@@ -9,12 +9,14 @@ import CommunityLayout from "../CommunityAccess/CommunityLayout";
 import GotAQuestion from "../GotAQuestion/GotAQuestion";
 import CourseFee from "../CourseFee/CourseFee";
 import Hero from "../Hero/Hero";
+
+import Navbar from "../../../components/Navbar";
 const CoursePage = () => {
   return (
     <>
+      <Navbar />
       <Hero />
       <WhatYouWillLearn />
-
       <HowWillYouSpent />
       <WhoIsThisFor />
       <Curriculum />
