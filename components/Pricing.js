@@ -5,7 +5,7 @@ import styles from "./pricing.module.css";
 const plans = [
   {
     imageLink: "/images/professional-plan.webp",
-    planName: "Professional",
+    planName: "Advanced",
     price: 9499,
     cutPrice: 11959,
     discount: "21% off",
