@@ -4,7 +4,16 @@ import Container from "./Container";
 import Image from "next/image";
 import CoursePageData from "../data/CoursePageData";
 import { useRouter } from "next/router";
+import { useState } from "react";
+import PopUp from "../PopUp/PopUp";
+import { motion, AnimatePresence } from "framer-motion";
+import styles from "../PopUp/popup.module.css";
+import { HiOutlineBookOpen } from "react-icons/hi";
 const HowWillYouSpent = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const close = () => setModalOpen(false);
+  const open = () => setModalOpen(true);
+
   const router = useRouter();
   const { courseid } = router.query;
   const [data, setdata] = React.useState({});
@@ -43,12 +52,27 @@ const HowWillYouSpent = () => {
           })}
         </div>
 
-        <Button
-          ButtonText="curriculum"
-          IconName="Book"
-          BgColor="buttonblue"
-          TextColor="white"
-        />
+        <motion.button
+          className={styles["curriculam-button"]}
+          initial={{ scale: 0 }}
+          animate={{
+            scale: 1,
+            transition: { type: "spring", mass: 1.15, delay: 1.5 },
+          }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => (modalOpen ? close() : open())}
+        >
+          <HiOutlineBookOpen className={styles["curriculam-button-icon"]} />
+          <span>Full Course Structure</span>
+        </motion.button>
+        <AnimatePresence
+          initial={false}
+          exitBeforeEnter={true}
+          onExitComplete={() => null}
+        >
+          {modalOpen && <PopUp modalOpen={modalOpen} handleClose={close} />}
+        </AnimatePresence>
       </div>
     </>
   );

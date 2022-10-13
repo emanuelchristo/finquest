@@ -1,9 +1,10 @@
 :root {
-	--primary-color: #99d34f;
-	--text-grey: #51575f;
-	--card-bg: #f4f7f9;
-	--green: #2db24e;
-	--blue: #0d64e5;
-	--yellow: rgb(245, 214, 39);
-	--footer-bg: #161818;
+    --primary-color: #99d34f;
+    --text-grey: #51575f;
+    --card-bg: #f4f7f9;
+    --green: #2db24e;
+    --blue: #0d64e5;
+    --blue-second: #163AF4;
+    --yellow: rgb(245, 214, 39);
+    --footer-bg: #161818;
 }
