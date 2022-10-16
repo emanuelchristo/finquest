@@ -39,9 +39,9 @@ const plans = [
   {
     imageLink: "/images/options-trading-plan.webp",
     planName: "Options Trading",
-    price: 5499,
-    cutPrice: 6500,
-    discount: "15% off",
+    price: 5500,
+    cutPrice: 10998,
+    discount: "50% off",
     duration: "1 month",
     features: [
       "FNO trading",
