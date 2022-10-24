@@ -111,118 +111,86 @@ const PopUp = ({ handleClose }) => {
         exit="exit"
       >
         <section className={styles["popup"]}>
-          <div className={styles["heading-wrapper"]}>
-            <img
-              className={styles["image"]}
-              src="./images/community-popup-image.svg"
-              width="60px"
-              height="auto"
-              alt=""
-            />
-            <h2>Join our community</h2>
-            <div className={styles["prices"]}>
-              <span>&#x20B9;199</span>
-              <span>
+          <div className={styles["header"]}>
+            <div>
+              <div className={styles["heading-wrapper"]}>
+                <img
+                  className={styles["image"]}
+                  src="/images/books.png"
+                  width="50px"
+                  height="auto"
+                  alt=""
+                />
+                <h2>Course structure</h2>
+              </div>
+              <div className={styles.subtitle}>
+                <h6>
+                  Option Trading <span>Advanced</span>
+                </h6>
                 <p>
-                  &#x20B9;599
-                  <div>
-                    <img src="./images/modal-pricecross-line.svg" alt="" />
-                  </div>
+                  The Programs lasts for 4 to 8 weeks. Once in, the students
+                  received One year access to loads of resources, live support
+                  and a community to help excel.
                 </p>
-              </span>
-              <span>
-                <span>
-                  <p>
-                    <img src="./images/modal-off-rect.svg" alt="" />
-                    <div>67% off</div>
-                  </p>
-                </span>
-              </span>
+              </div>
+            </div>
+            <div>
+              <motion.button
+                type="submit"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={styles["enroll-button"]}
+              >
+                <BsBookHalf className={styles["enroll-icon"]} />
+                <span>Enroll for ₹5999</span>
+              </motion.button>
+              <p>*All times in IST</p>
             </div>
           </div>
-          <form className={styles.modal_form} onSubmit={join}>
+          <div className={styles.content}>
             <div>
-              <label htmlFor="name">
-                Name
-                <span
-                  style={{
-                    color: "red",
-                    fontSize: "18px",
-                  }}
-                >
-                  *
-                </span>
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={name}
-                placeholder="Enter your name"
-                required
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                value={email}
-                name="email"
-                placeholder="Enter your email"
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-              />
+              <p>
+                <span>Week 1:</span>
+                Orientation + Basic Learning + Doubt Clearing
+              </p>
+              <ul>
+                <li>
+                  Monday - 7:30PM to 8:30PM
+                  <ul>
+                    <li>Ice-breaking and Welcome Session</li>
+                  </ul>
+                </li>
+                <li>
+                  Tuesday - 6:00PM to 8:00PM
+                  <ul>
+                    <li>Live Classroom Training, Strategy Discussion</li>
+                  </ul>
+                </li>
+                <li>
+                  Wednesday - 5:00PM to 7:00PM
+                  <ul>
+                    <li>Screener Discussions</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
             <div>
-              <label htmlFor="phone">
-                Phone
-                <span
-                  style={{
-                    color: "red",
-                    fontSize: "18px",
-                  }}
-                >
-                  *
-                </span>
-              </label>
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                placeholder="Enter your phone number"
-                required
-                value={phone}
-                onChange={(e) => {
-                  setPhone(e.target.value);
-                }}
-              />
+              <p>
+                <span>Week 2 to Week 4: </span>
+                Practical Community-based Learning + Live Trading
+              </p>
+              <ul>
+                <li>Live Trading </li>
+                <li>Premium Support and Community Access </li>
+                <li>Access to all of our trades and analysis </li>
+                <li>Weekly Catchup and Review Sessions </li>
+                <li>Last Thursday 4 PM - 4 PM</li>
+              </ul>
             </div>
-            <div className={styles["join"]}>
-              <a href="#" target="_blank" rel="noreferrer noopener">
-                <motion.button
-                  type="submit"
-                  whileHover={{
-                    scale: 1.05,
-                  }}
-                  whileTap={{
-                    scale: 0.95,
-                  }}
-                  className={styles["join-button"]}
-                >
-                  <BsBookHalf className={styles["join-icon"]} />
-                  <span>Join Now</span>
-                </motion.button>
-              </a>
-            </div>
-          </form>
-          <button className={styles.modal_close} onClick={handleClose}>
-            <img src="./images/modal-close.svg" alt="" />
-          </button>
+          </div>
+          {/* <button className={styles.modal_close} onClick={handleClose}>
+            <img src="/images/modal-close.svg" alt="" />
+          </button> */}
         </section>
       </motion.div>
     </Backdrop>
