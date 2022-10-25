@@ -190,7 +190,8 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    max-width: 90%;
+    max-width: 100%;
+    width: 90%;
 }
 
 .content>div {
@@ -201,7 +202,6 @@
 
 .content>div:nth-child(1) {
     border-right: 1px solid grey;
-    width: 50%;
 
 }
 
@@ -288,5 +288,52 @@
         margin: 0;
         height: 3rem;
         margin-bottom: 0.75rem;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .header>div:nth-child(1) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .header>div:nth-child(2) {
+        flex-direction: column;
+        align-self: center;
+        gap: .5rem;
+        text-align: center;
+
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: normal;
+        align-content: stretch;
+        padding: 2rem;
+
+    }
+
+    .content>div {
+        padding: 1rem;
+        width: 100%;
+        overflow: auto;
+
+    }
+
+    .content>div:nth-child(1) {
+        border-right: none;
+
+    }
+
+    .content>div>p>span,
+    .content>div>p {
+        font-size: 18px;
+        width: 100%;
     }
 }
