@@ -33,7 +33,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     gap: 20px;
     isolation: isolate;
     position: relative;
