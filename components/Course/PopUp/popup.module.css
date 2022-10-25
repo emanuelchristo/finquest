@@ -28,7 +28,6 @@
 }
 
 .popup {
-    overflow: auto;
 
     position: relative;
     display: flex;
