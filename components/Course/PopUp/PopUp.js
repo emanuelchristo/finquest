@@ -188,9 +188,9 @@ const PopUp = ({ handleClose }) => {
               </ul>
             </div>
           </div>
-          {/* <button className={styles.modal_close} onClick={handleClose}>
+          <button className={styles.modal_close} onClick={handleClose}>
             <img src="/images/modal-close.svg" alt="" />
-          </button> */}
+          </button>
         </section>
       </motion.div>
     </Backdrop>

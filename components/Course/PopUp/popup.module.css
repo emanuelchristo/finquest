@@ -28,6 +28,7 @@
 }
 
 .popup {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -37,6 +38,15 @@
     max-width: 100%;
     width: 100%;
     border-radius: 24px;
+
+}
+
+.modal_close {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 1rem;
+    top: 1rem;
 
 }
 
