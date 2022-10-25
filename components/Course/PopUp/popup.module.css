@@ -3,7 +3,7 @@
 
 .modal {
     /* width: 25rem; */
-    height: 39.75rem;
+    height: 90%;
     width: 90%;
     margin: auto;
     border-radius: 12px;
@@ -11,6 +11,8 @@
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
+
+
 }
 
 .backdrop {
@@ -28,17 +30,21 @@
 }
 
 .popup {
-
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px 40px;
     gap: 20px;
     isolation: isolate;
     position: relative;
     max-width: 100%;
     width: 100%;
     border-radius: 24px;
+    overflow-y: auto;
+    height: 100%;
+
+
+
 
 }
 
@@ -77,7 +83,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 4px 6px 6px;
+    padding: 6px 8px;
     background: #E64771;
     border-radius: 8px;
     margin-left: 1.2rem;
@@ -173,7 +179,6 @@
 }
 
 .content {
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -185,6 +190,7 @@
     /* background: #F6F7F9; */
     border-radius: 12px;
 
+
 }
 
 .content>div>p>span,
@@ -192,7 +198,6 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    max-width: 100%;
     width: 90%;
 }
 
@@ -270,14 +275,23 @@
     }
 
     .popup {
-        padding: 25px 22px;
+        padding: 25px 30px;
         gap: 20px;
     }
+
+
 
 
 }
 
 @media (max-width: 639px) {
+    .heading-wrapper {
+        margin-top: 2rem;
+    }
+
+    .heading-wrapper h2 {
+        font-size: 35px;
+    }
 
     .curriculam-button-icon {
         font-size: 1.35rem;
@@ -340,7 +354,7 @@
     }
 
     .popup {
-        overflow: auto;
-        padding: 30px;
+        padding: 25px;
+        gap: 20px;
     }
 }

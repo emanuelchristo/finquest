@@ -150,7 +150,7 @@ const PopUp = ({ handleClose }) => {
           <div className={styles.content}>
             <div>
               <p>
-                <span>Week 1:</span>
+                <span>Week 1: </span>
                 Orientation + Basic Learning + Doubt Clearing
               </p>
               <ul>
@@ -176,7 +176,7 @@ const PopUp = ({ handleClose }) => {
             </div>
             <div>
               <p>
-                <span>Week 2 to Week 4: </span>
+                <span>Week 2 to Week 4 : </span>
                 Practical Community-based Learning + Live Trading
               </p>
               <ul>
