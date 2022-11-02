@@ -1,24 +1,22 @@
-import About from '../components/About'
-import Associated from '../components/Associated'
-import Benefits from '../components/Benefits'
-import Community from '../components/Community'
-import Consultation from '../components/Consultation'
-import Faqs from '../components/Faqs'
+import About from "../components/About";
+import Associated from "../components/Associated";
+import Benefits from "../components/Benefits";
+import Community from "../components/Community";
+import Consultation from "../components/Consultation";
+import Faqs from "../components/Faqs";
 
-import Header from '../components/Header'
-import Letstalk from '../components/Letstalk'
-import Pricing from '../components/Pricing'
-import Quote from '../components/Quote'
-import Reviews from '../components/Reviews'
-import Rocket from '../components/Rocket'
-import Store from '../components/Store'
-
-
+import Header from "../components/Header";
+import Letstalk from "../components/Letstalk";
+import Pricing from "../components/Pricing";
+import Quote from "../components/Quote";
+import Reviews from "../components/Reviews";
+import Rocket from "../components/Rocket";
+import Store from "../components/Store";
 
 export default function Home() {
-	return (
-		<div id='home'>
-			<Header />
+  return (
+    <div id="home">
+      {/* <Header />
 			<Associated />
 			<div className='section-spacer'></div>
 			<About />
@@ -29,11 +27,11 @@ export default function Home() {
 			<div className='section-spacer'></div>
 			<Quote />
 			<div className='section-spacer'></div>
-			<Pricing />
-			<div className='section-spacer'></div>
-			<Reviews />
-			<div className='section-spacer'></div>
-			<Consultation />
+			<Pricing /> */}
+      <div className="section-spacer"></div>
+      <Reviews />
+      <div className="section-spacer"></div>
+      {/* <Consultation />
 			<div className='section-spacer'></div>
 			<Store />
 			<div className='section-spacer'></div>
@@ -42,13 +40,7 @@ export default function Home() {
 
 			<Letstalk />
 			<div className='section-spacer'></div>
-			<Community />
-
-		</div>
-	)
+			<Community /> */}
+    </div>
+  );
 }
-
-
-
-
-
