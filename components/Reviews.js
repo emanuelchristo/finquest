@@ -56,8 +56,25 @@ export default function Reviews() {
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={30}
-          slidesPerView={3}
-          pagination={{ clickable: true }}
+          breakpoints={{
+            640: {
+              // width: 640,
+              slidesPerView: 1,
+            },
+            768: {
+              // width: 768,
+              slidesPerView: 2,
+            },
+            1200: {
+              // width: 1000,
+              slidesPerView: 3,
+            },
+          }}
+          pagination={{
+            clickable: true,
+            type: "bullets",
+            clickable: true,
+          }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

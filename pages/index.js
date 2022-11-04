@@ -17,14 +17,11 @@ import Script from "next/script";
 export default function Home() {
   return (
     <div id="home">
-      <div className="section-spacer"></div>
-      <Reviews />
-      <div className="section-spacer"></div>
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
       ></Script>
-      <Script> 
+      <Script>
         {`
         window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);} 

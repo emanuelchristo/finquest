@@ -8,8 +8,13 @@
 }
 
 .swiper-pagination {
-    top: 17rem;
+    position: unset !important;
+    margin-top: 1rem;
+
 }
+
+
+
 
 html,
 body {
