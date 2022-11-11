@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <div id="home">
       <Script
+        id="gtm-script"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
       ></Script>

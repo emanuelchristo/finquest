@@ -14,7 +14,7 @@ export default function AboutUs() {
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
       ></Script>
-      <Script>
+      <Script id="gtm-script">
         {`
 window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);} 
