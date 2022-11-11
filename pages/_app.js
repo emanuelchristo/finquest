@@ -14,6 +14,10 @@ function MyApp({ Component, pageProps }) {
           easily.
         </title>
         <link rel="icon" type="image/png" href="/favicon.png"></link>
+        <meta
+          name="google-site-verification"
+          content="4Cbyhz8hc0taFGG6F4lucI7JMMXJQe1y_Qa8qKscRnI"
+        />
       </Head>
       <Snackbar message=" 🎉  Flat ₹2000 off for beginners! " />
       <Component {...pageProps} />
