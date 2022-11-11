@@ -11,7 +11,7 @@ export default function AboutUs() {
   return (
     <div id="home">
       <Script
-        id="gtm-script-about_1"
+        id="gtm-script-about"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
       ></Script>
