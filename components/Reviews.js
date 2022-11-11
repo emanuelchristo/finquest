@@ -82,7 +82,7 @@ export default function Reviews() {
           className="mySwiper"
         >
           {reviews.map((item, index) => (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <Review
                 key={index}
                 imageLink={item.imageLink}
