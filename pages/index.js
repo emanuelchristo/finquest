@@ -18,11 +18,11 @@ export default function Home() {
   return (
     <div id="home">
       <Script
-        id="gtm-script"
+        id="gtm-script-index"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
       ></Script>
-      <Script>
+      <Script id="gtm-script-index_2">
         {`
         window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);} 

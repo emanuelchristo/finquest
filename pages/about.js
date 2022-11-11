@@ -11,10 +11,11 @@ export default function AboutUs() {
   return (
     <div id="home">
       <Script
+        id="gtm-script-about"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
       ></Script>
-      <Script id="gtm-script">
+      <Script id="gtm-script-about_2">
         {`
 window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);} 
