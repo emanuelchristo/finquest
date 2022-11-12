@@ -12,24 +12,10 @@ import Quote from "../components/Quote";
 import Reviews from "../components/Reviews";
 import Rocket from "../components/Rocket";
 import Store from "../components/Store";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <div id="home">
-      <Script
-        id="gtm-script-index"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
-      ></Script>
-      <Script id="gtm-script-index_2">
-        {`
-        window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);} 
-        gtag('js', new Date());
-        gtag('config', 'UA-247600968-1');
-        `}
-      </Script>
       <Header />
       <Associated />
       <div className="section-spacer"></div>

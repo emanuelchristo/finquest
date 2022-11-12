@@ -4,6 +4,7 @@ import "../styles/global.css";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Snackbar from "../components/SnackBar";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -19,6 +20,19 @@ function MyApp({ Component, pageProps }) {
           content="4Cbyhz8hc0taFGG6F4lucI7JMMXJQe1y_Qa8qKscRnI"
         />
       </Head>
+      <Script
+        id="gtm-script"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
+      ></Script>
+      <Script id="gtm-script-2">
+        {`
+        window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);} 
+        gtag('js', new Date());
+        gtag('config', 'UA-247600968-1');
+        `}
+      </Script>
       <Snackbar message=" 🎉  Flat ₹2000 off for beginners! " />
       <Component {...pageProps} />
 
