@@ -54,13 +54,7 @@ export default function Reviews() {
       <section className={styles["reviews"]}>
         <div className={styles.heading}>
           <h2>Reviews</h2>
-          <img
-            className={styles["decoration"]}
-            src="/images/reviews-star.svg"
-            width="60px"
-            height="auto"
-            alt=""
-          />
+          <img src="/images/reviews-star.svg" height="auto" alt="" />
         </div>
         <Swiper
           modules={[Pagination, Autoplay]}
