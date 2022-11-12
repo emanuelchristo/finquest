@@ -10,19 +10,6 @@ import Script from "next/script";
 export default function AboutUs() {
   return (
     <div id="home">
-      <Script
-        id="gtm-script-about"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
-      ></Script>
-      <Script id="gtm-script-about_2">
-        {`
-window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);} 
-gtag('js', new Date());
-gtag('config', 'UA-247600968-1');
-`}
-      </Script>
       <div id="home" className={styles["nav-spacer"]}></div>
       <Navbar />
       <div id="home" className={styles["about-spacer"]}></div>

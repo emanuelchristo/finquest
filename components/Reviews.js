@@ -52,7 +52,16 @@ export default function Reviews() {
   return (
     <div className="margin">
       <section className={styles["reviews"]}>
-        <h2>Reviews</h2>
+        <div className={styles.heading}>
+          <h2>Reviews</h2>
+          <img
+            className={styles["decoration"]}
+            src="/images/reviews-star.svg"
+            width="60px"
+            height="auto"
+            alt=""
+          />
+        </div>
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={30}

@@ -1,6 +1,12 @@
-.reviews h2 {
-    margin-bottom: 4rem;
+.heading {
+    display: flex;
+    margin-bottom: 5rem;
+    gap: 1rem;
 }
+
+/* .reviews h2 {
+    margin-bottom: 4rem;
+} */
 
 .content {
     display: grid;
