@@ -1,7 +1,6 @@
 .heading {
     display: inline-flex;
     gap: 1rem;
-    align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 5rem;
 }
