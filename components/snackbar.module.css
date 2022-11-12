@@ -1,30 +1,37 @@
 .wrapper {
-    height: 50px;
+    height: 81px;
 }
 
 .main {
-    background: rgb(5, 150, 105);
+    background: #F5F075;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 81px;
     position: fixed;
 }
 
 .snack-text {
     flex: 1;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5;
+    line-height: 135%;
     text-align: center;
+
+}
+
+.snack-text>span {
+    color: #6133E4 !important;
+    max-width: 92%;
 }
 
 .snack-close {
     padding-right: 2rem;
-    color: #fff;
+    color: #000;
 }
 
 .snack-close:hover {
@@ -33,16 +40,13 @@
 
 @media (max-width: 639px) {
 
-    .main,
-    .wrapper {
-        height: 40px;
-    }
+
 
     .snack-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .snack-close {
-        padding-right: 1.25rem;
+        padding-right: 1rem;
     }
 }

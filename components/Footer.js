@@ -1,10 +1,4 @@
-import {
-  BsFacebook,
-  BsInstagram,
-  BsTwitter,
-  BsWhatsapp,
-  BsYoutube,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
 import styles from "./footer.module.css";
 
