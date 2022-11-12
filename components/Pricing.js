@@ -218,6 +218,7 @@ function Card({
           JOIN NOW
         </motion.button>
       </a>
+      <span className={styles.money_back}>* 7 days money back guarantee</span>
     </div>
   );
 }
