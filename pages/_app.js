@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
           content="4Cbyhz8hc0taFGG6F4lucI7JMMXJQe1y_Qa8qKscRnI"
         />
       </Head>
-      {/* <Script
+      <Script
         id="gtm-script"
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-247600968-1"
@@ -32,17 +32,17 @@ function MyApp({ Component, pageProps }) {
         gtag('js', new Date());
         gtag('config', 'UA-247600968-1');
         `}
-      </Script> */}
+      </Script>
       <Snackbar
         message={[
           "🎉 Flat ",
-          <span id="offprice">₹2000 off for beginners!</span>,
+          <span id="offprice" key={1}>
+            ₹2000 off for beginners!
+          </span>,
           " (First 100 learners only) 🎉",
         ]}
       />
-      {/* <Snackbar message="🎉 Flat&nbsp;
-          <span className={styles["offprice"]}>₹2000 off for beginners!</span>
-          &nbsp; (First 100 learners only) 🎉" /> */}
+
       <Component {...pageProps} />
 
       <Footer />
