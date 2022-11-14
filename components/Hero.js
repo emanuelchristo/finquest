@@ -1,4 +1,3 @@
-import { IoSchoolSharp } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Link from "next/link";

@@ -10,7 +10,7 @@ export default function Associated() {
           Trusted by&nbsp;<span className=" font-semibold">600+</span>
           &nbsp;learners{" "}
           <span className={styles["rating"]}>
-            <BsFillStarFill className={styles["star-icon"]} /> 4.6/5
+            <BsFillStarFill className={styles["star-icon"]} /> 4.7/5
           </span>
         </div>
         <div className={styles["associated"]}>
