@@ -4,6 +4,7 @@ import Benefits from "../components/Benefits";
 import Community from "../components/Community";
 import Consultation from "../components/Demo";
 import Faqs from "../components/Faqs";
+import Features from "../components/Features";
 
 import Header from "../components/Header";
 import Letstalk from "../components/Letstalk";
@@ -26,6 +27,8 @@ export default function Home() {
       <Benefits />
       <div className="section-spacer"></div>
       <Quote />
+      <div className="section-spacer"></div>
+      <Features />
       <div className="section-spacer"></div>
       <Pricing />
       <div className="section-spacer"></div>
