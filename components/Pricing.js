@@ -26,7 +26,7 @@ const plans = [
   {
     imageLink: "/images/student-plan.webp",
     planName: "Starter",
-    price: 7999,
+    price: 7500,
     cutPrice: 15499,
     discount: "52% off",
     duration: "1 month",
