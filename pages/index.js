@@ -2,7 +2,7 @@ import About from "../components/About";
 import Associated from "../components/Associated";
 import Benefits from "../components/Benefits";
 import Community from "../components/Community";
-import Consultation from "../components/Consultation";
+import Consultation from "../components/Demo";
 import Faqs from "../components/Faqs";
 
 import Header from "../components/Header";

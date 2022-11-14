@@ -1,7 +1,7 @@
 import { SiGoogleclassroom } from "react-icons/si";
 import { motion } from "framer-motion";
 
-import styles from "./consultation.module.css";
+import styles from "./demo.module.css";
 
 export default function Hiring() {
   return (
@@ -13,7 +13,7 @@ export default function Hiring() {
         />
         <span className={styles["text"]}>DEMO CLASS</span>
         <h2>Book a free live class now!</h2>
-        <p>Fill your details and select a date for your live class</p>
+        <p>Schedule a 30 minute google meet call with our mentors</p>
         <div className={styles["feature"]}>
           <a
             href="https://calendly.com/finquest"

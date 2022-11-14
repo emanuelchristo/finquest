@@ -1,5 +1,5 @@
 import { IoSchoolSharp } from "react-icons/io5";
-import { MdOutlinePersonAdd } from "react-icons/md";
+import { IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import TypeAnimation from "react-type-animation";
@@ -240,7 +240,6 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className={styles["talk-button"]}
           >
-            <IoSchoolSharp className={styles["membership-icon"]} />
             <span>Start learning</span>
           </motion.button>
         </Link>
@@ -255,8 +254,8 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className={styles["consultation-button"]}
           >
-            <MdOutlinePersonAdd className={styles["consultation-icon"]} />
             <span>Book a demo</span>
+            <IoIosArrowForward className={styles["consultation-icon"]} />
           </motion.button>
         </Link>
       </div>

@@ -26,7 +26,7 @@ const plans = [
   {
     imageLink: "/images/student-plan.webp",
     planName: "Starter",
-    price: 7500,
+    price: 7999,
     cutPrice: 15499,
     discount: "52% off",
     duration: "1 month",
@@ -39,7 +39,7 @@ const plans = [
   {
     imageLink: "/images/options-trading-plan.webp",
     planName: "Options Trading",
-    price: 5500,
+    price: 5499,
     cutPrice: 10998,
     discount: "50% off",
     duration: "1 month",
@@ -215,7 +215,7 @@ function Card({
           whileTap={{ scale: 0.95 }}
           className={styles["action-button"]}
         >
-          JOIN NOW
+          Learn More
         </motion.button>
       </a>
       <span className={styles.money_back}>* 7 days money back guarantee</span>
