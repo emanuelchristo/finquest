@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
         message={[
           "🎉 Flat ",
           <span id="offprice" key={1}>
-            ₹2000 off for beginners!
+            ₹7999 off for beginners!
           </span>,
           " (First 100 learners only) 🎉",
         ]}

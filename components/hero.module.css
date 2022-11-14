@@ -174,7 +174,8 @@
 
 .consultation-icon {
     font-size: 1.25rem;
-    margin-bottom: 0.125rem;
+    margin-left: 0.125rem;
+
 }
 
 .membership-icon {
@@ -182,6 +183,8 @@
 }
 
 .consultation-button {
+
+
     margin-left: 1rem;
     color: #000;
     background-color: #fff;
