@@ -1,9 +1,11 @@
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import styles from "./pricing.module.css";
+import Link from "next/link";
 
 const plans = [
   {
+    id: "professional",
     imageLink: "/images/professional-plan.webp",
     planName: "Advanced",
     price: 9999,
@@ -24,6 +26,7 @@ const plans = [
     message: "I would like to join the 'Professional' plan",
   },
   {
+    id: "starter",
     imageLink: "/images/student-plan.webp",
     planName: "Starter",
     price: 7999,
@@ -37,6 +40,7 @@ const plans = [
     message: "I would like to join the 'Starter' plan",
   },
   {
+    id: "options",
     imageLink: "/images/options-trading-plan.webp",
     planName: "Options Trading",
     price: 5499,
@@ -77,6 +81,7 @@ export default function Pricing() {
         <div className={styles["cards-wrapper"]}>
           {plans.map((item, index) => (
             <Card
+              id={item.id}
               key={index}
               imageLink={item.imageLink}
               planName={item.planName}
@@ -156,6 +161,7 @@ function waLink(msg) {
 }
 
 function Card({
+  id,
   imageLink,
   planName,
   price,
@@ -210,13 +216,15 @@ function Card({
         target="_blank"
         rel="noreferrer noopener"
       >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className={styles["action-button"]}
-        >
-          Learn More
-        </motion.button>
+        <Link href={`course/${id}/`}>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={styles["action-button"]}
+          >
+            Learn More
+          </motion.button>
+        </Link>
       </a>
       <span className={styles.money_back}>* 7 days money back guarantee</span>
     </div>
