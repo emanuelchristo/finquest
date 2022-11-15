@@ -1,22 +1,25 @@
-import { HiPhone } from "react-icons/hi";
-import { MdMail } from "react-icons/md";
 import { motion } from "framer-motion";
 import styles from "./features.module.css";
+import CountUp, { useCountUp } from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const featuresItems = [
   {
     imageLink: "/images/features-icon-1.svg",
-    title: "600+",
+    title: 600,
+    ext: "+",
     subtitle: "students & growing",
   },
   {
     imageLink: "/images/features-icon-2.svg",
-    title: "94%",
+    title: 94,
+    ext: "%",
     subtitle: "satisfaction rate",
   },
   {
     imageLink: "/images/features-icon-3.svg",
-    title: "27+",
+    title: 27,
+    ext: "+",
     subtitle: "cities worldwide",
   },
 ];
@@ -36,6 +39,7 @@ export default function Features() {
                 imageLink={item.imageLink}
                 title={item.title}
                 subtitle={item.subtitle}
+                ext={item.ext}
               />
             ))}
           </div>
@@ -44,11 +48,24 @@ export default function Features() {
     </div>
   );
 }
-function Item({ imageLink, title, subtitle }) {
+function Item({ imageLink, title, subtitle, ext }) {
   return (
     <div>
       <img src={imageLink} alt="" />
-      <h3>{title}</h3>
+
+      <VisibilitySensor delayedCall>
+        {({ isVisible }) => (
+          <h3>
+            {isVisible ? (
+              <CountUp end={title} duration={2.5} redraw={true} />
+            ) : (
+              0
+            )}
+            {ext}
+          </h3>
+        )}
+      </VisibilitySensor>
+
       <p>{subtitle}</p>
     </div>
   );

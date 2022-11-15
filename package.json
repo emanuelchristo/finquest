@@ -11,10 +11,12 @@
     "framer-motion": "^6.2.6",
     "next": "12.0.10",
     "react": "17.0.2",
+    "react-countup": "^6.3.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "react-toastify": "^9.0.8",
     "react-type-animation": "^1.1.2",
+    "react-visibility-sensor": "^5.1.1",
     "swiper": "^8.4.4"
   },
   "devDependencies": {
