@@ -1,41 +1,52 @@
 .wrapper {
-	height: 50px;
+    height: 81px;
 }
+
 .main {
-	background: rgb(5, 150, 105);
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 999;
-	display: flex;
-	align-items: center;
-	height: 50px;
-	position: fixed;
+    background: #F5F075;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 81px;
+    position: fixed;
 }
+
 .snack-text {
-	flex: 1;
-	color: #fff;
-	font-size: 1rem;
-	font-weight: 500;
-	text-align: center;
+    flex: 1;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5;
+    line-height: 135%;
+    text-align: center;
+
 }
+
+.snack-text>span {
+    color: #6133E4 !important;
+    max-width: 92%;
+}
+
 .snack-close {
-	padding-right: 2rem;
-	color: #fff;
+    padding-right: 2rem;
+    color: #000;
 }
+
 .snack-close:hover {
-	color: rgba(255, 255, 255, 0.733);
+    color: rgba(255, 255, 255, 0.733);
 }
 
 @media (max-width: 639px) {
-	.main,
-	.wrapper {
-		height: 40px;
-	}
-	.snack-text {
-		font-size: 0.9rem;
-	}
-	.snack-close {
-		padding-right: 1.25rem;
-	}
+
+
+
+    .snack-text {
+        font-size: 1rem;
+    }
+
+    .snack-close {
+        padding-right: 1rem;
+    }
 }

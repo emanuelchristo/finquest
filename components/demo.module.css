@@ -1,5 +1,5 @@
-.community {
-    background-color: var(--blue);
+.consultation {
+    background-color: #7045E8;
     color: #fff;
     display: flex;
     align-items: center;
@@ -7,63 +7,73 @@
     flex-direction: column;
     text-align: center;
     border-radius: 1.5rem;
-    padding: 7rem 1.5rem 5rem 1.5rem;
+    padding: 3rem 1.5rem 5rem 1.5rem;
     position: relative;
-    margin-top: 8rem;
 }
 
+.suitcase {
+    margin-bottom: 1rem;
+}
 
+.join {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
+.consultation-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    gap: 10px;
+    background: #FACF38;
+    border-radius: 67px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 1rem 0;
+    color: #FFFFFFC7;
+    ;
+}
+
+.consultation>* {
+    z-index: 2;
+}
 
 .image {
     position: absolute;
     top: -8.5rem;
 }
 
-.community-join-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    width: 11.5rem;
-    height: 3.688rem;
-    background: #FBCD29;
-    border-radius: 4.188rem;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 135%;
-    color: black;
-    letter-spacing: 0.01em;
-    margin-top: 2rem;
-}
-
-.community-join-icon {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-}
-
-.whatsapp-icon {
-    font-size: 1.35rem;
-}
-
-.whatsapp-button span {
-    font-weight: 600;
-    margin-left: 0.6rem;
-    margin-top: 0.125rem;
-}
-
-.community h2 {
-    font-size: 3rem;
+.consultation h2 {
+    font-size: 64px;
     margin-bottom: 1rem;
     line-height: 1;
+    color: #fff;
+    text-align: center;
+    width: 38rem;
+    max-width: 100%;
 }
 
-.community p {
-    color: rgba(255, 255, 255, 0.55);
+.consultation-icon {
+    color: #000;
+    font-size: 20px;
+
+}
+
+.consultation p {
+    color: #FFFFFFA6;
     max-width: 550px;
     line-height: 1.5;
     margin-bottom: 1.5rem;
     padding: 0 1rem;
+    font-size: 20px;
 }
 
 .pills-wrapper {
@@ -79,20 +89,6 @@
     width: fit-content;
     font-size: 1rem;
     margin: 0.3rem;
-}
-
-.pill-dotted {
-    padding: 0.75rem 1.125rem;
-    border-radius: 100px;
-    width: fit-content;
-    font-size: 1rem;
-    margin: 0.3rem;
-    border: 2px dashed rgba(255, 255, 255, 0.539);
-    font-weight: 600;
-    line-height: 100%;
-    text-align: center;
-    color: #FFFFFF;
-
 }
 
 .pill.white {
@@ -135,14 +131,20 @@
 .arrow-1 {
     position: absolute;
     bottom: 0;
-    left: 1.5rem;
+    left: 0;
+    z-index: 1;
+    width: 14.5rem;
+    height: auto;
+    transform: rotate(180deg);
 }
 
 .arrow-2 {
     position: absolute;
-    right: 1.5rem;
+    right: 0;
     top: 0;
-    transform: rotate(180deg);
+    z-index: 1;
+    width: 14.5rem;
+    height: auto;
 }
 
 .footer-bar {
@@ -160,53 +162,29 @@
 
     .arrow-1,
     .arrow-2 {
-        width: 120px;
-    }
-
-
-    .image {
-        width: 220px;
-        top: -6rem;
-    }
-}
-
-@media (max-width: 820px) {
-
-    .arrow-1,
-    .arrow-2 {
-        width: 80px;
+        width: 8rem;
     }
 }
 
 @media (max-width: 767px) {
-    .community h2 {
+    .consultation h2 {
         font-size: 2.5rem;
     }
 
-
+    .arrow-1,
+    .arrow-2 {
+        width: 8rem;
+    }
 }
 
 @media (max-width: 639px) {
 
     .arrow-1,
     .arrow-2 {
-        width: 100px;
+        width: 7rem;
     }
 
-    .arrow-1 {
-        left: 1rem;
-    }
-
-    .arrow-2 {
-        right: 1rem;
-    }
-
-    .image {
-        width: 185px;
-    }
-
-    .community {
-        margin-top: 6rem;
+    .consultation {
         margin-left: -0.25rem;
         margin-right: -0.25rem;
         padding-top: 6rem;
@@ -218,5 +196,13 @@
     .features-wrapper {
         grid-template-columns: 1fr;
         gap: 0.875rem;
+    }
+}
+
+@media (max-width: 434px) {
+
+    .arrow-2,
+    .arrow-1 {
+        width: 5rem;
     }
 }

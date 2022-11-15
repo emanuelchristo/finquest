@@ -1,15 +1,14 @@
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import styles from "./pricing.module.css";
-import Link from "next/link";
 
 const plans = [
   {
     imageLink: "/images/professional-plan.webp",
-    planName: "Professional",
-    price: 9499,
-    cutPrice: 11959,
-    discount: "21% off",
+    planName: "Advanced",
+    price: 9999,
+    cutPrice: 25699,
+    discount: "61% off",
     duration: "2 months",
     features: [
       // 'Course duration - 1 month',
@@ -23,28 +22,26 @@ const plans = [
     tag: "Popular Program",
     tagColor: "#790DE5",
     message: "I would like to join the 'Professional' plan",
-    goto: "/professional",
   },
   {
     imageLink: "/images/student-plan.webp",
     planName: "Starter",
-    price: 6999,
-    cutPrice: 8999,
-    discount: "23% off",
+    price: 7999,
+    cutPrice: 15499,
+    discount: "49% off",
     duration: "1 month",
     color: "yellow",
     features: ["Intraday trading", "Swing trading", "Commodity", "Long term"],
     tag: "Most Enrolled",
     tagColor: "#D22C2C",
     message: "I would like to join the 'Starter' plan",
-    goto: "/starter",
   },
   {
     imageLink: "/images/options-trading-plan.webp",
     planName: "Options Trading",
     price: 5499,
-    cutPrice: 6500,
-    discount: "15% off",
+    cutPrice: 10998,
+    discount: "50% off",
     duration: "1 month",
     features: [
       "FNO trading",
@@ -53,7 +50,6 @@ const plans = [
       "Option selling",
     ],
     message: "I would like to join the 'Options trading' plan",
-    goto: "/options",
   },
 ];
 
@@ -94,7 +90,6 @@ export default function Pricing() {
               tagColor={item.tagColor}
               message={item.message}
               maxFeatLen={max}
-              goto={item.goto}
             />
           ))}
           <div className={styles["twinkle-wrapper-1"]}>
@@ -152,6 +147,14 @@ export default function Pricing() {
   );
 }
 
+function waLink(msg) {
+  let url = "https://api.whatsapp.com/send?";
+  let params = new URLSearchParams("");
+  params.append("phone", "918075145434");
+  params.append("text", msg);
+  return url + params.toString();
+}
+
 function Card({
   imageLink,
   planName,
@@ -165,7 +168,6 @@ function Card({
   tagColor,
   message,
   maxFeatLen,
-  goto,
 }) {
   return (
     <div
@@ -202,17 +204,21 @@ function Card({
           </li>
         ))}
       </ul>
-      <Link href={`/course/${goto}`}>
-        <a className={styles["action-link"]} rel="noreferrer noopener">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={styles["action-button"]}
-          >
-            JOIN NOW
-          </motion.button>
-        </a>
-      </Link>
+      <a
+        className={styles["action-link"]}
+        href={waLink(message)}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={styles["action-button"]}
+        >
+          Learn More
+        </motion.button>
+      </a>
+      <span className={styles.money_back}>* 7 days money back guarantee</span>
     </div>
   );
 }
