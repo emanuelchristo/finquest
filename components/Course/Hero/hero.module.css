@@ -32,7 +32,8 @@
 }
 
 .image {
-    max-width: 500px;
+    max-width: 800px;
+
 }
 
 .maincontent>h2 {
@@ -54,8 +55,8 @@
 
 .details_review {
     display: flex;
-    justify-content: space-between;
     margin: 1rem 0;
+    gap: 4rem;
 
 }
 

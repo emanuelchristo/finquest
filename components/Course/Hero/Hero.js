@@ -37,7 +37,7 @@ const Hero = () => {
           <LastDate />
         </div>
         <div className={styles.image}>
-          <img src="/images/heroimage.png" alt="image" />
+          <img src="/images/course/hero-women.png" alt="image" />
         </div>
       </div>
       <img src="/images/ad.png" alt="hero" className={styles.logos} />

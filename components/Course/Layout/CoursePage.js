@@ -11,11 +11,13 @@ import CourseFee from "../CourseFee/CourseFee";
 import Hero from "../Hero/Hero";
 
 import Navbar from "../../../components/Navbar";
+import Subscription from "../Subscription/Subscription";
 const CoursePage = () => {
   return (
     <>
       <Navbar />
       <Hero />
+      <Subscription />
       <WhatYouWillLearn />
       <HowWillYouSpent />
       <WhoIsThisFor />
