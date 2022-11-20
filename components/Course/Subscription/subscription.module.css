@@ -26,7 +26,6 @@
     border-radius: 1.5rem;
     width: 100%;
     padding: 4rem 4.5rem;
-    flex-wrap: wrap;
 
 }
 
@@ -42,6 +41,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 2.5rem;
+    width: 14rem;
     gap: 10px;
     background: #FACF38;
     border-radius: 67px;
@@ -114,49 +114,74 @@
 
 @media (max-width: 1023px) {
 
-    .arrow-1,
-    .arrow-2 {
-        width: 8rem;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 4.5rem;
+        gap: 2rem;
+
     }
+
+    .container>div:nth-child(1)>h2 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container>div:nth-child(1) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container>div:nth-child(1)>img {
+        right: -6rem;
+        top: -4rem;
+        width: 5rem;
+        display: none;
+    }
+
+    .subscription>img:nth-child(1) {
+        bottom: 0;
+        left: 4rem;
+    }
+
+    .subscription>img:nth-child(2) {
+        top: 0;
+        right: 9rem;
+    }
+
 }
 
 @media (max-width: 767px) {
-    .enroll h2 {
-        font-size: 2.5rem;
+    .subscription>img:nth-child(1) {
+        bottom: 0;
+        left: 3rem;
     }
 
-    .arrow-1,
-    .arrow-2 {
-        width: 8rem;
-    }
-}
-
-@media (max-width: 639px) {
-
-    .arrow-1,
-    .arrow-2 {
-        width: 7rem;
-    }
-
-    .enroll {
-        margin-left: -0.25rem;
-        margin-right: -0.25rem;
-        padding-top: 6rem;
-        border-radius: 1rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    .features-wrapper {
-        grid-template-columns: 1fr;
-        gap: 0.875rem;
+    .subscription>img:nth-child(2) {
+        top: 0;
+        right: 4rem;
     }
 }
+
+@media (max-width: 639px) {}
 
 @media (max-width: 434px) {
 
-    .arrow-2,
-    .arrow-1 {
-        width: 5rem;
+    .container>div:nth-child(2)>h6 {
+        padding: .35rem 2rem;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+
+    .time {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
     }
 }
