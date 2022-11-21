@@ -2,7 +2,6 @@ import React from "react";
 import Faqs from "../../Faqs";
 
 import WhatYouWillLearn from "../WhatYouWillLearn/WhatYouWillLearn";
-import FeaturesLayout from "../common/FeatureLayout/FeaturesLayout";
 import WhoIsThisFor from "../WhoIsThisFor/WhoIsThisFor";
 import HowWillYouSpent from "../HowWillYouSpen/HowWillYouSpent";
 import Curriculum from "../CurriculumBuilt/Curriculum";
@@ -13,12 +12,15 @@ import Hero from "../Hero/Hero";
 
 import Navbar from "../../../components/Navbar";
 import Subscription from "../Subscription/Subscription";
+import EnrollmentDate from "../EnrollmentDate/EnrollmentDate";
+
 const CoursePage = () => {
   return (
     <>
       <Navbar />
       <Hero />
       <Subscription />
+      <EnrollmentDate />
       <WhatYouWillLearn />
       <HowWillYouSpent />
       <WhoIsThisFor />
