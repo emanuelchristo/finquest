@@ -20,6 +20,7 @@
     "swiper": "^8.4.4"
   },
   "devDependencies": {
+    "@netlify/plugin-sitemap": "^0.8.1",
     "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
