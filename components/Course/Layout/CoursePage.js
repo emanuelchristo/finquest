@@ -6,7 +6,7 @@ import WhoIsThisFor from "../WhoIsThisFor/WhoIsThisFor";
 import HowWillYouSpent from "../HowWillYouSpen/HowWillYouSpent";
 import Curriculum from "../CurriculumBuilt/Curriculum";
 import CommunityLayout from "../CommunityAccess/CommunityLayout";
-import GotAQuestion from "../GotAQuestion/GotAQuestion";
+
 import CourseFee from "../CourseFee/CourseFee";
 import Hero from "../Hero/Hero";
 
@@ -14,6 +14,7 @@ import Navbar from "../../../components/Navbar";
 import Subscription from "../Subscription/Subscription";
 import EnrollmentDate from "../EnrollmentDate/EnrollmentDate";
 import StartNow from "../StartNow/StartNow";
+import Demo from "../Demo/Demo";
 
 const CoursePage = () => {
   return (
@@ -27,10 +28,10 @@ const CoursePage = () => {
       <StartNow />
       <WhoIsThisFor />
       <Curriculum />
+      <CourseFee />
       <CommunityLayout />
       <Faqs />
-      <CourseFee />
-      <GotAQuestion />
+      <Demo />
     </>
   );
 };
