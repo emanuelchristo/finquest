@@ -13,6 +13,7 @@ import Hero from "../Hero/Hero";
 import Navbar from "../../../components/Navbar";
 import Subscription from "../Subscription/Subscription";
 import EnrollmentDate from "../EnrollmentDate/EnrollmentDate";
+import StartNow from "../StartNow/StartNow";
 
 const CoursePage = () => {
   return (
@@ -23,6 +24,7 @@ const CoursePage = () => {
       <EnrollmentDate />
       <WhatYouWillLearn />
       <HowWillYouSpent />
+      <StartNow />
       <WhoIsThisFor />
       <Curriculum />
       <CommunityLayout />
