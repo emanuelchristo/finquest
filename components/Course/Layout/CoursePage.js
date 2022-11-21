@@ -1,5 +1,6 @@
 import React from "react";
-import Faqs from "../Faq/Faqs";
+import Faqs from "../../Faqs";
+
 import WhatYouWillLearn from "../WhatYouWillLearn/WhatYouWillLearn";
 import FeaturesLayout from "../common/FeatureLayout/FeaturesLayout";
 import WhoIsThisFor from "../WhoIsThisFor/WhoIsThisFor";

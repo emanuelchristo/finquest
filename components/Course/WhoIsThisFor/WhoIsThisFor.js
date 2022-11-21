@@ -25,15 +25,14 @@ const WhoIsThisFor = () => {
     <>
       <div className="margin">
         <div className="flex">
-          <h2 style={{ margin: "3rem 0" }} className="md:text-center">
-            Who is this for
-          </h2>
+          <h2 style={{ margin: "3rem 0" }}>Who is this for</h2>
           <img
-            src="/images/sparkle.png"
+            src="/images/course/sparkle.png"
             alt=""
-            width="70px"
-            height="50px"
-            className="imageclass md:hidden"
+            style={{
+              width: "85px",
+              height: "100px",
+            }}
           />
         </div>
         <Button
