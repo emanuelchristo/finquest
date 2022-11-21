@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+disallow:
 
 Sitemap: https://www.finqlearning.com/sitemap.xml
