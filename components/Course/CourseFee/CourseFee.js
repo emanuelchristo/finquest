@@ -25,67 +25,57 @@ const CourseFee = () => {
   return (
     <>
       <div className="margin">
-        <div className={styles.course_fee}>
-          <div className={styles.fee}>
-            <img
-              className={styles["arrow-1"]}
-              src="/images/course_fee-arrow.svg"
-              width="140px"
-              height="auto"
-              alt=""
-            />
-            <img
-              className={styles["arrow-2"]}
-              src="/images/course_fee-arrow.svg"
-              width="140px"
-              height="auto"
-              alt=""
-            />
+        <section className={styles.course_fee}>
+          <h1>Get the offer while it lasts!</h1>
+          <div className={styles.container}>
+            <div className={styles.fee}>
+              <h2>Webflow On-Demand Program Launch Offer (Save ₹1500)</h2>
+              <div className={styles.price}>
+                <div>
+                  <h2>{data.newprice}</h2>
+                  <div className={styles["cut-price-wrapper"]}>
+                    {data.oldprice}
+                  </div>
 
-            <h2>Course fee</h2>
-            <p>Tortor, ac enim aliquam turpis nibh tempus.</p>
-            <Button
-              className={styles.button}
-              ButtonText={`Enroll Now`}
-              IconName="card"
-              BgColor="buttonyellow"
-              TextColor="black"
-            />
-          </div>
-          <div className={styles.details}>
-            <div>
-              <div>
-                <h3>4 Months</h3>
-                <span>Duration</span>
-              </div>
-              <div>
-                <h3>
-                  {data.emiavailable && "EMI Available"}
-                  {!data.emiavailable && "EMI Not Available"}
-                </h3>
-                <span>Contact us</span>
-              </div>
-            </div>
-            <div className={styles.price}>
-              <div>
-                <h2>{data.newprice}</h2>
-                <div className={styles["cut-price-wrapper"]}>
-                  {data.oldprice}
+                  <img
+                    src={data["offerimageurl"]}
+                    alt=""
+                    width="78px"
+                    height="27px"
+                    className="imageclass"
+                  />
                 </div>
-
-                <img
-                  src={data["offerimageurl"]}
-                  alt=""
-                  width="78px"
-                  height="27px"
-                  className="imageclass"
-                />
+                <h3>
+                  (Including GST) <span>GST @ 18%</span>
+                </h3>
               </div>
-              <h1>(Including GST)</h1>
-              <span>Total price</span>
+              <div className={styles.emi}>
+                <div>
+                  <h3>4 Months</h3>
+                  <span>Duration</span>
+                </div>
+                <div>
+                  <h3>
+                    {data.emiavailable && "EMI Available"}
+                    {!data.emiavailable && "EMI Not Available"}
+                  </h3>
+                  <span>Contact us</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.details}>
+              <h3>Why should I choose...</h3>
+              <ul>
+                <li>Real-Time Trading Practice</li>
+                <li>1:1 mentorship from Experts</li>
+                <li>Real-Time Trading Practice</li>
+                <li>1:1 mentorship from Experts</li>
+                <li>Real-Time Trading Practice</li>
+                <li>1:1 mentorship from Experts</li>
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

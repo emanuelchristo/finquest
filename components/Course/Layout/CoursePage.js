@@ -15,6 +15,7 @@ import Subscription from "../Subscription/Subscription";
 import EnrollmentDate from "../EnrollmentDate/EnrollmentDate";
 import StartNow from "../StartNow/StartNow";
 import Demo from "../Demo/Demo";
+import CourseFeeCopy from "../CourseFee/CourseFee copy";
 
 const CoursePage = () => {
   return (
@@ -29,6 +30,7 @@ const CoursePage = () => {
       <WhoIsThisFor />
       <Curriculum />
       <CourseFee />
+      <CourseFeeCopy />
       <CommunityLayout />
       <Faqs />
       <Demo />
