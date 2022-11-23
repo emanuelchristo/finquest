@@ -29,6 +29,8 @@ const CourseFee = () => {
           <h1>Get the offer while it lasts!</h1>
           <div className={styles.container}>
             <div className={styles.fee}>
+              <img src="/images/course/course-fee-arrow_1.svg" alt="" />
+              <img src="/images/course/course-fee-arrow_2.svg" alt="" />
               <h2>Webflow On-Demand Program Launch Offer (Save ₹1500)</h2>
               <div className={styles.price}>
                 <div>
@@ -61,6 +63,41 @@ const CourseFee = () => {
                   </h3>
                   <span>Contact us</span>
                 </div>
+              </div>
+              <ul>
+                <li>
+                  <img
+                    src={"/images/course/course-fee-list.svg"}
+                    alt=""
+                    width="15px"
+                    height="15px"
+                  />
+                  Enroll now and get bonuses worth ₹20,000 free. There was never
+                  a better time to grab this on-demand program. <br />
+                </li>
+
+                <li>
+                  <img
+                    src={"/images/course/course-fee-list.svg"}
+                    alt=""
+                    width="15px"
+                    height="15px"
+                  />
+                  The launch offer expires tonight, November 12, 2022
+                </li>
+              </ul>
+              <span>
+                Note: No exceptions would be made beyond the offer expiry date.
+                The prices would go up and no free bonuses
+              </span>
+              <div>
+                <Button
+                  className={styles.button}
+                  ButtonText={`Enroll Now`}
+                  IconName="card"
+                  BgColor="buttonyellow"
+                  TextColor="black"
+                />
               </div>
             </div>
             <div className={styles.details}>

@@ -30,7 +30,7 @@ const CoursePage = () => {
       <WhoIsThisFor />
       <Curriculum />
       <CourseFee />
-      <CourseFeeCopy />
+      {/* <CourseFeeCopy /> */}
       <CommunityLayout />
       <Faqs />
       <Demo />
