@@ -15,11 +15,12 @@ import Subscription from "../Subscription/Subscription";
 import EnrollmentDate from "../EnrollmentDate/EnrollmentDate";
 import StartNow from "../StartNow/StartNow";
 import Demo from "../Demo/Demo";
-import CourseFeeCopy from "../CourseFee/CourseFee copy";
+import Snackbar from "../SnackBar/SnackBar";
 
 const CoursePage = () => {
   return (
     <>
+      <Snackbar />
       <Navbar />
       <Hero />
       <Subscription />
@@ -30,7 +31,6 @@ const CoursePage = () => {
       <WhoIsThisFor />
       <Curriculum />
       <CourseFee />
-      {/* <CourseFeeCopy /> */}
       <CommunityLayout />
       <Faqs />
       <Demo />

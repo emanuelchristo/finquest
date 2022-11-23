@@ -1,0 +1,37 @@
+.wrapper {
+    height: 81px;
+}
+
+.main {
+    background: #F5F075;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 81px;
+    position: fixed;
+}
+
+
+
+
+.snack-close {
+    position: absolute;
+    padding-right: 2rem;
+    right: 0;
+    color: #000;
+}
+
+.snack-close:hover {
+    color: rgba(255, 255, 255, 0.733);
+}
+
+@media (max-width: 639px) {
+
+
+    .snack-close {
+        padding-right: 1rem;
+    }
+}
