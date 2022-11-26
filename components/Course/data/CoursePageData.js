@@ -46,28 +46,28 @@ const CoursePageData = {
     upcomingcohort: "1 July",
     whatyouwilllearn: [
       {
-        iconLink: "/icons/benefit-6.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
         title: "Money management techniques",
       },
       {
-        iconLink: "/icons/benefit-2.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
         title: "Price action strategies",
       },
       {
-        iconLink: "/icons/benefit-4.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
         title: "Momentum scanner tool",
       },
       {
-        iconLink: "/icons/benefit-1.svg",
+        iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
         title: "Chart pattern analysis",
       },
       {
-        iconLink: "/icons/benefit-pace.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
         title: "Position sizing",
       },
 
       {
-        iconLink: "/icons/benefit-goal.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
         title: "Intelligent target and stop loss",
       },
     ],
@@ -90,33 +90,6 @@ const CoursePageData = {
     ],
     lastdate: "29 June",
     upcomingcohort: "1 July",
-    whatyouwilllearn: [
-      {
-        iconLink: "/icons/benefit-6.png",
-        title: "Money management techniques",
-      },
-      {
-        iconLink: "/icons/benefit-2.png",
-        title: "Price action strategies",
-      },
-      {
-        iconLink: "/icons/benefit-4.png",
-        title: "Momentum scanner tool",
-      },
-      {
-        iconLink: "/icons/benefit-1.svg",
-        title: "Chart pattern analysis",
-      },
-      {
-        iconLink: "/icons/benefit-pace.png",
-        title: "Position sizing",
-      },
-
-      {
-        iconLink: "/icons/benefit-goal.png",
-        title: "Intelligent target and stop loss",
-      },
-    ],
     howwillyouspendyourtime: [
       {
         duration: "4 Hours",
@@ -149,36 +122,34 @@ const CoursePageData = {
     ],
     whoisthisfor: [
       {
-        iconLink: "/icons/benefit-6.png",
+        iconLink: "/images/course/icons/whoisthisfor-1.svg",
         title: "Money management techniques",
       },
       {
-        iconLink: "/icons/benefit-2.png",
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
         title: "Price action strategies",
       },
       {
-        iconLink: "/icons/benefit-4.png",
+        iconLink: "/images/course/icons/whoisthisfor-3.svg",
         title: "Momentum scanner tool",
       },
       {
-        iconLink: "/icons/benefit-1.svg",
+        iconLink: "/images/course/icons/whoisthisfor-4.svg",
         title: "Chart pattern analysis",
       },
       {
-        iconLink: "/icons/benefit-pace.png",
+        iconLink: "/images/course/icons/whoisthisfor-5.svg",
         title: "Position sizing",
       },
 
       {
-        iconLink: "/icons/benefit-goal.png",
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
         title: "Intelligent target and stop loss",
       },
     ],
     emiavailable: true,
     message: "I would like to join the 'Options trading' plan",
-    curriculum:{
-      
-    }
+    curriculum: {},
   },
   starter: {
     id: "starter",
@@ -226,28 +197,28 @@ const CoursePageData = {
     upcomingcohort: "1 July",
     whatyouwilllearn: [
       {
-        iconLink: "/icons/benefit-6.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
         title: "Money management techniques",
       },
       {
-        iconLink: "/icons/benefit-2.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
         title: "Price action strategies",
       },
       {
-        iconLink: "/icons/benefit-4.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
         title: "Momentum scanner tool",
       },
       {
-        iconLink: "/icons/benefit-1.svg",
+        iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
         title: "Chart pattern analysis",
       },
       {
-        iconLink: "/icons/benefit-pace.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
         title: "Position sizing",
       },
 
       {
-        iconLink: "/icons/benefit-goal.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
         title: "Intelligent target and stop loss",
       },
     ],
@@ -283,65 +254,37 @@ const CoursePageData = {
     ],
     whoisthisfor: [
       {
-        iconLink: "/icons/benefit-6.png",
+        iconLink: "/images/course/icons/whoisthisfor-1.svg",
         title: "Money management techniques",
       },
       {
-        iconLink: "/icons/benefit-2.png",
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
         title: "Price action strategies",
       },
       {
-        iconLink: "/icons/benefit-4.png",
+        iconLink: "/images/course/icons/whoisthisfor-3.svg",
         title: "Momentum scanner tool",
       },
       {
-        iconLink: "/icons/benefit-1.svg",
+        iconLink: "/images/course/icons/whoisthisfor-4.svg",
         title: "Chart pattern analysis",
       },
       {
-        iconLink: "/icons/benefit-pace.png",
+        iconLink: "/images/course/icons/whoisthisfor-5.svg",
         title: "Position sizing",
       },
 
       {
-        iconLink: "/icons/benefit-goal.png",
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
         title: "Intelligent target and stop loss",
       },
     ],
     lastdate: "29 June",
     upcomingcohort: "1 July",
-    whatyouwilllearn: [
-      {
-        iconLink: "/icons/benefit-6.png",
-        title: "Money management techniques",
-      },
-      {
-        iconLink: "/icons/benefit-2.png",
-        title: "Price action strategies",
-      },
-      {
-        iconLink: "/icons/benefit-4.png",
-        title: "Momentum scanner tool",
-      },
-      {
-        iconLink: "/icons/benefit-1.svg",
-        title: "Chart pattern analysis",
-      },
-      {
-        iconLink: "/icons/benefit-pace.png",
-        title: "Position sizing",
-      },
 
-      {
-        iconLink: "/icons/benefit-goal.png",
-        title: "Intelligent target and stop loss",
-      },
-    ],
     emiavailable: true,
     message: "I would like to join the 'Starter' plan",
-    curriculum:{
-
-    }
+    curriculum: {},
   },
   professional: {
     id: "professional",
@@ -389,87 +332,60 @@ const CoursePageData = {
     upcomingcohort: "1 July",
     whatyouwilllearn: [
       {
-        iconLink: "/icons/benefit-6.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
         title: "Money management techniques",
       },
       {
-        iconLink: "/icons/benefit-2.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
         title: "Price action strategies",
       },
       {
-        iconLink: "/icons/benefit-4.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
         title: "Momentum scanner tool",
       },
       {
-        iconLink: "/icons/benefit-1.svg",
+        iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
         title: "Chart pattern analysis",
       },
       {
-        iconLink: "/icons/benefit-pace.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
         title: "Position sizing",
       },
 
       {
-        iconLink: "/icons/benefit-goal.png",
+        iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
         title: "Intelligent target and stop loss",
       },
     ],
     whoisthisfor: [
       {
-        iconLink: "/icons/benefit-6.png",
+        iconLink: "/images/course/icons/whoisthisfor-1.svg",
         title: "Money management techniques",
       },
       {
-        iconLink: "/icons/benefit-2.png",
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
         title: "Price action strategies",
       },
       {
-        iconLink: "/icons/benefit-4.png",
+        iconLink: "/images/course/icons/whoisthisfor-3.svg",
         title: "Momentum scanner tool",
       },
       {
-        iconLink: "/icons/benefit-1.svg",
+        iconLink: "/images/course/icons/whoisthisfor-4.svg",
         title: "Chart pattern analysis",
       },
       {
-        iconLink: "/icons/benefit-pace.png",
+        iconLink: "/images/course/icons/whoisthisfor-5.svg",
         title: "Position sizing",
       },
 
       {
-        iconLink: "/icons/benefit-goal.png",
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
         title: "Intelligent target and stop loss",
       },
     ],
     lastdate: "29 June",
     upcomingcohort: "1 July",
-    whatyouwilllearn: [
-      {
-        iconLink: "/icons/benefit-6.png",
-        title: "Money management techniques",
-      },
-      {
-        iconLink: "/icons/benefit-2.png",
-        title: "Price action strategies",
-      },
-      {
-        iconLink: "/icons/benefit-4.png",
-        title: "Momentum scanner tool",
-      },
-      {
-        iconLink: "/icons/benefit-1.svg",
-        title: "Chart pattern analysis",
-      },
-      {
-        iconLink: "/icons/benefit-pace.png",
-        title: "Position sizing",
-      },
-
-      {
-        iconLink: "/icons/benefit-goal.png",
-        title: "Intelligent target and stop loss",
-      },
-    ],
     howwillyouspendyourtime: [
       {
         duration: "4 Hours",
@@ -502,9 +418,7 @@ const CoursePageData = {
     ],
     emiavailable: true,
     message: "I would like to join the 'Professional' plan",
-    curriculum:{
-      
-    }
+    curriculum: {},
   },
 };
 

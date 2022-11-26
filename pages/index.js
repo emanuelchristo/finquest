@@ -13,10 +13,19 @@ import Quote from "../components/Quote";
 import Reviews from "../components/Reviews";
 import Rocket from "../components/Rocket";
 import Store from "../components/Store";
-
+import Snackbar from "../components/SnackBar";
 export default function Home() {
   return (
     <div id="home">
+      <Snackbar
+        message={[
+          "🎉 Flat ",
+          <span id="offprice" key={1}>
+            ₹7500 off for beginners!
+          </span>,
+          " (First 100 learners only) 🎉",
+        ]}
+      />
       <Header />
       <Associated />
       <div className="section-spacer"></div>
