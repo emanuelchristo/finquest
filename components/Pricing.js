@@ -6,9 +6,9 @@ const plans = [
   {
     imageLink: "/images/professional-plan.webp",
     planName: "Advanced",
-    price: 9999,
+    price: 9900,
     cutPrice: 25699,
-    discount: "61% off",
+    discount: "62% off",
     duration: "2 months",
     features: [
       // 'Course duration - 1 month',
@@ -39,9 +39,9 @@ const plans = [
   {
     imageLink: "/images/options-trading-plan.webp",
     planName: "Options Trading",
-    price: 5499,
+    price: 5699,
     cutPrice: 10998,
-    discount: "50% off",
+    discount: "48% off",
     duration: "1 month",
     features: [
       "FNO trading",
