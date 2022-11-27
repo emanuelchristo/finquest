@@ -3,7 +3,6 @@ import MainContent from "./MainContent";
 import DetailsAndReview from "./DetailsAndReview";
 import ButtonAndDiscount from "./ButtonAndDiscount";
 import Cards from "./Cards";
-import LastDate from "./LastDate";
 import { useRouter } from "next/router";
 import CoursePageData from "../data/CoursePageData";
 import styles from "./hero.module.css";
@@ -34,13 +33,11 @@ const Hero = () => {
           <DetailsAndReview />
           <ButtonAndDiscount />
           <Cards />
-          <LastDate />
         </div>
         <div className={styles.image}>
           <img src="/images/course/hero-women.png" alt="image" />
         </div>
       </div>
-      <img src="/images/ad.png" alt="hero" className={styles.logos} />
     </>
   );
 };

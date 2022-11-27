@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: -1rem;
+    margin-top: 0rem;
 }
 
 .review>h3 {
@@ -191,6 +191,10 @@
 @media (max-width: 1279px) {}
 
 @media (max-width: 1023px) {
+    .image {
+        display: none;
+    }
+
     .course {
         flex-direction: column-reverse;
 
@@ -203,7 +207,7 @@
 
     .review {
 
-        margin: 2rem 0;
+        /* margin: 2rem 0; */
         align-items: center;
     }
 
@@ -225,7 +229,10 @@
 }
 
 @media (max-width: 767px) {
+    .details_review {
+        gap: 2rem;
 
+    }
 
     .maincontent>h2 {
         width: 100%;

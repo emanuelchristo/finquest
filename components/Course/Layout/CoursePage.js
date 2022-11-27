@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Faqs from "../../Faqs";
 
 import WhatYouWillLearn from "../WhatYouWillLearn/WhatYouWillLearn";
@@ -18,9 +18,29 @@ import Demo from "../Demo/Demo";
 import Snackbar from "../SnackBar/SnackBar";
 
 const CoursePage = () => {
+  const [snackbar, setSnackbar] = useState(false);
+  useEffect(function mount() {
+    function onScroll() {
+      var y = window.scrollY;
+      console.log(screen.width, y);
+      if (y >= 1200 && screen.width <= 500) {
+        setSnackbar(true);
+      } else if (y >= 1000 && screen.width < 900) {
+        setSnackbar(true);
+      } else if (y >= 800 && screen.width > 900) {
+        setSnackbar(true);
+      } else {
+        setSnackbar(false);
+      }
+    }
+    window.addEventListener("scroll", onScroll);
+    return function unMount() {
+      window.removeEventListener("scroll", onScroll);
+    };
+  });
   return (
     <>
-      <Snackbar />
+      <Snackbar trigger={snackbar} />
       <Navbar />
       <Hero />
       <Subscription />

@@ -1,6 +1,7 @@
 .subscription {
     position: relative;
     padding: 4rem 0;
+    margin-top: 6rem;
 }
 
 .subscription>img {
@@ -161,6 +162,12 @@
     .subscription>img:nth-child(1) {
         bottom: 0;
         left: 3rem;
+
+    }
+
+    .subscription {
+
+        margin-top: 3rem;
     }
 
     .subscription>img:nth-child(2) {
@@ -183,5 +190,10 @@
         display: flex;
         align-items: center;
         gap: .5rem;
+    }
+
+    .subscription {
+
+        margin-top: 2rem;
     }
 }

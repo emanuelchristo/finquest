@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import styles from "./snackbar.module.css";
 
@@ -19,7 +19,16 @@ export default function Snackbar(props) {
       className={styles["wrapper"]}
       style={{ display: hidden ? "none" : "block" }}
     >
-      <div className={styles["main"]}>
+      <motion.div
+        initial={{ y: 100 }}
+        animate={{
+          y: props.trigger ? 0 : 150,
+        }}
+        transition={{
+          duration: 1,
+        }}
+        className={styles["main"]}
+      >
         <button
           className={styles["snack-close"]}
           onClick={(e) => {
@@ -66,7 +75,7 @@ export default function Snackbar(props) {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
