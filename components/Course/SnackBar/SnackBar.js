@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./snackbar.module.css";
+import Countdown from "react-countdown";
 
 const data = {
   newprice: 2399,
@@ -11,7 +12,15 @@ const data = {
   enddate: "11th Nov 2022",
   duration: "6 Weeks",
 };
-
+const renderer = ({ hours, minutes, seconds }) => {
+  // Render a countdown
+  return (
+    <b>
+      {hours}:{minutes}:{seconds}
+    </b>
+  );
+};
+var x = Date.now() + 2940000;
 export default function Snackbar(props) {
   const [hidden, setHidden] = useState(false);
   return (
@@ -49,7 +58,8 @@ export default function Snackbar(props) {
                 ₹2399 <s>₹3499</s>
               </h2>
               <p>
-                offer ends in <b>0:32:12</b>
+                offer ends in&nbsp;
+                <Countdown autoStart={true} date={x} renderer={renderer} />
               </p>
             </div>
           </div>

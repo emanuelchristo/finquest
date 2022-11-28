@@ -22,7 +22,6 @@ const CoursePage = () => {
   useEffect(function mount() {
     function onScroll() {
       var y = window.scrollY;
-      console.log(screen.width, y);
       if (y >= 1200 && screen.width <= 500) {
         setSnackbar(true);
       } else if (y >= 1000 && screen.width < 900) {

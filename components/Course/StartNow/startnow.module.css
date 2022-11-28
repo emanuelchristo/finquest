@@ -5,7 +5,7 @@
     align-items: center;
     border-radius: 24px;
     /* flex-wrap: wrap; */
-    gap: 1.5rem;
+    justify-content: space-between;
     margin: 0rem 0 4rem 0;
 }
 
@@ -66,6 +66,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        gap: 1.5rem;
     }
 
     .startnow h2 {

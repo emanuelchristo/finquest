@@ -164,6 +164,7 @@
     height: 3.75rem;
     padding: 0 2rem;
     border-radius: 100px;
+    border: 1px solid;
 }
 
 .talk-button span,
