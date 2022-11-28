@@ -4,31 +4,32 @@ import styles from "./subscription.module.css";
 import Countdown from "react-countdown";
 
 // subcription-arrow
+const renderer = ({ hours, minutes, seconds }) => {
+  // Render a countdown
+  return (
+    <div>
+      <h6>ENDS IN</h6>
+      <div className={styles.time}>
+        <h2>
+          {hours} <span>Hrs</span>
+        </h2>
+        :
+        <h2>
+          {minutes} <span>Mins</span>
+        </h2>
+        :
+        <h2>
+          {seconds} <span>Sec</span>
+        </h2>
+      </div>
+    </div>
+  );
+};
+var x = Date.now() + 24 * 60 * 60 * 1000 - 1000;
 export default function Subscription() {
   var today = new Date();
   var dd = String(today.getDate() + 1);
-  const renderer = ({ hours, minutes, seconds }) => {
-    // Render a countdown
-    return (
-      <div>
-        <h6>ENDS IN</h6>
-        <div className={styles.time}>
-          <h2>
-            {hours} <span>Hrs</span>
-          </h2>
-          :
-          <h2>
-            {minutes} <span>Mins</span>
-          </h2>
-          :
-          <h2>
-            {seconds} <span>Sec</span>
-          </h2>
-        </div>
-      </div>
-    );
-  };
-  var x = Date.now() + 24 * 60 * 60 * 1000 - 1000;
+
   return (
     <div className="margin" id="subscription">
       <section className={styles["subscription"]}>
