@@ -4,6 +4,20 @@ import styles from "./subscription.module.css";
 import Countdown from "react-countdown";
 
 // subcription-arrow
+var months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 const renderer = ({ hours, minutes, seconds }) => {
   // Render a countdown
   return (
@@ -28,8 +42,9 @@ const renderer = ({ hours, minutes, seconds }) => {
 var x = Date.now() + 24 * 60 * 60 * 1000 - 1000;
 export default function Subscription() {
   var today = new Date();
-  var dd = String(today.getDate() + 1);
-
+  today.setDate(today.getDate() + 1);
+  var dd = String(today.getDate()).padStart(1, "0");
+  var mm = String(today.getMonth()).padStart(2, "0");
   return (
     <div className="margin" id="subscription">
       <section className={styles["subscription"]}>
@@ -54,7 +69,9 @@ export default function Subscription() {
               alt=""
             />
 
-            <h2>Hurry up, the offer ends on Nov {dd}!!</h2>
+            <h2>
+              Hurry up, the offer ends on {months[mm]} {dd} !!
+            </h2>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
