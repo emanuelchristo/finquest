@@ -10,7 +10,7 @@ const CoursePageData = {
     rating: "4.6/5",
     details: [
       {
-        heading: "₹ 500",
+        heading: "₹ 1999",
         content: "Min Capital",
       },
       {
@@ -34,7 +34,7 @@ const CoursePageData = {
       {
         imagepath: "/icons/chart.png",
         content1: "Small group session",
-        content2: "(1:5)",
+        content2: "(1:10)",
       },
       {
         imagepath: "/icons/bulb.png",
@@ -80,7 +80,7 @@ const CoursePageData = {
       {
         imagepath: "/icons/chart.png",
         content1: "Small group session",
-        content2: "(1:5)",
+        content2: "(1:10)",
       },
       {
         imagepath: "/icons/bulb.png",
@@ -120,33 +120,7 @@ const CoursePageData = {
         color: "buttonyellow",
       },
     ],
-    whoisthisfor: [
-      {
-        iconLink: "/images/course/icons/whoisthisfor-1.svg",
-        title: "Money management techniques",
-      },
-      {
-        iconLink: "/images/course/icons/whoisthisfor-2.svg",
-        title: "Price action strategies",
-      },
-      {
-        iconLink: "/images/course/icons/whoisthisfor-3.svg",
-        title: "Momentum scanner tool",
-      },
-      {
-        iconLink: "/images/course/icons/whoisthisfor-4.svg",
-        title: "Chart pattern analysis",
-      },
-      {
-        iconLink: "/images/course/icons/whoisthisfor-5.svg",
-        title: "Position sizing",
-      },
 
-      {
-        iconLink: "/images/course/icons/whoisthisfor-6.svg",
-        title: "Intelligent target and stop loss",
-      },
-    ],
     emiavailable: true,
     message: "I would like to join the 'Options trading' plan",
     curriculum: {},
@@ -161,7 +135,7 @@ const CoursePageData = {
     rating: "4.6/5",
     details: [
       {
-        heading: "₹ 500",
+        heading: "₹ 1999",
         content: "Min Capital",
       },
       {
@@ -175,6 +149,23 @@ const CoursePageData = {
     ],
     newprice: "₹5999",
     oldprice: "₹8999",
+    features: [
+      {
+        imagepath: "/icons/scholar.png",
+        content1: "Zero fee",
+        content2: "challenge",
+      },
+      {
+        imagepath: "/icons/chart.png",
+        content1: "Small group session",
+        content2: "(1:10)",
+      },
+      {
+        imagepath: "/icons/bulb.png",
+        content1: "Live trading",
+        content2: "flexible timing",
+      },
+    ],
     offerimageurl: "/icons/50.png",
     cards: [
       {
@@ -185,7 +176,7 @@ const CoursePageData = {
       {
         imagepath: "/icons/chart.png",
         content1: "Small group session",
-        content2: "(1:5)",
+        content2: "(1:10)",
       },
       {
         imagepath: "/icons/bulb.png",
@@ -195,6 +186,33 @@ const CoursePageData = {
     ],
     lastdate: "29 June",
     upcomingcohort: "1 July",
+    whoisthisfor: [
+      {
+        iconLink: "/images/course/icons/whoisthisfor-1.svg",
+        title: "Absolute Beginners",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
+        title: "Retirees",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-3.svg",
+        title: "Entrepreneurs/Business Owners",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-4.svg",
+        title: "Salaried Employees",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-5.svg",
+        title: "Freelancers",
+      },
+
+      {
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
+        title: "Students, Freelancers",
+      },
+    ],
     whatyouwilllearn: [
       {
         iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
@@ -252,36 +270,36 @@ const CoursePageData = {
         color: "buttonyellow",
       },
     ],
+
+    lastdate: "29 June",
+    upcomingcohort: "1 July",
     whoisthisfor: [
       {
         iconLink: "/images/course/icons/whoisthisfor-1.svg",
-        title: "Money management techniques",
+        title: "Absolute Beginners",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-2.svg",
-        title: "Price action strategies",
+        title: "Retirees",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-3.svg",
-        title: "Momentum scanner tool",
+        title: "Entrepreneurs/Business Owners",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-4.svg",
-        title: "Chart pattern analysis",
+        title: "Salaried Employees",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-5.svg",
-        title: "Position sizing",
+        title: "Freelancers",
       },
 
       {
         iconLink: "/images/course/icons/whoisthisfor-6.svg",
-        title: "Intelligent target and stop loss",
+        title: "Students, Freelancers",
       },
     ],
-    lastdate: "29 June",
-    upcomingcohort: "1 July",
-
     emiavailable: true,
     message: "I would like to join the 'Starter' plan",
     curriculum: {},
@@ -296,7 +314,7 @@ const CoursePageData = {
     rating: "4.6/5",
     details: [
       {
-        heading: "₹ 500",
+        heading: "₹ 1999",
         content: "Min Capital",
       },
       {
@@ -310,6 +328,23 @@ const CoursePageData = {
     ],
     newprice: "₹5999",
     oldprice: "₹8999",
+    features: [
+      {
+        imagepath: "/icons/scholar.png",
+        content1: "Zero fee",
+        content2: "challenge",
+      },
+      {
+        imagepath: "/icons/chart.png",
+        content1: "Small group session",
+        content2: "(1:10)",
+      },
+      {
+        imagepath: "/icons/bulb.png",
+        content1: "Live trading",
+        content2: "flexible timing",
+      },
+    ],
     offerimageurl: "/icons/50.png",
     cards: [
       {
@@ -320,7 +355,7 @@ const CoursePageData = {
       {
         imagepath: "/icons/chart.png",
         content1: "Small group session",
-        content2: "(1:5)",
+        content2: "(1:10)",
       },
       {
         imagepath: "/icons/bulb.png",
@@ -360,28 +395,28 @@ const CoursePageData = {
     whoisthisfor: [
       {
         iconLink: "/images/course/icons/whoisthisfor-1.svg",
-        title: "Money management techniques",
+        title: "Absolute Beginners",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-2.svg",
-        title: "Price action strategies",
+        title: "Retirees",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-3.svg",
-        title: "Momentum scanner tool",
+        title: "Entrepreneurs/Business Owners",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-4.svg",
-        title: "Chart pattern analysis",
+        title: "Salaried Employees",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-5.svg",
-        title: "Position sizing",
+        title: "Freelancers",
       },
 
       {
         iconLink: "/images/course/icons/whoisthisfor-6.svg",
-        title: "Intelligent target and stop loss",
+        title: "Students, Freelancers",
       },
     ],
     lastdate: "29 June",

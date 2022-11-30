@@ -104,11 +104,14 @@ const CourseFee = () => {
               <h3>Why should I choose...</h3>
               <ul>
                 <li>Real-Time Trading Practice</li>
-                <li>1:1 mentorship from Experts</li>
-                <li>Real-Time Trading Practice</li>
-                <li>1:1 mentorship from Experts</li>
-                <li>Real-Time Trading Practice</li>
-                <li>1:1 mentorship from Experts</li>
+                <li>1-on-1 Mentorship from Experts</li>
+                <li>Live Class</li>
+                <li>Malayalam & English</li>
+                <li>At the cost of pizza</li>
+                <li>Learn Anywhere</li>
+                <li>Lifetime support</li>
+                <li>Community Access</li>
+                <li>Certificate of completion</li>
               </ul>
             </div>
           </div>

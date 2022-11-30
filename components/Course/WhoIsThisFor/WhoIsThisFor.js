@@ -25,7 +25,7 @@ const WhoIsThisFor = () => {
     <>
       <div className="margin">
         <div className="flex">
-          <h2 style={{ margin: "3rem 0" }}>Who is this for</h2>
+          <h2 style={{ margin: "3rem 0" }}>Who is this program for ?</h2>
           <img
             src="/images/course/sparkle.png"
             alt=""

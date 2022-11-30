@@ -8,7 +8,7 @@ import Countdown from "react-countdown";
 const data = {
   newprice: 2399,
   oldprice: 3499,
-  endtime: "0:32:12",
+  endtime: Date.now() + 2940000,
   enddate: "11th Nov 2022",
   duration: "6 Weeks",
 };
@@ -20,7 +20,6 @@ const renderer = ({ hours, minutes, seconds }) => {
     </b>
   );
 };
-var x = Date.now() + 2940000;
 export default function Snackbar(props) {
   const [hidden, setHidden] = useState(false);
   return (
@@ -59,7 +58,11 @@ export default function Snackbar(props) {
               </h2>
               <p>
                 offer ends in&nbsp;
-                <Countdown autoStart={true} date={x} renderer={renderer} />
+                <Countdown
+                  autoStart={true}
+                  date={data.endtime}
+                  renderer={renderer}
+                />
               </p>
             </div>
           </div>

@@ -19,13 +19,13 @@ const Curriculum = () => {
       <h2 className="md:text-center">Curriculum built by the best</h2>
       <div className="flex gap-5 flex-wrap justify-center items-center">
         {data.map((item, index) => {
-          return (<div key={index}>
+          return (
+            <div key={index}>
               <GrayWrapper>
                 <img src={item.imagepath} alt="" width="24px" height="24px" />
                 <div>{item.content}</div>
               </GrayWrapper>
             </div>
-            
           );
         })}
       </div>
