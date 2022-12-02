@@ -2,15 +2,15 @@ const CoursePageData = {
   options: {
     id: "options",
     image: "/images/heroimage.png",
-    toughness: "Beginner",
-    title: "Kickstart your Stock market journey in less than 6 weeks!",
+    toughness: "Advanced",
+    title: "Learn Options Trading",
     description:
-      "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
-    review: "Trusted by 500+ learners",
-    rating: "4.6/5",
+      "In this course, you will learn the fundamentals of Options Trading. Right from Basics to In-Depth learning about Option chain analysis, PCR, Iron Condor, Butterfly, Bull Call Spread, Bear Put Spread. Get Expert Actionable frameworks and strategies to trade effectively.",
+    review: "Trusted by 600+ learners",
+    rating: "4.7/5",
     details: [
       {
-        heading: "₹ 1999",
+        heading: "₹ 24,999",
         content: "Min Capital",
       },
       {
@@ -18,11 +18,11 @@ const CoursePageData = {
         content: "Language",
       },
       {
-        heading: "1 month",
+        heading: "4 weeks",
         content: "Duration",
       },
     ],
-    newprice: "₹5999",
+    newprice: "₹5699",
     oldprice: "₹8999",
     offerimageurl: "/icons/50.png",
     features: [
@@ -38,7 +38,7 @@ const CoursePageData = {
       },
       {
         imagepath: "/icons/bulb.png",
-        content1: "Live trading",
+        content1: "Live trading &",
         content2: "flexible timing",
       },
     ],
@@ -47,49 +47,76 @@ const CoursePageData = {
     whatyouwilllearn: [
       {
         iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
-        title: "Money management techniques",
+        title: "Basics of Options Trading",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
-        title: "Price action strategies",
+        title: "How Options Trading Work?",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
-        title: "Momentum scanner tool",
+        title: "How to read Options & Options Chains?",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
-        title: "Chart pattern analysis",
+        title: "Understanding Options Greeks",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
-        title: "Position sizing",
+        title: "Tried & Tested Options Strategies",
       },
 
       {
         iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
-        title: "Intelligent target and stop loss",
+        title: "Psychology of Options Trading",
       },
     ],
     cards: [
       {
-        imagepath: "/icons/scholar.png",
+        imagepath: "/icons/bulb.png",
         content1: "Zero fee",
         content2: "challenge",
       },
       {
-        imagepath: "/icons/chart.png",
+        imagepath: "/icons/scholar.png",
         content1: "Small group session",
         content2: "(1:10)",
       },
       {
-        imagepath: "/icons/bulb.png",
-        content1: "Live trading",
+        imagepath: "/icons/chart.png",
+        content1: "Live trading &",
         content2: "flexible timing",
       },
     ],
     lastdate: "29 June",
     upcomingcohort: "1 July",
+    whoisthisfor: [
+      {
+        iconLink: "/images/course/icons/whoisthisfor-1.svg",
+        title: "Absolute Beginners",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
+        title: "Students & Freelancers",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-3.svg",
+        title: "Entrepreneurs/Business Owners",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-4.svg",
+        title: "Salaried Employees",
+      },
+      {
+        iconLink: "/images/course/icons/whoisthisfor-5.svg",
+        title: "Finance Enthusiasts",
+      },
+
+      {
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
+        title: "Retirees",
+      },
+    ],
     howwillyouspendyourtime: [
       {
         duration: "4 Hours",
@@ -131,8 +158,8 @@ const CoursePageData = {
     title: "Kickstart your Stock market journey in less than 6 weeks!",
     description:
       "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
-    review: "Trusted by 500+ learners",
-    rating: "4.6/5",
+    review: "Trusted by 600+ learners",
+    rating: "4.7/5",
     details: [
       {
         heading: "₹ 1999",
@@ -143,7 +170,7 @@ const CoursePageData = {
         content: "Language",
       },
       {
-        heading: "1 month",
+        heading: "6 Weeks",
         content: "Duration",
       },
     ],
@@ -162,25 +189,25 @@ const CoursePageData = {
       },
       {
         imagepath: "/icons/bulb.png",
-        content1: "Live trading",
+        content1: "Live trading  &",
         content2: "flexible timing",
       },
     ],
     offerimageurl: "/icons/50.png",
     cards: [
       {
-        imagepath: "/icons/scholar.png",
+        imagepath: "/icons/bulb.png",
         content1: "Zero fee",
         content2: "challenge",
       },
       {
-        imagepath: "/icons/chart.png",
+        imagepath: "/icons/scholar.png",
         content1: "Small group session",
         content2: "(1:10)",
       },
       {
-        imagepath: "/icons/bulb.png",
-        content1: "Live trading",
+        imagepath: "/icons/chart.png",
+        content1: "Live trading &",
         content2: "flexible timing",
       },
     ],
@@ -192,8 +219,8 @@ const CoursePageData = {
         title: "Absolute Beginners",
       },
       {
-        iconLink: "/images/course/icons/whoisthisfor-2.svg",
-        title: "Retirees",
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
+        title: "Students & Freelancers",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-3.svg",
@@ -205,34 +232,34 @@ const CoursePageData = {
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-5.svg",
-        title: "Freelancers",
+        title: "Finance Enthusiasts",
       },
 
       {
-        iconLink: "/images/course/icons/whoisthisfor-6.svg",
-        title: "Students, Freelancers",
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
+        title: "Retirees",
       },
     ],
     whatyouwilllearn: [
       {
         iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
-        title: "Money management techniques",
+        title: "Train the candidate on Price Action",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
-        title: "Price action strategies",
+        title: "Profitable Intraday Strategies ",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
-        title: "Momentum scanner tool",
+        title: "Reading Charts, Price Pattern Analysis.",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
-        title: "Chart pattern analysis",
+        title: "How the Stock Market Works",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
-        title: "Position sizing",
+        title: "Mastering Risk and Money management",
       },
 
       {
@@ -279,8 +306,8 @@ const CoursePageData = {
         title: "Absolute Beginners",
       },
       {
-        iconLink: "/images/course/icons/whoisthisfor-2.svg",
-        title: "Retirees",
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
+        title: "Students & Freelancers",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-3.svg",
@@ -292,12 +319,12 @@ const CoursePageData = {
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-5.svg",
-        title: "Freelancers",
+        title: "Finance Enthusiasts",
       },
 
       {
-        iconLink: "/images/course/icons/whoisthisfor-6.svg",
-        title: "Students, Freelancers",
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
+        title: "Retirees",
       },
     ],
     emiavailable: true,
@@ -306,12 +333,12 @@ const CoursePageData = {
   },
   professional: {
     id: "professional",
-    toughness: "intermediate",
+    toughness: "beginner",
     title: "Kickstart your Stock market journey in less than 6 weeks!",
     description:
       "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
-    review: "Trusted by 500+ learners",
-    rating: "4.6/5",
+    review: "Trusted by 600+ learners",
+    rating: "4.7/5",
     details: [
       {
         heading: "₹ 1999",
@@ -348,18 +375,18 @@ const CoursePageData = {
     offerimageurl: "/icons/50.png",
     cards: [
       {
-        imagepath: "/icons/scholar.png",
+        imagepath: "/icons/bulb.png",
         content1: "Zero fee",
         content2: "challenge",
       },
       {
-        imagepath: "/icons/chart.png",
+        imagepath: "/icons/scholar.png",
         content1: "Small group session",
         content2: "(1:10)",
       },
       {
-        imagepath: "/icons/bulb.png",
-        content1: "Live trading",
+        imagepath: "/icons/chart.png",
+        content1: "Live trading &",
         content2: "flexible timing",
       },
     ],
@@ -398,8 +425,8 @@ const CoursePageData = {
         title: "Absolute Beginners",
       },
       {
-        iconLink: "/images/course/icons/whoisthisfor-2.svg",
-        title: "Retirees",
+        iconLink: "/images/course/icons/whoisthisfor-6.svg",
+        title: "Students & Freelancers",
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-3.svg",
@@ -411,12 +438,12 @@ const CoursePageData = {
       },
       {
         iconLink: "/images/course/icons/whoisthisfor-5.svg",
-        title: "Freelancers",
+        title: "Finance Enthusiasts",
       },
 
       {
-        iconLink: "/images/course/icons/whoisthisfor-6.svg",
-        title: "Students, Freelancers",
+        iconLink: "/images/course/icons/whoisthisfor-2.svg",
+        title: "Retirees",
       },
     ],
     lastdate: "29 June",

@@ -53,7 +53,7 @@ const CourseFee = () => {
               </div>
               <div className={styles.emi}>
                 <div>
-                  <h3>4 Months</h3>
+                  <h3>4 Weeks</h3>
                   <span>Duration</span>
                 </div>
                 <div>

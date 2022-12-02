@@ -57,7 +57,7 @@
 .details_review {
     display: flex;
     margin: 1rem 0;
-    gap: 4rem;
+    gap: 1rem;
 
 }
 
@@ -202,7 +202,7 @@
 
     .details_review {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .review {

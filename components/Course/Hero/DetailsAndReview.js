@@ -24,8 +24,6 @@ const DetailsAndReview = () => {
   return (
     <div>
       <div className={styles.details_review}>
-        <Review />
-
         <div className={styles.details}>
           {data["details"]?.map((item, index) => {
             return (
@@ -42,6 +40,8 @@ const DetailsAndReview = () => {
             );
           })}
         </div>
+        <div className={styles.separator}></div>
+        <Review />
       </div>
     </div>
   );
