@@ -1,7 +1,16 @@
 import React from "react";
-import Button from "../common/Buttons/Button";
 import FeaturesLayout from "../common/FeatureLayout/FeaturesLayout";
+import { motion, AnimatePresence } from "framer-motion";
+import ContactPopUp from "../PopUp/Contact";
+import styles from "./whatyouwill.module.css";
+import { BsBookHalf } from "react-icons/bs";
+
+import { useState } from "react";
+
 const WhatYouWillLearn = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const close = () => setModalOpen(false);
+  const open = () => setModalOpen(true);
   return (
     <>
       <div className="margin">
@@ -9,14 +18,24 @@ const WhatYouWillLearn = () => {
           What You will Learn
         </h2>
         <div className="flex">
-          <Button
-            ButtonText="Curriculum"
-            IconName="Book"
-            BgColor="buttongreen"
-            TextColor="white"
-          />
+          <button
+            className={styles["curriculum-button"]}
+            onClick={() => (modalOpen ? close() : open())}
+          >
+            <BsBookHalf />
+            Curriculum
+          </button>
         </div>
         <FeaturesLayout indicator="whatyouwilllearn" />
+        <AnimatePresence
+          initial={false}
+          exitBeforeEnter={true}
+          onExitComplete={() => null}
+        >
+          {modalOpen && (
+            <ContactPopUp modalOpen={modalOpen} handleClose={close} />
+          )}
+        </AnimatePresence>
       </div>
     </>
   );

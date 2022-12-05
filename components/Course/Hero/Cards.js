@@ -20,7 +20,6 @@ const Cards = () => {
         setdata(CoursePageData.starter);
     }
   }, [courseid]);
-  console.log(data[0]?.cards);
 
   return (
     <div className={styles.cards}>

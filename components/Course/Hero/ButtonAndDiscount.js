@@ -32,14 +32,9 @@ const ButtonAndDiscount = () => {
         <div>
           <span className={styles.strikethrough}>{data["oldprice"]}</span>
         </div>
-        <div>
-          <img
-            src={data["offerimageurl"]}
-            alt=""
-            width="78px"
-            height="27px"
-            className="imageclass"
-          />
+        <div className={styles.offprice}>
+          <img src="/images/course/offprice.svg" alt="" />
+          <span>{data.offprice}% off</span>
         </div>
       </div>
     </>

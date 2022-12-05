@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillStar } from "react-icons/ai";
 import Detail from "./Detail";
 import Review from "./Review";
 import { useRouter } from "next/router";

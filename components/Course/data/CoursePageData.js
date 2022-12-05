@@ -24,7 +24,7 @@ const CoursePageData = {
     ],
     newprice: "₹5699",
     oldprice: "₹8999",
-    offerimageurl: "/icons/50.png",
+    offprice: 50,
     features: [
       {
         imagepath: "/icons/scholar.png",
@@ -150,7 +150,52 @@ const CoursePageData = {
 
     emiavailable: true,
     message: "I would like to join the 'Options trading' plan",
-    curriculum: {},
+    curriculum: {
+      title: "Options Trading",
+      description:
+        "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
+      duration1: {
+        title: ["Week 1", "Orientation + Basic Learning + Doubt Clearing"],
+        points: [
+          {
+            title: "Monday - 7:30PM to 8:30PM",
+            description: "Ice-breaking and Welcome Session",
+          },
+          {
+            title: "Tuesday - 6:00PM to 8:00PM",
+            description: "Live Classroom Training, Strategy Discussion",
+          },
+          {
+            title: "Wednesday - 5:00PM to 7:00PM",
+            description: "Screener Discussions",
+          },
+        ],
+      },
+
+      duration2: {
+        title: [
+          "Week 2 to Week 4",
+          "Practical Community-based Learning + Live Trading",
+        ],
+        points: [
+          {
+            title: "Live Trading",
+          },
+          {
+            title: "Premium Support and Community Access",
+          },
+          {
+            title: "Access to all of our trades and analysis",
+          },
+          {
+            title: "Weekly Catchup and Review Sessions",
+          },
+          {
+            title: "Last Thursday 4 PM - 4 PM",
+          },
+        ],
+      },
+    },
   },
   starter: {
     id: "starter",
@@ -193,7 +238,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    offerimageurl: "/icons/50.png",
+    offprice: 50,
     cards: [
       {
         imagepath: "/icons/bulb.png",
@@ -329,7 +374,52 @@ const CoursePageData = {
     ],
     emiavailable: true,
     message: "I would like to join the 'Starter' plan",
-    curriculum: {},
+    curriculum: {
+      title: "Options Trading",
+      description:
+        "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
+      duration1: {
+        title: ["Week 1", "Orientation + Basic Learning + Doubt Clearing"],
+        points: [
+          {
+            title: "Monday - 7:30PM to 8:30PM",
+            description: "Ice-breaking and Welcome Session",
+          },
+          {
+            title: "Tuesday - 6:00PM to 8:00PM",
+            description: "Live Classroom Training, Strategy Discussion",
+          },
+          {
+            title: "Wednesday - 5:00PM to 7:00PM",
+            description: "Screener Discussions",
+          },
+        ],
+      },
+
+      duration2: {
+        title: [
+          "Week 2 to Week 4",
+          "Practical Community-based Learning + Live Trading",
+        ],
+        points: [
+          {
+            title: "Live Trading",
+          },
+          {
+            title: "Premium Support and Community Access",
+          },
+          {
+            title: "Access to all of our trades and analysis",
+          },
+          {
+            title: "Weekly Catchup and Review Sessions",
+          },
+          {
+            title: "Last Thursday 4 PM - 4 PM",
+          },
+        ],
+      },
+    },
   },
   professional: {
     id: "professional",
@@ -372,7 +462,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    offerimageurl: "/icons/50.png",
+    offprice: 50,
     cards: [
       {
         imagepath: "/icons/bulb.png",
@@ -480,7 +570,52 @@ const CoursePageData = {
     ],
     emiavailable: true,
     message: "I would like to join the 'Professional' plan",
-    curriculum: {},
+    curriculum: {
+      title: "Options Trading",
+      description:
+        "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
+      duration1: {
+        title: ["Week 1", "Orientation + Basic Learning + Doubt Clearing"],
+        points: [
+          {
+            title: "Monday - 7:30PM to 8:30PM",
+            description: "Ice-breaking and Welcome Session",
+          },
+          {
+            title: "Tuesday - 6:00PM to 8:00PM",
+            description: "Live Classroom Training, Strategy Discussion",
+          },
+          {
+            title: "Wednesday - 5:00PM to 7:00PM",
+            description: "Screener Discussions",
+          },
+        ],
+      },
+
+      duration2: {
+        title: [
+          "Week 2 to Week 4",
+          "Practical Community-based Learning + Live Trading",
+        ],
+        points: [
+          {
+            title: "Live Trading",
+          },
+          {
+            title: "Premium Support and Community Access",
+          },
+          {
+            title: "Access to all of our trades and analysis",
+          },
+          {
+            title: "Weekly Catchup and Review Sessions",
+          },
+          {
+            title: "Last Thursday 4 PM - 4 PM",
+          },
+        ],
+      },
+    },
   },
 };
 

@@ -39,8 +39,12 @@ export default function Community() {
         </div>
         <motion.button
           className={styles["community-join-button"]}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
           onClick={() => (modalOpen ? close() : open())}
         >
           <FaUsers className={styles["community-join-icon"]} />

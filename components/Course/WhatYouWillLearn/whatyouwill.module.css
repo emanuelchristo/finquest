@@ -1,0 +1,28 @@
+.curriculum-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 200px;
+    height: 59px;
+    background: #2DB34E;
+    border-radius: 67px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.curriculum-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 1022px) {
+    .curriculum-button {
+        margin-bottom: 2rem;
+    }
+}

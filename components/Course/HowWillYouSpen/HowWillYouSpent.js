@@ -5,7 +5,8 @@ import Image from "next/image";
 import CoursePageData from "../data/CoursePageData";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import PopUp from "../PopUp/PopUp";
+import Contact from "../PopUp/Contact";
+import CourseStructurePopUp from "../PopUp/CourseStructure";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "../PopUp/popup.module.css";
 import { HiOutlineBookOpen } from "react-icons/hi";
@@ -71,7 +72,13 @@ const HowWillYouSpent = () => {
           exitBeforeEnter={true}
           onExitComplete={() => null}
         >
-          {modalOpen && <PopUp modalOpen={modalOpen} handleClose={close} />}
+          {modalOpen && (
+            <CourseStructurePopUp
+              data={data}
+              modalOpen={modalOpen}
+              handleClose={close}
+            />
+          )}
         </AnimatePresence>
       </div>
     </>
