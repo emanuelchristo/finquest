@@ -1,17 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import CoursePageData from "../data/CoursePageData";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import styles from "./snackbar.module.css";
 import Countdown from "react-countdown";
+import { WaButton } from "../common/Buttons/Button";
 
-const data = {
-  newprice: 2399,
-  oldprice: 3499,
-  endtime: Date.now() + 2940000,
-  enddate: "11th Nov 2022",
-  duration: "6 Weeks",
+var months = [
+  "Jan",
+  "Feb",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "Aug",
+  "Sept",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+var tommorow = new Date();
+tommorow.setDate(tommorow.getDate() + 1);
+
+const tmw = {
+  dd: String(tommorow.getDate()).padStart(1, "0"),
+  mm: months[String(tommorow.getMonth()).padStart(2, "0")],
+  yy: String(tommorow.getFullYear()).padStart(2, "0"),
 };
+
 const renderer = ({ hours, minutes, seconds }) => {
   // Render a countdown
   return (
@@ -20,8 +38,25 @@ const renderer = ({ hours, minutes, seconds }) => {
     </b>
   );
 };
+
 export default function Snackbar(props) {
+  const router = useRouter();
   const [hidden, setHidden] = useState(false);
+  const [data, setdata] = useState({});
+  const { courseid } = router.query;
+  const [date, setdate] = useState();
+  useEffect(() => {
+    switch (courseid) {
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+      case "starter":
+        setdata(CoursePageData.starter);
+    }
+  }, [courseid]);
   return (
     <div
       className={styles["wrapper"]}
@@ -54,13 +89,13 @@ export default function Snackbar(props) {
             />
             <div>
               <h2>
-                ₹2399 <s>₹3499</s>
+                {data.newprice} <s>{data.oldprice}</s>
               </h2>
               <p>
                 offer ends in&nbsp;
                 <Countdown
                   autoStart={true}
-                  date={data.endtime}
+                  date={Date.now() + 2940000}
                   renderer={renderer}
                 />
               </p>
@@ -68,24 +103,21 @@ export default function Snackbar(props) {
           </div>
           <div>
             <h3>Registration ends on</h3>
-            <p>11th Nov 2022</p>
+            <p>
+              {tmw.dd}th {tmw.mm} {tmw.yy}
+            </p>
           </div>
           <div>
             <h3>Course duration</h3>
-            <p>6 Weeks</p>
+            <p>{data.duration}</p>
           </div>
         </div>
         <div>
           <div>
-            <Link href={`course/`}>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className={styles["enroll-button"]}
-              >
-                Enroll Now
-              </motion.button>
-            </Link>
+            <WaButton
+              ButtonText={"Enroll Now"}
+              ClassName={styles["enroll-button"]}
+            />
           </div>
         </div>
       </motion.div>

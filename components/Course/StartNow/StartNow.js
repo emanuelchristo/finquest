@@ -1,5 +1,6 @@
 import styles from "./startnow.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function StartNow() {
   return (
@@ -13,13 +14,15 @@ export default function StartNow() {
           <p>Its time for you to grab your opportunity</p>
         </div>
         <div>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={styles["start-button"]}
-          >
-            <span className={styles["start"]}>Start Now</span>
-          </motion.button>
+          <Link href="#EnrollNow">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={styles["start-button"]}
+            >
+              <span className={styles["start"]}>Start Now</span>
+            </motion.button>
+          </Link>
         </div>
       </section>
     </div>

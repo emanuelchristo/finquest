@@ -7,6 +7,47 @@ import { BsWhatsapp } from "react-icons/bs";
 import { useRouter } from "next/router";
 import CoursePageData from "../../data/CoursePageData";
 import Link from "next/link";
+
+function waLink(msg) {
+  let url = "https://api.whatsapp.com/send?";
+  let params = new URLSearchParams("");
+  params.append("phone", "918075145434");
+  params.append("text", msg);
+  return url + params.toString();
+}
+
+export const WaButton = ({ ButtonText, ClassName }) => {
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [data, setdata] = React.useState({});
+  const [redirecturl, setredirecturl] = React.useState("");
+  React.useEffect(() => {
+    switch (courseid) {
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+      case "starter":
+        setdata(CoursePageData.starter);
+    }
+  }, [courseid]);
+  useEffect(() => {
+    setredirecturl(waLink(data.message));
+  }, [data, ButtonText, ClassName]);
+  return (
+    <a href={redirecturl} target="_blank" rel="noopener noreferrer">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className={ClassName}
+      >
+        {ButtonText}
+      </motion.button>
+    </a>
+  );
+};
 const Button = ({ ButtonText, IconName, BgColor, TextColor }) => {
   const router = useRouter();
   const { courseid } = router.query;
@@ -26,13 +67,7 @@ const Button = ({ ButtonText, IconName, BgColor, TextColor }) => {
   }, [courseid]);
   const [bg, setbg] = React.useState(BgColor);
   const [text, settext] = React.useState(TextColor);
-  function waLink(msg) {
-    let url = "https://api.whatsapp.com/send?";
-    let params = new URLSearchParams("");
-    params.append("phone", "918075145434");
-    params.append("text", msg);
-    return url + params.toString();
-  }
+
   useEffect(() => {
     if (BgColor === "buttonblue") {
       setbg("bg-buttonblue");
@@ -49,7 +84,7 @@ const Button = ({ ButtonText, IconName, BgColor, TextColor }) => {
     if (TextColor === "black") {
       settext("text-black");
     }
-    if (ButtonText.includes("Enroll for")) {
+    if (ButtonText.includes("Enroll Now")) {
       setredirecturl(waLink(data.message));
     }
     if (ButtonText == "Curriculum" || ButtonText == "curriculum") {

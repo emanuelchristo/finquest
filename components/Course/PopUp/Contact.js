@@ -3,7 +3,7 @@ import styles from "./popup.module.css";
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import { sendMessage, dropIn } from "./Telegram";
+import { sendMessage } from "./Telegram";
 import PopUp from "./PopUp";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
@@ -62,7 +62,7 @@ const ContactPopup = ({ handleClose }) => {
         <section className={styles["popup"]}>
           <div className={styles.contact}>
             <h1>Ready to become a Rockstar Trader?</h1>
-            <div className="inputs">
+            <div className={styles["inputs"]}>
               <input type="text" placeholder="Enter your name" />
               <PhoneInput
                 international

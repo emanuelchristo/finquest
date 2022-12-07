@@ -8,6 +8,7 @@ const CoursePageData = {
       "In this course, you will learn the fundamentals of Options Trading. Right from Basics to In-Depth learning about Option chain analysis, PCR, Iron Condor, Butterfly, Bull Call Spread, Bear Put Spread. Get Expert Actionable frameworks and strategies to trade effectively.",
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
+    duration: "4 weeks",
     details: [
       {
         heading: "₹ 24,999",
@@ -25,6 +26,7 @@ const CoursePageData = {
     newprice: "₹5699",
     oldprice: "₹8999",
     offprice: 50,
+
     features: [
       {
         imagepath: "/icons/scholar.png",
@@ -119,37 +121,42 @@ const CoursePageData = {
     ],
     howwillyouspendyourtime: [
       {
-        duration: "4 Hours",
-        title: "Live training",
+        duration: "3 Weeks",
+        title: "Live Trading",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Practice & Compare strategies & trades with expert trades to trade confidently.",
         color: "buttonblue",
       },
       {
-        duration: "2 Weeks",
-        title: "Q&A session",
+        duration: "4 Weeks",
+        title: "Live Sessions",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "We host live sessions for more specific & personalized learning throughout the first 6 weeks.",
         color: "buttongreen",
       },
       {
-        duration: "1 Month",
-        title: "Community access",
+        duration: "4 Weeks",
+        title: "Q&A session",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Get your doubts resolved during the live sessions in the easiest ways possible.",
         color: "buttonblue",
       },
       {
-        duration: "1 Month",
-        title: "Audio rooms access",
+        duration: "Lifetime",
+        title: "Community access",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Interact with 1000+ learners. Clear your doubts and exchange strategy ideas every day.",
         color: "buttonyellow",
       },
     ],
 
     emiavailable: true,
     message: "I would like to join the 'Options trading' plan",
+    curriculumbuiltbythebest: {
+      title: "Starter Program Launch Offer (Save ₹7500)",
+      point:
+        "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
+    },
     curriculum: {
       title: "Options Trading",
       description:
@@ -205,6 +212,7 @@ const CoursePageData = {
       "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
+    duration: "6 weeks",
     details: [
       {
         heading: "₹ 1999",
@@ -219,8 +227,8 @@ const CoursePageData = {
         content: "Duration",
       },
     ],
-    newprice: "₹5999",
-    oldprice: "₹8999",
+    newprice: "₹7999",
+    oldprice: "₹15499",
     features: [
       {
         imagepath: "/icons/scholar.png",
@@ -238,7 +246,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    offprice: 50,
+    offprice: 49,
     cards: [
       {
         imagepath: "/icons/bulb.png",
@@ -314,31 +322,31 @@ const CoursePageData = {
     ],
     howwillyouspendyourtime: [
       {
-        duration: "4 Hours",
-        title: "Live training",
+        duration: "4 Weeks",
+        title: "Live Trading",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Practice & Compare strategies & trades with expert trades to trade confidently.",
         color: "buttonblue",
       },
       {
-        duration: "2 Weeks",
-        title: "Q&A session",
+        duration: "6 Weeks",
+        title: "Live Sessions",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "We host live sessions for more specific & personalized learning throughout the first 6 weeks.",
         color: "buttongreen",
       },
       {
-        duration: "1 Month",
-        title: "Community access",
+        duration: "6 Weeks",
+        title: "Q&A session",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Get your doubts resolved during the live sessions in the easiest ways possible.",
         color: "buttonblue",
       },
       {
-        duration: "1 Month",
-        title: "Audio rooms access",
+        duration: "Lifetime",
+        title: "Community access",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Interact with 1000+ learners. Clear your doubts and exchange strategy ideas every day.",
         color: "buttonyellow",
       },
     ],
@@ -374,6 +382,11 @@ const CoursePageData = {
     ],
     emiavailable: true,
     message: "I would like to join the 'Starter' plan",
+    curriculumbuiltbythebest: {
+      title: "Starter Program Launch Offer (Save ₹7500)",
+      point:
+        "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
+    },
     curriculum: {
       title: "Options Trading",
       description:
@@ -429,6 +442,7 @@ const CoursePageData = {
       "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
+    duration: "1 month",
     details: [
       {
         heading: "₹ 1999",
@@ -540,36 +554,41 @@ const CoursePageData = {
     upcomingcohort: "1 July",
     howwillyouspendyourtime: [
       {
-        duration: "4 Hours",
-        title: "Live training",
+        duration: "5 Weeks",
+        title: "Live Trading",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Practice & Compare strategies & trades with expert trades to trade confidently.",
         color: "buttonblue",
       },
       {
-        duration: "2 Weeks",
-        title: "Q&A session",
+        duration: "8 Weeks",
+        title: "Live Sessions",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "We host live sessions for more specific & personalized learning throughout the first 6 weeks.",
         color: "buttongreen",
       },
       {
-        duration: "1 Month",
-        title: "Community access",
+        duration: "8 Weeks",
+        title: "Q&A session",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Get your doubts resolved during the live sessions in the easiest ways possible.",
         color: "buttonblue",
       },
       {
-        duration: "1 Month",
-        title: "Audio rooms access",
+        duration: "Lifetime",
+        title: "Community access",
         content:
-          "Sem turpis dui id nunc. Cras et diam ullamcorper massa id enim. Quam sed massa tempus mattis.",
+          "Interact with 1000+ learners. Clear your doubts and exchange strategy ideas every day.",
         color: "buttonyellow",
       },
     ],
     emiavailable: true,
     message: "I would like to join the 'Professional' plan",
+    curriculumbuiltbythebest: {
+      title: "Starter Program Launch Offer (Save ₹7500)",
+      point:
+        "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
+    },
     curriculum: {
       title: "Options Trading",
       description:

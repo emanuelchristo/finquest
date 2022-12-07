@@ -1,8 +1,38 @@
 import styles from "./demo.module.css";
 import { motion } from "framer-motion";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import CoursePageData from "../data/CoursePageData";
+
+function waLink(msg) {
+  let url = "https://api.whatsapp.com/send?";
+  let params = new URLSearchParams("");
+  params.append("phone", "918075145434");
+  params.append("text", msg);
+  return url + params.toString();
+}
 
 export default function Demo() {
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [data, setdata] = useState({});
+  const [redirecturl, setredirecturl] = useState("");
+  useEffect(() => {
+    switch (courseid) {
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+      case "starter":
+        setdata(CoursePageData.starter);
+    }
+  }, [courseid]);
+  useEffect(() => {
+    setredirecturl(waLink(data.message));
+  }, [data]);
   return (
     <div className="margin" id="demo">
       <section className={styles["demo"]}>
@@ -14,21 +44,33 @@ export default function Demo() {
           </p>
         </div>
         <div className={styles.buttons}>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <a
+            href="https://calendly.com/finquest"
+            target="_blank"
+            rel="noreferrer noopener"
             className={styles["button"]}
           >
-            <span className={styles["button-text"]}>Book a demo</span>
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className={styles["button-text"]}>Book a demo</span>
+            </motion.button>
+          </a>
+          <a
+            href={redirecturl}
+            target="_blank"
+            rel="noopener noreferrer"
             className={styles["button"]}
           >
             <FaPhoneAlt className={styles["icon"]} />
-            <span className={styles["button-text"]}>Talk to us</span>
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className={styles["button-text"]}>Talk to us</span>
+            </motion.button>
+          </a>
         </div>
       </section>
     </div>

@@ -5,10 +5,31 @@ import CoursePageData from "../data/CoursePageData";
 import { useRouter } from "next/router";
 import styles from "./course_fee.module.css";
 
+var months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 const CourseFee = () => {
+  var today = new Date();
+  today.setDate(today.getDate() + 1);
+  var dd = String(today.getDate()).padStart(1, "0");
+  var mm = String(today.getMonth()).padStart(2, "0");
+  var yy = String(today.getFullYear()).padStart(2, "0");
   const router = useRouter();
   const { courseid } = router.query;
   const [data, setdata] = React.useState({});
+  const [curriculum, setcurriculum] = React.useState();
+  const [duration, setduration] = React.useState();
   React.useEffect(() => {
     switch (courseid) {
       case "options":
@@ -20,18 +41,21 @@ const CourseFee = () => {
       case "starter":
         setdata(CoursePageData.starter);
     }
-  }, [courseid]);
-
+  }, [courseid, CoursePageData]);
+  React.useEffect(() => {
+    setcurriculum(data.curriculumbuiltbythebest);
+    setduration(data.details);
+  }, [courseid, data]);
   return (
     <>
       <div className="margin">
-        <section className={styles.course_fee}>
+        <section id="EnrollNow" className={styles.course_fee}>
           <h1>Get the offer while it lasts!</h1>
           <div className={styles.container}>
             <div className={styles.fee}>
               <img src="/images/course/course-fee-arrow_1.svg" alt="" />
               <img src="/images/course/course-fee-arrow_2.svg" alt="" />
-              <h2>Webflow On-Demand Program Launch Offer (Save ₹1500)</h2>
+              <h2>{curriculum?.title}</h2>
               <div className={styles.price}>
                 <div>
                   <h2>{data.newprice}</h2>
@@ -50,7 +74,7 @@ const CourseFee = () => {
               </div>
               <div className={styles.emi}>
                 <div>
-                  <h3>4 Weeks</h3>
+                  <h3>{duration ? duration[2]?.heading : ""}</h3>
                   <span>Duration</span>
                 </div>
                 <div>
@@ -69,8 +93,7 @@ const CourseFee = () => {
                     width="15px"
                     height="15px"
                   />
-                  Enroll now and get bonuses worth ₹20,000 free. There was never
-                  a better time to grab this on-demand program. <br />
+                  {curriculum?.point} <br />
                 </li>
 
                 <li>
@@ -80,9 +103,10 @@ const CourseFee = () => {
                     width="15px"
                     height="15px"
                   />
-                  The launch offer expires tonight, November 12, 2022
+                  The launch offer expires tommorow, {months[mm]} {dd}, {yy}
                 </li>
               </ul>
+
               <span>
                 Note: No exceptions would be made beyond the offer expiry date.
                 The prices would go up and no free bonuses

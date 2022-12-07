@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Faqs from "../../Faqs";
+import Faqs from "../Faqs/Faqs";
 
 import WhatYouWillLearn from "../WhatYouWillLearn/WhatYouWillLearn";
 import WhoIsThisFor from "../WhoIsThisFor/WhoIsThisFor";
