@@ -68,7 +68,7 @@ const CourseStructurePopUp = ({ handleClose, data }) => {
               </p>
               <ul>
                 {data.curriculum.duration2.points?.map((item, index) => {
-                  return <li>{item.title} </li>;
+                  return <li key={index}>{item.title} </li>;
                 })}
               </ul>
             </div>
