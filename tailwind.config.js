@@ -13,10 +13,13 @@ module.exports = {
         blue: "#0d64e5",
         yellow: "#F5D627",
         "footer-bg": "#161818",
-        buttonblue: "#163af4",
+        buttonblue: "#0D64E5",
+        buttongreen: "#2DB34E",
+        buttonpink: "#F555A0",
+        buttonpurple: "#875EFB",
         lightblue: "#f3fbff",
-        lightgreen:"#E9FFCC",
-        lightblack:"#343B45"
+        lightgreen: "#E9FFCC",
+        lightblack: "#343B45",
       },
     },
     screens: {

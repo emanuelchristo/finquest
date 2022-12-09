@@ -1,7 +1,6 @@
-const chat_id = 651770430;
-const bot_id = "5479087425:AAG6TaqMFvWyaFbBZXXM-eRsgZRABPKR0Ro";
-// const chat_id = process.env.chat_id;
-// const bot_id = process.env.bot_id;
+const bot_id = process.env.bot_id;
+const chat_id = process.env.chat_id;
+
 const makePostRequest = async (url, details) => {
   const response = await fetch(url, {
     method: "POST",

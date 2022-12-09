@@ -7,17 +7,23 @@ import { sendMessage } from "./Telegram";
 import PopUp from "./PopUp";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
-
-const ContactPopup = ({ handleClose }) => {
+const chat_id = process.env.chat_id;
+const ContactPopup = ({ handleClose, courseid }) => {
   const [value, setValue] = useState();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const img = "https://www.finqlearning.com/images/professional-plan.webp";
+
+  if (courseid == "starter") {
+    img = "https://www.finqlearning.com/images/student-plan.webp";
+  } else if (courseid == "options") {
+    img = "https://www.finqlearning.com/images/options-trading-plan.webp";
+  }
   function join(e) {
     e.preventDefault();
     try {
       sendMessage(
-        `<a href="https://www.finqlearning.com/images/quote.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
+        `<a href="${img}"> </a><b>Course Join Request</b>\n\n🚀 Course: <b>${courseid.toUpperCase()}</b>\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n\n`,
         "html",
         chat_id
       );
@@ -38,7 +44,6 @@ const ContactPopup = ({ handleClose }) => {
         position: "top-right",
       });
     }
-    setEmail("");
     setName("");
     setPhone("");
   }
@@ -55,33 +60,41 @@ const ContactPopup = ({ handleClose }) => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
+        style={{ zIndex: 999999 }}
       />
       {/* Same as */}
-      <ToastContainer />
       <PopUp className={styles.contactmodal}>
         <section className={styles["popup"]}>
-          <div className={styles.contact}>
+          <form className={styles.contact} onSubmit={join}>
             <h1>Ready to become a Rockstar Trader?</h1>
             <div className={styles["inputs"]}>
-              <input type="text" placeholder="Enter your name" />
+              <input
+                type="text"
+                placeholder="Enter your name"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                required
+              />
               <PhoneInput
                 international
                 countryCallingCodeEditable={false}
                 defaultCountry="IN"
                 value={value}
-                onChange={setValue}
+                onChange={setPhone}
                 className={styles.phone}
+                rules={{ required: true }}
               />
             </div>
             <motion.button
               className={styles["submit-button"]}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              onClick={() => (modalOpen ? close() : open())}
+              type="submit"
             >
               <span>Submit</span>
             </motion.button>
-          </div>
+          </form>
           <button className={styles.modal_close} onClick={handleClose}>
             <img src="/images/course/icons/popup-close.svg" alt="" />
           </button>

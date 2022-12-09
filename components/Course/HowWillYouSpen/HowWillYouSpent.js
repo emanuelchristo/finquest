@@ -71,7 +71,11 @@ const HowWillYouSpent = () => {
           onExitComplete={() => null}
         >
           {modalOpen && (
-            <ContactPopUp modalOpen={modalOpen} handleClose={close} />
+            <ContactPopUp
+              modalOpen={modalOpen}
+              handleClose={close}
+              courseid={courseid}
+            />
           )}
         </AnimatePresence>
       </div>

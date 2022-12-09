@@ -139,14 +139,14 @@ const CoursePageData = {
         title: "Q&A session",
         content:
           "Get your doubts resolved during the live sessions in the easiest ways possible.",
-        color: "buttonblue",
+        color: "buttonpink",
       },
       {
         duration: "Lifetime",
         title: "Community access",
         content:
           "Interact with 1000+ learners. Clear your doubts and exchange strategy ideas every day.",
-        color: "buttonyellow",
+        color: "buttonpurple",
       },
     ],
 
