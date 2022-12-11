@@ -499,28 +499,28 @@ const CoursePageData = {
     whatyouwilllearn: [
       {
         iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
-        title: "Fundamentals of Options Trading",
+        title: "IntraDay and Swing stratergies",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
-        title: "Select an option strategy to increase profits",
+        title: "Basics of Options Trading",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
-        title: "Momentum scanner tool",
+        title: "Fundamentals of Options Trading",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
-        title: "Chart pattern analysis",
+        title: "FNO strategies to increase profits",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
-        title: "Position sizing",
+        title: "How to read Options chart & Options Chains?",
       },
 
       {
         iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
-        title: "Intelligent target and stop loss",
+        title: "Tried & Tested Options Strategies",
       },
     ],
     whoisthisfor: [
