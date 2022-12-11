@@ -5,11 +5,13 @@ const Curriculum = () => {
   const data = [
     {
       imagepath: "/images/curiculum1.png",
-      content: "Community-led learning is the future.",
+      content:
+        "Learn Investing & Trading from the top 1% of the Industry Experts.",
     },
     {
       imagepath: "/images/curiculum2.png",
-      content: "A complete hands-on experience from industry leaders.",
+      content:
+        "A complete hands-on experience with live trading alongside the Community.",
     },
   ];
   return (

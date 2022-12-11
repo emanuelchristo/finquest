@@ -215,7 +215,7 @@ const CoursePageData = {
     duration: "6 weeks",
     details: [
       {
-        heading: "₹ 1999",
+        heading: "₹ 3999",
         content: "Min Capital",
       },
       {
@@ -437,15 +437,15 @@ const CoursePageData = {
   professional: {
     id: "professional",
     toughness: "beginner",
-    title: "Kickstart your Stock market journey in less than 6 weeks!",
+    title: "From beginner to PRO TRADER",
     description:
-      "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
+      "A Complete Masterclass from Market Experts where you will learn about in-depth Stock Trading and Unlock a new source of Income.",
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
-    duration: "1 month",
+    duration: "8 Weeks",
     details: [
       {
-        heading: "₹ 1999",
+        heading: "₹ 6999",
         content: "Min Capital",
       },
       {
@@ -453,12 +453,12 @@ const CoursePageData = {
         content: "Language",
       },
       {
-        heading: "1 month",
+        heading: "8 Weeks",
         content: "Duration",
       },
     ],
-    newprice: "₹5999",
-    oldprice: "₹8999",
+    newprice: "₹9900",
+    oldprice: "₹25699",
     features: [
       {
         imagepath: "/icons/scholar.png",
@@ -476,7 +476,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    offprice: 50,
+    offprice: 62,
     cards: [
       {
         imagepath: "/icons/bulb.png",
@@ -499,11 +499,11 @@ const CoursePageData = {
     whatyouwilllearn: [
       {
         iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
-        title: "Money management techniques",
+        title: "Fundamentals of Options Trading",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
-        title: "Price action strategies",
+        title: "Select an option strategy to increase profits",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
@@ -585,9 +585,9 @@ const CoursePageData = {
     emiavailable: true,
     message: "I would like to join the 'Professional' plan",
     curriculumbuiltbythebest: {
-      title: "Starter Program Launch Offer (Save ₹7500)",
+      title: "Pro Trader Program Launch Offer (Save ₹15,799)",
       point:
-        "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
+        "Enroll now and get bonuses worth ₹15,799 free. There was never a better time to grab this on-demand program.",
     },
     curriculum: {
       title: "Options Trading",
