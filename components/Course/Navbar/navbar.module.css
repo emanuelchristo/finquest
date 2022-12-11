@@ -1,3 +1,33 @@
+.sub-menu {
+    display: flex;
+    position: absolute;
+    top: 0rem;
+    padding: 1rem;
+    width: 120px;
+    z-index: 10000;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.sub-menu-item {
+    margin-bottom: 5px;
+    text-transform: none;
+
+}
+.sub-menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.membership {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+/* submenuend */
 .navbar {
 	display: flex;
 	align-items: center;

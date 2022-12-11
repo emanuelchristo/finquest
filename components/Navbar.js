@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { FaAngleDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import styles from "./navbar.module.css";
 import Link from "next/link";
-
 import { FaBuilding, FaStar, FaQuestion, FaAward } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
 import VisibilitySensor from "react-visibility-sensor";
@@ -44,9 +44,36 @@ const menuItem = {
   show: { opacity: 1, y: 0, transition: { type: "spring", mass: 1 } },
 };
 
-export default function Navbar2() {
+export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [contact, setContact] = useState(false);
+
+  const [isMouse, toggleMouse] = useState(false);
+  const toggleMouseMenu = () => {
+    toggleMouse(!isMouse);
+  };
+  const subMenuAnimate = {
+    enter: {
+      opacity: 1,
+      y: 70,
+      transition: {
+        duration: 0.3,
+      },
+      display: "block",
+    },
+    exit: {
+      opacity: 0,
+      y: 100,
+      // rotateX: -15,
+      transition: {
+        duration: 0.2,
+        delay: 0.3,
+      },
+      transitionEnd: {
+        display: "none",
+      },
+    },
+  };
 
   return (
     <div>
@@ -90,10 +117,41 @@ export default function Navbar2() {
               <a>Benefits</a>
             </Link>
           </motion.li>
-          <motion.li variants={item}>
-            <Link href="/#memberships">
-              <a>Memberships</a>
-            </Link>
+          <motion.li
+            variants={item}
+            onMouseEnter={toggleMouseMenu}
+            onMouseLeave={toggleMouseMenu}
+          >
+           
+              <a className={styles.membership}>
+                Memberships <FaAngleDown />
+              </a>
+        
+            <motion.div
+              className={styles["sub-menu"]}
+              initial="exit"
+              animate={isMouse ? "enter" : "exit"}
+              variants={subMenuAnimate}
+            >
+              <div className={styles["sub-menu-background"]} />
+              <div className={styles["sub-menu-container"]}>
+                <div className={styles["sub-menu-item"]}>
+                  <Link href="/course/starter">
+                    <a>Starter</a>
+                  </Link>
+                </div>
+                <div className={styles["sub-menu-item"]}>
+                  <Link href="/course/professional">
+                    <a>Advanced</a>
+                  </Link>
+                </div>
+                <div className={styles["sub-menu-item"]}>
+                  <Link href="/course/options">
+                    <a>Options</a>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
           </motion.li>
           <motion.li variants={item}>
             <Link href="/#faqs">

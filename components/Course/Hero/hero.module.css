@@ -252,7 +252,7 @@
 
 @media (max-width: 767px) {
     .details_review {
-        gap: 2rem;
+        /* gap: 2rem; */
 
     }
 
