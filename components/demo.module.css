@@ -32,6 +32,11 @@
     border-radius: 67px;
 }
 
+.consultation-icon {
+    color: #000;
+    font-size: 20px;
+
+}
 .text {
     font-style: normal;
     font-weight: 600;
@@ -39,7 +44,7 @@
     line-height: 100%;
     margin: 1rem 0;
     color: #FFFFFFC7;
-    ;
+    
 }
 
 .consultation>* {
@@ -61,11 +66,7 @@
     max-width: 100%;
 }
 
-.consultation-icon {
-    color: #000;
-    font-size: 20px;
 
-}
 
 .consultation p {
     color: #FFFFFFA6;

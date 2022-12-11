@@ -3,7 +3,6 @@ import "../styles/variables.css";
 import "../styles/global.css";
 import Head from "next/head";
 import Footer from "../components/Footer";
-import Snackbar from "../components/SnackBar";
 import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
@@ -33,15 +32,7 @@ function MyApp({ Component, pageProps }) {
         gtag('config', 'UA-247600968-1');
         `}
       </Script>
-      <Snackbar
-        message={[
-          "🎉 Flat ",
-          <span id="offprice" key={1}>
-            ₹7500 off for beginners!
-          </span>,
-          " (First 100 learners only) 🎉",
-        ]}
-      />
+     
 
       <Component {...pageProps} />
 

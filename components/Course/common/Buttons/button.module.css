@@ -1,0 +1,46 @@
+.talk-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.75rem;
+    padding: 0 2rem;
+    border-radius: 100px;
+}
+
+/* button */
+.talk-button span {
+    margin-left: 0.6rem;
+    font-weight: 600;
+}
+
+.membership-icon {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 639px) {
+
+    .membership-icon {
+        font-size: 1.35rem;
+    }
+
+
+
+    .talk-button {
+        width: 100%;
+        margin: 0;
+        height: 3rem;
+        margin-bottom: 0.75rem;
+    }
+
+
+    @keyframes updown {
+        0% {
+            transform: translate(0, 0.75rem);
+        }
+
+        100% {
+            transform: translate(0, -0.75rem);
+        }
+    }
+}

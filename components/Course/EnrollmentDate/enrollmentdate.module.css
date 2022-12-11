@@ -1,0 +1,35 @@
+.enrollmentdate {
+    margin: 9rem 0;
+    font-weight: 600;
+    display: flex;
+    line-height: 135%;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+}
+
+.enrollmentdate h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.enrollmentdate p {
+    font-size: 28px;
+    color: #000;
+}
+
+
+@media (max-width: 1023px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 639px) {
+    .enrollmentdate {
+        margin: 5rem 0;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 434px) {}

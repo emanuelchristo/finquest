@@ -1,0 +1,18 @@
+.strikethrough {
+  position: relative;
+}
+
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: #D90F0F;
+  -webkit-transform: rotate(-17deg);
+  -moz-transform: rotate(-17deg);
+  -ms-transform: rotate(-17deg);
+  -o-transform: rotate(-17deg);
+  transform: rotate(-17deg);
+}

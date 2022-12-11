@@ -164,6 +164,11 @@
     height: 3.75rem;
     padding: 0 2rem;
     border-radius: 100px;
+    border: 1px solid;
+}
+
+.consultation-button {
+    padding: 0 1.5rem;
 }
 
 .talk-button span,
@@ -328,6 +333,10 @@
     .consultation-button {
         margin: 0;
         height: 3rem;
+    }
+
+    .consultation-button {
+        height: 2.8rem;
     }
 
     .talk-button {

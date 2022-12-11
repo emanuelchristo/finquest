@@ -1,0 +1,36 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    /* background-color: var(--card-bg); */
+    padding: 0.375rem;
+    width: fit-content;
+    flex-wrap: nowrap;
+    /* background-color: black; */
+    gap: 2.5rem;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 2.75rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.selected {
+    color: var(--blue);
+    border-bottom: 5px solid var(--blue);
+    padding-top: 0.05rem;
+}
+
+@media (max-width: 639px) {
+    .tabs {
+        gap: 2rem;
+
+    }
+
+
+}
