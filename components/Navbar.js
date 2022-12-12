@@ -54,10 +54,6 @@ export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [contact, setContact] = useState(false);
 
-
-
-
-  
   const [isMouse, toggleMouse] = useState(false);
   const toggleMouseMenu = () => {
     toggleMouse(!isMouse);

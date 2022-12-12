@@ -2,6 +2,7 @@ import { SiGoogleclassroom } from "react-icons/si";
 import { motion } from "framer-motion";
 import styles from "./subscription.module.css";
 import Countdown from "react-countdown";
+import Link from "next/link";
 
 // subcription-arrow
 var months = [
@@ -72,6 +73,7 @@ export default function Subscription() {
             <h2>
               Hurry up, the offer ends on {months[mm]} {dd} !!
             </h2>
+            <Link href="#EnrollNow">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -80,6 +82,7 @@ export default function Subscription() {
               <SiGoogleclassroom className={styles["enroll-icon"]} />
               <span className={styles["join"]}>Enroll Now</span>
             </motion.button>
+            </Link>
           </div>
           <Countdown autoStart={true} date={x} renderer={renderer} />
         </div>
