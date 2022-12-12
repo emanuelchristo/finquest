@@ -47,7 +47,7 @@ function waLink() {
   let url = "https://api.whatsapp.com/send?";
   let params = new URLSearchParams("");
   params.append("phone", "918075145434");
-  // params.append("text", '');
+  params.append("text", "Hi, Just saw your website. I'd like to know more about the programs!");
   return url + params.toString();
 }
 export default function Navbar() {
