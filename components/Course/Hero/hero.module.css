@@ -1,3 +1,36 @@
+.join {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    /* identical to box height, or 22px */
+    
+    letter-spacing: 0.01em;
+    
+    color: #FFFFFF;
+}
+
+.enroll-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    width: 227px;
+    height: 59px;
+    
+    background: #163AF4;
+    border-radius: 67px;
+}
+
+.enroll-icon {
+    color: #fff;
+    font-size: 20px;
+
+}
+
 .course {
     display: flex;
     flex-direction: row;
@@ -55,7 +88,7 @@
 
 .image {
     max-width: 510px;
-    margin-top: -2rem;
+    margin-top: -4rem;
 
 }
 

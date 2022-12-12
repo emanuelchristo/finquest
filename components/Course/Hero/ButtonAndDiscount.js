@@ -3,7 +3,9 @@ import Button from "../common/Buttons/Button";
 import CoursePageData from "../data/CoursePageData";
 import { useRouter } from "next/router";
 import styles from "./hero.module.css";
-
+import {motion} from "framer-motion"
+import {MdCardMembership} from "react-icons/md"
+import Link from "next/link";
 const ButtonAndDiscount = () => {
   const router = useRouter();
   const { courseid } = router.query;
@@ -23,12 +25,16 @@ const ButtonAndDiscount = () => {
   return (
     <>
       <div className={styles.buttons_and_discount}>
-        <Button
-          ButtonText={`Enroll for  ${data["newprice"]}`}
-          IconName="card"
-          BgColor="buttonblue"
-          TextColor="white"
-        />
+      <Link href="#EnrollNow">
+         <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={styles["enroll-button"]}
+            >
+              <MdCardMembership className={styles["enroll-icon"]} />
+              <span className={styles["join"]}>{`Enroll for  ${data["newprice"]}`}</span>
+            </motion.button>
+            </Link>
         <div>
           <span className={styles.strikethrough}>{data["oldprice"]}</span>
         </div>
