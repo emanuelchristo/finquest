@@ -35,7 +35,7 @@ const Hero = () => {
           <Cards />
         </div>
         <div className={styles.image}>
-          <img src="/images/course/hero-women.png" alt="image" />
+          <img src="/images/course/hero-ameen.png" alt="image" />
         </div>
       </div>
     </>
