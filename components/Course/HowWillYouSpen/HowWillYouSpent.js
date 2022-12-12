@@ -12,7 +12,7 @@ const HowWillYouSpent = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
-
+  
   const router = useRouter();
   const { courseid } = router.query;
   const [data, setdata] = React.useState({});
@@ -28,7 +28,6 @@ const HowWillYouSpent = () => {
         setdata(CoursePageData.starter);
     }
   }, [courseid]);
-  console.log(data?.howwillyouspendyourtime);
   return (
     <>
       <div

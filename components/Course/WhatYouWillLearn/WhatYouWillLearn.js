@@ -4,13 +4,31 @@ import { motion, AnimatePresence } from "framer-motion";
 import ContactPopUp from "../PopUp/Contact";
 import styles from "./whatyouwill.module.css";
 import { BsBookHalf } from "react-icons/bs";
-
+import CoursePageData from "../data/CoursePageData";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const WhatYouWillLearn = () => {
+  
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
+
+    const router = useRouter();
+  const { courseid } = router.query;
+  const [data, setdata] = React.useState({});
+  React.useEffect(() => {
+    switch (courseid) {
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+      case "starter":
+        setdata(CoursePageData.starter);
+    }
+  }, [courseid]);
   return (
     <>
       <div className="margin">
@@ -18,13 +36,13 @@ const WhatYouWillLearn = () => {
           What You will Learn
         </h2>
         <div className="flex">
-          <button
+          <motion.button
             className={styles["curriculum-button"]}
             onClick={() => (modalOpen ? close() : open())}
           >
             <BsBookHalf />
             Curriculum
-          </button>
+          </motion.button>
         </div>
         <FeaturesLayout indicator="whatyouwilllearn" />
         <AnimatePresence
@@ -33,7 +51,7 @@ const WhatYouWillLearn = () => {
           onExitComplete={() => null}
         >
           {modalOpen && (
-            <ContactPopUp modalOpen={modalOpen} handleClose={close} />
+            <ContactPopUp modalOpen={modalOpen} handleClose={close} courseid={courseid}/>
           )}
         </AnimatePresence>
       </div>
