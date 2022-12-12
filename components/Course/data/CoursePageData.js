@@ -209,7 +209,7 @@ const CoursePageData = {
     toughness: "Beginner",
     title: "Kickstart your Stock market journey in less than 6 weeks!",
     description:
-      "A 5 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
+      "A 6 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
