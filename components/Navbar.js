@@ -43,11 +43,21 @@ const menuItem = {
   hide: { opacity: 0, y: -50 },
   show: { opacity: 1, y: 0, transition: { type: "spring", mass: 1 } },
 };
-
+function waLink() {
+  let url = "https://api.whatsapp.com/send?";
+  let params = new URLSearchParams("");
+  params.append("phone", "918075145434");
+  params.append("text", "Hi, Just saw your website. I'd like to know more about the programs!");
+  return url + params.toString();
+}
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [contact, setContact] = useState(false);
 
+
+
+
+  
   const [isMouse, toggleMouse] = useState(false);
   const toggleMouseMenu = () => {
     toggleMouse(!isMouse);
@@ -159,7 +169,12 @@ export default function Navbar() {
             </Link>
           </motion.li>
         </ul>
-        <Link href="/#contact" passHref>
+        <a
+            href={waLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles["button"]}
+          >
           <motion.button
             initial={{}}
             animate={contact ? {} : {}}
@@ -174,10 +189,16 @@ export default function Navbar() {
             <BsWhatsapp className=" mb-[0.125rem]" />
             <span>Contact</span>
           </motion.button>
-        </Link>
+        </a>
         {showMenu && <Menu onClose={() => setShowMenu(false)} />}
       </motion.nav>
-      <Link href="/#contact" passHref>
+      <a
+            href={waLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles["button"]}
+          >
+
         <motion.button
           initial={{ opacity: 0, scale: 0.5 }}
           animate={contact ? { opacity: 1, scale: 1 } : {}}
@@ -189,11 +210,11 @@ export default function Navbar() {
           whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.95 }}
           className={styles["talk-button-hidden"]}
-        >
+          >
           <BsWhatsapp className=" mb-[0.125rem]" />
           <span>Contact</span>
         </motion.button>
-      </Link>
+          </a>
     </div>
   );
 }
