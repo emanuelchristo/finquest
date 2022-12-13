@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../common/Buttons/Button";
 import CoursePageData from "../data/CoursePageData";
 import { useRouter } from "next/router";
 import styles from "./hero.module.css";
