@@ -33,9 +33,8 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
 
-      <Script id="pixel-code">
-{`
-!function(f,b,e,v,n,t,s)
+
+      <Script id="pixel-code" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -44,13 +43,19 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '499046898871948');
-fbq('track', 'PageView');
-`}
-</Script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=499046898871948&ev=PageView&noscript=1"
-/></noscript>
+fbq('track', 'PageView');`}}></Script>
 
+
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: ` <img
+          height="1"
+          width="1"
+          style="display:none"
+          src="https://www.facebook.com/tr?id=499046898871948&ev=PageView&noscript=1"
+        />`,
+        }}
+      ></noscript>
 
       <Component {...pageProps} />
 
