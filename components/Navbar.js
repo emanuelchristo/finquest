@@ -165,7 +165,7 @@ export default function Navbar() {
             </Link>
           </motion.li>
         </ul>
-        <a
+        <Link
             href={waLink()}
             target="_blank"
             rel="noopener noreferrer"
@@ -185,7 +185,7 @@ export default function Navbar() {
             <BsWhatsapp className=" mb-[0.125rem]" />
             <span>Contact</span>
           </motion.button>
-        </a>
+        </Link>
         {showMenu && <Menu onClose={() => setShowMenu(false)} />}
       </motion.nav>
       <a
@@ -226,7 +226,7 @@ function Menu({ onClose }) {
       <div className={styles["menu-close-wrapper"]} onClick={onClose}>
         <IoMdClose className={styles["menu-close-icon"]} />
       </div>
-      <ul className={styles["menu-links-list"]} onClick={onClose}>
+      <motion.ul className={styles["menu-links-list"]} onClick={onClose}>
         <motion.li variants={menuItem}>
           <Link href="/about">
             <a>
@@ -282,7 +282,7 @@ function Menu({ onClose }) {
             </a>
           </Link>
         </motion.li>
-      </ul>
+      </motion.ul>
     </motion.div>
   );
 }

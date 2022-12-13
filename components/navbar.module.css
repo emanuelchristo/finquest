@@ -118,7 +118,7 @@
         display: flex;
         font-size: 1.5rem;
     }
-
+    
     .menu {
         display: flex;
         position: absolute;
@@ -131,7 +131,7 @@
         background-color: #fff;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     }
-
+    
     .menu-links-list li {
         font-size: 1.1rem;
         font-weight: 500;
@@ -142,7 +142,7 @@
         display: flex;
         align-items: center;
     }
-
+    
     .menu-links-list li a span {
         margin-top: 0.25rem;
     }
