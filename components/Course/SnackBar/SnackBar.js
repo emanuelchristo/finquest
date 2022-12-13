@@ -29,7 +29,7 @@ const tmw = {
   mm: months[String(tommorow.getMonth()).padStart(2, "0")],
   yy: String(tommorow.getFullYear()).padStart(2, "0"),
 };
-
+const timer = Date.now() + 2940000
 const renderer = ({ hours, minutes, seconds }) => {
   // Render a countdown
   return (
@@ -44,7 +44,6 @@ export default function Snackbar(props) {
   const [hidden, setHidden] = useState(false);
   const [data, setdata] = useState({});
   const { courseid } = router.query;
-  const [date, setdate] = useState();
   useEffect(() => {
     switch (courseid) {
       case "options":
@@ -95,7 +94,7 @@ export default function Snackbar(props) {
                 offer ends in&nbsp;
                 <Countdown
                   autoStart={true}
-                  date={Date.now() + 2940000}
+                  date={timer}
                   renderer={renderer}
                 />
               </p>
