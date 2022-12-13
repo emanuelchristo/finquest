@@ -15,11 +15,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: .5rem 5rem;
     gap: 8px;
     
-    /* width: 227px;
-    height: 59px; */
+    width: 227px;
+    height: 59px;
     
     background: #163AF4;
     border-radius: 67px;
@@ -363,12 +362,17 @@
         font-weight: 600;
         font-size: 16px;
     }
-}
-
-@media (max-width: 639px) {
-
     .details {
         justify-content: space-between;
         gap: 0;
     }
+    .enroll-button {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 478px) {
+
+
 }
