@@ -1,5 +1,5 @@
 .community {
-    background-color: var(--blue);
+    background-color: var(--blue-new);
     color: #fff;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@
 
 .pill {
     padding: 0.75rem 1.125rem;
-    background-color: #3d83ea;
+    background-color: #5858ef;
     border-radius: 100px;
     width: fit-content;
     font-size: 1rem;

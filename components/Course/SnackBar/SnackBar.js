@@ -7,28 +7,6 @@ import styles from "./snackbar.module.css";
 import Countdown from "react-countdown";
 import { WaButton } from "../common/Buttons/Button";
 
-var months = [
-  "Jan",
-  "Feb",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "Aug",
-  "Sept",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-var tommorow = new Date();
-tommorow.setDate(tommorow.getDate() + 1);
-
-const tmw = {
-  dd: String(tommorow.getDate()).padStart(1, "0"),
-  mm: months[String(tommorow.getMonth()).padStart(2, "0")],
-  yy: String(tommorow.getFullYear()).padStart(2, "0"),
-};
 const timer = Date.now() + 2940000
 const renderer = ({ hours, minutes, seconds }) => {
   // Render a countdown
@@ -41,9 +19,9 @@ const renderer = ({ hours, minutes, seconds }) => {
 
 export default function Snackbar(props) {
   const router = useRouter();
+  const { courseid } = router.query;
   const [hidden, setHidden] = useState(false);
   const [data, setdata] = useState({});
-  const { courseid } = router.query;
   useEffect(() => {
     switch (courseid) {
       case "options":
@@ -103,7 +81,7 @@ export default function Snackbar(props) {
           <div>
             <h3>Registration ends on</h3>
             <p>
-              {tmw.dd}th {tmw.mm} {tmw.yy}
+              {data.deadline}
             </p>
           </div>
           <div>
