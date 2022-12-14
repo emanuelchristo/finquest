@@ -9,6 +9,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "4 weeks",
+    deadline:'17th Dec 2022',
+    startdate:'18th Dec 2022',
     details: [
       {
         heading: "₹ 24,999",
@@ -213,6 +215,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
+    deadline:'17th Dec 2022',
+    startdate:'18th Dec 2022',
     details: [
       {
         heading: "₹ 3999",
@@ -340,14 +344,14 @@ const CoursePageData = {
         title: "Q&A session",
         content:
           "Get your doubts resolved during the live sessions in the easiest ways possible.",
-        color: "buttonblue",
+        color: "buttonpink",
       },
       {
         duration: "Lifetime",
         title: "Community access",
         content:
           "Interact with 1000+ learners. Clear your doubts and exchange strategy ideas every day.",
-        color: "buttonyellow",
+        color: "buttonpurple",
       },
     ],
 
@@ -443,6 +447,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "8 Weeks",
+    deadline:'17th Dec 2022',
+    startdate:'18th Dec 2022',
     details: [
       {
         heading: "₹ 6999",
@@ -572,14 +578,14 @@ const CoursePageData = {
         title: "Q&A session",
         content:
           "Get your doubts resolved during the live sessions in the easiest ways possible.",
-        color: "buttonblue",
+        color: "buttonpink",
       },
       {
         duration: "Lifetime",
         title: "Community access",
         content:
           "Interact with 1000+ learners. Clear your doubts and exchange strategy ideas every day.",
-        color: "buttonyellow",
+        color: "buttonpurple",
       },
     ],
     emiavailable: true,
