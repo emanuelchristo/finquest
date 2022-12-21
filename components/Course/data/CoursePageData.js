@@ -9,8 +9,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "4 weeks",
-    deadline:'17th Dec 2022',
-    startdate:'18th Dec 2022',
+    deadline:'26th Dec 2022',
+    startdate:'27th Dec 2022',
     details: [
       {
         heading: "₹ 24,999",
@@ -215,8 +215,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
-    deadline:'17th Dec 2022',
-    startdate:'18th Dec 2022',
+    deadline:'26th Dec 2022',
+    startdate:'27th Dec 2022',
     details: [
       {
         heading: "₹ 3999",
@@ -447,8 +447,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "8 Weeks",
-    deadline:'17th Dec 2022',
-    startdate:'18th Dec 2022',
+    deadline:'26th Dec 2022',
+    startdate:'27th Dec 2022',
     details: [
       {
         heading: "₹ 6999",
