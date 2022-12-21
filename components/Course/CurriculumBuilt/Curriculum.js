@@ -23,7 +23,6 @@ const Curriculum = () => {
           return (
             <div key={index}>
               <GrayWrapper>
-                <img src={item.imagepath} alt="" width="24px" height="24px" />
                 <div>{item.content}</div>
               </GrayWrapper>
             </div>

@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/Finquest-102198582285743/"
+                  href="https://www.facebook.com/finquestlearning/"
                   rel="noreferrer"
                   target="_blank"
                 >

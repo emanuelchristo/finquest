@@ -16,6 +16,7 @@ import StartNow from "../StartNow/StartNow";
 import Demo from "../Demo/Demo";
 import Snackbar from "../SnackBar/SnackBar";
 import Navbar from "../Navbar/Navbar";
+import UpcomingBatches from "../UpcomingBatches/UpcomingBatches";
 
 const CoursePage = () => {
   const [snackbar, setSnackbar] = useState(false);
@@ -49,6 +50,7 @@ const CoursePage = () => {
       <StartNow />
       <WhoIsThisFor />
       <Curriculum />
+      <UpcomingBatches/>
       <CourseFee />
       <CommunityLayout />
       <Faqs />
