@@ -9,7 +9,7 @@ export default function Hiring() {
 			<section className={styles['community']}>
 				<img src='/images/suitcase.svg' className={styles['suitcase']} />
 				<span className={styles['text']}>WORK AT FINQUEST</span>
-				<h2>Let&apos;s work together</h2>
+				<h2>Join our mission</h2>
 				<p>We&apos;re looking for people who want make stock market trading effective</p>
 				<div className={styles['feature']}>
 					<a href={waLink('I would like to work at FINQUEST')} target='_blank' rel='noreferrer noopener'>

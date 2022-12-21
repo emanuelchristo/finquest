@@ -225,7 +225,7 @@ function Card({
           </motion.button>
         </Link>
       </a>
-      <span className={styles.money_back}>* 7 days money back guarantee</span>
+      <span className={styles.money_back}>* 5 days money back guarantee</span>
     </div>
   );
 }
