@@ -1,20 +1,35 @@
 import styles from "./upcomingbatches.module.css";
+import Link from "next/link";
+import {motion} from 'framer-motion'
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+function waLink(msg) {
+  let url = "https://api.whatsapp.com/send?";
+  let params = new URLSearchParams("");
+  params.append("phone", "918075145434");
+  params.append("text", msg);
+  return url + params.toString();
+}
 const UpcomingBatches = () => {
+  const router = useRouter();
+  const { courseid } = router.query;
   const data = [
     {
       type: "online",
-      week: "weekend",
+      color:"green",
+      week: "Weekday",
       days: "Mon, Tue & Fri",
-      date: "December 24",
+      date: "January 10",
       from: "7:00 PM",
       to: "9:00 PM",
       status: "available",
     },
     {
-      type: "offline",
+      type: "online",
+      color:"purple",
       week: "Weekend",
       days: "SAT & SUN",
-      date: "December 23",
+      date: "January 14",
       from: "7:00 PM",
       to: "9:00 PM",
       status: "Soldout",
@@ -35,7 +50,7 @@ const UpcomingBatches = () => {
           {data.map((item, index) => {
             return (
               <div key={index}>
-                <span style={{background:item.type=='online'?'#1BA93F':'#C141CC'}}>{item.type}</span>
+                <span style={{background:item.color=='green'?'#1BA93F':'#C141CC'}}>{item.type}</span>
                 <div className={styles.week}>
                   <h2>{item.week}</h2>
                   <h4>{item.days}</h4>
@@ -50,7 +65,17 @@ const UpcomingBatches = () => {
                     
                   </h2>
                 </div>
-                <button style={{opacity:item.status=='available'?'':'.5'}} disabled={item.status=='available'?0:1}>Request callback</button>
+                <Link href={waLink(`I would like to join in ${courseid} course ${item.week} batch starting from ${item.date}`)}>
+            <motion.button
+            style={{opacity:item.status=='available'?'':'.5'}} disabled={item.status=='available'?0:1}
+              whileHover={{ scale:item.status=='available'?1.05:1 }}
+              whileTap={{ scale:item.status=='available'?0.95:1  }}
+            >
+              Join Now
+             
+            </motion.button>
+            </Link>
+
               </div>
             );
           })}
