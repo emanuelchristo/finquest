@@ -1,7 +1,6 @@
 import styles from "./upcomingbatches.module.css";
 import Link from "next/link";
 import {motion} from 'framer-motion'
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 function waLink(msg) {
   let url = "https://api.whatsapp.com/send?";
@@ -32,7 +31,7 @@ const UpcomingBatches = () => {
       date: "January 14",
       from: "7:00 PM",
       to: "9:00 PM",
-      status: "Soldout",
+      status: "available",
     },
   ];
 
@@ -43,7 +42,8 @@ const UpcomingBatches = () => {
           <h1>Upcoming Batches</h1>
           <p>
             We conduct offline and online classes, and updates for it are
-            regularly posted. Keep an eye on this section.
+            regularly posted. <br />
+            Keep an eye on this section.
           </p>
         </div>
         <div className={styles.container}>
