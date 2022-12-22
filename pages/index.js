@@ -19,11 +19,11 @@ export default function Home() {
     <div id="home">
       <Snackbar
         message={[
-          "🎉 Flat ",
+          "🎉🎉 Flat ",
           <span id="offprice" key={1}>
-            ₹7500 off for beginners!
+            ₹7500 off for beginners !
           </span>,
-          " (First 100 learners only) 🎉",
+          " (First 100 learners only)",
         ]}
       />
       <Header />

@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/#shop">
-                  <a>🛒 Shop</a>
+                  <a>🛍️ Shop</a>
                 </Link>
               </li>
               <li>

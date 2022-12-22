@@ -40,7 +40,7 @@ export default function Demo() {
           <img src="/images/course/phone.svg" alt="" />
           <p>
             99.99% convinced? Take the .01 leap by attending a demo class with
-            our star instructor Mudit Goel Book a demo Talk to us
+            our star instructor Noel George Book a demo Talk to us
           </p>
         </div>
         <div className={styles.buttons}>

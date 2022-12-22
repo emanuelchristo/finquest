@@ -2,6 +2,7 @@ import { BsFillCheckCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import styles from "./pricing.module.css";
 import Link from "next/link";
+import {FiChevronRight} from 'react-icons/fi'
 
 const plans = [
   {
@@ -221,7 +222,7 @@ function Card({
             whileTap={{ scale: 0.95 }}
             className={styles["action-button"]}
           >
-            Learn More
+            Learn More&nbsp;&nbsp;<FiChevronRight/>
           </motion.button>
         </Link>
       </a>

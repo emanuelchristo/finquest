@@ -28,7 +28,7 @@ const Hero = () => {
     <>
       <div className={styles.course}>
         <div className={styles.content}>
-          <div className={styles.toughness}><span>{data.toughness}</span><span>No finance knowledge required ✌️</span> </div>
+          <div className={styles.toughness}><span>{data.toughness}</span><span>No prior knowledge required ✌️</span> </div>
           <MainContent />
           <DetailsAndReview />
           <ButtonAndDiscount />
