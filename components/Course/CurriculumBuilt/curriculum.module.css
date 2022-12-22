@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.container>div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 40px;
+gap: 15px;
+max-width: 361px;
+height: 170px;
+background: #F4F7F9;
+border-radius: 16px;
+text-align: center;
+font-weight: 500;
+font-size: 22px;
+line-height: 135%;
+color: #000000;
+}
+.heading{
+    max-width: 593px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 125%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+@media (max-width:849px){
+    .container>div{
+        font-size: 18px;
+    }
+}
