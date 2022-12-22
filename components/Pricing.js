@@ -1,22 +1,24 @@
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import styles from "./pricing.module.css";
+import Link from "next/link";
+import {FiChevronRight} from 'react-icons/fi'
 
 const plans = [
   {
+    id: "professional",
     imageLink: "/images/professional-plan.webp",
     planName: "Advanced",
-    price: 9999,
+    price: 9900,
     cutPrice: 25699,
-    discount: "61% off",
-    duration: "2 months",
+    discount: "62% off",
+    duration: "8 Weeks",
     features: [
       // 'Course duration - 1 month',
-      "Intraday & swing trading",
-      "Commodity",
-      "Long term",
-      "FNO trading",
-      "Option buying",
+      "Intraday & Swing Trading",
+      "Long term Investing",
+      "Basics of FNO Segment",
+      "Option Buying",
       "Option selling",
     ],
     tag: "Popular Program",
@@ -24,27 +26,29 @@ const plans = [
     message: "I would like to join the 'Professional' plan",
   },
   {
+    id: "starter",
     imageLink: "/images/student-plan.webp",
     planName: "Starter",
     price: 7999,
     cutPrice: 15499,
     discount: "49% off",
-    duration: "1 month",
+    duration: "6 Week",
     color: "yellow",
-    features: ["Intraday trading", "Swing trading", "Commodity", "Long term"],
+    features: ["Intraday trading", "Swing trading", "Longterm Investing","Personal Finance"],
     tag: "Most Enrolled",
     tagColor: "#D22C2C",
     message: "I would like to join the 'Starter' plan",
   },
   {
+    id: "options",
     imageLink: "/images/options-trading-plan.webp",
     planName: "Options Trading",
-    price: 5499,
+    price: 5699,
     cutPrice: 10998,
-    discount: "50% off",
-    duration: "1 month",
+    discount: "48% off",
+    duration: "4 Week",
     features: [
-      "FNO trading",
+      "Basics of FNO",
       "Stock options",
       "Option buying",
       "Option selling",
@@ -77,6 +81,7 @@ export default function Pricing() {
         <div className={styles["cards-wrapper"]}>
           {plans.map((item, index) => (
             <Card
+              id={item.id}
               key={index}
               imageLink={item.imageLink}
               planName={item.planName}
@@ -156,6 +161,7 @@ function waLink(msg) {
 }
 
 function Card({
+  id,
   imageLink,
   planName,
   price,
@@ -210,15 +216,17 @@ function Card({
         target="_blank"
         rel="noreferrer noopener"
       >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className={styles["action-button"]}
-        >
-          Learn More
-        </motion.button>
+        <Link href={`course/${id}/`}>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={styles["action-button"]}
+          >
+            Learn More&nbsp;&nbsp;<FiChevronRight/>
+          </motion.button>
+        </Link>
       </a>
-      <span className={styles.money_back}>* 7 days money back guarantee</span>
+      <span className={styles.money_back}>* 5 days money back guarantee</span>
     </div>
   );
 }

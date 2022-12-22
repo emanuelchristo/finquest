@@ -59,7 +59,7 @@ const Modal = ({ handleClose }) => {
     e.preventDefault();
     try {
       sendMessage(
-        `<a href="https://www.finqlearning.com/images/quote.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
+        `<a href="https://www.finqlearning.com/images/community.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
         "html",
         chat_id
       );

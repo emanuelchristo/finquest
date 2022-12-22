@@ -1,0 +1,103 @@
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import CoursePageData from "../data/CoursePageData";
+import { IoMdClose } from "react-icons/io";
+import { motion } from "framer-motion";
+import styles from "./snackbar.module.css";
+import Countdown from "react-countdown";
+import { WaButton } from "../common/Buttons/Button";
+
+const timer = Date.now() + 2940000
+const renderer = ({ hours, minutes, seconds }) => {
+  // Render a countdown
+  return (
+    <b>
+      {hours}:{minutes}:{seconds}
+    </b>
+  );
+};
+
+export default function Snackbar(props) {
+  const router = useRouter();
+  const { courseid } = router.query;
+  const [hidden, setHidden] = useState(false);
+  const [data, setdata] = useState({});
+  useEffect(() => {
+    switch (courseid) {
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+      case "starter":
+        setdata(CoursePageData.starter);
+    }
+  }, [courseid]);
+  return (
+    <div
+      className={styles["wrapper"]}
+      style={{ display: hidden ? "none" : "block" }}
+    >
+      <motion.div
+        initial={{ y: 100 }}
+        animate={{
+          y: props.trigger ? 0 : 150,
+        }}
+        transition={{
+          duration: 1,
+        }}
+        className={styles["main"]}
+      >
+        <button
+          className={styles["snack-close"]}
+          onClick={(e) => {
+            setHidden(!hidden);
+          }}
+        >
+          <IoMdClose style={{ fontSize: 20 }} />
+        </button>
+        <div>
+          <div>
+            <img
+              src="/images/course/icons/snackbar-hourglass.svg"
+              width={40}
+              alt=""
+            />
+            <div>
+              <h2>
+                {data.newprice} <s>{data.oldprice}</s>
+              </h2>
+              <p>
+                offer ends in&nbsp;
+                <Countdown
+                  autoStart={true}
+                  date={timer}
+                  renderer={renderer}
+                />
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3>Registration ends on</h3>
+            <p>
+              {data.deadline}
+            </p>
+          </div>
+          <div>
+            <h3>Course duration</h3>
+            <p>{data.duration}</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <WaButton
+              ButtonText={"Enroll Now"}
+              ClassName={styles["enroll-button"]}
+            />
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}

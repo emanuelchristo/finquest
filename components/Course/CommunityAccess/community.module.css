@@ -1,0 +1,160 @@
+.community {
+    background-color: var(--blue-new);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 7rem 1.5rem 5rem 1.5rem;
+    position: relative;
+    margin: 15rem 0 6rem 0;
+}
+
+.community>* {
+    z-index: 2;
+}
+
+.image {
+    position: absolute;
+    top: -8.5rem;
+}
+
+.community h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.community p {
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 550px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.pills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pill {
+    padding: 0.75rem 1.125rem;
+    background-color: #3d83ea;
+    border-radius: 100px;
+    width: fit-content;
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+
+.pill.white {
+    background-color: #fff;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.features-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    color: #fff;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    width: 3.25rem;
+    height: 3.25rem;
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    color: var(--blue);
+    font-size: 1.4rem;
+}
+
+.arrow-1 {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    z-index: 1;
+}
+
+.arrow-2 {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+@media (max-width: 1023px) {
+
+    .arrow-1,
+    .arrow-2 {
+        width: 120px;
+    }
+
+    .community {}
+
+    .image {
+        width: 220px;
+        top: -6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .community h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 639px) {
+
+    .arrow-1,
+    .arrow-2 {
+        width: 90px;
+    }
+
+    .arrow-1 {
+        left: 1rem;
+    }
+
+    .arrow-2 {
+        right: 1rem;
+    }
+
+    .image {
+        width: 185px;
+    }
+
+    .community {
+        margin-top: 6rem;
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+        padding-top: 6rem;
+        border-radius: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin: 6rem 0 3rem 0;
+    }
+
+    .features-wrapper {
+        grid-template-columns: 1fr;
+        gap: 0.875rem;
+    }
+}

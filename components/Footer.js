@@ -23,37 +23,37 @@ export default function Footer() {
             <ul>
               <li>
                 <Link href="/">
-                  <a>Home</a>
+                  <a>🏠 Home</a>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a>About us</a>
+                  <a>🤵‍♀️ About us</a>
                 </Link>
               </li>
               <li>
                 <Link href="/#memberships">
-                  <a>Memberships</a>
+                  <a>🎖️ Memberships</a>
                 </Link>
               </li>
               <li>
                 <Link href="/#shop">
-                  <a>Shop</a>
+                  <a>🛍️ Shop</a>
                 </Link>
               </li>
               <li>
                 <Link href="/about/#hiring">
                   <a>
-                    Career{" "}
+                   💪 Career{" "}
                     <span className={styles["career-tooltip"]}>
-                      we&apos;re hiring
+                      hiring
                     </span>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/#faqs">
-                  <a>FAQs</a>
+                  <a>💬 FAQs</a>
                 </Link>
               </li>
             </ul>
@@ -69,8 +69,8 @@ export default function Footer() {
                   target="_blank"
                 >
                   <div className={styles["social-wrapper"]}>
-                    <BsInstagram className={styles["social-icon"]} />
-                    <span>Instagram</span>
+                    <BsInstagram style={{color:'#bc2a8d'}} className={styles["social-icon"]} />
+                    <span >Instagram</span>
                   </div>
                 </a>
               </li>
@@ -81,19 +81,19 @@ export default function Footer() {
                   target="_blank"
                 >
                   <div className={styles["social-wrapper"]}>
-                    <BsYoutube className={styles["social-icon"]} />
-                    <span>Youtube</span>
+                    <BsYoutube style={{color:'#bb0000'}} className={styles["social-icon"]} />
+                    <span >Youtube</span>
                   </div>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/Finquest-102198582285743/"
+                  href="https://www.facebook.com/finquestlearning/"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <div className={styles["social-wrapper"]}>
-                    <BsFacebook className={styles["social-icon"]} />
+                    <BsFacebook style={{color:'#3b5998'}} className={styles["social-icon"]} />
                     <span>Facebook</span>
                   </div>
                 </a>
@@ -105,7 +105,7 @@ export default function Footer() {
                   target="_blank"
                 >
                   <div className={styles["social-wrapper"]}>
-                    <BsTwitter className={styles["social-icon"]} />
+                    <BsTwitter style={{color:'#00aced'}} className={styles["social-icon"]} />
                     <span>Twitter</span>
                   </div>
                 </a>
@@ -117,17 +117,17 @@ export default function Footer() {
             <ul>
               <li>
                 <Link href="/privacy-policy">
-                  <a>Privacy Policy</a>
+                  <a>🗝️ Privacy Policy</a>
                 </Link>
               </li>
               <li>
                 <Link href="/terms-of-service">
-                  <a>Terms of Service</a>
+                  <a>📋 Terms of Service</a>
                 </Link>
               </li>
               <li>
                 <Link href="/payment-refund-and-cancellation-policy">
-                  <a>Refund &amp; Cancellation</a>
+                  <a>💳 Refund &amp; Cancellation</a>
                 </Link>
               </li>
             </ul>
