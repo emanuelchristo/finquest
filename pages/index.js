@@ -14,6 +14,7 @@ import Reviews from "../components/Reviews";
 import Rocket from "../components/Rocket";
 import Store from "../components/Store";
 import Snackbar from "../components/SnackBar";
+import UpcomingEvents from "../components/UpcomingEvents";
 export default function Home() {
   return (
     <div id="home">
@@ -26,8 +27,8 @@ export default function Home() {
           " (First 100 learners only)",
         ]}
       />
-      <Header />
-      <Associated />
+      {/* <Header /> */}
+      {/* <Associated />
       <div className="section-spacer"></div>
       <About />
       <div className="section-spacer"></div>
@@ -47,11 +48,13 @@ export default function Home() {
       <div className="section-spacer"></div>
       <Store />
       <div className="section-spacer"></div>
-      <Faqs />
+      <Faqs /> */}
       <div className="section-spacer"></div>
-      <Letstalk />
+      <UpcomingEvents/>
       <div className="section-spacer"></div>
-      <Community />
+      {/* <Letstalk />
+      <div className="section-spacer"></div>
+      <Community /> */}
     </div>
   );
 }
