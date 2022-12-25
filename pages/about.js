@@ -5,7 +5,6 @@ import WhyUs1 from "../components/aboutUs/WhyUs1";
 import WhyUs2 from "../components/aboutUs/WhyUs2";
 import Navbar from "../components/Navbar";
 import styles from "./styles.module.css";
-import Script from "next/script";
 import Snackbar from "../components/SnackBar";
 export default function AboutUs() {
   return (

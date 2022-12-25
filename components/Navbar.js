@@ -89,9 +89,9 @@ export default function Navbar() {
         animate="show"
         className={styles["navbar"]}
       >
-        <Link href="/" passHref>
           <VisibilitySensor>
             {({ isVisible }) => (
+              <Link href="/" passHref>
               <motion.img
                 className=" cursor-pointer"
                 variants={item}
@@ -101,9 +101,9 @@ export default function Navbar() {
               >
                 {isVisible ? setContact(false) : setContact(true)}
               </motion.img>
+            </Link>
             )}
           </VisibilitySensor>
-        </Link>
         <motion.span
           className={styles["menu-icon-wrapper"]}
           variants={item}
@@ -143,17 +143,17 @@ export default function Navbar() {
               <div className={styles["sub-menu-container"]}>
                 <div className={styles["sub-menu-item"]}>
                   <Link href="/course/starter">
-                    <a>Starter</a>
+                    <a>⭐ Starter</a>
                   </Link>
                 </div>
                 <div className={styles["sub-menu-item"]}>
                   <Link href="/course/professional">
-                    <a>Advanced</a>
+                    <a>🎖️ Advanced</a>
                   </Link>
                 </div>
                 <div className={styles["sub-menu-item"]}>
                   <Link href="/course/options">
-                    <a>Options</a>
+                    <a>⚡Options</a>
                   </Link>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export default function Navbar() {
           className={styles["talk-button-hidden"]}
           >
           <BsWhatsapp className=" mb-[0.125rem]" />
-          <span>Contact</span>
+          <span>Chat with us</span>
         </motion.button>
           </a>
     </div>
