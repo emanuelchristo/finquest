@@ -82,22 +82,4 @@ const UpcomingEvents = () => {
   );
 };
 export default UpcomingEvents;
-{
-  /* <div >
-                <div className={styles.image} style={{ backgroundImage: `url('/images/whyus3.png')` }}>
-                  <span>FREE</span></div>
-                <div className={styles.time}>
-                  <span>26 DEC</span>
-                  <span>7:30 PM - 9:30 PM</span>
-                  </div>
-                <h2 >Q&A with Abdul Malik</h2>
-                <div className={styles.button}>Book a seat</div>
-              </div>
-              <div >
-                <div className={styles.image} style={{ backgroundImage: `url('/images/whyus3.png')` }}>
-                  <span>FREE</span></div>
-                <div className={styles.time}><span>26 DEC</span><span>7:30 PM - 9:30 PM</span></div>
-                <h2 >Q&A with Abdul Malik</h2>
-                <div className={styles.button}>Book a seat</div>
-              </div> */
-}
+

@@ -27,8 +27,8 @@ export default function Home() {
           " (First 100 learners only)",
         ]}
       />
-      {/* <Header /> */}
-      {/* <Associated />
+      <Header />
+      <Associated />
       <div className="section-spacer"></div>
       <About />
       <div className="section-spacer"></div>
@@ -48,13 +48,13 @@ export default function Home() {
       <div className="section-spacer"></div>
       <Store />
       <div className="section-spacer"></div>
-      <Faqs /> */}
+      <Faqs />
       <div className="section-spacer"></div>
       <UpcomingEvents/>
       <div className="section-spacer"></div>
-      {/* <Letstalk />
+      <Letstalk />
       <div className="section-spacer"></div>
-      <Community /> */}
+      <Community />
     </div>
   );
 }
