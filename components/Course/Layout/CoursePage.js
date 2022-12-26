@@ -48,9 +48,9 @@ const CoursePage = () => {
       <EnrollmentDate />
       <WhatYouWillLearn />
       <HowWillYouSpent />
-      <StartNow />
       <WhoIsThisFor />
       <Curriculum />
+      <StartNow />
       <UpcomingBatches/>
       <CourseFee />
       <CommunityLayout />
