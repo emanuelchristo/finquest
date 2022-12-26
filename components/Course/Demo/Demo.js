@@ -63,12 +63,12 @@ export default function Demo() {
             rel="noopener noreferrer"
             className={styles["button"]}
           >
-            <BsWhatsapp className={styles["icon"]} />
+           
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className={styles["button-text"]}>WhatsApp us</span>
+              <span className={styles["button-text"]}> <BsWhatsapp className={styles["icon"]} /> WhatsApp us</span>
             </motion.button>
           </a>
         </div>
