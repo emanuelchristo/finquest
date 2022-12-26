@@ -17,6 +17,7 @@ import Demo from "../Demo/Demo";
 import Snackbar from "../SnackBar/SnackBar";
 import Navbar from "../Navbar/Navbar";
 import UpcomingBatches from "../UpcomingBatches/UpcomingBatches";
+import TopTrader from "../TopTrader/TopTrader";
 
 const CoursePage = () => {
   const [snackbar, setSnackbar] = useState(false);
@@ -55,6 +56,7 @@ const CoursePage = () => {
       <CommunityLayout />
       <Faqs />
       <Demo />
+      <TopTrader/>
     </>
   );
 };
