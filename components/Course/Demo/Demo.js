@@ -1,6 +1,6 @@
 import styles from "./demo.module.css";
 import { motion } from "framer-motion";
-import { FaPhoneAlt } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import CoursePageData from "../data/CoursePageData";
@@ -54,7 +54,7 @@ export default function Demo() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className={styles["button-text"]}>Book a demo</span>
+              <span className={styles["button-text"]}>Book a free demo</span>
             </motion.button>
           </a>
           <a
@@ -63,12 +63,12 @@ export default function Demo() {
             rel="noopener noreferrer"
             className={styles["button"]}
           >
-            <FaPhoneAlt className={styles["icon"]} />
+            <BsWhatsapp className={styles["icon"]} />
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className={styles["button-text"]}>Talk to us</span>
+              <span className={styles["button-text"]}>WhatsApp us</span>
             </motion.button>
           </a>
         </div>
