@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
+import { HiOutlinePhone } from "react-icons/hi";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -47,7 +48,10 @@ function waLink() {
   let url = "https://api.whatsapp.com/send?";
   let params = new URLSearchParams("");
   params.append("phone", "918075145434");
-  params.append("text", "Hi, Just saw your website. I'd like to know more about the programs!");
+  params.append(
+    "text",
+    "Hi, Just saw your website. I'd like to know more about the programs!"
+  );
   return url + params.toString();
 }
 export default function Navbar() {
@@ -89,9 +93,9 @@ export default function Navbar() {
         animate="show"
         className={styles["navbar"]}
       >
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Link href="/" passHref>
+        <VisibilitySensor>
+          {({ isVisible }) => (
+            <Link href="/" passHref>
               <motion.img
                 className=" cursor-pointer"
                 variants={item}
@@ -102,8 +106,8 @@ export default function Navbar() {
                 {isVisible ? setContact(false) : setContact(true)}
               </motion.img>
             </Link>
-            )}
-          </VisibilitySensor>
+          )}
+        </VisibilitySensor>
         <motion.span
           className={styles["menu-icon-wrapper"]}
           variants={item}
@@ -128,11 +132,10 @@ export default function Navbar() {
             onMouseEnter={toggleMouseMenu}
             onMouseLeave={toggleMouseMenu}
           >
-           
-              <a className={styles.membership}>
-                Memberships <FaAngleDown />
-              </a>
-        
+            <a className={styles.membership}>
+              Memberships <FaAngleDown />
+            </a>
+
             <motion.div
               className={styles["sub-menu"]}
               initial="exit"
@@ -166,35 +169,33 @@ export default function Navbar() {
           </motion.li>
         </ul>
         <Link
-            href={waLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles["button"]}
-          >
-          <motion.button
-            initial={{}}
-            animate={contact ? {} : {}}
-            transition={{
-              duration: 1,
-            }}
-            variants={item}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={styles["talk-button"]}
-          >
-            <BsWhatsapp className=" mb-[0.125rem]" />
-            <span>Contact</span>
+          href={waLink()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles["button"]}
+        >
+          <motion.button className={styles["talk-button"]}>
+            <HiOutlinePhone className={styles["icon-phone"]}/>
+            <div className={styles["inner-phone"]} >
+            <p>Call : +91 - 63614 00157</p>
+        </div>
           </motion.button>
+        {/* <div class="sticky-phone">
+            <div class="icon-phone"></div>
+        <div class="inner-phone">
+            <p>Call : <span class="txt-bold" itemprop="tel">+91 - 63614 00157</span></p>
+        </div>
+    </div> */}
         </Link>
+        
         {showMenu && <Menu onClose={() => setShowMenu(false)} />}
       </motion.nav>
       <a
-            href={waLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles["button"]}
-          >
-
+        href={waLink()}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles["button"]}
+      >
         <motion.button
           initial={{ opacity: 0, scale: 0.5 }}
           animate={contact ? { opacity: 1, scale: 1 } : {}}
@@ -206,11 +207,11 @@ export default function Navbar() {
           whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.95 }}
           className={styles["talk-button-hidden"]}
-          >
+        >
           <BsWhatsapp className=" mb-[0.125rem]" />
           <span>Chat with us</span>
         </motion.button>
-          </a>
+      </a>
     </div>
   );
 }
