@@ -11,28 +11,25 @@ function waLink(msg) {
 const UpcomingEvents = () => {
   const data = [
     {
-      imageUrl: "/images/poster_sample.jpeg",
-      date: "26 DEC",
-      from: "7:30 PM",
+      imageUrl: "/images/Office-Hours.png",
+      date: " 14 JANUARY",
+      from: "08:30 PM",
       to: "9:30 PM",
-      title: "Q&A with Abdul Malik",
-      link: "",
+      title: "Office Hours With Noel",
     },
     {
-      imageUrl: "/images/poster_sample.jpeg",
-      date: "26 DEC",
-      from: "7:30 PM",
+      imageUrl: "/images/Q&A.png",
+      date: " 21 JANUARY",
+      from: "08:30 PM",
       to: "9:30 PM",
-      title: "Q&A with Abdul Malik",
-      link: "",
+      title: "Q&A With Noel & Afsal",
     },
     {
-      imageUrl: "/images/poster_sample.jpeg",
-      date: "26 DEC",
-      from: "7:30 PM",
+      imageUrl: "/images/Office-Hours.png",
+      date: "21 JANUARY",
+      from: "08:30 PM",
       to: "9:30 PM",
-      title: "Q&A with Abdul Malik",
-      link: "",
+      title: "Office Hours With Noel",
     },
   ];
 
@@ -64,14 +61,18 @@ const UpcomingEvents = () => {
                   </span>
                 </div>
                 <h2>{item.title}</h2>
-                <Link href={item.link}>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={styles.button}
+                <Link
+                  target="_blank"
+                  href={waLink(`${item.title} : ${item.date}`)}
+                  rel="noopener noreferrer"
                 >
-                  Book a seat
-                </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={styles.button}
+                  >
+                    Book a seat
+                  </motion.button>
                 </Link>
               </div>
             );
@@ -82,4 +83,3 @@ const UpcomingEvents = () => {
   );
 };
 export default UpcomingEvents;
-
