@@ -49,7 +49,6 @@ export default function Home() {
       <Store />
       <div className="section-spacer"></div>
       <Faqs />
-      <div className="section-spacer"></div>
       <UpcomingEvents/>
       <div className="section-spacer"></div>
       <Letstalk />
