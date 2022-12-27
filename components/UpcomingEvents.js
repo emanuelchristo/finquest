@@ -26,7 +26,7 @@ const UpcomingEvents = () => {
     },
     {
       imageUrl: "/images/Office-Hours.png",
-      date: "21 JANUARY",
+      date: "28 JANUARY",
       from: "08:30 PM",
       to: "9:30 PM",
       title: "Office Hours With Noel",
@@ -35,7 +35,7 @@ const UpcomingEvents = () => {
 
   return (
     <>
-      <div className="margin">
+      <div className="margin" id="upcomingevents">
         <div className={styles.heading}>
           <h1>Upcoming Events</h1>
           <p>

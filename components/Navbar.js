@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp ,BsFillCalendar2WeekFill} from "react-icons/bs";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -8,6 +8,7 @@ import Link from "next/link";
 import { FaBuilding, FaStar, FaQuestion, FaAward } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
 import VisibilitySensor from "react-visibility-sensor";
+
 
 const container = {
   hide: {},
@@ -160,6 +161,11 @@ export default function Navbar() {
             </motion.div>
           </motion.li>
           <motion.li variants={item}>
+            <Link href="/#upcomingevents">
+              <a>Events</a>
+            </Link>
+          </motion.li>
+          <motion.li variants={item}>
             <Link href="/#faqs">
               <a>FAQs</a>
             </Link>
@@ -257,6 +263,17 @@ function Menu({ onClose }) {
                 style={{ color: "#0bab2e" }}
               />
               <span>Memberships</span>
+            </a>
+          </Link>
+        </motion.li>
+        <motion.li variants={menuItem}>
+          <Link href="/#upcomingevents">
+            <a>
+              <BsFillCalendar2WeekFill
+                className={styles["menu-item-icon"]}
+                style={{ color: "#e71628" }}
+              />
+              <span>Events</span>
             </a>
           </Link>
         </motion.li>
