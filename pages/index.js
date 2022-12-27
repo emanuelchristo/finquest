@@ -14,6 +14,7 @@ import Reviews from "../components/Reviews";
 import Rocket from "../components/Rocket";
 import Store from "../components/Store";
 import Snackbar from "../components/SnackBar";
+import UpcomingEvents from "../components/UpcomingEvents";
 export default function Home() {
   return (
     <div id="home">
@@ -48,6 +49,8 @@ export default function Home() {
       <Store />
       <div className="section-spacer"></div>
       <Faqs />
+      <div className="section-spacer"></div>
+      <UpcomingEvents/>
       <div className="section-spacer"></div>
       <Letstalk />
       <div className="section-spacer"></div>
