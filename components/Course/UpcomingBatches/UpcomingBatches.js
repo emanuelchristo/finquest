@@ -19,8 +19,8 @@ const UpcomingBatches = () => {
       week: "Weekday",
       days: "Mon, Tue & Fri",
       date: "January 10",
-      from: "7:00 PM",
-      to: "9:00 PM",
+      from: "07:00 PM",
+      to: "09:00 PM",
       status: "available",
     },
     {
@@ -29,8 +29,8 @@ const UpcomingBatches = () => {
       week: "Weekend",
       days: "SAT & SUN",
       date: "January 14",
-      from: "7:00 PM",
-      to: "9:00 PM",
+      from: "09:00 AM",
+      to: "11:00 AM",
       status: "available",
     },
   ];

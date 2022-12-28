@@ -13,8 +13,8 @@ const CoursePageData = {
     startdate:'27th Dec 2022',
     details: [
       {
-        heading: "₹ 24,999",
-        content: "Min Capital",
+        heading: "15 Slots",
+        content: "Available",
       },
       {
         heading: "Malayalam",
@@ -219,8 +219,8 @@ const CoursePageData = {
     startdate:'27th Dec 2022',
     details: [
       {
-        heading: "₹ 3999",
-        content: "Min Capital",
+        heading: "15 Slots",
+        content: "Available",
       },
       {
         heading: "Malayalam",
@@ -451,8 +451,8 @@ const CoursePageData = {
     startdate:'27th Dec 2022',
     details: [
       {
-        heading: "₹ 6999",
-        content: "Min Capital",
+        heading: "15 Slots",
+        content: "Available",
       },
       {
         heading: "Malayalam",
