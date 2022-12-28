@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BsWhatsapp ,BsFillCalendar2WeekFill} from "react-icons/bs";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import {HiOutlinePhone} from "react-icons/hi"
 import { FaAngleDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 import styles from "./navbar.module.css";
