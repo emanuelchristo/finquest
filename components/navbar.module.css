@@ -11,16 +11,19 @@
     font-size: 0.9rem;
     font-weight: 600;
 }
+
 .sub-menu-item {
     margin-bottom: 5px;
     text-transform: none;
 
 }
-.sub-menu-container{
+
+.sub-menu-container {
     display: flex;
     flex-direction: column;
     gap: .6rem;
 }
+
 .membership {
     display: flex;
     gap: .4rem;
@@ -54,7 +57,65 @@
     margin-right: 0;
 }
 
-.talk-button,
+
+
+/* hover-effect */
+.talk-button {
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    height: 3rem;
+    width: 17rem;
+    will-change: transform;
+    z-index: 55;
+    transition: all 1s;
+}
+.talk-button .inner-phone {
+    overflow: hidden;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    top: 1px;
+    right: 1px;
+    transform: translateX(100%);
+    transition: 1s;
+    background: #f3f3f7;
+    padding: 8px 40px 8px 20px;
+    border-radius: 50px;
+}
+.talk-button .inner-phone p {
+    margin: 0;
+    font-size: 16px;
+    line-height: normal;
+    color: #1f1f1f;
+    font-weight: 500px;
+}
+
+.talk-button:hover .inner-phone {
+    transform: translateX(0%)
+}
+
+.hide-call-icon .talk-button {
+    display: none !important
+}
+.talk-button .icon-phone {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 2;
+    padding: .7rem;
+}
+/* hover-effect */
 .talk-button-hidden {
     color: #fff;
     display: flex;
@@ -63,13 +124,16 @@
     padding: 0 1.65rem;
     border-radius: 100px;
 }
-.talk-button{
+
+/* .talk-button {
     background-color: #000;
-}
-.talk-button-hidden{
+} */
+
+.talk-button-hidden {
     background-color: #128c7e;
 
 }
+
 .talk-button-hidden {
     position: fixed;
     bottom: 1rem;
@@ -114,8 +178,19 @@
         margin-right: 1.5rem;
 
     }
+
     .sub-menu {
-        top: 1rem;}
+        top: 1rem;
+    }
+    .talk-button {
+        width: 13rem;
+    }
+    .talk-button .inner-phone p {
+        font-size: 12px;
+    }
+    .talk-button .inner-phone {
+        padding: 8px 50px 8px 10px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -123,7 +198,7 @@
         display: flex;
         font-size: 1.5rem;
     }
-    
+
     .menu {
         display: flex;
         position: absolute;
@@ -136,7 +211,7 @@
         background-color: #fff;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     }
-    
+
     .menu-links-list li {
         font-size: 1.1rem;
         font-weight: 500;
@@ -147,7 +222,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     .menu-links-list li a span {
         margin-top: 0.25rem;
     }
