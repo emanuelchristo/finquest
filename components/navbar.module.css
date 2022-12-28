@@ -57,7 +57,6 @@
     margin-right: 0;
 }
 
-/* hover-effect */
 
 
 /* hover-effect */
@@ -69,7 +68,7 @@
     overflow: hidden;
     justify-content: center;
     height: 3rem;
-    width: 18rem;
+    width: 17rem;
     will-change: transform;
     z-index: 55;
     transition: all 1s;
@@ -91,7 +90,8 @@
     margin: 0;
     font-size: 16px;
     line-height: normal;
-    color: #1f1f1f
+    color: #1f1f1f;
+    font-weight: 500px;
 }
 
 .talk-button:hover .inner-phone {
@@ -181,6 +181,15 @@
 
     .sub-menu {
         top: 1rem;
+    }
+    .talk-button {
+        width: 13rem;
+    }
+    .talk-button .inner-phone p {
+        font-size: 12px;
+    }
+    .talk-button .inner-phone {
+        padding: 8px 50px 8px 10px;
     }
 }
 

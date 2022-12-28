@@ -169,7 +169,7 @@ export default function Navbar() {
           </motion.li>
         </ul>
         <Link
-          href={waLink()}
+          href='tel:+918075145434'
           target="_blank"
           rel="noopener noreferrer"
           className={styles["button"]}
@@ -177,7 +177,7 @@ export default function Navbar() {
           <motion.button className={styles["talk-button"]}>
             <HiOutlinePhone className={styles["icon-phone"]}/>
             <div className={styles["inner-phone"]} >
-            <p>Call : +91 - 63614 00157</p>
+            <p>Call :<span>+91 - 80751 45434</span> </p>
         </div>
           </motion.button>
         {/* <div class="sticky-phone">
