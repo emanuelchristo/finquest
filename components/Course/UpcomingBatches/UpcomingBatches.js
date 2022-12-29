@@ -27,10 +27,10 @@ const UpcomingBatches = () => {
       type: "online",
       color:"purple",
       week: "Weekend",
-      days: "SAT & SUN",
+      days: "FRI, SAT & SUN",
       date: "January 14",
-      from: "09:00 AM",
-      to: "11:00 AM",
+      from: "10:00 AM",
+      to: "03:00 PM",
       status: "available",
     },
   ];

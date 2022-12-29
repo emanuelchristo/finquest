@@ -205,6 +205,31 @@ const CoursePageData = {
         ],
       },
     },
+    oursubscription:{
+      emi:[
+         {
+    id: 1,
+    plan: "one time",
+    price: 399,
+    mostenrolled: false,
+    default: true,
+  },
+  {
+    id: 2,
+    plan: "two time",
+    price: 599,
+    mostenrolled: true,
+    default: false,
+  },
+  {
+    id: 3,
+    plan: "three time",
+    price: 6999,
+    mostenrolled: false,
+    default: false,
+  },
+      ]
+    }
   },
   starter: {
     id: "starter",
@@ -437,6 +462,31 @@ const CoursePageData = {
         ],
       },
     },
+    oursubscription:{
+      emi:[
+         {
+    id: 1,
+    plan: "one time",
+    price: 399,
+    mostenrolled: false,
+    default: true,
+  },
+  {
+    id: 2,
+    plan: "two time",
+    price: 599,
+    mostenrolled: true,
+    default: false,
+  },
+  {
+    id: 3,
+    plan: "three time",
+    price: 6999,
+    mostenrolled: false,
+    default: false,
+  },
+      ]
+    }
   },
   professional: {
     id: "professional",
@@ -641,6 +691,31 @@ const CoursePageData = {
         ],
       },
     },
+    oursubscription:{
+      emi:[
+         {
+    id: 1,
+    plan: "one time",
+    price: 399,
+    mostenrolled: false,
+    default: true,
+  },
+  {
+    id: 2,
+    plan: "two time",
+    price: 599,
+    mostenrolled: true,
+    default: false,
+  },
+  {
+    id: 3,
+    plan: "three time",
+    price: 6999,
+    mostenrolled: false,
+    default: false,
+  },
+      ]
+    }
   },
 };
 

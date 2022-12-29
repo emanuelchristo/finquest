@@ -57,7 +57,7 @@ const CoursePage = () => {
       <StartNow />
       <UpcomingBatches/>
       {courseid!='options'?
-      <OurSubscription/>:
+      <OurSubscription courseid={courseid}/>:
       <CourseFee />
       }
       <CommunityLayout />
