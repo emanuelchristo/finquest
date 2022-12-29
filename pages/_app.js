@@ -4,14 +4,9 @@ import "../styles/global.css";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Script from "next/script";
-import { NextUIProvider,globalCss } from '@nextui-org/react';
-const globalStyles = globalCss({
- 
-});
 function MyApp({ Component, pageProps }) {
-  globalStyles()
   return (
-    <NextUIProvider >
+
     <div>
       <Head>
         <title>
@@ -66,7 +61,6 @@ fbq('track', 'PageView');`}}></Script>
 
       <Footer />
     </div>
-        </NextUIProvider>
   );
 }
 
