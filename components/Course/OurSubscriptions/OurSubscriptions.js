@@ -112,7 +112,7 @@ export default function OurSubscriptions(courseid) {
       case "starter":
         setdata(CoursePageData.starter);
     }
-  }, [courseid.courseid, CoursePageData]);
+  }, [courseid.courseid]);
   const [selected, setSelected] = React.useState([defaultval.plan]);
   const [price, setPrice] = React.useState();
   console.log(courseid);
@@ -134,8 +134,8 @@ export default function OurSubscriptions(courseid) {
               <span>⚡</span>Why should I choose...
             </h2>
             <ul>
-              {points.map((item) => (
-                <li>{item}</li>
+              {points.map((item,index) => (
+                <li key={index}>{item}</li>
               ))}
             </ul>
           </div>
