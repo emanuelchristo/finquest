@@ -18,8 +18,12 @@ import Snackbar from "../SnackBar/SnackBar";
 import Navbar from "../Navbar/Navbar";
 import UpcomingBatches from "../UpcomingBatches/UpcomingBatches";
 import TopTrader from "../TopTrader/TopTrader";
+import OurSubscription from "../OurSubscriptions/OurSubscriptions";
+import { useRouter } from "next/router";
 
 const CoursePage = () => {
+  const router = useRouter();
+  const { courseid } = router.query;
   const [snackbar, setSnackbar] = useState(false);
   useEffect(function mount() {
     function onScroll() {
@@ -52,7 +56,10 @@ const CoursePage = () => {
       <Curriculum />
       <StartNow />
       <UpcomingBatches/>
+      {courseid!='options'?
+      <OurSubscription courseid={courseid}/>:
       <CourseFee />
+      }
       <CommunityLayout />
       <Faqs />
       <Demo />

@@ -178,9 +178,7 @@
 .details {
     display: flex;
     flex-direction: column;
-    /* padding: 70px 1rem; */
     gap: 1.6rem;
-    /* width: 517px; */
     border-radius: 24px;
 }
 
