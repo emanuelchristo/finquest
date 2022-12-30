@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 56px 48px;
-    width: 45%;
+    width: 47%;
     height: 100%;
     gap: 1rem;
     background: #2141E8;
@@ -164,11 +164,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 32px;
+    padding: 2rem;
     background: #F4F7F9;
     border-radius: 18px;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .card>p {
@@ -187,7 +187,7 @@
 .check {
     display: flex;
     flex-direction: row;
-    gap: 18px;
+    gap: 1rem;
     font-weight: 500;
     font-size: 18px;
     line-height: 125%;
@@ -222,7 +222,6 @@
     align-items: center;
     padding: 0px;
     gap: 10px;
-    width: 187px;
 }
 
 .price>div>h4 {
@@ -260,14 +259,16 @@
 
 .offprice {
     position: relative;
-    width: 78px;
+    width: 75px;
     height: 27px;
     display: flex;
     align-items: center;
+    
 }
 
 .offprice>img {
     position: absolute;
+    width: 69px;
 }
 
 .offprice>span {
