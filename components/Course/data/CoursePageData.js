@@ -1,3 +1,26 @@
+export const nth = function(d) {
+  if (d > 3 && d < 21) return 'th';
+  switch (d % 10) {
+      case 1:  return "st";
+      case 2:  return "nd";
+      case 3:  return "rd";
+      default: return "th";
+  }
+};
+export const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 const CoursePageData = {
   options: {
     id: "options",
@@ -9,8 +32,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "4 weeks",
-    deadline:'26th Dec 2022',
-    startdate:'27th Dec 2022',
+    deadline:'10 Jan 2023',
+    // startdate:'27th Dec 2022',
     details: [
       {
         heading: "15 Slots",
@@ -240,8 +263,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
-    deadline:'26th Dec 2022',
-    startdate:'27th Dec 2022',
+    deadline:'10 Jan 2023',
+    // startdate:'27th Dec 2022',
     details: [
       {
         heading: "15 Slots",
@@ -497,8 +520,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "8 Weeks",
-    deadline:'26th Dec 2022',
-    startdate:'27th Dec 2022',
+    deadline:'10 Jan 2023',
+    // startdate:'27th Dec 2022',
     details: [
       {
         heading: "15 Slots",

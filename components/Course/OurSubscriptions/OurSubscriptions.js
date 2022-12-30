@@ -5,6 +5,7 @@ import { Checkbox } from "@nextui-org/react";
 import React from "react";
 import { MdOutlineGroups } from "react-icons/md";
 
+
 function waLink(msg) {
   let url = "https://api.whatsapp.com/send?";
   let params = new URLSearchParams("");
@@ -149,7 +150,9 @@ export default function OurSubscriptions(courseid) {
               >
                 {data.emi
                   ? data.emi.map((item, index) => (
-                      <div className={styles.card} key={index}>
+                      <div className={styles.card} key={index} onClick={() => {
+                        setSelected([item.plan]), setPrice(item.monthly);
+                      }}>
                         {item.mostenrolled ? <p>MOST ENROLLED</p> : ""}
                         <div className={styles.check}>
                           <Checkbox
@@ -175,7 +178,7 @@ export default function OurSubscriptions(courseid) {
                               ₹{item.cutprice}
                             </h5>
                             <h6 className={styles.offprice}>
-                              <img src="/images/course/offprice.svg" alt="" />
+                              <img src="/images/course/offprice.svg"  alt="" />
                               <span>{item.off}% off</span>
                             </h6>
                           </div>

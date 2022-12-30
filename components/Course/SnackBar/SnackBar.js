@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import CoursePageData from "../data/CoursePageData";
+import CoursePageData,{months,nth} from "../data/CoursePageData";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import styles from "./snackbar.module.css";
 import Countdown from "react-countdown";
 import { WaButton } from "../common/Buttons/Button";
+
 
 const timer = Date.now() + 2940000
 const renderer = ({ hours, minutes, seconds }) => {
@@ -18,6 +19,7 @@ const renderer = ({ hours, minutes, seconds }) => {
 };
 
 export default function Snackbar(props) {
+  
   const router = useRouter();
   const { courseid } = router.query;
   const [hidden, setHidden] = useState(false);
@@ -27,13 +29,18 @@ export default function Snackbar(props) {
       case "options":
         setdata(CoursePageData.options);
         break;
-      case "professional":
+        case "professional":
         setdata(CoursePageData.professional);
         break;
-      case "starter":
+        case "starter":
         setdata(CoursePageData.starter);
     }
   }, [courseid]);
+  var deadline = new Date(data.deadline);
+  deadline.setDate(deadline.getDate() - 1);
+  var ddd = String(deadline.getDate()).padStart(1, "0");
+  var dmm = String(deadline.getMonth()).padStart(1, "0");
+  var dyy = String(deadline.getFullYear()).padStart(4, "0");
   return (
     <div
       className={styles["wrapper"]}
@@ -81,7 +88,7 @@ export default function Snackbar(props) {
           <div>
             <h3>Registration ends on</h3>
             <p>
-              {data.deadline}
+            {ddd+nth(ddd)} {months[dmm]} {dyy}
             </p>
           </div>
           <div>

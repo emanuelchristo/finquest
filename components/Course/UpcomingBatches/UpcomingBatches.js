@@ -1,7 +1,12 @@
 import styles from "./upcomingbatches.module.css";
 import Link from "next/link";
+import CoursePageData,{months,nth} from "../data/CoursePageData";
 import {motion} from 'framer-motion'
-import { useRouter } from "next/router";
+import { useState ,useEffect} from "react";
+
+
+// subcription-arrow
+
 function waLink(msg) {
   let url = "https://api.whatsapp.com/send?";
   let params = new URLSearchParams("");
@@ -9,16 +14,31 @@ function waLink(msg) {
   params.append("text", msg);
   return url + params.toString();
 }
-const UpcomingBatches = () => {
-  const router = useRouter();
-  const { courseid } = router.query;
-  const data = [
+const UpcomingBatches = (courseid) => {
+  const [data, setdata] = useState({});
+  useEffect(() => {
+    switch (courseid.courseid) {
+      case "options":
+        setdata(CoursePageData.options);
+        break;
+      case "professional":
+        setdata(CoursePageData.professional);
+        break;
+      case "starter":
+        setdata(CoursePageData.starter);
+    }
+  }, [courseid]);
+  var deadline = new Date(data.deadline);
+  var dd = String(deadline.getDate()).padStart(1, "0");
+  var mm = String(deadline.getMonth()).padStart(1, "0");
+  var yy = String(deadline.getFullYear()).padStart(4, "0");
+  const card = [
     {
       type: "online",
       color:"green",
       week: "Weekday",
       days: "Mon, Tue & Fri",
-      date: "January 10",
+      date: `${dd+nth(dd)} ${months[mm]} ${yy}`,
       from: "07:00 PM",
       to: "09:00 PM",
       status: "available",
@@ -28,7 +48,7 @@ const UpcomingBatches = () => {
       color:"purple",
       week: "Weekend",
       days: "FRI, SAT & SUN",
-      date: "January 14",
+      date: "14th Jan 2023",
       from: "10:00 AM",
       to: "03:00 PM",
       status: "available",
@@ -47,7 +67,7 @@ const UpcomingBatches = () => {
           </p>
         </div>
         <div className={styles.container}>
-          {data.map((item, index) => {
+          {card.map((item, index) => {
             return (
               <div key={index}>
                 <span style={{background:item.color=='green'?'#1BA93F':'#C141CC'}}>{item.type}</span>

@@ -55,7 +55,7 @@ const CoursePage = () => {
       <WhoIsThisFor />
       <Curriculum />
       <StartNow />
-      <UpcomingBatches/>
+      <UpcomingBatches courseid={courseid}/>
       {courseid!='options'?
       <OurSubscription courseid={courseid}/>:
       <CourseFee />
