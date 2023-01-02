@@ -141,7 +141,7 @@ export default function OurSubscriptions(courseid) {
             </ul>
           </div>
           <div className={styles.emi}>
-            <div className={styles.options}>
+            <div className={styles.options} id='subscriptionoptions'>
               <Checkbox.Group
                 defaultValue={selected}
                 value={selected}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./hero.module.css";
 import Link from "next/link";
 
-export default function TopTrader() {
+export default function RightPlace() {
 
   return (
     <div className="margin">

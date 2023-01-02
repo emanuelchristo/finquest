@@ -124,8 +124,8 @@ export default function Navbar() {
             </Link>
           </motion.li>
           <motion.li variants={item}>
-            <Link href="/#benefits">
-              <a>Benefits</a>
+            <Link href="/zero-fee-challenge">
+              <a>Zero fee</a>
             </Link>
           </motion.li>
           <motion.li
@@ -241,13 +241,13 @@ function Menu({ onClose }) {
           </Link>
         </motion.li>
         <motion.li variants={menuItem}>
-          <Link href="/#benefits">
+          <Link href="/zero-fee-challenge">
             <a>
               <FaStar
                 className={styles["menu-item-icon"]}
                 style={{ color: "#f1b915" }}
               />
-              <span>Benefits</span>
+              <span>Zero fee</span>
             </a>
           </Link>
         </motion.li>

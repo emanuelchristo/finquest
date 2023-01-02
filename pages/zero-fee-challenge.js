@@ -1,9 +1,11 @@
 import Faqs from '../components/ZeroFee/Faqs';
 import Hero from '../components/ZeroFee/Hero'
-import TopTrader from '../components/ZeroFee/TopTrader';
+import RightPlace from '../components/ZeroFee/RightPlace';
 import Community from '../components/Course/CommunityAccess/Community';
 import Snackbar from '../components/SnackBar';
 import Navbar from '../components/Navbar';
+import WhatDoIGet from '../components/ZeroFee/WhatDoIGet/WhatDoIGet';
+import Subscription from '../components/ZeroFee/Subscription/Subscription';
 
 const ZeroFee = () => {
   return (
@@ -18,12 +20,16 @@ const ZeroFee = () => {
         ]}
       />
       <Navbar />
-
       <Hero/>
+      <div className="section-spacer"></div>
+      <div className="section-spacer"></div>
+      <WhatDoIGet/>
+      <div className="section-spacer"></div>
+      <Subscription/>
       <div className="section-spacer"></div>
       <Faqs/>
       <Community/>
-      <TopTrader/>
+      <RightPlace/>
     </div>
   );
 };

@@ -37,6 +37,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/zero-fee-challenge">
+                  <a>🤑 Zero Fee</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/#shop">
                   <a>🛍️ Shop</a>
                 </Link>

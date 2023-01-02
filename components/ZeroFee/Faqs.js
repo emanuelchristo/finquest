@@ -4,29 +4,36 @@ import styles from "./faqs.module.css";
 
 export default function Faqs() {
   const [faqs, setFaqs] = useState([
-    {
-      id: 1,
-      open: false,
-      question: "What do we do?",
-      answer: `We teach money management and stock market skills to everyone.`,
-    },
+    
     {
       id: 2,
       open: false,
-      question: "Can stock trading be a career?",
-      answer: `Stock Trading can be an excellent full-time profession as well as a business. More people are entering the Stock Market as full-time careers after realizing its potential.`,
+      question: "What is the zero-fee Challenge?",
+      answer: ``,
     },
     {
       id: 3,
       open: false,
-      question: "What are the benefits of stock market trading?",
-      answer: `You will be Saving and Making money, earning dividends, being your own boss, with no middlemen, low fees and commissions, high returns, fast gains, an unconventional career, a smooth process, and many more.`,
+      question: "How to participate in the zero-fee challenge?",
+      answer: ``,
     },
     {
       id: 4,
       open: false,
-      question: "How much can I earn from the stock market?",
-      answer: `There is no limit to how much you can earn from the Stock Market. It can be in thousands and even lakhs if you have the proper knowledge & expertise in technical indicators and your risk appetite.`,
+      question: "Is there any charge to participate in the zero-fee challenge?",
+      answer: ``,
+    },
+    {
+      id: 5,
+      open: false,
+      question: "Can the zero-fee challenge be stopped or cancelled? ( duration)",
+      answer: ``,
+    },
+    {
+      id: 1,
+      open: false,
+      question: "I have completed the zero-fee challenge. How do I download the certificate?",
+      answer: ``,
     },
   ]);
 

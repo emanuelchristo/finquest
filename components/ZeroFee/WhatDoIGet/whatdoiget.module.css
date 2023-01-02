@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.container>div:nth-child(1){
+    padding: 30px;
+}
+.certificate{
+    overflow: hidden;
+    box-shadow: 0px 0px 34px 4px rgba(194,194,194,0.54);
+}
+
+.certificate>img{
+    overflow: hidden;
+    max-width: 400px;
+}
+.points{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.points>div{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.points h4{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 1rem;
+}
+.points p{
+    font-size: 16px;
+}
