@@ -168,7 +168,7 @@
     background: #F4F7F9;
     border-radius: 18px;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .card>p {
@@ -209,6 +209,10 @@
     color: #000000;
 }
 
+.price>p {
+font-size: 12px;
+color: #5F656D;
+}
 .price>h2>span {
     font-weight: 500;
     font-size: 16px;
