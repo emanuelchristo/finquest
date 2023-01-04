@@ -45,7 +45,7 @@ const CoursePage = () => {
   });
   return (
     <>
-      {/* <Snackbar trigger={snackbar} />
+      <Snackbar trigger={snackbar} />
       <Navbar />
       <Hero />
       <Subscription />
@@ -55,15 +55,15 @@ const CoursePage = () => {
       <WhoIsThisFor />
       <Curriculum />
       <StartNow />
-      <UpcomingBatches courseid={courseid}/> */}
+      <UpcomingBatches courseid={courseid}/>
       {courseid!='options'?
       <OurSubscription courseid={courseid}/>:
       <CourseFee />
       }
-      {/* <CommunityLayout />
+      <CommunityLayout />
       <Faqs />
       <Demo />
-      <TopTrader/> */}
+      <TopTrader/>
     </>
   );
 };

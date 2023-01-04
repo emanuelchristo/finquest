@@ -1,4 +1,4 @@
-import { motion,AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./oursubscriptions.module.css";
 import Link from "next/link";
 import { Checkbox } from "@nextui-org/react";
@@ -11,8 +11,8 @@ function waLink(msg) {
   let params = new URLSearchParams("");
   params.append("phone", "918075145434");
   params.append("text", msg);
-  // return url + params.toString();
-  window.open(url + params.toString(), "_blank")
+  return url + params.toString();
+  // return window.open(url + params.toString(), "_blank")
 }
 const CoursePageData = {
   professional: {
@@ -198,28 +198,32 @@ export default function OurSubscriptions(courseid) {
               </Checkbox.Group>
             </div>
             <div>
-              {/* <Link
-                target="_blank"
-                href={
-                  price != null
-                    ? waLink(
-                        `I would like to join the '${courseid.courseid} course' with ${selected} Plan`
-                      )
-                    : "#oursubscription"
-                }
-                onClick={price != null ? '':() => (modalOpen ? close() : open())}
-              > */}
+              {price != null ? (
+                <Link
+                  target="_blank"
+                  href={waLink(
+                    `I would like to join the '${courseid.courseid} course' with ${selected} Plan`
+                  )}
+                >
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    aria-label="Enroll"
+                  >
+                    {`Pay ₹${price}`}
+                  </motion.button>
+                </Link>
+              ) : (
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label="Enroll"
-                  onClick={price != null ? waLink(
-                    `I would like to join the '${courseid.courseid} course' with ${selected} Plan`
-                  ):() => (modalOpen ? close() : open())}
+                  onClick={() => (modalOpen ? close() : open())}
                 >
-                  {price != null ? `Pay ₹${price}` : "Select your plan"}
+                  Select your plan
                 </motion.button>
-              {/* </Link> */}
+              )}
+
               <p>
                 <MdOutlineGroups />
                 600+ Learners already enrolled
