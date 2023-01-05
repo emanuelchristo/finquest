@@ -123,7 +123,7 @@ export default function OurSubscriptions(courseid) {
 
   return (
     <div className="margin" id="oursubscription">
-      <section className={styles["oursubscription"]}>
+      <section id="EnrollNow" className={styles["oursubscription"]}>
         <div className={styles.heading}>
           <span>PRICING</span>
           <h3>Our subscriptions fit your needs</h3>
