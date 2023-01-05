@@ -8,7 +8,8 @@ import PopUp from "./PopUp";
 import "react-phone-number-input/style.css";
 const chat_id = process.env.chat_id;
 const BookingPopUp = ({ handleClose, courseid }) => {
-  const [value, setValue] = useState();
+  const [section, setSection] = useState(true);
+  const Next = () => setSection(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const img = "https://www.finqlearning.com/images/professional-plan.webp";
@@ -63,13 +64,48 @@ const BookingPopUp = ({ handleClose, courseid }) => {
       />
       {/* Same as */}
       <PopUp className={styles.popup}>
-        dfsd
         <button className={styles.modal_close} onClick={handleClose}>
           <img src="/images/course/icons/popup-close.svg" alt="" />
         </button>
+        {section ? <Section1 goNext={Next} /> : <Section2 />}
       </PopUp>
     </>
   );
 };
 
 export default BookingPopUp;
+
+const Section1 = ({goNext}) => {
+  return (
+    <>
+      <div className={styles.section1}>
+        <div>
+          <img src="/images/course/hero-ameen.png" alt="" />
+          <div className={styles.desc}>
+            <span>beginner</span>
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <div>
+              <div>
+                <img src="/images/course/booking-popup-off.svg" alt="" />
+                <h2>₹4999/-</h2>
+              </div>
+              <p onClick={goNext}>Total inclusive of taxes</p>
+            </div>
+            
+          </div>
+        </div>
+        <div></div>
+        <div>
+        <button onClick={goNext}>Next</button>
+        </div>
+      </div>
+    </>
+  );
+};
+const Section2 = () => {
+  return (
+    <>
+      <div className={styles.section2}>Section2</div>
+    </>
+  );
+};

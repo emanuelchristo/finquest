@@ -12,12 +12,95 @@
     overflow-y: auto;
     height: 80%;
     background-color: #fff;
-    }
-    .modal_close {
-        position: absolute;
-        width: 17px;
-        height: 17px;
-        right: 1rem;
-        top: 1rem;
-    
-    }
+}
+
+.modal_close {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 1rem;
+    top: 1rem;
+
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+}
+
+.section1>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 18px;
+}
+
+.section1>div:nth-child(1)>img {
+    width: 30%;
+}
+
+.section1 .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+}
+
+.section1 .desc>span {
+    background-color: #F555A0;
+    padding: 6px 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section1 .desc>h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110%;
+    color: #000000;
+}
+.section1 .desc>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.section1 .desc>div>div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1 .desc>div h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 7px 17px 7px 7px;
+}
+.section1 .desc>div img{
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+
+}
+.section1 .desc>div>p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #5F656D;
+}
