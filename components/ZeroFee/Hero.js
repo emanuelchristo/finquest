@@ -36,12 +36,12 @@ const Hero = () => {
         </p>
         <p>
           Through this challenge, Finquest will help you regain the money (fees)
-          you've invested in learning; from the Stock Market itself. It's cent
+          you&apos;ve invested in learning; from the Stock Market itself. It&apos;s cent
           percent guaranteed for we have the best Community which will actively
           suggest you Stocks to watch.
         </p>
         <p>
-          There will also be Live Trading sessions from experts so you'll right
+          There will also be Live Trading sessions from experts so you&apos;ll right
           away know which stock to watch out.
         </p>
       </section>

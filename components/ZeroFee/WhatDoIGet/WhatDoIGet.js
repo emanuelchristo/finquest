@@ -39,7 +39,7 @@ const WhatDoIGet = () => {
           </div>
           <div className={styles.points}>
             {points.map((Item, index) => (
-              <div>
+              <div key={index}>
                 <h4>
                   {Item.icon}
                   {Item.title}

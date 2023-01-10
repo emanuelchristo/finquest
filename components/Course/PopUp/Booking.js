@@ -1,11 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./booking.module.css";
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { sendMessage } from "./Telegram";
 import PopUp from "./PopUp";
-import "react-phone-number-input/style.css";
+import { Checkbox } from "@nextui-org/react";
+
 const chat_id = process.env.chat_id;
 const BookingPopUp = ({ handleClose, courseid }) => {
   const [section, setSection] = useState(true);
@@ -62,7 +63,6 @@ const BookingPopUp = ({ handleClose, courseid }) => {
         pauseOnHover
         style={{ zIndex: 999999 }}
       />
-      {/* Same as */}
       <PopUp className={styles.popup}>
         <button className={styles.modal_close} onClick={handleClose}>
           <img src="/images/course/icons/popup-close.svg" alt="" />
@@ -75,7 +75,42 @@ const BookingPopUp = ({ handleClose, courseid }) => {
 
 export default BookingPopUp;
 
-const Section1 = ({goNext}) => {
+const Section1 = ({ goNext }) => {
+  const [faqs, setFaqs] = useState([
+    {
+      id: 1,
+      open: true,
+      batch: "Wednesday Batch 9:00PM - 10:30PM",
+      points: [
+        "Module 1 - 4 Jan, 23",
+        "Module 1 - 4 Jan, 23",
+        "Module 1 - 4 Jan, 23",
+      ],
+    },
+    {
+      id: 2,
+      open: false,
+      batch: "Wednesday Batch 10:00PM - 10:30PM",
+      points: [
+        "Module 1 - 4 Jan, 23",
+        "Module 1 - 4 Jan, 23",
+        "Module 1 - 4 Jan, 23",
+      ],
+    },
+  ]);
+
+  function handleClick(id) {
+    let temp = faqs.map((item) => {
+      if (item.id === id) return { ...item, open: !item.open };
+      return { ...item, open: false };
+    });
+    setFaqs(temp);
+  }
+  const defaultval = {
+    plan: "Wednesday Batch 9:00PM - 10:30PM",
+  };
+  const [selected, setSelected] = useState([defaultval.plan]);
+
   return (
     <>
       <div className={styles.section1}>
@@ -89,14 +124,33 @@ const Section1 = ({goNext}) => {
                 <img src="/images/course/booking-popup-off.svg" alt="" />
                 <h2>₹4999/-</h2>
               </div>
-              <p onClick={goNext}>Total inclusive of taxes</p>
+              <p>Total inclusive of taxes</p>
             </div>
-            
           </div>
         </div>
-        <div></div>
+        <div className={styles["points-wrapper"]}>
+          <Checkbox.Group
+            defaultValue={selected}
+            value={selected}
+            aria-label="checkbox"
+          >
+            {faqs.map((item, index) => (
+              <Faq
+                key={index}
+                batch={item.batch}
+                points={item.points}
+                open={item.open}
+                onClick={()=>{
+                  setSelected(item.batch),handleClick(item.id)
+                }}
+                
+                
+              />
+            ))}
+          </Checkbox.Group>
+        </div>
         <div>
-        <button onClick={goNext}>Next</button>
+          <button onClick={goNext}>Next</button>
         </div>
       </div>
     </>
@@ -109,3 +163,51 @@ const Section2 = () => {
     </>
   );
 };
+const pointsAnimation = {
+  initial: {
+    height: 0,
+  },
+  animate: {
+    height: "auto",
+  },
+  exit: {
+    height: 0,
+  },
+};
+function Faq({ batch, points, open,onClick }) {
+  return (
+    <div className={`${styles["batch"]} ${open ? styles["open"] : ""}`}>
+      <motion.div>
+        <Checkbox
+          value={batch}
+          aria-label={batch}
+          isRounded
+          size="md"
+          color="primary"
+          onChange={onClick}
+          
+        />
+      </motion.div>
+      <div>
+        <h2>{batch}</h2>
+        <AnimatePresence>
+        <div className={styles.points}>
+          {open &&
+          points.map((item,index)=>(
+              <motion.p
+              key={index}
+              variants={pointsAnimation}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                >
+                {item}
+              </motion.p>
+          ))
+           }
+            </div>
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+}

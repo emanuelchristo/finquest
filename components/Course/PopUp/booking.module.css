@@ -26,7 +26,6 @@
 .section1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0px;
     gap: 40px;
 }
@@ -71,32 +70,36 @@
     line-height: 110%;
     color: #000000;
 }
-.section1 .desc>div{
+
+.section1 .desc>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
     flex-wrap: wrap;
 }
 
-.section1 .desc>div>div{
+.section1 .desc>div>div {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .section1 .desc>div h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     padding: 7px 17px 7px 7px;
 }
-.section1 .desc>div img{
+
+.section1 .desc>div img {
     position: absolute;
     z-index: -1;
     left: 0px;
 
 }
+
 .section1 .desc>div>p {
     font-weight: 400;
     font-size: 12px;
@@ -104,3 +107,44 @@
     text-align: center;
     color: #5F656D;
 }
+.points-wrapper>div>div{
+gap: 2rem;
+}
+
+.batch {
+    display: flex;
+    gap: 1rem;
+}
+.batch h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000000;
+}
+.batch p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    color: #5F656D;
+    
+}
+.points{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    
+}
+.batch>div:nth-child(1){
+    margin-top: .5rem;
+}
+.batch>div:nth-child(2){
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+    
