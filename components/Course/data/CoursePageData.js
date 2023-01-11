@@ -668,6 +668,7 @@ const CoursePageData = {
       point:
         "Enroll now and get bonuses worth ₹15,799 free. There was never a better time to grab this on-demand program.",
     },
+    
     curriculum: {
       title: "Options Trading",
       description:

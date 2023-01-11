@@ -14,78 +14,7 @@ function waLink(msg) {
   return url + params.toString();
   // return window.open(url + params.toString(), "_blank")
 }
-const CoursePageData = {
-  professional: {
-    default: {
-      plan: "One Time",
-      monthly: "9,900",
-    },
-    emi: [
-      {
-        id: 1,
-        plan: "One Time",
-        monthly: "9,900",
-        price: "9,900",
-        cutprice: "25,699",
-        off: 62,
-        mostenrolled: false,
-      },
-      {
-        id: 2,
-        plan: "One Month",
-        monthly: "5300",
-        price: "10,600",
-        cutprice: "25,699",
-        off: 59,
-        mostenrolled: true,
-      },
-      {
-        id: 3,
-        plan: "Two Month",
-        monthly: "3,740",
-        price: "11,199",
-        cutprice: "25,699",
-        off: 56,
-        mostenrolled: false,
-      },
-    ],
-  },
-  starter: {
-    default: {
-      plan: "One Time",
-      monthly: "7,999",
-    },
-    emi: [
-      {
-        id: 1,
-        plan: "One Time",
-        monthly: "7,999",
-        price: "7,999",
-        cutprice: "15,499",
-        off: 49,
-        mostenrolled: false,
-      },
-      {
-        id: 2,
-        plan: "One Month",
-        monthly: "4,350",
-        price: "8,699",
-        cutprice: "15,499",
-        off: 44,
-        mostenrolled: true,
-      },
-      {
-        id: 3,
-        plan: "Two Months",
-        monthly: "3,070",
-        price: "9,199",
-        cutprice: "15,499",
-        off: 41,
-        mostenrolled: false,
-      },
-    ],
-  },
-};
+
 const defaultval = {
   plan: "One Time",
   monthly: "",
@@ -101,10 +30,85 @@ const points = [
   "Certificate of completion",
 ];
 
-export default function OurSubscriptions(courseid) {
+export default function OurSubscriptions({courseid}) {
+  const CoursePageData = {
+    professional: {
+      title: "From beginner to PRO TRADER",
+      default: {
+        plan: "One Time",
+        monthly: "9,900",
+      },
+      emi: [
+        {
+          id: 1,
+          plan: "One Time",
+          monthly: "9,900",
+          price: "9,900",
+          cutprice: "25,699",
+          off: 62,
+          mostenrolled: false,
+        },
+        {
+          id: 2,
+          plan: "One Month",
+          monthly: "5300",
+          price: "10,600",
+          cutprice: "25,699",
+          off: 59,
+          mostenrolled: true,
+        },
+        {
+          id: 3,
+          plan: "Two Month",
+          monthly: "3,740",
+          price: "11,199",
+          cutprice: "25,699",
+          off: 56,
+          mostenrolled: false,
+        },
+      ],
+    },
+    starter: {
+      title: "Kickstart your Stock market journey in less than 6 weeks!",
+      default: {
+        plan: "One Time",
+        monthly: "7,999",
+      },
+      emi: [
+        {
+          id: 1,
+          plan: "One Time",
+          monthly: "7,999",
+          price: "7,999",
+          cutprice: "15,499",
+          off: 49,
+          mostenrolled: false,
+        },
+        {
+          id: 2,
+          plan: "One Month",
+          monthly: "4,350",
+          price: "8,699",
+          cutprice: "15,499",
+          off: 44,
+          mostenrolled: true,
+        },
+        {
+          id: 3,
+          plan: "Two Months",
+          monthly: "3,070",
+          price: "9,199",
+          cutprice: "15,499",
+          off: 41,
+          mostenrolled: false,
+        },
+      ],
+    },
+  };
   const [data, setdata] = React.useState({});
+  const [price, setPrice] = React.useState();
   React.useEffect(() => {
-    switch (courseid.courseid) {
+    switch (courseid) {
       case "options":
         setdata(CoursePageData.options);
         break;
@@ -114,9 +118,9 @@ export default function OurSubscriptions(courseid) {
       case "starter":
         setdata(CoursePageData.starter);
     }
-  }, [courseid.courseid]);
+  }, [courseid]);
+
   const [selected, setSelected] = React.useState([defaultval.plan]);
-  const [price, setPrice] = React.useState();
   const [modalOpen, setModalOpen] = React.useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
@@ -198,7 +202,7 @@ export default function OurSubscriptions(courseid) {
               </Checkbox.Group>
             </div>
             <div>
-              {price != null ? (
+              {/* {price != null ? (
                 <Link
                   target="_blank"
                   href={waLink(
@@ -213,16 +217,17 @@ export default function OurSubscriptions(courseid) {
                     {`Pay ₹${price}`}
                   </motion.button>
                 </Link>
-              ) : (
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label="Enroll"
-                  onClick={() => (modalOpen ? close() : open())}
-                >
-                  Select your plan
-                </motion.button>
-              )}
+              ) : 
+              ( */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label="Enroll"
+                onClick={() => (modalOpen ? close() : open())}
+              >
+                {`Pay `}
+              </motion.button>
+              {/* )} */}
 
               <p>
                 <MdOutlineGroups />
@@ -239,6 +244,8 @@ export default function OurSubscriptions(courseid) {
       >
         {modalOpen && (
           <BookingPopUp
+            head={data.title}
+            price={price==null?data.default.monthly:price}
             modalOpen={modalOpen}
             handleClose={close}
             courseid={courseid}

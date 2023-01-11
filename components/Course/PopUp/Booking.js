@@ -1,48 +1,25 @@
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./booking.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
-import { sendMessage } from "./Telegram";
 import PopUp from "./PopUp";
 import { Checkbox } from "@nextui-org/react";
 import {BsBookHalf} from 'react-icons/bs'
-const chat_id = process.env.chat_id;
+import Link from "next/link";
 
 
-const BookingPopUp = ({ handleClose, courseid }) => {
+
+const BookingPopUp = ({ handleClose,head,price}) => {
   const [section, setSection] = useState(true);
+  console.log('price1',price);
   const Next = () => setSection(false);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const img = "https://www.finqlearning.com/images/professional-plan.webp";
-
-  if (courseid == "starter") {
-    img = "https://www.finqlearning.com/images/student-plan.webp";
-  } else if (courseid == "options") {
-    img = "https://www.finqlearning.com/images/options-trading-plan.webp";
-  }
-
-
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        style={{ zIndex: 999999 }}
-      />
       <PopUp className={styles.popup}>
         <button className={styles.modal_close} onClick={handleClose}>
           <img src="/images/course/icons/popup-close.svg" alt="" />
         </button>
-        {section ? <Section1 goNext={Next} /> : <Section2 />}
+        {section ? <Section1 head={head} goNext={Next} price={price}/> : <Section2 head={head} price={price}/>}
       </PopUp>
     </>
   );
@@ -50,16 +27,20 @@ const BookingPopUp = ({ handleClose, courseid }) => {
 
 export default BookingPopUp;
 
-const Section1 = ({ goNext }) => {
+const Section1 = ({ goNext,head ,price}) => {
+  console.log('price:',price);
   const [faqs, setFaqs] = useState([
     {
       id: 1,
       open: true,
-      batch: "Wednesday Batch 9:00PM - 10:30PM",
+      batch: "Jan 16th Batch - 07:30 PM - 09:00 PM",
       points: [
-        "Module 1 - 4 Jan, 23",
-        "Module 1 - 4 Jan, 23",
-        "Module 1 - 4 Jan, 23",
+        "Module 1 - 16 Jan to 23 Jan",
+        "Module 2 - 23 Jan to 30 Jan",
+        "Module 3 - 30 Jan to 6 Feb",
+        "Module 4 - 6 Feb to 13 Feb",
+        "Module 5 - 13 Feb to 20 Feb",
+        "Module 6 - 20 Feb to 27 Feb",
       ],
     },
     {
@@ -82,14 +63,14 @@ const Section1 = ({ goNext }) => {
     setFaqs(temp);
   }
   const defaultval = {
-    plan: "Wednesday Batch 9:00PM - 10:30PM",
+    plan: "Jan 16th Batch - 07:30 PM - 09:00 PM",
   };
   const [selected, setSelected] = useState([defaultval.plan]);
 
   return (
     <>
       <div className={styles.section1}>
-        <Header />
+        <Header head={head} price={price}/>
         <div className={styles["points-wrapper"]}>
           <Checkbox.Group
             defaultValue={selected}
@@ -108,6 +89,7 @@ const Section1 = ({ goNext }) => {
               />
             ))}
           </Checkbox.Group>
+          
         </div>
         <div className={styles.next}>
           <motion.button onClick={goNext}>Next</motion.button>
@@ -116,44 +98,22 @@ const Section1 = ({ goNext }) => {
     </>
   );
 };
-const Section2 = () => {
+const Section2 = ({head,price}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  function join(e) {
-    e.preventDefault();
-    try {
-      sendMessage(
-        `<a href="https://www.finqlearning.com/images/community.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
-        "html",
-        chat_id
-      );
-      toast.success("Hurray! we'll contact you shortly", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        onClose: setTimeout(() => {
-          handleClose();
-        }, 5000),
-      });
-    } catch (error) {
-      toast.error("Sorry Something went wrong", {
-        position: "top-right",
-      });
-    }
-    setEmail("");
-    setName("");
-    setPhone("");
+  function waLink(msg) {
+    let url = "https://api.whatsapp.com/send?";
+    let params = new URLSearchParams("");
+    params.append("phone", "918075145434");
+    params.append("text", msg);
+    return url + params.toString();
   }
   return (
 
       <div className={styles.section2}>
-        <Header />
-        <form className={styles.modal_form} onSubmit={join}>
+        <Header head={head} price={price}/>
+        <form className={styles.modal_form} >
             <div>
               <label htmlFor="name">
                 Name
@@ -216,10 +176,17 @@ const Section2 = () => {
               />
             </div>
             <div>
-              <input type="checkbox" />This is my WhatsApp number
+            <Checkbox defaultSelected><span className={styles.wa}>This is my WhatsApp number</span></Checkbox>
             </div>
             <div className={styles["join"]}>
-              <a href="#" target="_blank" rel="noreferrer noopener">
+            <Link
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href={waLink(
+                    `I would like to join the Plan`
+                  )}
+                >
+            
                 <motion.button
                   type="submit"
                   whileHover={{
@@ -233,7 +200,7 @@ const Section2 = () => {
                   <BsBookHalf className={styles["join-icon"]} />
                   <span>Join Now</span>
                 </motion.button>
-              </a>
+                </Link>
             </div>
           </form>
          
@@ -280,7 +247,13 @@ function Faq({ batch, points, open, onClick }) {
                 >
                   {item}
                 </motion.p>
-              ))}
+              ))
+         
+              
+              }
+              {open && (
+                <div> All timings are in IST (+05:30)</div>
+              )}
           </div>
         </AnimatePresence>
       </div>
@@ -288,17 +261,18 @@ function Faq({ batch, points, open, onClick }) {
   );
 }
 
-const Header = () => {
+const Header = ({head,price}) => {
+
   return (
     <div className={styles.header}>
       <img src="/images/course/hero-ameen.png" alt="" />
       <div className={styles.desc}>
         <span>beginner</span>
-        <h4>Lorem ipsum dolor sit amet</h4>
+        <h4 contentEditable>{head}</h4>
         <div>
           <div>
             <img src="/images/course/booking-popup-off.svg" alt="" />
-            <h2>₹4999/-</h2>
+            <h2>₹ {price}/-</h2>
           </div>
           <p>Total inclusive of taxes</p>
         </div>
