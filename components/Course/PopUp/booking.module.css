@@ -8,9 +8,9 @@
     position: relative;
     max-width: 90%;
     width: 25rem;
+    min-height: 558px;
     border-radius: 24px;
     overflow-y: auto;
-    height: 80%;
     background-color: #fff;
 }
 
@@ -30,7 +30,7 @@
     gap: 40px;
 }
 
-.section1>div:nth-child(1) {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,11 +38,11 @@
     gap: 18px;
 }
 
-.section1>div:nth-child(1)>img {
+.header>img {
     width: 30%;
 }
 
-.section1 .desc {
+.desc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -51,7 +51,7 @@
 
 }
 
-.section1 .desc>span {
+ .desc>span {
     background-color: #F555A0;
     padding: 6px 8px;
     border-radius: 5px;
@@ -64,14 +64,14 @@
     color: #FFFFFF;
 }
 
-.section1 .desc>h4 {
+.desc>h4 {
     font-weight: 700;
     font-size: 20px;
     line-height: 110%;
     color: #000000;
 }
 
-.section1 .desc>div {
+ .desc>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,72 +79,167 @@
     flex-wrap: wrap;
 }
 
-.section1 .desc>div>div {
+.desc>div>div {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.section1 .desc>div h2 {
+ .desc>div h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     padding: 7px 17px 7px 7px;
 }
 
-.section1 .desc>div img {
+ .desc>div img {
     position: absolute;
     z-index: -1;
     left: 0px;
 
 }
 
-.section1 .desc>div>p {
+.desc>div>p {
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     text-align: center;
     color: #5F656D;
 }
-.points-wrapper>div>div{
-gap: 2rem;
+
+.points-wrapper>div>div {
+    gap: 2rem;
 }
 
 .batch {
     display: flex;
     gap: 1rem;
 }
-.batch h2{
+
+.batch h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 135%;
     color: #000000;
 }
+
 .batch p {
     font-weight: 500;
     font-size: 16px;
     line-height: 135%;
     color: #5F656D;
-    
+
 }
-.points{
+
+.points {
     display: flex;
     flex-direction: column;
     gap: .8rem;
-    
+
 }
-.batch>div:nth-child(1){
+
+.batch>div:nth-child(1) {
     margin-top: .5rem;
 }
-.batch>div:nth-child(2){
+
+.batch>div:nth-child(2) {
     justify-content: space-around;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+.next {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.next>button {
+    width: 100%;
+    background-color: var(--blue-second);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 18px 15px;
+    border-radius: 57px;
 
 
+}
+.section2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 40px;
+}
 
-    
+.join-button {
+    height: 3.313rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--blue-second);
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: .8rem;
+}
+
+.join-button span {
+    font-weight: 600;
+    margin-left: 0.6rem;
+    margin-top: 0.125rem;
+}
+
+.modal_form {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.modal_form label {
+    float: left;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 3px;
+
+}
+
+.modal_form input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 8px;
+    width: 100%;
+    height: 50px;
+    background: #E6EAEE;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.modal_close {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 1rem;
+    top: 1rem;
+
+}

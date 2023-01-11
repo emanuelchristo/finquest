@@ -6,8 +6,10 @@ import { ToastContainer, toast } from "react-toastify";
 import { sendMessage } from "./Telegram";
 import PopUp from "./PopUp";
 import { Checkbox } from "@nextui-org/react";
-
+import {BsBookHalf} from 'react-icons/bs'
 const chat_id = process.env.chat_id;
+
+
 const BookingPopUp = ({ handleClose, courseid }) => {
   const [section, setSection] = useState(true);
   const Next = () => setSection(false);
@@ -20,34 +22,7 @@ const BookingPopUp = ({ handleClose, courseid }) => {
   } else if (courseid == "options") {
     img = "https://www.finqlearning.com/images/options-trading-plan.webp";
   }
-  function join(e) {
-    e.preventDefault();
-    try {
-      sendMessage(
-        `<a href="${img}"> </a><b>Course Join Request</b>\n\n🚀 Course: <b>${courseid.toUpperCase()}</b>\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n\n`,
-        "html",
-        chat_id
-      );
-      toast.success("Hurray! we'll contact you shortly", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        onClose: setTimeout(() => {
-          handleClose();
-        }, 5000),
-      });
-    } catch (error) {
-      toast.error("Sorry Something went wrong", {
-        position: "top-right",
-      });
-    }
-    setName("");
-    setPhone("");
-  }
+
 
   return (
     <>
@@ -114,20 +89,7 @@ const Section1 = ({ goNext }) => {
   return (
     <>
       <div className={styles.section1}>
-        <div>
-          <img src="/images/course/hero-ameen.png" alt="" />
-          <div className={styles.desc}>
-            <span>beginner</span>
-            <h4>Lorem ipsum dolor sit amet</h4>
-            <div>
-              <div>
-                <img src="/images/course/booking-popup-off.svg" alt="" />
-                <h2>₹4999/-</h2>
-              </div>
-              <p>Total inclusive of taxes</p>
-            </div>
-          </div>
-        </div>
+        <Header />
         <div className={styles["points-wrapper"]}>
           <Checkbox.Group
             defaultValue={selected}
@@ -140,27 +102,143 @@ const Section1 = ({ goNext }) => {
                 batch={item.batch}
                 points={item.points}
                 open={item.open}
-                onClick={()=>{
-                  setSelected(item.batch),handleClick(item.id)
+                onClick={() => {
+                  setSelected(item.batch), handleClick(item.id);
                 }}
-                
-                
               />
             ))}
           </Checkbox.Group>
         </div>
-        <div>
-          <button onClick={goNext}>Next</button>
+        <div className={styles.next}>
+          <motion.button onClick={goNext}>Next</motion.button>
         </div>
       </div>
     </>
   );
 };
 const Section2 = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  function join(e) {
+    e.preventDefault();
+    try {
+      sendMessage(
+        `<a href="https://www.finqlearning.com/images/community.webp"> </a><b>Community Join Request</b>\n\n💎 Name: <b>${name}</b>\n☎️ Phone: <b>${phone}</b>\n📩 Email: ${email}\n`,
+        "html",
+        chat_id
+      );
+      toast.success("Hurray! we'll contact you shortly", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        onClose: setTimeout(() => {
+          handleClose();
+        }, 5000),
+      });
+    } catch (error) {
+      toast.error("Sorry Something went wrong", {
+        position: "top-right",
+      });
+    }
+    setEmail("");
+    setName("");
+    setPhone("");
+  }
   return (
-    <>
-      <div className={styles.section2}>Section2</div>
-    </>
+
+      <div className={styles.section2}>
+        <Header />
+        <form className={styles.modal_form} onSubmit={join}>
+            <div>
+              <label htmlFor="name">
+                Name
+                <span
+                  style={{
+                    color: "red",
+                    fontSize: "18px",
+                  }}
+                >
+                  *
+                </span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={name}
+                placeholder="Enter your name"
+                required
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+            </div>
+            <div>
+              <label htmlFor="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                value={email}
+                name="email"
+                placeholder="Enter your email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+            </div>
+            <div>
+              <label htmlFor="phone">
+                Phone
+                <span
+                  style={{
+                    color: "red",
+                    fontSize: "18px",
+                  }}
+                >
+                  *
+                </span>
+              </label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+                value={phone}
+                onChange={(e) => {
+                  setPhone(e.target.value);
+                }}
+              />
+            </div>
+            <div>
+              <input type="checkbox" />This is my WhatsApp number
+            </div>
+            <div className={styles["join"]}>
+              <a href="#" target="_blank" rel="noreferrer noopener">
+                <motion.button
+                  type="submit"
+                  whileHover={{
+                    scale: 1.05,
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                  }}
+                  className={styles["join-button"]}
+                >
+                  <BsBookHalf className={styles["join-icon"]} />
+                  <span>Join Now</span>
+                </motion.button>
+              </a>
+            </div>
+          </form>
+         
+      </div>
+
   );
 };
 const pointsAnimation = {
@@ -174,40 +252,57 @@ const pointsAnimation = {
     height: 0,
   },
 };
-function Faq({ batch, points, open,onClick }) {
+function Faq({ batch, points, open, onClick }) {
   return (
     <div className={`${styles["batch"]} ${open ? styles["open"] : ""}`}>
       <motion.div>
         <Checkbox
+          isReadOnly={open}
           value={batch}
           aria-label={batch}
           isRounded
           size="md"
           color="primary"
           onChange={onClick}
-          
         />
       </motion.div>
       <div>
         <h2>{batch}</h2>
         <AnimatePresence>
-        <div className={styles.points}>
-          {open &&
-          points.map((item,index)=>(
-              <motion.p
-              key={index}
-              variants={pointsAnimation}
-                initial="initial"
-                animate="animate"
-                exit="exit"
+          <div className={styles.points}>
+            {open &&
+              points.map((item) => (
+                <motion.p
+                  variants={pointsAnimation}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
                 >
-                {item}
-              </motion.p>
-          ))
-           }
-            </div>
+                  {item}
+                </motion.p>
+              ))}
+          </div>
         </AnimatePresence>
       </div>
     </div>
   );
 }
+
+const Header = () => {
+  return (
+    <div className={styles.header}>
+      <img src="/images/course/hero-ameen.png" alt="" />
+      <div className={styles.desc}>
+        <span>beginner</span>
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <div>
+          <div>
+            <img src="/images/course/booking-popup-off.svg" alt="" />
+            <h2>₹4999/-</h2>
+          </div>
+          <p>Total inclusive of taxes</p>
+        </div>
+      </div>
+    </div>
+  );
+};
