@@ -11,7 +11,6 @@ import Link from "next/link";
 
 const BookingPopUp = ({ handleClose,head,price}) => {
   const [section, setSection] = useState(true);
-  console.log('price1',price);
   const Next = () => setSection(false);
   return (
     <>
@@ -28,7 +27,6 @@ const BookingPopUp = ({ handleClose,head,price}) => {
 export default BookingPopUp;
 
 const Section1 = ({ goNext,head ,price}) => {
-  console.log('price:',price);
   const [faqs, setFaqs] = useState([
     {
       id: 1,
@@ -39,8 +37,8 @@ const Section1 = ({ goNext,head ,price}) => {
         "Module 2 - 23 Jan to 30 Jan",
         "Module 3 - 30 Jan to 6 Feb",
         "Module 4 - 6 Feb to 13 Feb",
-        "Module 5 - 13 Feb to 20 Feb",
-        "Module 6 - 20 Feb to 27 Feb",
+        // "Module 5 - 13 Feb to 20 Feb",
+        // "Module 6 - 20 Feb to 27 Feb",
       ],
     },
     {
@@ -252,7 +250,7 @@ function Faq({ batch, points, open, onClick }) {
               
               }
               {open && (
-                <div> All timings are in IST (+05:30)</div>
+                <div className={styles.ist}> All timings are in IST (+05:30)</div>
               )}
           </div>
         </AnimatePresence>
@@ -268,7 +266,7 @@ const Header = ({head,price}) => {
       <img src="/images/course/hero-ameen.png" alt="" />
       <div className={styles.desc}>
         <span>beginner</span>
-        <h4 contentEditable>{head}</h4>
+        <h4>{head}</h4>
         <div>
           <div>
             <img src="/images/course/booking-popup-off.svg" alt="" />
