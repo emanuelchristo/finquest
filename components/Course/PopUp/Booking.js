@@ -8,8 +8,70 @@ import {BsBookHalf} from 'react-icons/bs'
 import Link from "next/link";
 
 
+const CoursePageData = {
+  starter: [
+    {
+      id: 1,
+      open: true,
+      batch: "Feb 6th Batch - 07:30 PM - 09:00 PM",
+      points: [
+        "Module 1&2 - 06 Feb to 20 Feb",
+        "Module 3&4 - 20 Feb to 06 Mar",
+        "Module 5&6- 06 Mar to 20 Mar",
+      ],
+    },
+    {
+      id: 2,
+      open: false,
+      batch: "Feb 6th Batch - 10:00 AM - 03:00 PM (Weekend)",
+      points: [
+        "Module 1&2 - 06 Feb to 20 Feb",
+        "Module 3&4 - 20 Feb to 06 Mar",
+        "Module 5&6- 06 Mar to 20 Mar",
+      ],
+    },
+  ],
+  professional: [
+    {
+      id: 1,
+      open: true,
+      batch: "Feb 6th Batch - 07:30 PM - 09:00 PM",
+      points: [
+        "Module 1&2 - 06 Feb to 20 Feb",
+        "Module 3&4 - 20 Feb to 06 Mar",
+        "Module 5&6- 06 Mar to 20 Mar",
+        "Module 7&8- 20 Mar to 03 Apr",
+      ],
+    },
+    {
+      id: 2,
+      open: false,
+      batch: "Feb 6th Batch - 10:00 AM - 03:00 PM (Weekend)",
+      points: [
+        "Module 1&2 - 06 Feb to 20 Feb",
+        "Module 3&4 - 20 Feb to 06 Mar",
+        "Module 5&6- 06 Mar to 20 Mar",
+        "Module 7&8- 06 Mar to 03 Apr",
+      ],
+    },
+  ]
+};
 
-const BookingPopUp = ({ handleClose,head,price}) => {
+const pointsAnimation = {
+  initial: {
+    height: 0,
+  },
+  animate: {
+    height: "auto",
+  },
+  exit: {
+    height: 0,
+  },
+};
+
+
+const BookingPopUp = ({ handleClose,head,price,courseid}) => {
+  const data = CoursePageData[courseid] ??  CoursePageData.starter;
   const [section, setSection] = useState(true);
   const Next = () => setSection(false);
   return (
@@ -18,52 +80,26 @@ const BookingPopUp = ({ handleClose,head,price}) => {
         <button className={styles.modal_close} onClick={handleClose}>
           <img src="/images/course/icons/popup-close.svg" alt="" />
         </button>
-        {section ? <Section1 head={head} goNext={Next} price={price}/> : <Section2 head={head} price={price}/>}
+        {section ? <Section1 data={data} head={head} goNext={Next} price={price}/> : <Section2 courseid={courseid} head={head} price={price}/>}
       </PopUp>
     </>
   );
 };
 
-export default BookingPopUp;
 
-const Section1 = ({ goNext,head ,price}) => {
-  const [faqs, setFaqs] = useState([
-    {
-      id: 1,
-      open: true,
-      batch: "Jan 16th Batch - 07:30 PM - 09:00 PM",
-      points: [
-        "Module 1 - 16 Jan to 23 Jan",
-        "Module 2 - 23 Jan to 30 Jan",
-        "Module 3 - 30 Jan to 6 Feb",
-        "Module 4 - 6 Feb to 13 Feb",
-        // "Module 5 - 13 Feb to 20 Feb",
-        // "Module 6 - 20 Feb to 27 Feb",
-      ],
-    },
-    {
-      id: 2,
-      open: false,
-      batch: "Wednesday Batch 10:00PM - 10:30PM",
-      points: [
-        "Module 1 - 4 Jan, 23",
-        "Module 1 - 4 Jan, 23",
-        "Module 1 - 4 Jan, 23",
-      ],
-    },
-  ]);
+
+const Section1 = ({ goNext,head ,price,data}) => {
+  const [modules, setModules] = useState(data);
 
   function handleClick(id) {
-    let temp = faqs.map((item) => {
+    let temp = modules.map((item) => {
       if (item.id === id) return { ...item, open: !item.open };
       return { ...item, open: false };
     });
-    setFaqs(temp);
+    setModules(temp);
   }
-  const defaultval = {
-    plan: "Jan 16th Batch - 07:30 PM - 09:00 PM",
-  };
-  const [selected, setSelected] = useState([defaultval.plan]);
+
+  const [selected, setSelected] = useState([modules[0].batch]);
 
   return (
     <>
@@ -75,8 +111,8 @@ const Section1 = ({ goNext,head ,price}) => {
             value={selected}
             aria-label="checkbox"
           >
-            {faqs.map((item, index) => (
-              <Faq
+            {modules.map((item, index) => (
+              <Module
                 key={index}
                 batch={item.batch}
                 points={item.points}
@@ -96,10 +132,11 @@ const Section1 = ({ goNext,head ,price}) => {
     </>
   );
 };
-const Section2 = ({head,price}) => {
+const Section2 = ({head,price,courseid}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [isWaNumber, setIsWaNumber] = useState(false);
   function waLink(msg) {
     let url = "https://api.whatsapp.com/send?";
     let params = new URLSearchParams("");
@@ -174,14 +211,16 @@ const Section2 = ({head,price}) => {
               />
             </div>
             <div>
-            <Checkbox defaultSelected><span className={styles.wa}>This is my WhatsApp number</span></Checkbox>
+            <Checkbox isSelected={!isWaNumber} onChange={()=>{
+              setIsWaNumber(!isWaNumber)
+            }} ><span className={styles.wa}>This is my WhatsApp number</span></Checkbox>
             </div>
             <div className={styles["join"]}>
             <Link
                   target="_blank"
                   rel="noreferrer noopener"
                   href={waLink(
-                    `I would like to join the Plan`
+                    `${courseid} (${price})\n${name}\n${email}\n${phone}${!isWaNumber?' (WhatsApp)':''}`
                   )}
                 >
             
@@ -193,6 +232,7 @@ const Section2 = ({head,price}) => {
                   whileTap={{
                     scale: 0.95,
                   }}
+                 
                   className={styles["join-button"]}
                 >
                   <BsBookHalf className={styles["join-icon"]} />
@@ -206,18 +246,8 @@ const Section2 = ({head,price}) => {
 
   );
 };
-const pointsAnimation = {
-  initial: {
-    height: 0,
-  },
-  animate: {
-    height: "auto",
-  },
-  exit: {
-    height: 0,
-  },
-};
-function Faq({ batch, points, open, onClick }) {
+
+function Module({ batch, points, open, onClick }) {
   return (
     <div className={`${styles["batch"]} ${open ? styles["open"] : ""}`}>
       <motion.div>
@@ -260,7 +290,6 @@ function Faq({ batch, points, open, onClick }) {
 }
 
 const Header = ({head,price}) => {
-
   return (
     <div className={styles.header}>
       <img src="/images/course/hero-ameen.png" alt="" />
@@ -278,3 +307,4 @@ const Header = ({head,price}) => {
     </div>
   );
 };
+export default BookingPopUp;

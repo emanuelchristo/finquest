@@ -54,7 +54,7 @@ export default function Demo() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className={styles["button-text"]}>Book a free demo</span>
+              <span className={styles["button-text"]}>Book a free class</span>
             </motion.button>
           </a>
           <a

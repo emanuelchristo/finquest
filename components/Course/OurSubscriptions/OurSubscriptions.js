@@ -1,24 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./oursubscriptions.module.css";
-import Link from "next/link";
 import { Checkbox } from "@nextui-org/react";
 import React from "react";
 import { MdOutlineGroups } from "react-icons/md";
 import BookingPopUp from "../PopUp/Booking";
 
-function waLink(msg) {
-  let url = "https://api.whatsapp.com/send?";
-  let params = new URLSearchParams("");
-  params.append("phone", "918075145434");
-  params.append("text", msg);
-  return url + params.toString();
-  // return window.open(url + params.toString(), "_blank")
-}
-
-const defaultval = {
-  plan: "One Time",
-  monthly: "",
-};
 const points = [
   "Real-Time Trading Practice",
   "1-on-1 Mentorship from Experts",
@@ -30,100 +16,89 @@ const points = [
   "Certificate of completion",
 ];
 
-export default function OurSubscriptions({courseid}) {
-  const CoursePageData = {
-    professional: {
-      title: "From beginner to PRO TRADER",
-      default: {
+const CoursePageData = {
+  professional: {
+    title: "From beginner to PRO TRADER",
+    default: {
+      plan: "One Time",
+      monthly: "9,900",
+    },
+    emi: [
+      {
+        id: 1,
         plan: "One Time",
         monthly: "9,900",
+        price: "9,900",
+        cutprice: "25,699",
+        off: 62,
+        mostenrolled: false,
       },
-      emi: [
-        {
-          id: 1,
-          plan: "One Time",
-          monthly: "9,900",
-          price: "9,900",
-          cutprice: "25,699",
-          off: 62,
-          mostenrolled: false,
-        },
-        {
-          id: 2,
-          plan: "One Month",
-          monthly: "5300",
-          price: "10,600",
-          cutprice: "25,699",
-          off: 59,
-          mostenrolled: true,
-        },
-        {
-          id: 3,
-          plan: "Two Month",
-          monthly: "3,740",
-          price: "11,199",
-          cutprice: "25,699",
-          off: 56,
-          mostenrolled: false,
-        },
-      ],
+      {
+        id: 2,
+        plan: "One Month",
+        monthly: "5300",
+        price: "10,600",
+        cutprice: "25,699",
+        off: 59,
+        mostenrolled: true,
+      },
+      {
+        id: 3,
+        plan: "Two Month",
+        monthly: "3,740",
+        price: "11,199",
+        cutprice: "25,699",
+        off: 56,
+        mostenrolled: false,
+      },
+    ],
+  },
+  starter: {
+    title: "Kickstart your Stock market journey in less than 6 weeks!",
+    default: {
+      plan: "One Time",
+      monthly: "7,999",
     },
-    starter: {
-      title: "Kickstart your Stock market journey in less than 6 weeks!",
-      default: {
+    emi: [
+      {
+        id: 1,
         plan: "One Time",
         monthly: "7,999",
+        price: "7,999",
+        cutprice: "15,499",
+        off: 49,
+        mostenrolled: false,
       },
-      emi: [
-        {
-          id: 1,
-          plan: "One Time",
-          monthly: "7,999",
-          price: "7,999",
-          cutprice: "15,499",
-          off: 49,
-          mostenrolled: false,
-        },
-        {
-          id: 2,
-          plan: "One Month",
-          monthly: "4,350",
-          price: "8,699",
-          cutprice: "15,499",
-          off: 44,
-          mostenrolled: true,
-        },
-        {
-          id: 3,
-          plan: "Two Months",
-          monthly: "3,070",
-          price: "9,199",
-          cutprice: "15,499",
-          off: 41,
-          mostenrolled: false,
-        },
-      ],
-    },
-  };
-  const [data, setdata] = React.useState({});
-  const [price, setPrice] = React.useState();
-  React.useEffect(() => {
-    switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
-        break;
-      case "professional":
-        setdata(CoursePageData.professional);
-        break;
-      case "starter":
-        setdata(CoursePageData.starter);
-    }
-  }, [courseid]);
+      {
+        id: 2,
+        plan: "One Month",
+        monthly: "4,350",
+        price: "8,699",
+        cutprice: "15,499",
+        off: 44,
+        mostenrolled: true,
+      },
+      {
+        id: 3,
+        plan: "Two Months",
+        monthly: "3,070",
+        price: "9,199",
+        cutprice: "15,499",
+        off: 41,
+        mostenrolled: false,
+      },
+    ],
+  },
+};
 
-  const [selected, setSelected] = React.useState([defaultval.plan]);
+export default function OurSubscriptions({ courseid }) {
+  const [selectedCourse, setSelectedCourse] = React.useState(0);
+  const [selected, setSelected] = React.useState(["One Time"]);
   const [modalOpen, setModalOpen] = React.useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
+  const data = CoursePageData[courseid] ?? CoursePageData.starter;
+  const price_data = data.emi[selectedCourse].monthly;
 
   return (
     <div className="margin" id="oursubscription">
@@ -155,7 +130,7 @@ export default function OurSubscriptions({courseid}) {
                 aria-label="checkbox"
                 className={styles.checkgroup}
               >
-                {data.emi
+                {data?.emi
                   ? data.emi.map((item, index) => (
                       <motion.div
                         whileHover={{ scale: 1.05 }}
@@ -163,7 +138,8 @@ export default function OurSubscriptions({courseid}) {
                         className={styles.card}
                         key={index}
                         onClick={() => {
-                          setSelected([item.plan]), setPrice(item.monthly);
+                          setSelectedCourse(index);
+                          setSelected([item.plan]);
                         }}
                       >
                         {item.mostenrolled ? <p>MOST ENROLLED</p> : ""}
@@ -176,7 +152,8 @@ export default function OurSubscriptions({courseid}) {
                             size="md"
                             color="success"
                             onChange={() => {
-                              setSelected([item.plan]), setPrice(item.monthly);
+                              setSelectedCourse(index);
+                              setSelected([item.plan]);
                             }}
                           />
                           {item.plan} plan
@@ -202,32 +179,14 @@ export default function OurSubscriptions({courseid}) {
               </Checkbox.Group>
             </div>
             <div>
-              {/* {price != null ? (
-                <Link
-                  target="_blank"
-                  href={waLink(
-                    `I would like to join the '${courseid.courseid} course' with ${selected} Plan`
-                  )}
-                >
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    aria-label="Enroll"
-                  >
-                    {`Pay ₹${price}`}
-                  </motion.button>
-                </Link>
-              ) : 
-              ( */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="Enroll"
                 onClick={() => (modalOpen ? close() : open())}
               >
-                {`Pay `}
+                {`Pay ₹${price_data}`}
               </motion.button>
-              {/* )} */}
 
               <p>
                 <MdOutlineGroups />
@@ -245,7 +204,7 @@ export default function OurSubscriptions({courseid}) {
         {modalOpen && (
           <BookingPopUp
             head={data.title}
-            price={price==null?data.default.monthly:price}
+            price={price_data}
             modalOpen={modalOpen}
             handleClose={close}
             courseid={courseid}

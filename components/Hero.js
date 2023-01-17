@@ -253,7 +253,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className={styles["consultation-button"]}
           >
-            <span>Book a demo</span>
+            <span>Book a class</span>
             <IoIosArrowForward className={styles["consultation-icon"]} />
           </motion.button>
         </Link>
