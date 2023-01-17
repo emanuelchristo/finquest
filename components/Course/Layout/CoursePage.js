@@ -23,8 +23,14 @@ import { useRouter } from "next/router";
 
 const CoursePage = () => {
   const router = useRouter();
+  const [selectedCourseId,setSelectedCourseId] = useState(router.query)
   const { courseid } = router.query;
   const [snackbar, setSnackbar] = useState(false);
+  useEffect(()=>{
+    if(router.query.courseid){
+      setSelectedCourseId(router.query.courseid);
+    }
+  },[router])
   useEffect(function mount() {
     function onScroll() {
       var y = window.scrollY;
@@ -57,7 +63,7 @@ const CoursePage = () => {
       <StartNow />
       <UpcomingBatches courseid={courseid}/>
       {courseid!='options'?
-      <OurSubscription courseid={courseid}/>:
+      <OurSubscription courseid={selectedCourseId}/>:
       <CourseFee />
       }
       <CommunityLayout />

@@ -176,7 +176,7 @@ function Card({
   maxFeatLen,
 }) {
   return (
-    <div
+    <div id="membershipscards"
       className={`${styles["card"]} ${
         color === "yellow" ? styles["yellow-card"] : ""
       }`}

@@ -10,13 +10,7 @@ function waLink(msg) {
 }
 const UpcomingEvents = () => {
   const data = [
-    {
-      imageUrl: "/images/Office-Hours.png",
-      date: " 14 JANUARY",
-      from: "08:30 PM",
-      to: "9:30 PM",
-      title: "Office Hours With Noel",
-    },
+   
     {
       imageUrl: "/images/Q&A.png",
       date: " 21 JANUARY",
@@ -30,6 +24,13 @@ const UpcomingEvents = () => {
       from: "08:30 PM",
       to: "9:30 PM",
       title: "Office Hours With Noel",
+    },
+    {
+      imageUrl: "/images/Q&A.png",
+      date: " 4 FEBRUARY",
+      from: "08:30 PM",
+      to: "9:30 PM",
+      title: "Q&A With Noel & Afsal",
     },
   ];
 

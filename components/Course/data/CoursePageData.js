@@ -32,7 +32,7 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "4 weeks",
-    deadline:'16 Jan 2023',
+    deadline:'6 Feb 2023',
     // startdate:'27th Dec 2022',
     details: [
       {
@@ -263,7 +263,7 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
-    deadline:'16 Jan 2023',
+    deadline:'6 Feb 2023',
     // startdate:'27th Dec 2022',
     details: [
       {
@@ -520,7 +520,7 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "8 Weeks",
-    deadline:'16 Jan 2023',
+    deadline:'6 Feb 2023',
     // startdate:'27th Dec 2022',
     details: [
       {
@@ -668,6 +668,7 @@ const CoursePageData = {
       point:
         "Enroll now and get bonuses worth ₹15,799 free. There was never a better time to grab this on-demand program.",
     },
+    
     curriculum: {
       title: "Options Trading",
       description:

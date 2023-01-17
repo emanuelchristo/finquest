@@ -1,0 +1,128 @@
+
+.section1{
+    margin-top: 7rem;
+}
+.section1>h2 {
+    text-align: center;
+}
+
+.section1>p{
+    font-weight: 500;
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+}
+.section2>div{
+display: flex;
+align-items: flex-start;
+justify-content: baseline;
+margin-left: -1rem;
+}
+.section2>div>img{
+    transform: scale(.8);
+    
+}
+.section2>div>h2{
+    font-weight: 600;
+    margin: 2rem 0;
+    font-size: 35px;
+    line-height: 100%;
+    color: #000000;
+}
+.section2>p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 175%;
+    color: #5F656D;
+}
+.toptrader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin: 2rem 0;
+}
+
+.toptrader>h2 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 125%;
+    text-align: center;
+    color: #000000;
+}
+
+.enroll>span {
+    font-size: 20px;
+}
+
+.enroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 230px;
+    height: 59px;
+    background: #FBCD29;
+    border-radius: 67px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.toptrader>div>p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 6px;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.toptrader>div>p>span {
+    font-size: 25px;
+}
+.heading {
+	margin: 4rem 0;
+}
+.heading-wrapper {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+}
+.decoration {
+	position: absolute;
+	right: -4rem;
+	top: -2rem;
+}
+@media (max-width: 639px) {
+	.heading {
+		margin-top: 1.5rem;
+	}
+	.decoration {
+		width: 36px;
+		top: -1.125rem;
+		right: -2.5rem;
+	}
+}
+@media (max-width: 1023px) {
+	.heading {
+		margin: 2rem 0 1rem 0;
+	}
+	.decoration {
+		width: 44px;
+		top: -1.5rem;
+		right: -3rem;
+	}
+}

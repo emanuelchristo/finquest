@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.container>div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 3rem 3rem 2rem 3rem;
+    box-shadow: rgba(233, 238, 242, 0.4) 0px 16px 32px 0px;
+    -webkit-box-shadow: rgba(233, 238, 242, 0.4) 0px 16px 32px 0px;
+
+    border-radius: 8px;
+
+}
+
+.off {
+    background: url('/images/zero-fee-challenge/offer-tag.svg');
+    padding: 2px 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -2.5rem;
+    top: 3rem;
+    transform: rotate(30deg);
+    border-radius: 3px;
+}
+
+.container h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.container h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.container p {
+    margin-top: .5rem;
+    font-size: 14px;
+}
+
+.container>div>button {
+    margin-top: 2rem;
+    border: 1px solid;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+
+.container>div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.75rem;
+    padding: 0 2rem;
+    border-radius: 100px;
+    border: 1px solid;
+}
+
+.consultation-button {
+    padding: 0 1.5rem;
+}

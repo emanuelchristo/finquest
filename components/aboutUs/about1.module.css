@@ -105,3 +105,13 @@
 		right: -2.5rem;
 	}
 }
+@media (max-width: 1023px) {
+	.letstalk {
+		margin: 2rem 0 1rem 0;
+	}
+	.decoration {
+		width: 44px;
+		top: -1.5rem;
+		right: -3rem;
+	}
+}
