@@ -1,19 +1,18 @@
 import styles from "./hero.module.css";
 const Hero = () => {
   return (
-    <>
+    <div className="margin">
       <section className={styles.section1}>
         <div className={styles["heading"]}>
-          <div className={styles["heading-wrapper"]}>
-            <img
+
+           
+           <h2>The People Success Book  <img
               className={styles["decoration"]}
               src="/images/about-us-decoration.svg"
               width="60px"
               height="auto"
               alt=""
-            />
-            <h2>The People Success Book</h2>
-          </div>
+            /></h2>
         </div>
         <p>
           Over the last six months, we&apos;ve been speaking to India&apos;s top
@@ -45,7 +44,7 @@ const Hero = () => {
           away know which stock to watch out.
         </p>
       </section>
-    </>
+    </div>
   );
 };
 export default Hero;

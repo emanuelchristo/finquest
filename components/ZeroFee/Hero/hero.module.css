@@ -2,7 +2,8 @@
 .section1{
     margin-top: 7rem;
 }
-.section1>h2 {
+.section1>div>h2 {
+	position: relative;
     text-align: center;
 }
 
@@ -39,15 +40,10 @@ margin-left: -1rem;
 .heading {
 	margin: 4rem 0;
 }
-.heading-wrapper {
-	position: relative;
-	width: fit-content;
-	margin: 0 auto;
-}
 .decoration {
 	position: absolute;
-	right: -4rem;
-	top: -2rem;
+	right: -1rem;
+	top: 0;
 }
 @media (max-width: 639px) {
 	.heading {
@@ -55,17 +51,13 @@ margin-left: -1rem;
 	}
 	.decoration {
 		width: 36px;
-		top: -1.125rem;
-		right: -2.5rem;
 	}
 }
 @media (max-width: 1023px) {
-	.heading {
-		margin: 2rem 0 1rem 0;
+	.section1{
+		margin-top: 5rem;
 	}
 	.decoration {
 		width: 44px;
-		top: -1.5rem;
-		right: -3rem;
 	}
 }
