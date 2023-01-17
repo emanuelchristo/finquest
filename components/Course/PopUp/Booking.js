@@ -266,8 +266,9 @@ function Module({ batch, points, open, onClick }) {
         <AnimatePresence>
           <div className={styles.points}>
             {open &&
-              points.map((item) => (
+              points.map((item,index) => (
                 <motion.p
+                key={index}
                   variants={pointsAnimation}
                   initial="initial"
                   animate="animate"
