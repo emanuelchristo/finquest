@@ -43,7 +43,7 @@ margin-left: -1rem;
 .decoration {
 	position: absolute;
 	right: -1rem;
-	top: 0;
+	top: -2rem;
 }
 @media (max-width: 639px) {
 	.heading {
