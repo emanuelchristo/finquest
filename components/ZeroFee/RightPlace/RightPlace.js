@@ -1,6 +1,6 @@
 import { FiChevronRight } from "react-icons/fi";
 import { motion } from "framer-motion";
-import styles from "./hero.module.css";
+import styles from "./rightplace.module.css";
 import Link from "next/link";
 
 export default function RightPlace() {
