@@ -6,34 +6,34 @@ export default function Faqs() {
   const [faqs, setFaqs] = useState([
     
     {
-      id: 2,
+      id: 1,
       open: false,
       question: "What is the zero-fee Challenge?",
-      answer: ``,
+      answer: `As the name suggests, with Zero Fees Challenge, you could possibly learn the Stock
+      Market Mentorship program for Zero cost. Not to get confused, the programme has a
+      fees. (Arguably the most affordable Stock market mentorship program in Kerala with the
+      best course syllabus and expert mentors).`,
+    },
+    {
+      id: 2,
+      open: false,
+      question: "How to participate in the zero-fee challenge?",
+      answer: `Participate in Finquest's Zero Fees challenge by simply joining a Stock Market
+      Mentorship programme. Once enrolled, we shall continuously monitoring your progress.`,
     },
     {
       id: 3,
       open: false,
-      question: "How to participate in the zero-fee challenge?",
-      answer: ``,
+      question: "Is there any charge to participate in the zero-fee challenge?",
+      answer: `There wont be any special charge for participating in the challenge other than the
+      programme fees.`,
     },
     {
       id: 4,
       open: false,
-      question: "Is there any charge to participate in the zero-fee challenge?",
-      answer: ``,
-    },
-    {
-      id: 5,
-      open: false,
-      question: "Can the zero-fee challenge be stopped or cancelled? ( duration)",
-      answer: ``,
-    },
-    {
-      id: 1,
-      open: false,
       question: "I have completed the zero-fee challenge. How do I download the certificate?",
-      answer: ``,
+      answer: `Once you successfully complete the challenge, the certificate shall be send to you via
+      the registered E-Mail.`,
     },
   ]);
 

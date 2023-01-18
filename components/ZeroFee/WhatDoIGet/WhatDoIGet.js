@@ -6,12 +6,12 @@ const points = [
   {
     icon: <BsShieldCheck />,
     title: "Official and Verified",
-    desc: "Receive an instructor signed certificate with the institution's logo to verify your achievements and increase your job prospects.",
+    desc: "Receive an Mentor signed certificate with the Finquest’s logo to verify your achievements and increase your reputation in Stock Market Analysis.",
   },
   {
     icon: <BsShare />,
-    title: "Easily Sharable",
-    desc: "Add the certificate to your CV or your resume or post it directly on LinkedIn. You can even post it on Instagram Digital Collectible & Twitter.",
+    title: "Shareable & Valid",
+    desc: "Add the certificate to your CV or your resume or post it directly on LinkedIn. You can even post it on Instagram Digital Collectible, LinkedIn & Twitter",
   },
   {
     icon: <BsAward />,
