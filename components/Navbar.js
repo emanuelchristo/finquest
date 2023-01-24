@@ -123,11 +123,11 @@ export default function Navbar() {
               <a>About us</a>
             </Link>
           </motion.li>
-          <motion.li variants={item}>
+          {/* <motion.li variants={item}>
             <Link href="/zero-fee-challenge">
               <a>Zero fee</a>
             </Link>
-          </motion.li>
+          </motion.li> */}
           <motion.li
             variants={item}
             onMouseEnter={toggleMouseMenu}
@@ -240,7 +240,7 @@ function Menu({ onClose }) {
             </a>
           </Link>
         </motion.li>
-        <motion.li variants={menuItem}>
+        {/* <motion.li variants={menuItem}>
           <Link href="/zero-fee-challenge">
             <a>
               <FaStar
@@ -250,7 +250,7 @@ function Menu({ onClose }) {
               <span>Zero fee</span>
             </a>
           </Link>
-        </motion.li>
+        </motion.li> */}
         <motion.li variants={menuItem}>
           <Link href="/#memberships">
             <a>

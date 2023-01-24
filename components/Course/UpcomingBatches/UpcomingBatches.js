@@ -48,7 +48,7 @@ const UpcomingBatches = (courseid) => {
       color:"purple",
       week: "Weekend",
       days: "FRI, SAT & SUN",
-      date: "16th Jan 2023",
+      date: "8th Feb 2023",
       from: "10:00 AM",
       to: "03:00 PM",
       status: "available",

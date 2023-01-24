@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-Light.otf') ;
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-Regular.otf') ;
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-Medium.otf') ;
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-SemiBold.otf') ;
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-Bold.otf') ;
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ITALICS */
+
+
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-LightItalic.otf') ;
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-RegularItalic.otf') ;
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-MediumItalic.otf') ;
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-SemiBoldItalic.otf') ;
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matter';
+	src: url('./Matter-BoldItalic.otf') ;
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
