@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'ES-Build';
+	src: url('./ES-Build-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}

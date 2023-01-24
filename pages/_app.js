@@ -1,4 +1,6 @@
 import "../assets/fonts/gilroy/stylesheet.css";
+// import "../assets/fonts/ES-Build/stylesheet.css";
+// import "../assets/fonts/matter-font/stylesheet.css";
 import "../styles/variables.css";
 import "../styles/global.css";
 import Head from "next/head";

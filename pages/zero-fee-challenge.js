@@ -7,6 +7,8 @@ import Navbar from '../components/Navbar';
 import WhatDoIGet from '../components/ZeroFee/WhatDoIGet/WhatDoIGet';
 import Subscription from '../components/ZeroFee/Subscription/Subscription';
 
+
+
 const ZeroFee = () => {
   return (
     <div id="about" className="margin">
