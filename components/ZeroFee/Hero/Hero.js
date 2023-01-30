@@ -37,7 +37,7 @@ and expert mentors).
         Through this challenge, Finquest will help you regain the Fee amount you&apos;ve invested in
 learning, from the Stock Market itself. It&apos;s cent percent guaranteed, for we have the best
 Community which will actively helps you understand the Market inside out. There will also be
-Live Trading sessions from experts so you'll right away know which stock to watch out.
+Live Trading sessions from experts so you&apos;ll right away know which stock to watch out.
         </p>
         <p>
         Let&apos;s accept the challenge, shall we?
