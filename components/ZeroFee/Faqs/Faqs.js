@@ -4,7 +4,6 @@ import styles from "./faqs.module.css";
 
 export default function Faqs() {
   const [faqs, setFaqs] = useState([
-    
     {
       id: 1,
       open: false,
@@ -12,7 +11,12 @@ export default function Faqs() {
       answer: `As the name suggests, with Zero Fees Challenge, you could possibly learn the Stock
       Market Mentorship program for Zero cost. Not to get confused, the programme has a
       fees. (Arguably the most affordable Stock market mentorship program in Kerala with the
-      best course syllabus and expert mentors).`,
+      best course syllabus and expert mentors).
+       Through this challenge, Finquest will help you regain the Fee amount you've invested in
+learning, from the Stock Market itself. It's cent percent guaranteed, for we have the best
+Community which will actively helps you understand the Market inside out. There will
+also be Live Trading sessions from experts so you'll right away know which stock to
+watch out.`,
     },
     {
       id: 2,
@@ -31,12 +35,12 @@ export default function Faqs() {
     {
       id: 4,
       open: false,
-      question: "I have completed the zero-fee challenge. How do I download the certificate?",
+      question:
+        "I have completed the zero-fee challenge. How do I download the certificate?",
       answer: `Once you successfully complete the challenge, the certificate shall be send to you via
       the registered E-Mail.`,
     },
   ]);
-
 
   function handleClick(id) {
     let temp = faqs.map((item) => {
@@ -54,21 +58,18 @@ export default function Faqs() {
           <div className={styles["faqs-count"]}>{faqs.length}</div>
         </div>
         <div className={styles["tab-wrapper"]}>
-        <div className={styles['tabs']}>
-				
-		</div>
+          <div className={styles["tabs"]}></div>
         </div>
         <div className={styles["content"]}>
-          {faqs
-            .map((item) => (
-              <Faq
-                key={item.id}
-                question={item.question}
-                answer={item.answer}
-                open={item.open}
-                onClick={() => handleClick(item.id)}
-              />
-            ))}
+          {faqs.map((item) => (
+            <Faq
+              key={item.id}
+              question={item.question}
+              answer={item.answer}
+              open={item.open}
+              onClick={() => handleClick(item.id)}
+            />
+          ))}
         </div>
       </section>
     </div>

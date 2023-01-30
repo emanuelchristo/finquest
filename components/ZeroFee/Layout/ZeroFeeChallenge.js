@@ -19,6 +19,8 @@ const ZeroFeeChallenge = () => {
           " (First 100 learners only) 🎉",
         ]}
       />
+      
+<br />     
       <Navbar />
       <Hero/>
       <div className="section-spacer"></div>
