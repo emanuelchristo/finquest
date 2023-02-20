@@ -32,8 +32,8 @@ const CourseFee = () => {
   const [duration, setduration] = React.useState();
   React.useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);

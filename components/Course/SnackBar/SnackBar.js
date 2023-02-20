@@ -26,8 +26,8 @@ export default function Snackbar(props) {
   const [data, setdata] = useState({});
   useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
         case "professional":
         setdata(CoursePageData.professional);

@@ -40,20 +40,20 @@ const plans = [
     message: "I would like to join the 'Starter' plan",
   },
   {
-    id: "options",
+    id: "forex",
     imageLink: "/images/options-trading-plan.webp",
-    planName: "Options Trading",
-    price: 5699,
-    cutPrice: 10998,
-    discount: "48% off",
-    duration: "4 Week",
+    planName: "Forex Trading",
+    price: 15499,
+    cutPrice: 29999,
+    discount: "47% off",
+    duration: "12 Week",
     features: [
       "Basics of FNO",
       "Stock options",
       "Option buying",
       "Option selling",
     ],
-    message: "I would like to join the 'Options trading' plan",
+    message: "I would like to join the 'Forex trading' plan",
   },
 ];
 

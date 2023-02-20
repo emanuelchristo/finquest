@@ -18,8 +18,8 @@ const UpcomingBatches = (courseid) => {
   const [data, setdata] = useState({});
   useEffect(() => {
     switch (courseid.courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);
@@ -29,9 +29,14 @@ const UpcomingBatches = (courseid) => {
     }
   }, [courseid]);
   var deadline = new Date(data.deadline);
+  var weekend = new Date(data.weekend);
   var dd = String(deadline.getDate()).padStart(1, "0");
   var mm = String(deadline.getMonth()).padStart(1, "0");
   var yy = String(deadline.getFullYear()).padStart(4, "0");
+
+  var wdd = String(weekend.getDate()).padStart(1, "0");
+  var wmm = String(weekend.getMonth()).padStart(1, "0");
+  var wyy = String(weekend.getFullYear()).padStart(4, "0");
   const card = [
     {
       type: "online",
@@ -48,7 +53,7 @@ const UpcomingBatches = (courseid) => {
       color:"purple",
       week: "Weekend",
       days: "FRI, SAT & SUN",
-      date: "8th Feb 2023",
+      date: `${wdd+nth(wdd)} ${months[wmm]} ${wyy}`,
       from: "10:00 AM",
       to: "03:00 PM",
       status: "available",

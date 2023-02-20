@@ -21,7 +21,7 @@ import TopTrader from "../TopTrader/TopTrader";
 import OurSubscription from "../OurSubscriptions/OurSubscriptions";
 import { useRouter } from "next/router";
 
-const CoursePage = () => {
+const CoursePage = ({APIdata}) => {
   const router = useRouter();
   const [selectedCourseId,setSelectedCourseId] = useState(router.query)
   const { courseid } = router.query;
@@ -55,14 +55,14 @@ const CoursePage = () => {
       <Navbar />
       <Hero />
       <Subscription />
-      <EnrollmentDate />
+      <EnrollmentDate APIdata={APIdata}/>
       <WhatYouWillLearn />
       <HowWillYouSpent />
       <WhoIsThisFor />
       <Curriculum />
       <StartNow />
       <UpcomingBatches courseid={courseid}/>
-      {courseid!='options'?
+      {courseid!='forex'?
       <OurSubscription courseid={selectedCourseId}/>:
       <CourseFee />
       }

@@ -20,8 +20,8 @@ export default function Demo() {
   const [redirecturl, setredirecturl] = useState("");
   useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);
