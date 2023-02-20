@@ -23,8 +23,8 @@ export const WaButton = ({ ButtonText, ClassName }) => {
   const [redirecturl, setredirecturl] = React.useState("");
   React.useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);
@@ -55,8 +55,8 @@ const Button = ({ ButtonText, IconName, BgColor, TextColor }) => {
   const [redirecturl, setredirecturl] = React.useState("");
   React.useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);

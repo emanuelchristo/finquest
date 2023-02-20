@@ -10,8 +10,8 @@ const DetailsAndReview = () => {
   const [data, setdata] = React.useState({});
   React.useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);

@@ -16,7 +16,7 @@ const ContactPopup = ({ handleClose, courseid }) => {
 
   if (courseid == "starter") {
     img = "https://www.finqlearning.com/images/student-plan.webp";
-  } else if (courseid == "options") {
+  } else if (courseid == "forex") {
     img = "https://www.finqlearning.com/images/options-trading-plan.webp";
   }
   function join(e) {

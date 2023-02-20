@@ -4,14 +4,21 @@ import { useRouter } from "next/router";
 import CoursePageData,{months,nth} from "../data/CoursePageData";
 
 
-export default function EnrollmentDate() {
+export default function EnrollmentDate({APIdata}) {
   const router = useRouter();
   const { courseid } = router.query;
   const [data, setdata] = useState({});
+  console.log('APIData',APIdata.data[0].enrollment_deadline)
+  const api_date = new Date(APIdata.data[0].enrollment_deadline)
+  var dd = String(api_date.getDate()).padStart(1, "0");
+  var mm = String(api_date.getMonth()).padStart(1, "0");
+  var yy = String(api_date.getFullYear()).padStart(4, "0");
+  console.log(dd+nth(dd)+ months[mm]+ yy)
+
   useEffect(() => {
     switch (courseid) {
-      case "options":
-        setdata(CoursePageData.options);
+      case "forex":
+        setdata(CoursePageData.forex);
         break;
       case "professional":
         setdata(CoursePageData.professional);

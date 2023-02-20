@@ -22,35 +22,35 @@ export const months = [
   "Dec",
 ];
 const CoursePageData = {
-  options: {
-    id: "options",
+  forex: {
+    id: "forex",
     image: "/images/heroimage.png",
     toughness: "Advanced",
-    title: "Learn Options Trading",
+    title: "Trade Like an institution",
     description:
-      "In this course, you will learn the fundamentals of Options Trading. Right from Basics to In-Depth learning about Option chain analysis, PCR, Iron Condor, Butterfly, Bull Call Spread, Bear Put Spread. Get Expert Actionable frameworks and strategies to trade effectively.",
+      "In this course, you will learn the fundamentals of forex Trading. Right from Basics to In-Depth learning about Option chain analysis, PCR, Iron Condor, Butterfly, Bull Call Spread, Bear Put Spread. Get Expert Actionable frameworks and strategies to trade effectively.",
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
-    duration: "4 weeks",
-    deadline:'8 Feb 2023',
-    // startdate:'27th Dec 2022',
+    duration: "12 weeks",
+    deadline:'27 Feb 2023',
+    weekend:'3 Mar 2023',
     details: [
       {
-        heading: "15 Slots",
+        heading: "10 Slots",
         content: "Available",
       },
       {
-        heading: "Malayalam",
+        heading: "Mal/Eng",
         content: "Language",
       },
       {
-        heading: "4 weeks",
+        heading: "12 weeks",
         content: "Duration",
       },
     ],
-    newprice: "₹5699",
-    oldprice: "₹8999",
-    offprice: 50,
+    newprice: "₹15,499",
+    oldprice: "₹29,999",
+    offprice: 47,
 
     features: [
       {
@@ -69,34 +69,33 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    lastdate: "29 June",
-    upcomingcohort: "1 July",
+   
     whatyouwilllearn: [
       {
         iconLink: "/images/course/icons/whatyouwilllearn-1.svg",
-        title: "Basics of Options Trading",
+        title: "Ace the market with supply and demand ",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
-        title: "How Options Trading Work?",
+        title: "Liquidity markups and Grabbing theory",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
-        title: "How to read Options & Options Chains?",
+        title: "How Break of structure influences the market?",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
-        title: "Understanding Options Greeks",
+        title: "Structure mapping",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
-        title: "Tried & Tested Options Strategies",
+        title: "Understanding the controlling side of the market",
       },
 
-      {
-        iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
-        title: "Psychology of Options Trading",
-      },
+      // {
+      //   iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
+      //   title: "Psychology of forex Trading",
+      // },
     ],
     cards: [
       {
@@ -115,8 +114,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    lastdate: "29 June",
-    upcomingcohort: "1 July",
+  
     whoisthisfor: [
       {
         iconLink: "/images/course/icons/whoisthisfor-1.svg",
@@ -175,15 +173,15 @@ const CoursePageData = {
       },
     ],
 
-    emiavailable: true,
-    message: "I would like to join the 'Options trading' plan",
+    emiavailable: false,
+    message: "I would like to join the 'forex trading' plan",
     curriculumbuiltbythebest: {
       title: "Starter Program Launch Offer (Save ₹7500)",
       point:
         "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
     },
     curriculum: {
-      title: "Options Trading",
+      title: "forex Trading",
       description:
         "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
       duration1: {
@@ -264,7 +262,7 @@ const CoursePageData = {
     rating: "4.7/5",
     duration: "6 weeks",
     deadline:'8 Feb 2023',
-    // startdate:'27th Dec 2022',
+    weekend:'10 Mar 2023',
     details: [
       {
         heading: "15 Slots",
@@ -440,7 +438,7 @@ const CoursePageData = {
         "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
     },
     curriculum: {
-      title: "Options Trading",
+      title: "forex Trading",
       description:
         "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
       duration1: {
@@ -521,7 +519,7 @@ const CoursePageData = {
     rating: "4.7/5",
     duration: "8 Weeks",
     deadline:'8 Feb 2023',
-    // startdate:'27th Dec 2022',
+    weekend:'10 Mar 2023',
     details: [
       {
         heading: "15 Slots",
@@ -582,11 +580,11 @@ const CoursePageData = {
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-2.svg",
-        title: "Basics of Options Trading",
+        title: "Basics of forex Trading",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-3.svg",
-        title: "Fundamentals of Options Trading",
+        title: "Fundamentals of forex Trading",
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-4.svg",
@@ -594,12 +592,12 @@ const CoursePageData = {
       },
       {
         iconLink: "/images/course/icons/whatyouwilllearn-5.svg",
-        title: "How to read Options chart & Options Chains?",
+        title: "How to read forex chart & forex Chains?",
       },
 
       {
         iconLink: "/images/course/icons/whatyouwilllearn-6.svg",
-        title: "Tried & Tested Options Strategies",
+        title: "Tried & Tested forex Strategies",
       },
     ],
     whoisthisfor: [
@@ -670,7 +668,7 @@ const CoursePageData = {
     },
     
     curriculum: {
-      title: "Options Trading",
+      title: "forex Trading",
       description:
         "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
       duration1: {

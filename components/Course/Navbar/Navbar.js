@@ -156,8 +156,8 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <div className={styles["sub-menu-item"]}>
-                  <Link href="/course/options">
-                    <a>⚡Options</a>
+                  <Link href="/course/forex">
+                    <a>⚡forex</a>
                   </Link>
                 </div>
               </div>
