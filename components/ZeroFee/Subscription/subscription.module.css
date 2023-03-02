@@ -21,7 +21,20 @@
 }
 
 .off {
+    
+    background: #fbd929;
+    position: absolute;
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
+    top: 4.5rem;
+    left: -4rem;
+    transform: rotate(-22deg);
+    font-weight: 600;
+}
+/* .off {
+
     background: url('/images/zero-fee-challenge/offer-tag.svg');
+    width: 13rem;
     padding: 2px 1rem;
     font-weight: 600;
     display: flex;
@@ -30,9 +43,9 @@
     position: absolute;
     right: -2.5rem;
     top: 3rem;
-    transform: rotate(30deg);
+    transform: rotate(-22deg);
     border-radius: 3px;
-}
+} */
 
 .container h4 {
     font-size: 20px;

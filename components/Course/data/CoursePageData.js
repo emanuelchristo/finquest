@@ -144,21 +144,21 @@ const CoursePageData = {
     ],
     howwillyouspendyourtime: [
       {
-        duration: "3 Weeks",
+        duration: "6 Weeks",
         title: "Live Trading",
         content:
           "Practice & Compare strategies & trades with expert trades to trade confidently.",
         color: "buttonblue",
       },
       {
-        duration: "4 Weeks",
+        duration: "12 Weeks",
         title: "Live Sessions",
         content:
-          "We host live sessions for more specific & personalized learning throughout the first 6 weeks.",
+          "We host live sessions for more specific & personalized learning throughout the first 12 weeks.",
         color: "buttongreen",
       },
       {
-        duration: "4 Weeks",
+        duration: "8 Weeks",
         title: "Q&A session",
         content:
           "Get your doubts resolved during the live sessions in the easiest ways possible.",
