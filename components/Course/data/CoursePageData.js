@@ -32,8 +32,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "12 weeks",
-    deadline:'27 Feb 2023',
-    weekend:'3 Mar 2023',
+    deadline:'14 Mar 2023',
+    weekend:'17 Mar 2023',
     details: [
       {
         heading: "10 Slots",
