@@ -13,21 +13,21 @@ const UpcomingEvents = () => {
    
     {
       imageUrl: "/images/Q&A.png",
-      date: " 21 JANUARY",
+      date: "17 MARCH",
       from: "08:30 PM",
       to: "9:30 PM",
       title: "Q&A With Noel & Afsal",
     },
     {
       imageUrl: "/images/Office-Hours.png",
-      date: "28 JANUARY",
+      date: "24 MARCH",
       from: "08:30 PM",
       to: "9:30 PM",
       title: "Office Hours With Noel",
     },
     {
       imageUrl: "/images/Q&A.png",
-      date: " 4 FEBRUARY",
+      date: "31 MARCH",
       from: "08:30 PM",
       to: "9:30 PM",
       title: "Q&A With Noel & Afsal",

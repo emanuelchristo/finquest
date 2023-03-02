@@ -176,9 +176,9 @@ const CoursePageData = {
     emiavailable: false,
     message: "I would like to join the 'forex trading' plan",
     curriculumbuiltbythebest: {
-      title: "Starter Program Launch Offer (Save ₹7500)",
+      title: "Starter Program Launch Offer (Save ₹14,500)",
       point:
-        "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
+        "Enroll now and get bonuses worth ₹14,500 free. There was never a better time to grab this on-demand program.",
     },
     curriculum: {
       title: "Forex Trading",
