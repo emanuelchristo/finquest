@@ -25,7 +25,7 @@ const CoursePageData = {
   forex: {
     id: "forex",
     image: "/images/heroimage.png",
-    toughness: "Advanced",
+    toughness: "BEGINNER",
     title: "Trade Like an institution",
     description:
       "In this course, you will learn the fundamentals of forex Trading. Right from Basics to In-Depth learning about Option chain analysis, PCR, Iron Condor, Butterfly, Bull Call Spread, Bear Put Spread. Get Expert Actionable frameworks and strategies to trade effectively.",
@@ -181,7 +181,7 @@ const CoursePageData = {
         "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
     },
     curriculum: {
-      title: "forex Trading",
+      title: "Forex Trading",
       description:
         "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
       duration1: {
@@ -438,7 +438,7 @@ const CoursePageData = {
         "Enroll now and get bonuses worth ₹7,500 free. There was never a better time to grab this on-demand program.",
     },
     curriculum: {
-      title: "forex Trading",
+      title: "Forex Trading",
       description:
         "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
       duration1: {
@@ -668,7 +668,7 @@ const CoursePageData = {
     },
     
     curriculum: {
-      title: "forex Trading",
+      title: "Forex Trading",
       description:
         "The Programs lasts for 4 to 8 weeks. Once in, the students received One year access to loads of resources, live support and a community to help excel.",
       duration1: {
