@@ -32,8 +32,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "12 weeks",
-    deadline:'14 Mar 2023',
-    weekend:'17 Mar 2023',
+    deadline:'25 Mar 2023',
+    weekend:'25 Mar 2023',
     details: [
       {
         heading: "10 Slots",
@@ -261,8 +261,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
-    deadline:'8 Feb 2023',
-    weekend:'10 Mar 2023',
+    deadline:'8 Apr 2023',
+    weekend:'15 Apr 2023',
     details: [
       {
         heading: "15 Slots",
@@ -518,8 +518,8 @@ const CoursePageData = {
     review: "Trusted by 600+ learners",
     rating: "4.7/5",
     duration: "8 Weeks",
-    deadline:'8 Feb 2023',
-    weekend:'10 Mar 2023',
+    deadline:'8 Apr 2023',
+    weekend:'15 Apr 2023',
     details: [
       {
         heading: "15 Slots",
