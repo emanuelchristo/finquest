@@ -28,12 +28,12 @@ const CoursePageData = {
     toughness: "BEGINNER",
     title: "Trade Like an institution",
     description:
-      "In this course, you will learn the fundamentals of forex Trading. Right from Basics to In-Depth learning about Option chain analysis, PCR, Iron Condor, Butterfly, Bull Call Spread, Bear Put Spread. Get Expert Actionable frameworks and strategies to trade effectively.",
-    review: "Trusted by 600+ learners",
+      "A 12 week course that equip you with skills for the success in forex trading. The course covers everything from the basics to the advanced strategies. Learn with interactive classes and community.",
+    review: "Trusted by 800+ learners",
     rating: "4.7/5",
     duration: "12 weeks",
-    deadline:'25 Mar 2023',
-    weekend:'25 Mar 2023',
+    deadline:'5 Apr 2023',
+    weekend:'5 Apr 2023',
     details: [
       {
         heading: "10 Slots",
@@ -258,11 +258,11 @@ const CoursePageData = {
     title: "Kickstart your Stock market journey in less than 6 weeks!",
     description:
       "A 6 week cohort-based program that will build your knowledge around Stock market, Personal finance, Money basics with a community that is a hub for the Stock market experts & enthusiasts.",
-    review: "Trusted by 600+ learners",
+    review: "Trusted by 800+ learners",
     rating: "4.7/5",
     duration: "6 weeks",
-    deadline:'8 Apr 2023',
-    weekend:'15 Apr 2023',
+    deadline:'13 Apr 2023',
+    weekend:'16 Apr 2023',
     details: [
       {
         heading: "15 Slots",
@@ -277,8 +277,8 @@ const CoursePageData = {
         content: "Duration",
       },
     ],
-    newprice: "₹7999",
-    oldprice: "₹15499",
+    newprice: "₹8,999",
+    oldprice: "₹16,499",
     features: [
       {
         imagepath: "/icons/scholar.png",
@@ -296,7 +296,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    offprice: 49,
+    offprice: 47,
     cards: [
       {
         imagepath: "/icons/bulb.png",
@@ -515,11 +515,11 @@ const CoursePageData = {
     title: "From beginner to PRO TRADER",
     description:
       "A Complete Masterclass from Market Experts where you will learn about in-depth Stock Trading and Unlock a new source of Income.",
-    review: "Trusted by 600+ learners",
+    review: "Trusted by 800+ learners",
     rating: "4.7/5",
     duration: "8 Weeks",
-    deadline:'8 Apr 2023',
-    weekend:'15 Apr 2023',
+    deadline:'13 Apr 2023',
+    weekend:'16 Apr 2023',
     details: [
       {
         heading: "15 Slots",
@@ -534,7 +534,7 @@ const CoursePageData = {
         content: "Duration",
       },
     ],
-    newprice: "₹9900",
+    newprice: "₹12,599",
     oldprice: "₹25699",
     features: [
       {
@@ -553,7 +553,7 @@ const CoursePageData = {
         content2: "flexible timing",
       },
     ],
-    offprice: 62,
+    offprice: 51,
     cards: [
       {
         imagepath: "/icons/bulb.png",

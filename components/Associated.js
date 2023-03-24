@@ -7,7 +7,7 @@ export default function Associated() {
     <div className="margin">
       <div className="flex flex-col items-center">
         <div className={styles["trusted-wrapper"]}>
-          Trusted by&nbsp;<span className=" font-semibold">600+</span>
+          Trusted by&nbsp;<span className=" font-semibold">800+</span>
           &nbsp;learners{" "}
           <span className={styles["rating"]}>
             <BsFillStarFill className={styles["star-icon"]} /> 4.7/5

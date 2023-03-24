@@ -20,35 +20,35 @@ const CoursePageData = {
   professional: {
     title: "From beginner to PRO TRADER",
     default: {
-      plan: "One Time",
+      plan: "Pre Booking",
       monthly: "9,900",
     },
     emi: [
       {
         id: 1,
-        plan: "One Time",
-        monthly: "9,900",
-        price: "9,900",
+        plan: "Pre Booking",
+        monthly: "999",
+        price: "11,600",
         cutprice: "25,699",
-        off: 62,
+        off: 51,
         mostenrolled: false,
       },
       {
         id: 2,
-        plan: "One Month",
-        monthly: "5300",
-        price: "10,600",
+        plan: "One Time",
+        monthly: "12,599",
+        price: "12,599",
         cutprice: "25,699",
-        off: 59,
+        off: 51,
         mostenrolled: true,
       },
       {
         id: 3,
-        plan: "Two Month",
-        monthly: "3,740",
-        price: "11,199",
+        plan: "One Month",
+        monthly: "7,000",
+        price: "14,000",
         cutprice: "25,699",
-        off: 56,
+        off: 46,
         mostenrolled: false,
       },
     ],
@@ -56,34 +56,34 @@ const CoursePageData = {
   starter: {
     title: "Kickstart your Stock market journey in less than 6 weeks!",
     default: {
-      plan: "One Time",
+      plan: "Pre Booking",
       monthly: "7,999",
     },
     emi: [
       {
         id: 1,
-        plan: "One Time",
-        monthly: "7,999",
-        price: "7,999",
-        cutprice: "15,499",
+        plan: "Pre Booking",
+        monthly: "599",
+        price: "8,400",
+        cutprice: "16,499",
         off: 49,
         mostenrolled: false,
       },
       {
         id: 2,
-        plan: "One Month",
-        monthly: "4,350",
-        price: "8,699",
-        cutprice: "15,499",
-        off: 44,
+        plan: "One Time",
+        monthly: "8,999",
+        price: "8,999",
+        cutprice: "16,499",
+        off: 47,
         mostenrolled: true,
       },
       {
         id: 3,
-        plan: "Two Months",
-        monthly: "3,070",
-        price: "9,199",
-        cutprice: "15,499",
+        plan: "One Month",
+        monthly: "5,000",
+        price: "10,000",
+        cutprice: "16,499",
         off: 41,
         mostenrolled: false,
       },
@@ -93,7 +93,7 @@ const CoursePageData = {
 
 export default function OurSubscriptions({ courseid }) {
   const [selectedCourse, setSelectedCourse] = React.useState(0);
-  const [selected, setSelected] = React.useState(["One Time"]);
+  const [selected, setSelected] = React.useState(["Pre Booking"]);
   const [modalOpen, setModalOpen] = React.useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
@@ -190,7 +190,7 @@ export default function OurSubscriptions({ courseid }) {
 
               <p>
                 <MdOutlineGroups />
-                600+ Learners already enrolled
+                800+ Learners already enrolled
               </p>
             </div>
           </div>

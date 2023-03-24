@@ -6,7 +6,7 @@ import VisibilitySensor from "react-visibility-sensor";
 const featuresItems = [
   {
     imageLink: "/images/features-icon-1.svg",
-    title: 600,
+    title: 800,
     ext: "+",
     subtitle: "students & growing",
   },
@@ -29,7 +29,7 @@ export default function Features() {
     <div id="contact" className="margin">
       <section className={styles["features"]}>
         <div className={styles["heading-wrapper"]}>
-          <h6>4200+ Hours of tutoring resulted in</h6>
+          <h6>5200+ Hours of tutoring resulted in</h6>
         </div>
         <div className={styles["content-wrapper"]}>
           <div className={styles["features-content"]}>
