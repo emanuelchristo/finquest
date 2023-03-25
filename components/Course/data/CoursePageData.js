@@ -48,9 +48,9 @@ const CoursePageData = {
         content: "Duration",
       },
     ],
-    newprice: "₹15,499",
+    newprice: "₹24,999",
     oldprice: "₹29,999",
-    offprice: 47,
+    offprice: 18,
 
     features: [
       {

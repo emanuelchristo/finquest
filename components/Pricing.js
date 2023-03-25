@@ -43,9 +43,9 @@ const plans = [
     id: "forex",
     imageLink: "/images/options-trading-plan.webp",
     planName: "Forex Trading",
-    price: "15,499",
+    price: "24,999",
     cutPrice: "29,999",
-    discount: "47% off",
+    discount: "18% off",
     duration: "12 Week",
     features: [
       "Stock Options",
