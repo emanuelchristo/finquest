@@ -8,8 +8,8 @@ export default function Privacy() {
       <Snackbar
         message={[
           "New batch on forex trading starting  on april 13th ‼️ ",
-          <Link target="_blank" href="/course/forex/" rel="noopener noreferrer">
-            <a id="offprice" key={1}>
+          <Link target="_blank" href="/course/forex/" rel="noopener noreferrer" key={1}>
+            <a id="offprice">
               REGISTER NOW
             </a>
           </Link>,
