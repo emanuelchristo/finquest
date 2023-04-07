@@ -1,37 +1,39 @@
-import Faqs from '..//Faqs/Faqs';
-import Hero from '../Hero/Hero'
-import RightPlace from '../RightPlace/RightPlace';
-import Community from '../../Course/CommunityAccess/Community';
-import Snackbar from '../../SnackBar';
-import Navbar from '../../Navbar';
-import WhatDoIGet from '../WhatDoIGet/WhatDoIGet';
-import Subscription from '../Subscription/Subscription';
-
+import Faqs from "..//Faqs/Faqs";
+import Hero from "../Hero/Hero";
+import RightPlace from "../RightPlace/RightPlace";
+import Community from "../../Course/CommunityAccess/Community";
+import Snackbar from "../../SnackBar";
+import Navbar from "../../Navbar";
+import WhatDoIGet from "../WhatDoIGet/WhatDoIGet";
+import Subscription from "../Subscription/Subscription";
+import Link from "next/link";
 const ZeroFeeChallenge = () => {
   return (
     <>
-       <Snackbar
+      <Snackbar
         message={[
-          "🎉 Flat ",
-          <span id="offprice" key={1}>
-            ₹7500 off for beginners!
-          </span>,
-          " (First 100 learners only) 🎉",
+          "New batch on forex trading starting  on april 13th ‼️ ",
+          <Link target="_blank" href="/course/forex/" rel="noopener noreferrer">
+            <a id="offprice" key={1}>
+              REGISTER NOW
+            </a>
+          </Link>,
+          " ‼️",
         ]}
       />
-      
-<br />     
+
+      <br />
       <Navbar />
-      <Hero/>
+      <Hero />
       <div className="section-spacer"></div>
       <div className="section-spacer"></div>
-      <WhatDoIGet/>
+      <WhatDoIGet />
       <div className="section-spacer"></div>
-      <Subscription/>
+      <Subscription />
       <div className="section-spacer"></div>
-      <Faqs/>
-      <Community/>
-      <RightPlace/>
+      <Faqs />
+      <Community />
+      <RightPlace />
     </>
   );
 };

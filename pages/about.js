@@ -6,16 +6,23 @@ import WhyUs2 from "../components/aboutUs/WhyUs2";
 import Navbar from "../components/Navbar";
 import styles from "./styles.module.css";
 import Snackbar from "../components/SnackBar";
+import Link from "next/link";
 export default function AboutUs() {
   return (
     <div id="home">
-      <Snackbar
+        <Snackbar
         message={[
-          "🎉 Flat ",
-          <span id="offprice" key={1}>
-            ₹7500 off for beginners!
-          </span>,
-          " (First 100 learners only) 🎉",
+          "New batch on forex trading starting  on april 13th ‼️ ",
+          <Link
+                  target="_blank"
+                  href="/course/forex/"
+                  rel="noopener noreferrer"
+                >
+          <a  id="offprice" key={1}>
+              REGISTER NOW
+          </a>
+                </Link>,
+          " ‼️",
         ]}
       />
       <div id="home" className={styles["nav-spacer"]}></div>
