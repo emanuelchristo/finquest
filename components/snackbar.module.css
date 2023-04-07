@@ -24,7 +24,7 @@
 
 }
 
-.snack-text>span {
+.snack-text>a {
     color: #7045E8 !important;
     max-width: 92%;
 }

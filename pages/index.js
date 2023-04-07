@@ -15,16 +15,23 @@ import Rocket from "../components/Rocket";
 import Store from "../components/Store";
 import Snackbar from "../components/SnackBar";
 import UpcomingEvents from "../components/UpcomingEvents";
+import Link from "next/link";
 export default function Home() {
   return (
     <div id="home">
       <Snackbar
         message={[
-          "🎉🎉 Flat ",
-          <span id="offprice" key={1}>
-            ₹7500 off for beginners !
-          </span>,
-          " (First 100 learners only)",
+          "New batch on forex trading starting  on april 13th ‼️ ",
+          <Link
+                  target="_blank"
+                  href="/course/forex/"
+                  rel="noopener noreferrer"
+                >
+          <a  id="offprice" key={1}>
+              REGISTER NOW
+          </a>
+                </Link>,
+          " ‼️",
         ]}
       />
       <Header />
