@@ -16,15 +16,12 @@ import Store from "../components/Store";
 import Snackbar from "../components/SnackBar";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Link from "next/link";
-import { google } from "googleapis";
-export default function Home({ title, starter, advanced, forex }) {
+export default function Home() {
   return (
     <div id="home">
       <Snackbar
         message={[
-          `New batch on forex trading starting  on ${
-            forex ? forex[2] : "april 13th"
-          } ‼️ `,
+          "New batch on forex trading starting  on april 13th ‼️ ",
           <Link
             target="_blank"
             href="/course/forex/"
@@ -67,28 +64,4 @@ export default function Home({ title, starter, advanced, forex }) {
   );
 }
 
-export async function getServerSideProps({ query }) {
-  const auth = await google.auth.getClient({
-    scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
-  });
-  const sheets = google.sheets({ version: "v4", auth });
 
-  const { id } = query;
-  const range = `Sheet1!A1:D4`;
-
-  const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.SPREADSHEET_ID,
-    range,
-  });
-
-  const [title, starter, advanced, forex] = response.data.values;
-
-  return {
-    props: {
-      title,
-      starter,
-      advanced,
-      forex,
-    },
-  };
-}
