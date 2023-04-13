@@ -13,7 +13,7 @@ const ZeroFeeChallenge = () => {
       <Snackbar
         message={[
           "New batch on forex trading starting  on april 13th ‼️ ",
-          <Link target="_blank" href="/course/forex/" rel="noopener noreferrer"key={1}>
+          <Link target="_blank" href="/course/forex/" rel="noopener noreferrer" key={1}>
             <a >
               REGISTER NOW
             </a>
