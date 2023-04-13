@@ -17,12 +17,14 @@ import Snackbar from "../components/SnackBar";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Link from "next/link";
 import { google } from "googleapis";
-export default function Home({ title, starter, advanced,forex }) {
+export default function Home({ title, starter, advanced, forex }) {
   return (
     <div id="home">
       <Snackbar
         message={[
-          `New batch on forex trading starting  on april 13th ‼️ `,
+          `New batch on forex trading starting  on ${
+            forex ? forex[2] : "april 13th"
+          } ‼️ `,
           <Link
             target="_blank"
             href="/course/forex/"
@@ -79,14 +81,14 @@ export async function getServerSideProps({ query }) {
     range,
   });
 
-  const [title,starter, advanced,forex] = response.data.values;
+  const [title, starter, advanced, forex] = response.data.values;
 
   return {
     props: {
       title,
       starter,
       advanced,
-      forex
+      forex,
     },
   };
 }
