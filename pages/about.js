@@ -16,9 +16,9 @@ export default function AboutUs() {
           <Link
                   target="_blank"
                   href="/course/forex/"
-                  rel="noopener noreferrer" key={1}
+                  rel="noopener noreferrer"
                 >
-          <a  id="offprice">
+          <a  id="offprice" key={1}>
               REGISTER NOW
           </a>
                 </Link>,
