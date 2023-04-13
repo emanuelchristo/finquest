@@ -7,6 +7,7 @@ module.exports = {
     // chat_id: 651770430,
     //(Malik)
     chat_id: 1745728175,
-    api_url:'https://finquestbackend-production.up.railway.app/membership/'
+    api_url:'https://finquestbackend-production.up.railway.app/membership/',
+
   },
 };
