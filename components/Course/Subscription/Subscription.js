@@ -46,7 +46,6 @@ export default function Subscription() {
   today.setDate(today.getDate() + 1);
   var dd = String(today.getDate()).padStart(1, "0");
   var mm = String(today.getMonth()).padStart(1, "0");
-  console.log(mm);
   return (
     <div className="margin" id="subscription">
       <section className={styles["subscription"]}>
