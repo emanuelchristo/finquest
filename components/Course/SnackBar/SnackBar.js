@@ -18,7 +18,7 @@ const renderer = ({ hours, minutes, seconds }) => {
   );
 };
 
-export default function Snackbar({trigger,gsData}) {
+export default function Snackbar(props) {
   
   const router = useRouter();
   const { courseid } = router.query;
@@ -36,7 +36,7 @@ export default function Snackbar({trigger,gsData}) {
         setdata(CoursePageData.starter);
     }
   }, [courseid]);
-  var deadline = new Date(gsData ? gsData[2] : data.deadline);
+  var deadline = new Date(data.deadline);
   deadline.setDate(deadline.getDate() - 1);
   var ddd = String(deadline.getDate()).padStart(1, "0");
   var dmm = String(deadline.getMonth()).padStart(1, "0");
@@ -49,7 +49,7 @@ export default function Snackbar({trigger,gsData}) {
       <motion.div
         initial={{ y: 100 }}
         animate={{
-          y: trigger ? 0 : 150,
+          y: props.trigger ? 0 : 150,
         }}
         transition={{
           duration: 1,

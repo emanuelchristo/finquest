@@ -9,7 +9,7 @@ export default function Privacy() {
         message={[
           "New batch on forex trading starting  on april 13th ‼️ ",
           <Link target="_blank" href="/course/forex/" rel="noopener noreferrer" key={1}>
-            <a id="offprice" >
+            <a id="offprice">
               REGISTER NOW
             </a>
           </Link>,
