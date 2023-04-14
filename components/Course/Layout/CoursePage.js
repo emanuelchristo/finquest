@@ -21,27 +21,16 @@ import TopTrader from "../TopTrader/TopTrader";
 import OurSubscription from "../OurSubscriptions/OurSubscriptions";
 import { useRouter } from "next/router";
 
-const CoursePage = ({starter,advanced,forex}) => {
+const CoursePage = () => {
   const router = useRouter();
   const [selectedCourseId,setSelectedCourseId] = useState(router.query)
   const { courseid } = router.query;
   const [snackbar, setSnackbar] = useState(false);
-  const [gsData, setgsData] = useState(starter);
   useEffect(()=>{
     if(router.query.courseid){
       setSelectedCourseId(router.query.courseid);
     }
-
-    if (courseid == 'starter'){
-      setgsData(starter)
-    }
-    else if (courseid == 'forex'){
-      setgsData(forex)
-    }else if(courseid == 'professional'){
-      setgsData(advanced)
-    }
   },[router])
- 
   useEffect(function mount() {
     function onScroll() {
       var y = window.scrollY;
@@ -62,19 +51,19 @@ const CoursePage = ({starter,advanced,forex}) => {
   });
   return (
     <>
-      <Snackbar trigger={snackbar} gsData={gsData}/>
+      <Snackbar trigger={snackbar} />
       <Navbar />
       <Hero />
       <Subscription />
-      <EnrollmentDate gsData={gsData}/>
+      <EnrollmentDate/>
       <WhatYouWillLearn />
       <HowWillYouSpent />
       <WhoIsThisFor />
       <Curriculum />
       <StartNow />
-      <UpcomingBatches courseid={courseid} gsData={gsData}/>
+      <UpcomingBatches courseid={courseid}/>
       {courseid!='forex'?
-      <OurSubscription courseid={selectedCourseId} gsData={gsData}/>:
+      <OurSubscription courseid={selectedCourseId}/>:
       <CourseFee />
       }
       <CommunityLayout />

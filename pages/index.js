@@ -23,13 +23,14 @@ export default function Home() {
         message={[
           "New batch on forex trading starting  on april 13th ‼️ ",
           <Link
-            target="_blank"
-            href="/course/forex/"
-            rel="noopener noreferrer"
-            key={1}
-          >
-            <a id="offprice">REGISTER NOW</a>
-          </Link>,
+                  target="_blank"
+                  href="/course/forex/"
+                  rel="noopener noreferrer" key={1}
+                >
+          <a  id="offprice">
+              REGISTER NOW
+          </a>
+                </Link>,
           " ‼️",
         ]}
       />
@@ -55,7 +56,7 @@ export default function Home() {
       <Store />
       <div className="section-spacer"></div>
       <Faqs />
-      <UpcomingEvents />
+      <UpcomingEvents/>
       <div className="section-spacer"></div>
       <Letstalk />
       <div className="section-spacer"></div>
@@ -63,5 +64,3 @@ export default function Home() {
     </div>
   );
 }
-
-

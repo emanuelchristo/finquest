@@ -21,6 +21,7 @@ export default function FeaturesLayout({ indicator }) {
     }
   }, [courseid]);
   const [indicatord, setindicatord] = React.useState(indicator);
+  console.log(data.whoisthisfor);
   return (
     <div id="benefits">
       <section className={styles["benefits"]}>
