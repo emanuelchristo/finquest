@@ -51,17 +51,17 @@ const CoursePage = ({sheetdata}) => {
   });
   return (
     <>
-      <Snackbar trigger={snackbar} />
+      <Snackbar trigger={snackbar} sheetdata={sheetdata}/>
       <Navbar />
       <Hero />
       <Subscription />
-      <EnrollmentDate/>
+      <EnrollmentDate sheetdata={sheetdata}/>
       <WhatYouWillLearn />
       <HowWillYouSpent />
       <WhoIsThisFor />
       <Curriculum />
       <StartNow />
-      <UpcomingBatches courseid={courseid}/>
+      <UpcomingBatches courseid={courseid} sheetdata={sheetdata}/>
       {courseid!='forex'?
       <OurSubscription courseid={selectedCourseId}/>:
       <CourseFee />

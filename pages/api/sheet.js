@@ -1,7 +1,7 @@
 import { google } from "googleapis";
 import keys from "../../key";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
     try {
         const client = new google.auth.JWT(
             keys.client_email, null, keys.private_key, ['https://www.googleapis.com/auth/spreadsheets']
@@ -24,6 +24,6 @@ export default function handler(req, res) {
             return res.status(400).send(JSON.stringify({error: false, data: data.data.values}));
         });
     } catch (e) {
-        return res.status(400).send(JSON.stringify({error: true, message: e.message}));
+        return res.status(400).send(JSON.stringify({error: true, message: e.message})) ;
     }
 }

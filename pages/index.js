@@ -16,12 +16,15 @@ import Store from "../components/Store";
 import Snackbar from "../components/SnackBar";
 import UpcomingEvents from "../components/UpcomingEvents";
 import Link from "next/link";
-export default function Home() {
+export default function Home({sheetdata}) {
+  const defaultData =
+    [ 'forex', '12 weeks', '10 Apr 2023', '15 Apr 2023' ]
+
   return (
     <div id="home">
       <Snackbar
         message={[
-          "New batch on forex trading starting  on april 13th ‼️ ",
+          `New batch on forex trading starting  on ${sheetdata ?? defaultData} ‼️ `,
           <Link
                   target="_blank"
                   href="/course/forex/"
@@ -63,4 +66,15 @@ export default function Home() {
       <Community />
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const req = await fetch('http://localhost:3000/api/sheet');
+  const res = await req.json();
+
+  return {
+    props: {
+      sheetdata: res.data[2][2]
+    }
+  }
 }
