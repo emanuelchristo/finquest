@@ -21,7 +21,7 @@ import TopTrader from "../TopTrader/TopTrader";
 import OurSubscription from "../OurSubscriptions/OurSubscriptions";
 import { useRouter } from "next/router";
 
-const CoursePage = () => {
+const CoursePage = ({sheetdata}) => {
   const router = useRouter();
   const [selectedCourseId,setSelectedCourseId] = useState(router.query)
   const { courseid } = router.query;
