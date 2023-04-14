@@ -21,7 +21,7 @@ import TopTrader from "../TopTrader/TopTrader";
 import OurSubscription from "../OurSubscriptions/OurSubscriptions";
 import { useRouter } from "next/router";
 
-const CoursePage = () => {
+const CoursePage = ({sheetdata}) => {
   const router = useRouter();
   const [selectedCourseId,setSelectedCourseId] = useState(router.query)
   const { courseid } = router.query;
@@ -51,17 +51,17 @@ const CoursePage = () => {
   });
   return (
     <>
-      <Snackbar trigger={snackbar} />
+      <Snackbar trigger={snackbar} sheetdata={sheetdata}/>
       <Navbar />
       <Hero />
       <Subscription />
-      <EnrollmentDate/>
+      <EnrollmentDate sheetdata={sheetdata}/>
       <WhatYouWillLearn />
       <HowWillYouSpent />
       <WhoIsThisFor />
       <Curriculum />
       <StartNow />
-      <UpcomingBatches courseid={courseid}/>
+      <UpcomingBatches courseid={courseid} sheetdata={sheetdata}/>
       {courseid!='forex'?
       <OurSubscription courseid={selectedCourseId}/>:
       <CourseFee />
