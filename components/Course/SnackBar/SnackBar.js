@@ -22,24 +22,20 @@ export default function Snackbar({ trigger, sheetdata }) {
   const { courseid } = router.query;
   const [hidden, setHidden] = useState(false);
   const [data, setdata] = useState({});
-  const [gsData, setgsData] = useState([ 'starter', '6 weeks', '20 Apr 2023', '16 Apr 2023' ]);
   useEffect(() => {
     switch (courseid) {
       case "forex":
         setdata(CoursePageData.forex);
-        setgsData(sheetdata[2]);
         break;
       case "professional":
-        setgsData(sheetdata[1]);
         setdata(CoursePageData.professional);
         break;
       case "starter":
-        setgsData(sheetdata[0]);
         setdata(CoursePageData.starter);
     }
   }, [courseid]);
 
-  var deadline = new Date(gsData[2] ?? data.deadline);
+  var deadline = new Date(sheetdata.start_date ?? data.deadline);
   deadline.setDate(deadline.getDate() - 1);
   var ddd = String(deadline.getDate()).padStart(1, "0");
   var dmm = String(deadline.getMonth()).padStart(1, "0");

@@ -16,24 +16,20 @@ function waLink(msg) {
 }
 const UpcomingBatches = ({courseid,sheetdata}) => {
   const [data, setdata] = useState({});
-  const [gsData, setgsData] = useState([ 'starter', '6 weeks', '20 Apr 2023', '16 Apr 2023' ]);
   useEffect(() => {
     switch (courseid.courseid) {
       case "forex":
         setdata(CoursePageData.forex);
-        setgsData(sheetdata[2]);
         break;
       case "professional":
         setdata(CoursePageData.professional);
-        setgsData(sheetdata[1]);
         break;
       case "starter":
         setdata(CoursePageData.starter);
-        setgsData(sheetdata[0]);
     }
   }, [courseid]);
-  var deadline = new Date(gsData[2] ?? data.deadline);
-  var weekend = new Date(gsData[3] ?? data.weekend);
+  var deadline = new Date(sheetdata.start_date ?? data.deadline);
+  var weekend = new Date(sheetdata.week_end_date ?? data.weekend);
   var dd = String(deadline.getDate()).padStart(1, "0");
   var mm = String(deadline.getMonth()).padStart(1, "0");
   var yy = String(deadline.getFullYear()).padStart(4, "0");

@@ -31,6 +31,14 @@ const CoursePage = ({sheetdata}) => {
       setSelectedCourseId(router.query.courseid);
     }
   },[router])
+
+  if (courseid=='starter')
+      sheetdata=sheetdata[0]
+  else if(courseid=='professional')
+      sheetdata=sheetdata[1]
+  else if(courseid=='forex')
+      sheetdata=sheetdata[2]
+
   useEffect(function mount() {
     function onScroll() {
       var y = window.scrollY;
