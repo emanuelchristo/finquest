@@ -24,7 +24,7 @@ export default function Home() {
     <div id="home">
       <Snackbar
         message={[
-          `New batch on forex trading starting  on 13th April ‼️ `,
+          `New batch on forex trading starting soon ‼️ `,
           <Link
                   target="_blank"
                   href="/course/forex/"

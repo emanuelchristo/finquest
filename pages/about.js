@@ -12,7 +12,7 @@ export default function AboutUs() {
     <div id="home">
         <Snackbar
         message={[
-          "New batch on forex trading starting  on april 13th ‼️ ",
+          "New batch on forex trading starting soon ‼️ ",
           <Link
                   target="_blank"
                   href="/course/forex/"

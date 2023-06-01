@@ -7,7 +7,7 @@ export default function Privacy() {
     <div id="home" className={styles["home"]}>
       <Snackbar
         message={[
-          "New batch on forex trading starting  on april 13th ‼️ ",
+          "New batch on forex trading starting soon ‼️ ",
           <Link target="_blank" href="/course/forex/" rel="noopener noreferrer" key={1}>
             <a id="offprice">
               REGISTER NOW

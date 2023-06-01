@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           name="google-site-verification"
           content="4Cbyhz8hc0taFGG6F4lucI7JMMXJQe1y_Qa8qKscRnI"
         />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
       </Head>
       <Script
         id="gtm-script"
